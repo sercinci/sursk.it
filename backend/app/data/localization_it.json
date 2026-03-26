@@ -1,0 +1,2728 @@
+{
+  "meta": {
+    "source": "https://wiki.pokemoncentral.it/",
+    "generated_at": "2026-03-26T16:03:25.351206+00:00",
+    "moves_total": 569,
+    "locations_total": 61,
+    "abilities_total": 94
+  },
+  "moves": {
+    "absorb": {
+      "display_name": "Assorbimento",
+      "description": "Il Pokémon attacca assorbendo sostanze nutritive e recupera una quantità di PS pari a una parte del danno inflitto."
+    },
+    "acid": {
+      "display_name": "Acido",
+      "description": "Il Pokémon attacca il bersaglio spruzzando un acido corrosivo. Può anche ridurne la Difesa Speciale."
+    },
+    "acid-armor": {
+      "display_name": "Scudo Acido",
+      "description": "Il Pokémon altera la sua struttura cellulare passando allo stato liquido e aumentando la sua Difesa per un certo tempo."
+    },
+    "acid-spray": {
+      "display_name": "Acidobomba",
+      "description": "Il Pokémon attacca il bersaglio con un acido altamente corrosivo, riducendo la sua Difesa Speciale per un certo tempo."
+    },
+    "acrobatics": {
+      "display_name": "Acrobazia",
+      "description": "Il Pokémon attacca rapidamente il bersaglio. Se chi la usa non ha uno strumento, infligge grossi danni."
+    },
+    "acupressure": {
+      "display_name": "Acupressione",
+      "description": "Il Pokémon esercita pressione su alcuni punti nevralgici e aumenta di molto una statistica a caso."
+    },
+    "aerial-ace": {
+      "display_name": "Aeroassalto",
+      "description": "Il Pokémon sconvolge il bersaglio con movimenti velocissimi e lo assale."
+    },
+    "after-you": {
+      "display_name": "Cortesia",
+      "description": "Il Pokémon aiuta un bersaglio permettendogli di agire subito dopo."
+    },
+    "agility": {
+      "display_name": "Agilità",
+      "description": "Il Pokémon rilassa e alleggerisce il proprio corpo per accelerarne i movimenti per un po' di tempo."
+    },
+    "air-cutter": {
+      "display_name": "Aerasoio",
+      "description": "Il Pokémon provoca un vento tagliente che sferza il bersaglio. Probabile brutto colpo."
+    },
+    "air-slash": {
+      "display_name": "Eterelama",
+      "description": "Il Pokémon attacca con un vento tagliente che squarcia il cielo. Può anche far tentennare il bersaglio."
+    },
+    "alluring-voice": {
+      "display_name": "Ammaliavoce",
+      "description": "Il Pokémon attacca sfruttando il suo canto angelico, confondendo il bersaglio se le sue statistiche sono aumentate nello stesso turno."
+    },
+    "ally-switch": {
+      "display_name": "Cambiaposto",
+      "description": "Il Pokémon cambia di posto con un alleato in campo grazie a un misterioso potere. Se la mossa è usata in successione può fallire."
+    },
+    "amnesia": {
+      "display_name": "Amnesia",
+      "description": "Il Pokémon svuota per un po' la mente per dimenticare i problemi. La Difesa Speciale aumenta per un certo tempo."
+    },
+    "ancient-power": {
+      "display_name": "Forzantica",
+      "description": "Il Pokémon attacca il bersaglio con una forza primordiale. Può aumentare tutte le proprie statistiche."
+    },
+    "aqua-jet": {
+      "display_name": "Acquagetto",
+      "description": "Il Pokémon colpisce a una tale velocità da rendersi quasi invisibile."
+    },
+    "aqua-ring": {
+      "display_name": "Acquanello",
+      "description": "Il Pokémon si avvolge in un velo d'acqua, recuperando PS un po' alla volta."
+    },
+    "aqua-tail": {
+      "display_name": "Idrondata",
+      "description": "Il Pokémon attacca agitando la coda come se fosse una violenta ondata in una tempesta furiosa."
+    },
+    "arm-thrust": {
+      "display_name": "Sberletese",
+      "description": "Il Pokémon attacca con una raffica di ceffoni che colpisce da due a cinque volte di fila."
+    },
+    "aromatherapy": {
+      "display_name": "Aromaterapia",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "assist": {
+      "display_name": "Assistente",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "assurance": {
+      "display_name": "Garanzia",
+      "description": "Se il bersaglio ha già subito dei danni nello stesso turno, la potenza di questa mossa raddoppia."
+    },
+    "astonish": {
+      "display_name": "Sgomento",
+      "description": "Il Pokémon attacca il bersaglio emettendo un verso terrificante. Può anche farlo tentennare."
+    },
+    "attract": {
+      "display_name": "Attrazione",
+      "description": "Se il bersaglio è del sesso opposto, s'infatua e diventa riluttante ad attaccare."
+    },
+    "aura-sphere": {
+      "display_name": "Sferapulsar",
+      "description": "Il Pokémon rilascia l'aura dal profondo del corpo e la spara verso il bersaglio."
+    },
+    "aurora-beam": {
+      "display_name": "Raggiaurora",
+      "description": "Il Pokémon attacca il bersaglio con un raggio dai colori dell'iride. Può anche ridurne l'Attacco."
+    },
+    "aurora-veil": {
+      "display_name": "Velaurora",
+      "description": "Questa mossa riduce i danni subiti dalle mosse fisiche e dalle mosse speciali per cinque turni. Si può usare solo quando nevica."
+    },
+    "autotomize": {
+      "display_name": "Sganciapesi",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "avalanche": {
+      "display_name": "Slavina",
+      "description": "La potenza della mossa raddoppia se chi la usa è stato colpito dal bersaglio nello stesso turno."
+    },
+    "axe-kick": {
+      "display_name": "Calcio ad Ascia",
+      "description": "Il Pokémon attacca sferrando un calcio dall'alto verso il basso che può confondere il bersaglio. Se la mossa fallisce, il Pokémon subisce dei danni."
+    },
+    "baby-doll-eyes": {
+      "display_name": "Occhioni Teneri",
+      "description": "Il Pokémon rivolge i propri occhioni languidi al bersaglio, riducendone l'Attacco. Questo attacco ha priorità alta."
+    },
+    "barrier": {
+      "display_name": "Barriera",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "baton-pass": {
+      "display_name": "Staffetta",
+      "description": "Il Pokémon è sostituito da un altro della squadra, che eredita anche ogni modifica alle statistiche."
+    },
+    "beat-up": {
+      "display_name": "Picchiaduro",
+      "description": "Il Pokémon attacca con tutti gli altri Pokémon della squadra: più ce ne sono, maggiore è il numero di attacchi."
+    },
+    "belch": {
+      "display_name": "Rutto",
+      "description": "Il Pokémon attacca il bersaglio con un rutto potente. Per utilizzare questa mossa, deve aver mangiato la propria bacca o quella di un altro Pokémon."
+    },
+    "belly-drum": {
+      "display_name": "Panciamburo",
+      "description": "Il Pokémon massimizza l'Attacco in cambio di metà dei PS massimi."
+    },
+    "bestow": {
+      "display_name": "Cediregalo",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "bide": {
+      "display_name": "Pazienza",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "bind": {
+      "display_name": "Legatutto",
+      "description": "Il Pokémon attacca il bersaglio stritolandolo per quattro o cinque turni con il suo lungo corpo o le sue liane."
+    },
+    "bite": {
+      "display_name": "Morso",
+      "description": "Il Pokémon morde il bersaglio con denti affilatissimi che possono farlo tentennare."
+    },
+    "blast-burn": {
+      "display_name": "Incendio",
+      "description": "Il Pokémon attacca incenerendo il bersaglio con le fiamme di una potente esplosione, ma per un po' di tempo non può muoversi a causa del contraccolpo."
+    },
+    "blaze-kick": {
+      "display_name": "Calciardente",
+      "description": "Il Pokémon attacca il bersaglio e può anche scottarlo. Probabile brutto colpo."
+    },
+    "blizzard": {
+      "display_name": "Bora",
+      "description": "Il Pokémon attacca il bersaglio con una tremenda tempesta di ghiaccio che può anche congelarlo."
+    },
+    "block": {
+      "display_name": "Blocco",
+      "description": "Il Pokémon sbarra la strada al bersaglio impedendogli di lasciare il campo."
+    },
+    "body-press": {
+      "display_name": "Schiacciacorpo",
+      "description": "Il Pokémon attacca schiacciando il bersaglio con il suo corpo. Più la Difesa è alta, maggiori sono i danni inflitti."
+    },
+    "body-slam": {
+      "display_name": "Corposcontro",
+      "description": "Il Pokémon attacca il bersaglio scagliandosi contro di lui con tutto il corpo. Può causarne anche la paralisi."
+    },
+    "boomburst": {
+      "display_name": "Ondaboato",
+      "description": "Il Pokémon attacca tutto intorno con la forza di un boato distruttivo."
+    },
+    "bounce": {
+      "display_name": "Rimbalzo",
+      "description": "Il Pokémon balza in alto per sottrarsi alla vista e attaccare il bersaglio poco dopo. Può anche paralizzare il bersaglio."
+    },
+    "brave-bird": {
+      "display_name": "Baldeali",
+      "description": "Il Pokémon ripiega le ali e carica da bassa quota, ma subisce danni."
+    },
+    "breaking-swipe": {
+      "display_name": "Vastoimpatto",
+      "description": "Il Pokémon attacca il bersaglio con la sua robusta coda riducendone l'Attacco per un po' di tempo."
+    },
+    "brick-break": {
+      "display_name": "Breccia",
+      "description": "Il Pokémon attacca con una mano e rompe barriere come Riflesso e Schermoluce."
+    },
+    "brine": {
+      "display_name": "Acquadisale",
+      "description": "Se i PS del bersaglio sono scesi a metà o meno, la potenza di questa mossa raddoppia."
+    },
+    "brutal-swing": {
+      "display_name": "Vorticolpo",
+      "description": "Il Pokémon attacca attorno a sé facendo ruotare il suo corpo."
+    },
+    "bubble": {
+      "display_name": "Bolla",
+      "description": "Investe il bersaglio con una pioggia di bolle."
+    },
+    "bubble-beam": {
+      "display_name": "Bollaraggio",
+      "description": "Il Pokémon attacca il bersaglio con una forte scarica di bolle che può anche rallentarne i movimenti."
+    },
+    "bug-bite": {
+      "display_name": "Coleomorso",
+      "description": "Il Pokémon attacca mordendo. Se il bersaglio ha una bacca, gliela mangia e ne può sfruttare gli effetti."
+    },
+    "bug-buzz": {
+      "display_name": "Ronzio",
+      "description": "Il Pokémon attacca generando un'onda sonora che può anche ridurre la Difesa Speciale del bersaglio."
+    },
+    "bulk-up": {
+      "display_name": "Granfisico",
+      "description": "Il Pokémon tende i muscoli per gonfiare il corpo, aumentando Attacco e Difesa per un po' di tempo."
+    },
+    "bulldoze": {
+      "display_name": "Battiterra",
+      "description": "Il Pokémon calpesta il terreno e scatena un terremoto che danneggia il bersaglio, rallentandone i movimenti per un po' di tempo."
+    },
+    "bullet-punch": {
+      "display_name": "Pugnoscarica",
+      "description": "Il Pokémon assesta sul bersaglio una scarica di pugni duri e veloci come proiettili."
+    },
+    "bullet-seed": {
+      "display_name": "Semitraglia",
+      "description": "Il Pokémon attacca sparando una raffica di cinque semi."
+    },
+    "burning-jealousy": {
+      "display_name": "Fiamminvidia",
+      "description": "Il Pokémon attacca con la forza dell'invidia, causando una scottatura a tutti i Pokémon le cui statistiche sono aumentate durante quel turno."
+    },
+    "calm-mind": {
+      "display_name": "Calmamente",
+      "description": "Il Pokémon si concentra e placa il proprio spirito per aumentare l'Attacco Speciale e la Difesa Speciale per un po' di tempo."
+    },
+    "camouflage": {
+      "display_name": "Camuffamento",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "captivate": {
+      "display_name": "Incanto",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "charge": {
+      "display_name": "Sottocarica",
+      "description": "Il Pokémon si carica di elettricità e aumenta la potenza della sua prossima mossa di tipo Elettro. Aumenta anche la propria Difesa Speciale per un po' di tempo."
+    },
+    "charge-beam": {
+      "display_name": "Raggioscossa",
+      "description": "Il Pokémon lancia un fascio di elettricità molto intensa verso il bersaglio. Può anche aumentare il proprio Attacco Speciale."
+    },
+    "charm": {
+      "display_name": "Fascino",
+      "description": "Il Pokémon ammalia il bersaglio con lo sguardo per renderlo meno cauto. Ne riduce l'Attacco per un certo tempo."
+    },
+    "chilling-water": {
+      "display_name": "Doccia Fredda",
+      "description": "Il Pokémon attacca il bersaglio con una doccia d'acqua talmente fredda da farlo demoralizzare, riducendone l'Attacco per un po' di tempo."
+    },
+    "chip-away": {
+      "display_name": "Insidia",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "circle-throw": {
+      "display_name": "Ribaltiro",
+      "description": "Il Pokémon scaraventa il bersaglio dietro di sé. Può anche ridurre la sua Difesa."
+    },
+    "clamp": {
+      "display_name": "Tenaglia",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "clear-smog": {
+      "display_name": "Pulifumo",
+      "description": "Il Pokémon attacca il bersaglio lanciandogli contro un ammasso di fango speciale, che annulla ogni modifica alle statistiche."
+    },
+    "close-combat": {
+      "display_name": "Zuffa",
+      "description": "Il Pokémon attacca abbassando la guardia. La sua Difesa e la sua Difesa Speciale diminuiscono per un po' di tempo."
+    },
+    "coaching": {
+      "display_name": "Coaching",
+      "description": "Il Pokémon aumenta l'Attacco e la Difesa di tutti gli alleati dando loro indicazioni precise."
+    },
+    "coil": {
+      "display_name": "Arrotola",
+      "description": "Il Pokémon si concentra aumentando Attacco, Difesa e precisione."
+    },
+    "confide": {
+      "display_name": "Confidenza",
+      "description": "Il Pokémon svela dei segreti al bersaglio, distraendolo e riducendone l'Attacco Speciale."
+    },
+    "confuse-ray": {
+      "display_name": "Stordiraggio",
+      "description": "Il Pokémon colpisce il bersaglio con un raggio funesto che lo confonde."
+    },
+    "confusion": {
+      "display_name": "Confusione",
+      "description": "Il Pokémon attacca il bersaglio con una leggera forza telecinetica che può anche confonderlo."
+    },
+    "constrict": {
+      "display_name": "Limitazione",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "copycat": {
+      "display_name": "Copione",
+      "description": "Il Pokémon mima l'ultima mossa eseguita. Fallisce se non è stata ancora usata alcuna mossa."
+    },
+    "cosmic-power": {
+      "display_name": "Cosmoforza",
+      "description": "Il Pokémon assorbe una forza mistica dallo spazio che aumenta la Difesa e la Difesa Speciale."
+    },
+    "cotton-guard": {
+      "display_name": "Cotonscudo",
+      "description": "Il Pokémon avvolge il proprio corpo con del cotone morbidissimo, proteggendosi e aumentando la propria Difesa per molto tempo."
+    },
+    "cotton-spore": {
+      "display_name": "Cottonspora",
+      "description": "Nessuna descrizione disponibile."
+    },
+    "counter": {
+      "display_name": "Contrattacco",
+      "description": "Mossa che contrasta ogni attacco fisico, arrecando il doppio del danno ricevuto."
+    },
+    "covet": {
+      "display_name": "Supplica",
+      "description": "Il Pokémon si avvicina al bersaglio con fare accattivante e gli ruba lo strumento."
+    },
+    "crabhammer": {
+      "display_name": "Martellata",
+      "description": "Il Pokémon attacca il bersaglio servendosi di una grande tenaglia. Probabile brutto colpo."
+    },
+    "crafty-shield": {
+      "display_name": "Truccodifesa",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "cross-chop": {
+      "display_name": "Incrocolpo",
+      "description": "Il Pokémon attacca investendo il bersaglio con un colpo sferrato con entrambe le braccia incrociate. Probabile brutto colpo."
+    },
+    "cross-poison": {
+      "display_name": "Velenocroce",
+      "description": "Il Pokémon attacca con zanne tossiche che possono anche avvelenare il bersaglio. Probabile brutto colpo."
+    },
+    "crunch": {
+      "display_name": "Sgranocchio",
+      "description": "Il Pokémon attacca mordendo il bersaglio con denti affilati. Può anche ridurne la Difesa."
+    },
+    "crush-claw": {
+      "display_name": "Tritartigli",
+      "description": "Il Pokémon attacca il bersaglio con artigli robusti e affilati che possono ridurne la Difesa."
+    },
+    "curse": {
+      "display_name": "Maledizione",
+      "description": "Per un po' di tempo il Pokémon riduce la propria velocità di movimento ma aumenta l'Attacco e la Difesa. La mossa ha un effetto diverso se chi la usa è di tipo Spettro."
+    },
+    "cut": {
+      "display_name": "Taglio",
+      "description": "Il Pokémon attacca il bersaglio con artigli o falci affilate."
+    },
+    "dark-pulse": {
+      "display_name": "Neropulsar",
+      "description": "Il Pokémon emana un'aura impregnata di oscuri pensieri. Può anche far tentennare il bersaglio."
+    },
+    "darkest-lariat": {
+      "display_name": "Braccioteso",
+      "description": "Il Pokémon colpisce il bersaglio mulinando gli arti. Il danno inflitto ignora le modifiche alle statistiche del bersaglio."
+    },
+    "dazzling-gleam": {
+      "display_name": "Magibrillio",
+      "description": "Il Pokémon emette una luce potentissima che infligge danni al bersaglio."
+    },
+    "defense-curl": {
+      "display_name": "Ricciolscudo",
+      "description": "Il Pokémon si raggomitola per nascondere i punti deboli e aumentare la propria Difesa."
+    },
+    "defog": {
+      "display_name": "Scacciabruma",
+      "description": "Il Pokémon spazza via barriere come Riflesso e Schermoluce con un forte vento e riduce la capacità d'elusione del bersaglio."
+    },
+    "destiny-bond": {
+      "display_name": "Destinobbligato",
+      "description": "Se il Pokémon va KO a causa di un attacco, chi ha sferrato il colpo da KO fa la stessa fine. Se usata in successione fallisce."
+    },
+    "detect": {
+      "display_name": "Individua",
+      "description": "Il Pokémon si protegge saldamente, annullando tutti gli attacchi ricevuti."
+    },
+    "dig": {
+      "display_name": "Fossa",
+      "description": "Il Pokémon si nasconde scavando nel terreno per attaccare il bersaglio poco dopo."
+    },
+    "disable": {
+      "display_name": "Inibitore",
+      "description": "Per quattro turni, questa mossa impedisce al bersaglio di riutilizzare l'ultima mossa usata."
+    },
+    "disarming-voice": {
+      "display_name": "Incantavoce",
+      "description": "Il Pokémon emette una voce suadente che infligge danni spirituali al bersaglio."
+    },
+    "discharge": {
+      "display_name": "Scarica",
+      "description": "Il Pokémon attacca tutto intorno con un bagliore elettrico che può anche paralizzare."
+    },
+    "dive": {
+      "display_name": "Sub",
+      "description": "Il Pokémon si tuffa in acqua per emergere e attaccare al turno successivo."
+    },
+    "dizzy-punch": {
+      "display_name": "Stordipugno",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "doom-desire": {
+      "display_name": "Desiderio Fatale",
+      "description": "Il Pokémon attacca il bersaglio con un intenso fascio di luce due turni dopo l'uso della mossa."
+    },
+    "double-edge": {
+      "display_name": "Sdoppiatore",
+      "description": "Il Pokémon attacca il bersaglio lanciandosi in una carica spericolata, ma subisce danni."
+    },
+    "double-hit": {
+      "display_name": "Doppiosmash",
+      "description": "Il Pokémon attacca il bersaglio colpendolo due volte in rapida successione con la coda, una liana o simili."
+    },
+    "double-kick": {
+      "display_name": "Doppiocalcio",
+      "description": "Il Pokémon attacca il bersaglio calciandolo con entrambi i piedi, infliggendogli danni due volte di fila."
+    },
+    "double-slap": {
+      "display_name": "Doppiasberla",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "double-team": {
+      "display_name": "Doppioteam",
+      "description": "Il Pokémon si muove in fretta e crea copie illusorie di se stesso, eludendo gli attacchi avversari."
+    },
+    "draco-meteor": {
+      "display_name": "Dragobolide",
+      "description": "Il Pokémon attacca con meteore che cadono dal cielo, ma il contraccolpo riduce il suo Attacco Speciale per un certo tempo."
+    },
+    "dragon-ascent": {
+      "display_name": "Ascesa del Drago",
+      "description": "Il Pokémon attacca fiondandosi sul bersaglio dal cielo ad altissima velocità, ma la sua Difesa e la sua Difesa Speciale diminuiscono per un po' di tempo."
+    },
+    "dragon-breath": {
+      "display_name": "Dragospiro",
+      "description": "Il Pokémon attacca investendo il bersaglio con un soffio d'aria potentissimo. Può anche paralizzarlo."
+    },
+    "dragon-cheer": {
+      "display_name": "Grido del Drago",
+      "description": "Il Pokémon incita gli alleati con un inno ai draghi, aumentando la probabilità che sferrino brutti colpi. Particolarmente efficace con alleati di tipo Drago."
+    },
+    "dragon-claw": {
+      "display_name": "Dragartigli",
+      "description": "Il Pokémon attacca con artigli affilati che graffiano il bersaglio con grande forza."
+    },
+    "dragon-dance": {
+      "display_name": "Dragodanza",
+      "description": "Il Pokémon esegue una danza mistica e vigorosa che aumenta il suo Attacco e la sua Velocità."
+    },
+    "dragon-hammer": {
+      "display_name": "Marteldrago",
+      "description": "Il Pokémon infligge danni al bersaglio usando il proprio corpo come se fosse un martello."
+    },
+    "dragon-pulse": {
+      "display_name": "Dragopulsar",
+      "description": "Il Pokémon attacca il bersaglio generando un'onda d'urto dalla bocca."
+    },
+    "dragon-rage": {
+      "display_name": "Ira di Drago",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "dragon-rush": {
+      "display_name": "Dragofuria",
+      "description": "Il Pokémon colpisce il bersaglio con fare minaccioso. Può anche farlo tentennare."
+    },
+    "dragon-tail": {
+      "display_name": "Codadrago",
+      "description": "Il Pokémon fa volar via il bersaglio in modo che venga sostituito. Se il bersaglio è un Pokémon selvatico, la lotta finisce."
+    },
+    "drain-punch": {
+      "display_name": "Assorbipugno",
+      "description": "Il Pokémon assorbe energia dal bersaglio con un pugno e recupera una quantità di PS pari a una parte del danno inflitto."
+    },
+    "draining-kiss": {
+      "display_name": "Assorbibacio",
+      "description": "Il Pokémon recupera PS assorbendo energia dal bersaglio con un bacio."
+    },
+    "dream-eater": {
+      "display_name": "Mangiasogni",
+      "description": "Il Pokémon divora i sogni del bersaglio affetto da sonnolenza, recuperando una quantità di PS pari a una parte del danno inflitto."
+    },
+    "drill-run": {
+      "display_name": "Giravvita",
+      "description": "Il Pokémon si scaglia ruotando su se stesso come un trapano perforante. Probabile brutto colpo."
+    },
+    "dual-chop": {
+      "display_name": "Doppiocolpo",
+      "description": "Il Pokémon usa le parti dure del proprio corpo per attaccare il bersaglio due volte in rapida successione."
+    },
+    "dual-wingbeat": {
+      "display_name": "Doppia Ala",
+      "description": "Il Pokémon attacca il bersaglio urtandolo con le ali e infliggendogli danni due volte in rapida successione."
+    },
+    "dynamic-punch": {
+      "display_name": "Dinamipugno",
+      "description": "Il Pokémon attacca con una scarica di pugni davvero forti. Il bersaglio viene sicuramente confuso."
+    },
+    "earth-power": {
+      "display_name": "Geoforza",
+      "description": "Una forza devastante si sprigiona dal terreno sotto il bersaglio. Può anche ridurne la Difesa Speciale."
+    },
+    "earthquake": {
+      "display_name": "Terremoto",
+      "description": "Il Pokémon attacca tutto intorno provocando un potente sisma."
+    },
+    "echoed-voice": {
+      "display_name": "Echeggiavoce",
+      "description": "Chi la usa attacca il bersaglio con la propria voce echeggiante. Se usata a ripetizione da uno o più Pokémon, la potenza della mossa aumenta."
+    },
+    "eerie-impulse": {
+      "display_name": "Elettromistero",
+      "description": "Il Pokémon emette dal corpo onde anomale che investono il bersaglio, riducendone l'Attacco Speciale per un certo tempo."
+    },
+    "electric-terrain": {
+      "display_name": "Campo Elettrico",
+      "description": "Per cinque turni il terreno entra nello stato di Campo Elettrico: i Pokémon a terra non si addormentano e la potenza delle mosse di tipo Elettro aumenta."
+    },
+    "electro-ball": {
+      "display_name": "Energisfera",
+      "description": "Il Pokémon colpisce il bersaglio con una sfera d'energia elettrica. Più è rapido rispetto al bersaglio, maggiore è la potenza della mossa."
+    },
+    "electroweb": {
+      "display_name": "Elettrotela",
+      "description": "Il Pokémon attacca il bersaglio catturandolo con una ragnatela elettrica e rallentandone i movimenti per un po' di tempo."
+    },
+    "embargo": {
+      "display_name": "Divieto",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "ember": {
+      "display_name": "Braciere",
+      "description": "Il Pokémon attacca il bersaglio lanciando fiammelle che possono anche scottarlo."
+    },
+    "encore": {
+      "display_name": "Ripeti",
+      "description": "Il Pokémon obbliga il bersaglio a ripetere per tre turni l'ultima mossa eseguita."
+    },
+    "endeavor": {
+      "display_name": "Rimonta",
+      "description": "L'esibizione funziona bene se eseguita per ultima."
+    },
+    "endure": {
+      "display_name": "Resistenza",
+      "description": "Il Pokémon si mette in posizione per resistere agli attacchi. Mentre si difende, gli rimane sempre almeno 1 PS."
+    },
+    "energy-ball": {
+      "display_name": "Energipalla",
+      "description": "Il Pokémon attinge energia dalla natura e la scaglia contro il bersaglio. Può anche ridurne la Difesa Speciale."
+    },
+    "entrainment": {
+      "display_name": "Saltamicizia",
+      "description": "Il Pokémon saltella con un buffo ritmo, inducendo il bersaglio a imitarlo e rendendo la sua abilità identica alla propria."
+    },
+    "eruption": {
+      "display_name": "Eruzione",
+      "description": "Il Pokémon attacca il bersaglio con una furia esplosiva. Più i suoi PS sono bassi, più la potenza della mossa diminuisce."
+    },
+    "expanding-force": {
+      "display_name": "Vastenergia",
+      "description": "Il Pokémon attacca il bersaglio con energia psichica. Se usata quando è attivo un Campo Psichico, la mossa aumenta di potenza e danneggia tutti gli avversari."
+    },
+    "explosion": {
+      "display_name": "Esplosione",
+      "description": "Il Pokémon attacca tutto intorno causando una grande esplosione, ma poi va KO."
+    },
+    "extrasensory": {
+      "display_name": "Extrasenso",
+      "description": "Il Pokémon attacca con una misteriosa forza invisibile. Può far tentennare il bersaglio."
+    },
+    "extreme-speed": {
+      "display_name": "Extrarapido",
+      "description": "Il Pokémon carica il bersaglio a una tale velocità da rendersi quasi invisibile."
+    },
+    "facade": {
+      "display_name": "Facciata",
+      "description": "Mossa la cui potenza raddoppia se chi la usa è scottato, avvelenato, paralizzato o affetto da sonnolenza."
+    },
+    "fairy-wind": {
+      "display_name": "Vento di Fata",
+      "description": "Il Pokémon solleva un vento fatato che investe il bersaglio."
+    },
+    "fake-out": {
+      "display_name": "Bruciapelo",
+      "description": "Il Pokémon fa tentennare il bersaglio con un attacco ad alta priorità. L'attacco funziona solo appena scesi in campo."
+    },
+    "fake-tears": {
+      "display_name": "Falselacrime",
+      "description": "Il Pokémon inscena un pianto teatrale per turbare il bersaglio, riducendo la sua Difesa Speciale per un certo tempo."
+    },
+    "false-swipe": {
+      "display_name": "Falsofinale",
+      "description": "Il Pokémon attacca in modo contenuto, lasciando il bersaglio con almeno 1 PS."
+    },
+    "feather-dance": {
+      "display_name": "Danzadipiume",
+      "description": "Il Pokémon scatena un turbinio di piume che si attaccano al bersaglio riducendo il suo Attacco per un certo tempo."
+    },
+    "feint": {
+      "display_name": "Fintoattacco",
+      "description": "Il Pokémon può attaccare anche un bersaglio che ha usato mosse come Protezione e Individua, annullandone gli effetti."
+    },
+    "feint-attack": {
+      "display_name": "Finta",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "fell-stinger": {
+      "display_name": "Pungiglione",
+      "description": "Quando il Pokémon manda KO il bersaglio con questa mossa, aumenta moltissimo il suo Attacco."
+    },
+    "final-gambit": {
+      "display_name": "Azzardo",
+      "description": "Il Pokémon attacca rischiando il tutto per tutto. Va KO, ma infligge al bersaglio un danno pari ai PS che ha perso."
+    },
+    "fire-blast": {
+      "display_name": "Fuocobomba",
+      "description": "Il Pokémon investe il bersaglio con un'intensa fiammata che fa terra bruciata. Può anche scottarlo."
+    },
+    "fire-fang": {
+      "display_name": "Rogodenti",
+      "description": "Il Pokémon morde con denti infuocati. Può anche scottare o far tentennare il bersaglio."
+    },
+    "fire-pledge": {
+      "display_name": "Fiammapatto",
+      "description": "Il Pokémon attacca il bersaglio con una colonna di fuoco. Se usata con Erbapatto, la potenza aumenta e il campo diventa un mare di fuoco."
+    },
+    "fire-punch": {
+      "display_name": "Fuocopugno",
+      "description": "Il Pokémon attacca il bersaglio con un pugno ardente che può scottarlo."
+    },
+    "fire-spin": {
+      "display_name": "Turbofuoco",
+      "description": "Intrappola il nemico in un turbine di fuoco che dura per 2-5 turni."
+    },
+    "first-impression": {
+      "display_name": "Schermaglia",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "fissure": {
+      "display_name": "Abisso",
+      "description": "Il Pokémon attacca il bersaglio gettandolo in una grande spaccatura nel terreno. L'attacco richiede molto tempo."
+    },
+    "flail": {
+      "display_name": "Flagello",
+      "description": "Il Pokémon si dimena per attaccare. Più i suoi PS sono bassi, più la potenza della mossa aumenta."
+    },
+    "flame-burst": {
+      "display_name": "Pirolancio",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "flame-charge": {
+      "display_name": "Nitrocarica",
+      "description": "Il Pokémon si copre di fuoco e attacca il bersaglio, accelerando inoltre i propri movimenti per un po' di tempo."
+    },
+    "flame-wheel": {
+      "display_name": "Ruotafuoco",
+      "description": "Il Pokémon si copre di fuoco e attacca scagliandosi contro il bersaglio. Può anche scottarlo."
+    },
+    "flamethrower": {
+      "display_name": "Lanciafiamme",
+      "description": "Il Pokémon attacca il bersaglio lanciando intense fiammate che possono anche scottarlo."
+    },
+    "flare-blitz": {
+      "display_name": "Fuococarica",
+      "description": "Il Pokémon si ricopre di fuoco e si lancia all'attacco, ma subisce danni. Può anche scottare il bersaglio."
+    },
+    "flash": {
+      "display_name": "Flash",
+      "description": "Investe il bersaglio con una luce abbagliante che ne riduce la precisione. Fuori dalla lotta serve per illuminare le grotte."
+    },
+    "flash-cannon": {
+      "display_name": "Cannonflash",
+      "description": "Il Pokémon attacca raccogliendo e rilasciando energia luminosa. Può ridurre la Difesa Speciale del bersaglio."
+    },
+    "flatter": {
+      "display_name": "Adulazione",
+      "description": "Il Pokémon adula il bersaglio e lo confonde. Allo stesso tempo ne aumenta l'Attacco Speciale."
+    },
+    "fling": {
+      "display_name": "Lancio",
+      "description": "Il Pokémon lancia il suo strumento addosso al bersaglio. La potenza e l'effetto dipendono dallo strumento."
+    },
+    "flip-turn": {
+      "display_name": "Virata",
+      "description": "Dopo aver sferrato l'attacco il Pokémon torna rapidamente vicino al proprio Allenatore."
+    },
+    "fly": {
+      "display_name": "Volo",
+      "description": "Il Pokémon si nasconde alzandosi in volo per attaccare il bersaglio poco dopo."
+    },
+    "focus-blast": {
+      "display_name": "Focalcolpo",
+      "description": "Il Pokémon si concentra e rilascia la sua forza. Può ridurre la Difesa Speciale del bersaglio."
+    },
+    "focus-energy": {
+      "display_name": "Focalenergia",
+      "description": "Il Pokémon fa un profondo respiro e si concentra per rendere più probabili i brutti colpi per un certo tempo."
+    },
+    "focus-punch": {
+      "display_name": "Centripugno",
+      "description": "Il Pokémon prende la mira prima di sferrare un pugno. Fallisce se subisce un attacco prima di eseguire la mossa."
+    },
+    "force-palm": {
+      "display_name": "Palmoforza",
+      "description": "Il Pokémon attacca con un'onda d'urto che può anche paralizzare il bersaglio."
+    },
+    "foresight": {
+      "display_name": "Preveggenza",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "foul-play": {
+      "display_name": "Ripicca",
+      "description": "Il Pokémon sfrutta la forza del bersaglio. Il danno inflitto è proporzionale all'Attacco dell'avversario."
+    },
+    "freeze-dry": {
+      "display_name": "Liofilizzazione",
+      "description": "Il Pokémon attacca il bersaglio raffreddandolo istantaneamente e può anche congelarlo. Questa mossa risulta superefficace contro i Pokémon di tipo Acqua."
+    },
+    "frenzy-plant": {
+      "display_name": "Radicalbero",
+      "description": "Il Pokémon attacca colpendo il bersaglio con un groviglio di radici, ma non può muoversi per un po' di tempo a causa del contraccolpo."
+    },
+    "frost-breath": {
+      "display_name": "Alitogelido",
+      "description": "Il Pokémon attacca investendo il bersaglio con un soffio d'aria gelida. Brutto colpo assicurato."
+    },
+    "frustration": {
+      "display_name": "Frustrazione",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "fury-attack": {
+      "display_name": "Furia",
+      "description": "Il Pokémon attacca il bersaglio infilzandolo con corna affilate o con il becco da due a cinque volte di fila."
+    },
+    "fury-cutter": {
+      "display_name": "Tagliofuria",
+      "description": "Il Pokémon attacca il bersaglio con falci o artigli. Se la mossa colpisce in successione, la sua potenza aumenta."
+    },
+    "fury-swipes": {
+      "display_name": "Sfuriate",
+      "description": "Il Pokémon attacca il bersaglio graffiandolo con artigli o falci da due a cinque volte in rapida successione."
+    },
+    "future-sight": {
+      "display_name": "Divinazione",
+      "description": "Poco dopo l'utilizzo della mossa, il Pokémon attacca scagliando energia psichica sul luogo in cui si trovava il bersaglio."
+    },
+    "gastro-acid": {
+      "display_name": "Gastroacido",
+      "description": "Il Pokémon lancia acidi gastrici sul bersaglio e ne annulla l'abilità."
+    },
+    "giga-drain": {
+      "display_name": "Gigassorbimento",
+      "description": "Il Pokémon attacca assorbendo sostanze nutritive e recupera una quantità di PS pari a una parte del danno inflitto."
+    },
+    "giga-impact": {
+      "display_name": "Gigaimpatto",
+      "description": "Il Pokémon carica il bersaglio usando tutta la propria forza, ma per un po' di tempo non può agire a causa del contraccolpo."
+    },
+    "glare": {
+      "display_name": "Sguardo Feroce",
+      "description": "Il Pokémon spaventa il bersaglio con uno sguardo terrificante e ne causa la paralisi."
+    },
+    "grass-knot": {
+      "display_name": "Laccioerboso",
+      "description": "Il Pokémon intrappola il bersaglio con l'erba e lo fa cadere. Più il bersaglio è pesante, maggiore è la potenza della mossa."
+    },
+    "grass-pledge": {
+      "display_name": "Erbapatto",
+      "description": "Il Pokémon attacca il bersaglio con una colonna d'erba. Se usata con Acquapatto, la potenza aumenta e il campo diventa una palude."
+    },
+    "grass-whistle": {
+      "display_name": "Meloderba",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "grassy-glide": {
+      "display_name": "Erboscivolata",
+      "description": "Il Pokémon attacca il bersaglio scivolando sul terreno. Se usato quando è attivo un Campo Erboso, questo attacco ha priorità alta."
+    },
+    "grassy-terrain": {
+      "display_name": "Campo Erboso",
+      "description": "Per cinque turni il terreno entra nello stato di Campo Erboso: i Pokémon a terra recuperano PS a ogni turno e la potenza delle mosse di tipo Erba aumenta."
+    },
+    "gravity": {
+      "display_name": "Gravità",
+      "description": "Per cinque turni i Pokémon con Levitazione o di tipo Volante sono vulnerabili alle mosse di tipo Terra. Non è possibile usare mosse che fanno volare."
+    },
+    "growl": {
+      "display_name": "Ruggito",
+      "description": "Il Pokémon fa abbassare la guardia al bersaglio con un tenero ruggito e ne riduce l'Attacco per un po' di tempo."
+    },
+    "growth": {
+      "display_name": "Crescita",
+      "description": "Il Pokémon provoca la crescita immediata del proprio corpo, aumentando l'Attacco e l'Attacco Speciale per un po' di tempo."
+    },
+    "grudge": {
+      "display_name": "Rancore",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "guard-split": {
+      "display_name": "Paridifesa",
+      "description": "Il Pokémon sfrutta la sua forza psichica per sommare Difesa e Difesa Speciale a quelle del bersaglio e dividerle equamente."
+    },
+    "guard-swap": {
+      "display_name": "Barattoscudo",
+      "description": "Il Pokémon sfrutta la sua forza psichica per scambiare le modifiche a Difesa e Difesa Speciale con il bersaglio."
+    },
+    "guillotine": {
+      "display_name": "Ghigliottina",
+      "description": "Il Pokémon attacca il bersaglio con pericolose tenaglie. Se la mossa va a segno, il Pokémon colpito va KO."
+    },
+    "gunk-shot": {
+      "display_name": "Sporcolancio",
+      "description": "Il Pokémon attacca con rifiuti sudici che possono anche avvelenare il bersaglio."
+    },
+    "gust": {
+      "display_name": "Raffica",
+      "description": "Il Pokémon attacca il bersaglio con una folata di vento sollevata dalle ali."
+    },
+    "gyro-ball": {
+      "display_name": "Vortexpalla",
+      "description": "Il Pokémon si scaglia sul bersaglio facendo ruotare vorticosamente il proprio corpo. Più è lento rispetto al bersaglio, più è forte."
+    },
+    "hail": {
+      "display_name": "Grandine",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "hammer-arm": {
+      "display_name": "Martelpugno",
+      "description": "Il Pokémon infligge danni al bersaglio colpendolo con un pugno molto potente, ma la sua Velocità diminuisce."
+    },
+    "hard-press": {
+      "display_name": "Pressa d'Acciaio",
+      "description": "Il Pokémon schiaccia il bersaglio usando i propri arti. Più PS rimangono al bersaglio, maggiore è la potenza della mossa."
+    },
+    "harden": {
+      "display_name": "Rafforzatore",
+      "description": "Il Pokémon tonifica tutti i muscoli del corpo per aumentare la propria Difesa per un po' di tempo."
+    },
+    "haze": {
+      "display_name": "Nube",
+      "description": "Il Pokémon crea una nube nera attorno a sé che annulla ogni modifica alle statistiche di tutti i Pokémon a contatto con essa."
+    },
+    "head-smash": {
+      "display_name": "Zuccata",
+      "description": "Il Pokémon dà una testata al bersaglio con tutta la potenza di cui dispone, ma subisce danni."
+    },
+    "headbutt": {
+      "display_name": "Bottintesta",
+      "description": "Il Pokémon attacca lanciandosi diritto di testa contro il bersaglio. Può anche farlo tentennare."
+    },
+    "headlong-rush": {
+      "display_name": "Scontro Frontale",
+      "description": "Il Pokémon si schianta sul bersaglio con tutte le forze. La sua Difesa e la sua Difesa Speciale diminuiscono."
+    },
+    "heal-bell": {
+      "display_name": "Rintoccasana",
+      "description": "Il Pokémon produce uno scampanellio che cura i problemi di stato suoi e degli alleati."
+    },
+    "heal-block": {
+      "display_name": "Anticura",
+      "description": "Per un certo tempo il Pokémon impedisce al bersaglio di recuperare PS per mezzo di mosse o strumenti."
+    },
+    "heal-pulse": {
+      "display_name": "Curapulsar",
+      "description": "Il Pokémon lancia un'onda rilassante che fa recuperare al bersaglio metà dei suoi PS massimi."
+    },
+    "healing-wish": {
+      "display_name": "Curardore",
+      "description": "Il Pokémon va KO, ma chi lo sostituisce recupera tutti i PS e guarisce dai problemi di stato."
+    },
+    "heart-stamp": {
+      "display_name": "Cuorestampo",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "heat-crash": {
+      "display_name": "Marchiafuoco",
+      "description": "Il Pokémon carica con il suo corpo rovente. Più è pesante rispetto al bersaglio, maggiore è la potenza della mossa."
+    },
+    "heat-wave": {
+      "display_name": "Ondacalda",
+      "description": "Il Pokémon attacca investendo il bersaglio con un soffio d'aria calda. Può anche scottarlo."
+    },
+    "heavy-slam": {
+      "display_name": "Pesobomba",
+      "description": "Il Pokémon si lancia contro il bersaglio con tutto il proprio peso. Più è pesante rispetto al bersaglio, maggiore è la potenza della mossa."
+    },
+    "helping-hand": {
+      "display_name": "Altruismo",
+      "description": "Il Pokémon aiuta un alleato aumentandone la potenza della mossa."
+    },
+    "hex": {
+      "display_name": "Sciagura",
+      "description": "Il Pokémon attacca in modo implacabile. Infligge grossi danni se il bersaglio ha problemi di stato."
+    },
+    "hidden-power": {
+      "display_name": "Introforza",
+      "description": "Chi la usa adopera un misterioso potere per rendere il tipo della mossa vantaggioso rispetto a quello del bersaglio."
+    },
+    "high-horsepower": {
+      "display_name": "Forza Equina",
+      "description": "Il Pokémon travolge il bersaglio con un attacco possente."
+    },
+    "high-jump-kick": {
+      "display_name": "Calcinvolo",
+      "description": "Il Pokémon attacca il bersaglio con una ginocchiata in volo. Se la mossa fallisce, il Pokémon subisce dei danni."
+    },
+    "hone-claws": {
+      "display_name": "Unghiaguzze",
+      "description": "Il Pokémon affila i propri artigli aumentando Attacco e precisione."
+    },
+    "howl": {
+      "display_name": "Gridodilotta",
+      "description": "Il Pokémon emette un forte verso per farsi coraggio e aumentare il proprio Attacco e quello degli alleati."
+    },
+    "hurricane": {
+      "display_name": "Tifone",
+      "description": "Il Pokémon attacca il bersaglio avvolgendolo con un vento fortissimo. Può anche confonderlo."
+    },
+    "hydro-cannon": {
+      "display_name": "Idrocannone",
+      "description": "Il Pokémon attacca il bersaglio con un potente getto d'acqua, ma per un po' di tempo non può muoversi a causa del contraccolpo."
+    },
+    "hydro-pump": {
+      "display_name": "Idropompa",
+      "description": "Il Pokémon attacca il bersaglio travolgendolo con un potente getto d'acqua spruzzato ad altissima pressione."
+    },
+    "hyper-beam": {
+      "display_name": "Iper Raggio",
+      "description": "Il Pokémon attacca il bersaglio con un potente raggio, ma non può muoversi per un po' di tempo a causa del contraccolpo."
+    },
+    "hyper-voice": {
+      "display_name": "Granvoce",
+      "description": "Il Pokémon attacca il bersaglio lanciando un urlo straziante."
+    },
+    "hypnosis": {
+      "display_name": "Ipnosi",
+      "description": "Il Pokémon si avvale della suggestione ipnotica per causare sonnolenza nel bersaglio."
+    },
+    "ice-ball": {
+      "display_name": "Palla Gelo",
+      "description": "Colpisce il bersaglio con un blocco di ghiaccio. Tuttavia, chi la usa si fissa su questa mossa dopo averla sferrata."
+    },
+    "ice-beam": {
+      "display_name": "Geloraggio",
+      "description": "Il Pokémon attacca il bersaglio con un raggio di energia gelida che può anche congelarlo."
+    },
+    "ice-fang": {
+      "display_name": "Gelodenti",
+      "description": "Il Pokémon morde con denti ghiacciati. Può anche congelare o far tentennare il bersaglio."
+    },
+    "ice-punch": {
+      "display_name": "Gelopugno",
+      "description": "Il Pokémon attacca il bersaglio con un pugno di ghiaccio che può congelarlo."
+    },
+    "ice-shard": {
+      "display_name": "Geloscheggia",
+      "description": "Il Pokémon crea dei pezzi di ghiaccio in un istante per poi scagliarli rapidamente contro il bersaglio."
+    },
+    "ice-spinner": {
+      "display_name": "Vortighiaccio",
+      "description": "Il Pokémon avvolge gli arti inferiori in un sottile strato di ghiaccio e si scontra con il bersaglio piroettando. Il movimento rotatorio distrugge il terreno di lotta."
+    },
+    "icicle-crash": {
+      "display_name": "Scagliagelo",
+      "description": "Il Pokémon attacca violentemente il bersaglio con grosse stalattiti di ghiaccio che possono anche farlo tentennare."
+    },
+    "icicle-spear": {
+      "display_name": "Gelolancia",
+      "description": "Il Pokémon attacca sparando cinque ghiaccioli affilati contro il bersaglio."
+    },
+    "icy-wind": {
+      "display_name": "Ventogelato",
+      "description": "Il Pokémon attacca il bersaglio con una folata di aria gelida, rallentandone i movimenti per un po' di tempo."
+    },
+    "imprison": {
+      "display_name": "Esclusiva",
+      "description": "Il Pokémon impedisce all'avversario di usare mosse che conoscono entrambi."
+    },
+    "incinerate": {
+      "display_name": "Bruciatutto",
+      "description": "Chi la usa attacca il bersaglio con una fiammata. Il fuoco distruggerà le bacche o alcuni tipi di strumenti che i Pokémon hanno con sé."
+    },
+    "inferno": {
+      "display_name": "Marchiatura",
+      "description": "Il Pokémon attacca il bersaglio avvolgendolo in intense fiammate che causano scottature."
+    },
+    "infestation": {
+      "display_name": "Assillo",
+      "description": "Il Pokémon tormenta il bersaglio continuando a infliggergli danni per un certo tempo, durante il quale gli impedisce di essere sostituito."
+    },
+    "ingrain": {
+      "display_name": "Radicamento",
+      "description": "Il Pokémon mette delle radici che gli fanno recuperare PS a ogni turno. Non può più essere sostituito."
+    },
+    "iron-defense": {
+      "display_name": "Ferroscudo",
+      "description": "Il corpo del Pokémon si indurisce come il ferro, facendone aumentare la Difesa per un certo tempo."
+    },
+    "iron-head": {
+      "display_name": "Metaltestata",
+      "description": "Il Pokémon attacca il bersaglio con la sua testa dura come l'acciaio. Può anche farlo tentennare."
+    },
+    "iron-tail": {
+      "display_name": "Codacciaio",
+      "description": "Il Pokémon attacca colpendo il bersaglio con una robusta coda che può anche ridurne la Difesa."
+    },
+    "knock-off": {
+      "display_name": "Privazione",
+      "description": "Il Pokémon fa cadere lo strumento del bersaglio, impedendone l'uso nella lotta. Infligge più danni se il bersaglio ha uno strumento."
+    },
+    "laser-focus": {
+      "display_name": "Concentrazione",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "lash-out": {
+      "display_name": "Sfogarabbia",
+      "description": "Il Pokémon attacca il bersaglio con tutta la propria ira. Se ha subito riduzioni delle statistiche durante quel turno, la potenza della mossa raddoppia."
+    },
+    "last-resort": {
+      "display_name": "Ultimascelta",
+      "description": "Per usare questa mossa, bisogna prima avvalersi nella lotta di tutte le altre mosse conosciute."
+    },
+    "lava-plume": {
+      "display_name": "Lavasbuffo",
+      "description": "Il Pokémon attacca tutto intorno con fiamme scarlatte che possono anche scottare."
+    },
+    "leaf-blade": {
+      "display_name": "Fendifoglia",
+      "description": "Il Pokémon attacca il bersaglio manovrando una foglia come se fosse una spada. Probabile brutto colpo."
+    },
+    "leaf-storm": {
+      "display_name": "Verdebufera",
+      "description": "Il Pokémon scatena sul bersaglio una tempesta di foglie affilate. Il contraccolpo riduce l'Attacco Speciale di chi la usa per un certo tempo."
+    },
+    "leaf-tornado": {
+      "display_name": "Vorticerba",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "leafage": {
+      "display_name": "Fogliame",
+      "description": "Il Pokémon attacca il bersaglio con delle foglie."
+    },
+    "leech-life": {
+      "display_name": "Sanguisuga",
+      "description": "Il Pokémon succhia il sangue del bersaglio e lo attacca, recuperando una quantità di PS pari a parte del danno inflitto."
+    },
+    "leech-seed": {
+      "display_name": "Parassiseme",
+      "description": "Il Pokémon pianta dei semi sul bersaglio. Questi sottraggono PS a poco a poco permettendo a chi la usa di curarsi."
+    },
+    "leer": {
+      "display_name": "Fulmisguardo",
+      "description": "Il Pokémon terrorizza il bersaglio con uno sguardo fulminante e intimidatorio, riducendone la Difesa per un po' di tempo."
+    },
+    "lick": {
+      "display_name": "Leccata",
+      "description": "Il Pokémon attacca il bersaglio leccandolo con la sua lingua lunga. Può anche paralizzarlo."
+    },
+    "life-dew": {
+      "display_name": "Goccia Vitale",
+      "description": "Il Pokémon sparge tutt'intorno dell'acqua misteriosa che fa recuperare PS a sé e agli alleati in campo."
+    },
+    "light-screen": {
+      "display_name": "Schermoluce",
+      "description": "Il Pokémon innalza una barriera misteriosa che per un certo tempo riduce i danni degli attacchi speciali subiti. L'effetto persiste dopo la sostituzione."
+    },
+    "liquidation": {
+      "display_name": "Idrobreccia",
+      "description": "Il Pokémon attacca colpendo il bersaglio con la forza dell'acqua. Può anche ridurne la Difesa."
+    },
+    "lock-on": {
+      "display_name": "Localizza",
+      "description": "Il Pokémon punta il bersaglio con precisione. L'attacco successivo andrà sicuramente a segno."
+    },
+    "low-kick": {
+      "display_name": "Colpo Basso",
+      "description": "Il Pokémon attacca il bersaglio con un calcio basso e potente che lo fa cadere. Più il bersaglio è pesante, maggiore è la potenza della mossa."
+    },
+    "low-sweep": {
+      "display_name": "Calciobasso",
+      "description": "Il Pokémon colpisce con un attacco fulmineo la parte inferiore del corpo del bersaglio, rallentandone inoltre i movimenti per un po' di tempo."
+    },
+    "lucky-chant": {
+      "display_name": "Fortuncanto",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "lunge": {
+      "display_name": "Assalto",
+      "description": "Il Pokémon attacca lanciandosi con tutte le sue forze sul bersaglio e ne riduce l'Attacco per un po' di tempo."
+    },
+    "luster-purge": {
+      "display_name": "Abbagliante",
+      "description": "Il Pokémon sprigiona una luce abbagliante che può anche ridurre la Difesa Speciale del bersaglio."
+    },
+    "mach-punch": {
+      "display_name": "Pugnorapido",
+      "description": "Il Pokémon tira un pugno a una tale velocità da rendersi quasi invisibile."
+    },
+    "magic-coat": {
+      "display_name": "Magivelo",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "magic-room": {
+      "display_name": "Magicozona",
+      "description": "Chi la usa crea una dimensione in cui l'effetto degli strumenti di tutti i Pokémon è annullato per cinque turni."
+    },
+    "magical-leaf": {
+      "display_name": "Fogliamagica",
+      "description": "Il Pokémon sparpaglia strane foglie che inseguono il bersaglio."
+    },
+    "magnet-rise": {
+      "display_name": "Magnetascesa",
+      "description": "Il Pokémon si solleva in aria per cinque turni grazie a un campo elettromagnetico."
+    },
+    "magnitude": {
+      "display_name": "Magnitudo",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "me-first": {
+      "display_name": "Precedenza",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "mean-look": {
+      "display_name": "Malosguardo",
+      "description": "Il Pokémon blocca il bersaglio con uno sguardo oscuro e ammaliante, impedendogli di lasciare il campo."
+    },
+    "meditate": {
+      "display_name": "Meditazione",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "mega-drain": {
+      "display_name": "Megassorbimento",
+      "description": "Il Pokémon attacca assorbendo sostanze nutritive e recupera una quantità di PS pari alla metà del danno inflitto."
+    },
+    "mega-kick": {
+      "display_name": "Megacalcio",
+      "description": "Il Pokémon attacca il bersaglio con un calcio sferrato con la forza di muscoli poderosi."
+    },
+    "mega-punch": {
+      "display_name": "Megapugno",
+      "description": "Il Pokémon attacca il bersaglio con un pugno poderoso."
+    },
+    "megahorn": {
+      "display_name": "Megacorno",
+      "description": "Il Pokémon usa il suo robusto e imponente corno per attaccare il bersaglio con tutto se stesso."
+    },
+    "memento": {
+      "display_name": "Memento",
+      "description": "Il Pokémon va KO. Tuttavia, riduce di molto l'Attacco e l'Attacco Speciale del bersaglio."
+    },
+    "metal-burst": {
+      "display_name": "Metalscoppio",
+      "description": "Il Pokémon restituisce con gli interessi i danni subiti all'ultimo avversario che l'ha colpito."
+    },
+    "metal-claw": {
+      "display_name": "Ferrartigli",
+      "description": "Il Pokémon attacca il bersaglio con artigli d'acciaio. Può anche aumentare il proprio Attacco."
+    },
+    "metal-sound": {
+      "display_name": "Ferrostrido",
+      "description": "Il Pokémon emette un orribile stridio, simile a quello prodotto sfregando il metallo, che riduce la Difesa Speciale del bersaglio per un certo tempo."
+    },
+    "meteor-beam": {
+      "display_name": "Raggiometeora",
+      "description": "Il Pokémon accumula l'energia dello spazio, aumentando l'Attacco Speciale per un certo tempo, e poi attacca il bersaglio. L'attacco richiede tempo."
+    },
+    "meteor-mash": {
+      "display_name": "Meteorpugno",
+      "description": "Il Pokémon attacca il bersaglio con un pugno veloce come una meteora. Può anche aumentare il proprio Attacco."
+    },
+    "metronome": {
+      "display_name": "Metronomo",
+      "description": "Il Pokémon fa di no con il dito e stimola il cervello a usare a caso una delle tante mosse esistenti."
+    },
+    "mimic": {
+      "display_name": "Mimica",
+      "description": "Il Pokémon copia l'ultima mossa usata dal bersaglio per poi attaccarlo con essa."
+    },
+    "mind-reader": {
+      "display_name": "Leggimente",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "miracle-eye": {
+      "display_name": "Miracolvista",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "mirror-coat": {
+      "display_name": "Specchiovelo",
+      "description": "Il Pokémon risponde a un attacco speciale infliggendo al bersaglio il doppio dei danni subiti."
+    },
+    "mirror-move": {
+      "display_name": "Speculmossa",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "mist": {
+      "display_name": "Nebbia",
+      "description": "Il Pokémon crea della nebbia attorno a sé. Rimanendo al suo interno, i Pokémon non subiscono le riduzioni di statistiche causate da altri."
+    },
+    "mist-ball": {
+      "display_name": "Foschisfera",
+      "description": "Il Pokémon attacca avvolgendo il bersaglio in una sfera di nebbia. Può anche ridurne l'Attacco Speciale."
+    },
+    "misty-explosion": {
+      "display_name": "Nebbioscoppio",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "misty-terrain": {
+      "display_name": "Campo Nebbioso",
+      "description": "Per cinque turni il terreno entra nello stato di Campo Nebbioso: i Pokémon a terra sono immuni ai problemi di stato e la potenza delle mosse Drago è dimezzata."
+    },
+    "moonblast": {
+      "display_name": "Forza Lunare",
+      "description": "Il Pokémon sfrutta il potere della luna per attaccare il bersaglio. Può anche ridurne l'Attacco Speciale."
+    },
+    "moonlight": {
+      "display_name": "Lucelunare",
+      "description": "Il Pokémon recupera PS esponendosi alla placida luce della luna."
+    },
+    "morning-sun": {
+      "display_name": "Mattindoro",
+      "description": "Il Pokémon recupera PS crogiolandosi sotto piacevoli raggi di sole."
+    },
+    "mud-bomb": {
+      "display_name": "Pantanobomba",
+      "description": "Chi la usa lancia una compatta palla di fango. Inoltre, fa sì che le mosse nemiche falliscano più facilmente."
+    },
+    "mud-shot": {
+      "display_name": "Colpodifango",
+      "description": "Il Pokémon attacca lanciando fango sul bersaglio, rallentandolo per un po' di tempo."
+    },
+    "mud-slap": {
+      "display_name": "Fangosberla",
+      "description": "Il Pokémon attacca buttando fango in faccia al bersaglio, riducendone la precisione."
+    },
+    "mud-sport": {
+      "display_name": "Fangata",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "muddy-water": {
+      "display_name": "Fanghiglia",
+      "description": "Il Pokémon attacca il bersaglio con un getto di fango che ne rallenta i movimenti per un po' di tempo."
+    },
+    "mystical-fire": {
+      "display_name": "Magifiamma",
+      "description": "Il Pokémon attacca il bersaglio soffiandogli contro delle fiammate incredibilmente roventi, riducendone l'Attacco Speciale per un po' di tempo."
+    },
+    "nasty-plot": {
+      "display_name": "Congiura",
+      "description": "Il Pokémon stimola il cervello pensando a cose cattive, aumentando l'Attacco Speciale per un certo tempo."
+    },
+    "natural-gift": {
+      "display_name": "Dononaturale",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "nature-power": {
+      "display_name": "Naturforza",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "needle-arm": {
+      "display_name": "Pugnospine",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "night-shade": {
+      "display_name": "Ombra Notturna",
+      "description": "Il Pokémon fa apparire un orribile miraggio al bersaglio e infligge un danno pari al proprio livello."
+    },
+    "night-slash": {
+      "display_name": "Nottesferza",
+      "description": "Il Pokémon colpisce il bersaglio appena si presenta l'occasione. Probabile brutto colpo."
+    },
+    "nightmare": {
+      "display_name": "Incubo",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "noble-roar": {
+      "display_name": "Urlo",
+      "description": "Il Pokémon emette un urlo potente che intimidisce il bersaglio, riducendone l'Attacco e l'Attacco Speciale."
+    },
+    "nuzzle": {
+      "display_name": "Elettrococcola",
+      "description": "Il Pokémon attacca strofinando le guance elettrizzate contro il bersaglio, paralizzandolo."
+    },
+    "odor-sleuth": {
+      "display_name": "Segugio",
+      "description": "Colpisce il bersaglio con rocce. Inoltre, lo ostacola riducendone la Velocità."
+    },
+    "ominous-wind": {
+      "display_name": "Funestovento",
+      "description": "Il Pokémon attacca il bersaglio con una raffica di vento raccapricciante che può anche aumentare tutte le proprie statistiche."
+    },
+    "origin-pulse": {
+      "display_name": "Primopulsar",
+      "description": "Il Pokémon attacca il bersaglio colpendolo con miriadi di raggi di luce blu."
+    },
+    "outrage": {
+      "display_name": "Oltraggio",
+      "description": "Il Pokémon s'infuria e attacca, ma dopo aver usato la mossa rimane confuso."
+    },
+    "overheat": {
+      "display_name": "Vampata",
+      "description": "Il Pokémon sferra un potente attacco, ma il contraccolpo riduce il suo Attacco Speciale per un certo tempo."
+    },
+    "pain-split": {
+      "display_name": "Malcomune",
+      "description": "Il Pokémon somma i propri PS a quelli del bersaglio per poi dividerli in parti uguali."
+    },
+    "payback": {
+      "display_name": "Rivincita",
+      "description": "Il Pokémon accumula forza e attacca. La potenza raddoppia se agisce dopo il bersaglio."
+    },
+    "peck": {
+      "display_name": "Beccata",
+      "description": "Il Pokémon attacca il bersaglio con il becco appuntito o con un corno."
+    },
+    "perish-song": {
+      "display_name": "Ultimocanto",
+      "description": "Qualunque Pokémon che senta questo canto va KO dopo un po' di tempo, a meno che non venga sostituito."
+    },
+    "petal-blizzard": {
+      "display_name": "Fiortempesta",
+      "description": "Chi la usa infligge danni agli altri Pokémon attorno attaccandoli con una tempesta di fiori."
+    },
+    "petal-dance": {
+      "display_name": "Petalodanza",
+      "description": "Il Pokémon attacca il bersaglio tre volte in rapida successione cospargendolo di petali, ma rimane confuso."
+    },
+    "phantom-force": {
+      "display_name": "Spettrotuffo",
+      "description": "Il Pokémon si nasconde tra le ombre per attaccare il bersaglio poco dopo, ignorando l'effetto di mosse come Protezione e Individua."
+    },
+    "pin-missile": {
+      "display_name": "Missilspillo",
+      "description": "Il Pokémon attacca cinque volte in rapida successione con delle spine appuntite."
+    },
+    "play-nice": {
+      "display_name": "Simpatia",
+      "description": "Il Pokémon diventa amico del bersaglio, rabbonendolo e riducendone così l'Attacco."
+    },
+    "play-rough": {
+      "display_name": "Carineria",
+      "description": "Il Pokémon attacca il bersaglio con delle carinerie. Può anche ridurne l'Attacco."
+    },
+    "pluck": {
+      "display_name": "Spennata",
+      "description": "Il Pokémon attacca beccando. Se il bersaglio ha una bacca, gliela mangia e ne può sfruttare gli effetti."
+    },
+    "poison-fang": {
+      "display_name": "Velenodenti",
+      "description": "Il Pokémon attacca il bersaglio mordendolo con denti avvelenati che possono anche iperavvelenarlo."
+    },
+    "poison-gas": {
+      "display_name": "Velenogas",
+      "description": "Il Pokémon spruzza in faccia agli avversari una nuvola di gas tossico che li avvelena."
+    },
+    "poison-jab": {
+      "display_name": "Velenpuntura",
+      "description": "Il Pokémon infilza il bersaglio con un tentacolo o un arto intriso di una sostanza tossica che può anche avvelenarlo."
+    },
+    "poison-powder": {
+      "display_name": "Velenpolvere",
+      "description": "Il Pokémon investe il bersaglio con una nuvola di polvere tossica che avvelena."
+    },
+    "poison-sting": {
+      "display_name": "Velenospina",
+      "description": "Il Pokémon attacca il bersaglio con un aculeo tossico che può anche avvelenarlo."
+    },
+    "poison-tail": {
+      "display_name": "Velenocoda",
+      "description": "Il Pokémon colpisce con la coda e può avvelenare il bersaglio. Probabile brutto colpo."
+    },
+    "poltergeist": {
+      "display_name": "Poltergeist",
+      "description": "Il Pokémon attacca utilizzando lo strumento del bersaglio. La mossa fallisce se quest'ultimo non ha uno strumento."
+    },
+    "pounce": {
+      "display_name": "Balzo",
+      "description": "Il Pokémon fa un balzo e attacca il bersaglio, riducendone inoltre la Velocità."
+    },
+    "pound": {
+      "display_name": "Botta",
+      "description": "Il Pokémon attacca il bersaglio con la coda o le zampe anteriori."
+    },
+    "powder-snow": {
+      "display_name": "Polneve",
+      "description": "Il Pokémon attacca il bersaglio con una raffica di neve farinosa e può anche congelarlo."
+    },
+    "power-gem": {
+      "display_name": "Gemmoforza",
+      "description": "Il Pokémon attacca con un raggio di luce che brilla come se fosse fatto di pietre preziose."
+    },
+    "power-split": {
+      "display_name": "Pariattacco",
+      "description": "Il Pokémon sfrutta la sua forza psichica per sommare Attacco e Attacco Speciale a quelli del bersaglio e dividerli equamente."
+    },
+    "power-swap": {
+      "display_name": "Barattoforza",
+      "description": "Il Pokémon sfrutta la sua forza psichica per scambiare le modifiche ad Attacco e Attacco Speciale con il bersaglio."
+    },
+    "power-trick": {
+      "display_name": "Ingannoforza",
+      "description": "Mossa psichica che permette al Pokémon di scambiare i valori delle sue statistiche di Attacco e Difesa."
+    },
+    "power-trip": {
+      "display_name": "Tracotanza",
+      "description": "Il Pokémon attacca il bersaglio sfoggiando la propria forza. Più le sue statistiche sono state aumentate, più la potenza della mossa aumenta."
+    },
+    "power-up-punch": {
+      "display_name": "Crescipugno",
+      "description": "Il Pokémon colpisce con un pugno che viene reso più duro dall'impatto, aumentando così il proprio Attacco per poco tempo."
+    },
+    "power-whip": {
+      "display_name": "Vigorcolpo",
+      "description": "Il Pokémon attacca sferzando il bersaglio con liane o tentacoli che agita violentemente."
+    },
+    "precipice-blades": {
+      "display_name": "Spade Telluriche",
+      "description": "Il Pokémon attacca il bersaglio trasformando la potenza della terra in lame."
+    },
+    "present": {
+      "display_name": "Regalino",
+      "description": "Il Pokémon attacca dando un regalo trappola al bersaglio. A volte, però, può fargli recuperare PS."
+    },
+    "protect": {
+      "display_name": "Protezione",
+      "description": "Il Pokémon si protegge saldamente, annullando tutti gli attacchi ricevuti."
+    },
+    "psybeam": {
+      "display_name": "Psicoraggio",
+      "description": "Il Pokémon attacca il bersaglio con un raggio speciale che può anche confonderlo."
+    },
+    "psych-up": {
+      "display_name": "Psicamisù",
+      "description": "Il Pokémon s'ipnotizza per copiare ogni modifica alle statistiche del bersaglio."
+    },
+    "psychic": {
+      "display_name": "Psichico",
+      "description": "Il Pokémon attacca il bersaglio con una potente forza telecinetica che può anche ridurne la Difesa Speciale."
+    },
+    "psychic-fangs": {
+      "display_name": "Psicozanna",
+      "description": "Il Pokémon attacca il bersaglio mordendolo con delle zanne generate con l'energia psichica. Può rompere barriere come Riflesso e Schermoluce."
+    },
+    "psychic-noise": {
+      "display_name": "Psicorumore",
+      "description": "Il Pokémon investe il bersaglio con insopportabili onde sonore che gli impediscono di recuperare PS con mosse, abilità o strumenti che ha con sé per due turni."
+    },
+    "psychic-terrain": {
+      "display_name": "Campo Psichico",
+      "description": "Per cinque turni il terreno entra nello stato di Campo Psichico: i Pokémon a terra non subiscono mosse ad alta priorità e la potenza delle mosse di tipo Psico aumenta."
+    },
+    "psycho-boost": {
+      "display_name": "Psicoslancio",
+      "description": "Il Pokémon sferra un potente attacco, ma il contraccolpo riduce di molto il suo Attacco Speciale."
+    },
+    "psycho-cut": {
+      "display_name": "Psicotaglio",
+      "description": "Il Pokémon colpisce il bersaglio con lame fatte di forza psichica. Probabile brutto colpo."
+    },
+    "psycho-shift": {
+      "display_name": "Psicotrasfer",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "psyshock": {
+      "display_name": "Psicoshock",
+      "description": "Il Pokémon attacca il bersaglio facendo materializzare misteriose onde psichiche che provocano danni fisici."
+    },
+    "psywave": {
+      "display_name": "Psiconda",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "punishment": {
+      "display_name": "Punizione",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "pursuit": {
+      "display_name": "Inseguimento",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "quash": {
+      "display_name": "Spintone",
+      "description": "Il Pokémon spinge via il bersaglio, costringendolo ad agire per ultimo."
+    },
+    "quick-attack": {
+      "display_name": "Attacco Rapido",
+      "description": "Il Pokémon colpisce a una tale velocità da rendersi quasi invisibile."
+    },
+    "quick-guard": {
+      "display_name": "Anticipo",
+      "description": "Il Pokémon protegge sé e gli alleati dagli attacchi ad alta priorità."
+    },
+    "quiver-dance": {
+      "display_name": "Eledanza",
+      "description": "Danza leggiadra ed elegante che aumenta l'Attacco Speciale, la Difesa Speciale e la Velocità di chi la usa."
+    },
+    "rage": {
+      "display_name": "Ira",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "rain-dance": {
+      "display_name": "Pioggiadanza",
+      "description": "Il Pokémon provoca una forte pioggia per cinque turni, aumentando la potenza delle mosse di tipo Acqua e riducendo la potenza di quelle di tipo Fuoco."
+    },
+    "rapid-spin": {
+      "display_name": "Rapigiro",
+      "description": "Attacco rotante che elimina gli effetti di mosse come Legatutto, Avvolgibotta e Parassiseme. Aumenta anche la Velocità di chi la usa."
+    },
+    "razor-leaf": {
+      "display_name": "Foglielama",
+      "description": "Il Pokémon attacca con foglie taglienti che sferzano il bersaglio. Probabile brutto colpo."
+    },
+    "razor-shell": {
+      "display_name": "Conchilama",
+      "description": "Il Pokémon attacca il bersaglio con il proprio guscio tagliente e può anche ridurne la Difesa."
+    },
+    "razor-wind": {
+      "display_name": "Ventagliente",
+      "description": "Il Pokémon attacca il bersaglio generando molti turbini. Probabile brutto colpo. L'attacco richiede tempo."
+    },
+    "recover": {
+      "display_name": "Ripresa",
+      "description": "Mossa autocurativa. Il Pokémon recupera PS."
+    },
+    "recycle": {
+      "display_name": "Riciclo",
+      "description": "Il Pokémon ricicla uno strumento che ha usato nella lotta e può riutilizzarlo."
+    },
+    "reflect": {
+      "display_name": "Riflesso",
+      "description": "Il Pokémon innalza una barriera misteriosa che per un certo tempo riduce i danni degli attacchi fisici subiti. L'effetto persiste dopo la sostituzione."
+    },
+    "reflect-type": {
+      "display_name": "Riflettipo",
+      "description": "Il Pokémon cambia il proprio tipo in quello del bersaglio."
+    },
+    "refresh": {
+      "display_name": "Rinfrescata",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "rest": {
+      "display_name": "Riposo",
+      "description": "Il Pokémon recupera tutti i PS e guarisce da tutti i suoi problemi di stato, ma dorme per due turni."
+    },
+    "retaliate": {
+      "display_name": "Nemesi",
+      "description": "Il Pokémon vendica un alleato messo KO. Se ciò è accaduto al turno precedente, la potenza della mossa aumenta."
+    },
+    "return": {
+      "display_name": "Ritorno",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "revenge": {
+      "display_name": "Vendetta",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "reversal": {
+      "display_name": "Contropiede",
+      "description": "Il Pokémon attacca con tutte le sue forze. Più i suoi PS sono bassi, più la potenza della mossa aumenta."
+    },
+    "rising-voltage": {
+      "display_name": "Elettroimpennata",
+      "description": "Il Pokémon attacca con dell'elettricità che si alza dal suolo. La potenza della mossa raddoppia quando l'avversario si trova in un Campo Elettrico."
+    },
+    "roar": {
+      "display_name": "Boato",
+      "description": "Il Pokémon sorprende il bersaglio con un verso fortissimo e lo spinge molto indietro."
+    },
+    "rock-blast": {
+      "display_name": "Cadutamassi",
+      "description": "Il Pokémon attacca lanciando cinque massi pesanti in rapida successione."
+    },
+    "rock-climb": {
+      "display_name": "Scalaroccia",
+      "description": "Carica il bersaglio e può anche confonderlo. È una delle mosse MN del PokéKron."
+    },
+    "rock-polish": {
+      "display_name": "Lucidatura",
+      "description": "Il Pokémon leviga il proprio corpo per ridurne l'attrito con l'aria. Aumenta di molto la Velocità."
+    },
+    "rock-slide": {
+      "display_name": "Frana",
+      "description": "Il Pokémon attacca il bersaglio colpendolo violentemente con grandi massi che possono anche farlo tentennare."
+    },
+    "rock-smash": {
+      "display_name": "Spaccaroccia",
+      "description": "Il Pokémon attacca il bersaglio con un pugno che può anche ridurne la Difesa."
+    },
+    "rock-throw": {
+      "display_name": "Sassata",
+      "description": "Il Pokémon raccoglie una pietra e attacca il bersaglio lanciandogliela contro."
+    },
+    "rock-tomb": {
+      "display_name": "Rocciotomba",
+      "description": "Il Pokémon attacca il bersaglio lanciando una roccia. Se colpisce il bersaglio lo rallenta, altrimenti la roccia rimane sul campo."
+    },
+    "role-play": {
+      "display_name": "Giocodiruolo",
+      "description": "Il Pokémon mima in tutto e per tutto il bersaglio, copiandone l'abilità."
+    },
+    "rollout": {
+      "display_name": "Rotolamento",
+      "description": "Il Pokémon attacca rotolando verso il bersaglio come un'enorme roccia."
+    },
+    "roost": {
+      "display_name": "Trespolo",
+      "description": "Il Pokémon scende a terra e si riposa, recuperando metà dei propri PS massimi."
+    },
+    "rototiller": {
+      "display_name": "Aracampo",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "round": {
+      "display_name": "Coro",
+      "description": "Chi la usa attacca il bersaglio con una melodia. Se usata durante lo stesso turno da più Pokémon, la potenza della mossa aumenta."
+    },
+    "safeguard": {
+      "display_name": "Salvaguardia",
+      "description": "Il Pokémon crea un campo protettivo che previene i problemi di stato per un certo tempo. L'effetto persiste dopo la sostituzione."
+    },
+    "sand-attack": {
+      "display_name": "Turbosabbia",
+      "description": "Il Pokémon getta sabbia in faccia al bersaglio e ne riduce la precisione."
+    },
+    "sand-tomb": {
+      "display_name": "Sabbiotomba",
+      "description": "Il Pokémon genera un turbine di sabbia che continua a infliggere danni agli avversari che si trovano al suo interno."
+    },
+    "sandstorm": {
+      "display_name": "Terrempesta",
+      "description": "Per cinque turni, chi la usa causa una tempesta di sabbia che danneggia tutti i tipi esclusi Terra, Roccia e Acciaio. Aumenta la Difesa Speciale dei Pokémon di tipo Roccia."
+    },
+    "scald": {
+      "display_name": "Idrovampata",
+      "description": "Il Pokémon attacca il bersaglio con un getto d'acqua bollente che può anche scottarlo."
+    },
+    "scale-shot": {
+      "display_name": "Squamacolpo",
+      "description": "Il Pokémon attacca lanciando delle squame cinque volte in rapida successione. Per un po' di tempo accelera i propri movimenti ma riduce la propria Difesa."
+    },
+    "scary-face": {
+      "display_name": "Visotruce",
+      "description": "Il Pokémon spaventa il bersaglio con una faccia terribile e ne riduce di molto la Velocità."
+    },
+    "scorching-sands": {
+      "display_name": "Sabbiardente",
+      "description": "Il Pokémon attacca il bersaglio scagliandogli addosso della sabbia incandescente. Può anche scottarlo."
+    },
+    "scratch": {
+      "display_name": "Graffio",
+      "description": "Il Pokémon attacca il bersaglio graffiandolo con artigli acuminati, duri e affilati."
+    },
+    "screech": {
+      "display_name": "Stridio",
+      "description": "Il Pokémon emette uno stridio assordante che riduce la Difesa del bersaglio per un certo tempo."
+    },
+    "secret-power": {
+      "display_name": "Forzasegreta",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "seed-bomb": {
+      "display_name": "Semebomba",
+      "description": "Il Pokémon attacca il bersaglio dall'alto lanciando una raffica di semi dal guscio duro."
+    },
+    "seismic-toss": {
+      "display_name": "Movimento Sismico",
+      "description": "Il Pokémon attacca il bersaglio sfruttando la forza di gravità. Infligge un danno pari al proprio livello."
+    },
+    "self-destruct": {
+      "display_name": "Autodistruzione",
+      "description": "Il Pokémon attacca tutto intorno causando un'esplosione, ma poi va KO."
+    },
+    "shadow-ball": {
+      "display_name": "Palla Ombra",
+      "description": "Il Pokémon attacca lanciando sul bersaglio un grumo di ombre nere. Può anche ridurne la Difesa Speciale."
+    },
+    "shadow-claw": {
+      "display_name": "Ombrartigli",
+      "description": "Il Pokémon attacca il bersaglio con taglienti artigli d'ombra. Probabile brutto colpo."
+    },
+    "shadow-punch": {
+      "display_name": "Pugnodombra",
+      "description": "Il Pokémon tira un rapido pugno col favore delle tenebre."
+    },
+    "shadow-sneak": {
+      "display_name": "Furtivombra",
+      "description": "Il Pokémon estende la sua ombra e attacca il bersaglio alle spalle."
+    },
+    "shed-tail": {
+      "display_name": "Tagliacoda",
+      "description": "Il Pokémon crea una copia di se stesso usando parte dei suoi PS e torna vicino al proprio Allenatore. Inoltre, accelera i propri movimenti per un po' di tempo."
+    },
+    "sheer-cold": {
+      "display_name": "Purogelo",
+      "description": "Il Pokémon attacca il bersaglio con un'ondata di freddo penetrante che lo congela. L'attacco richiede molto tempo."
+    },
+    "shell-smash": {
+      "display_name": "Gettaguscio",
+      "description": "Il Pokémon si disfa del guscio. Difesa e Difesa Speciale diminuiscono, ma aumentano di molto Attacco, Attacco Speciale e Velocità."
+    },
+    "shock-wave": {
+      "display_name": "Ondashock",
+      "description": "Il Pokémon colpisce il bersaglio con una scossa di elettricità. Questo attacco va sempre a segno."
+    },
+    "signal-beam": {
+      "display_name": "Segnoraggio",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "silver-wind": {
+      "display_name": "Ventargenteo",
+      "description": "Il Pokémon attacca con una polvere di scaglie trasportata dal vento. Può anche aumentare tutte le proprie statistiche."
+    },
+    "simple-beam": {
+      "display_name": "Ondisinvolta",
+      "description": "Il Pokémon emette un misterioso raggio psichico che trasforma l'abilità del bersaglio in Disinvoltura."
+    },
+    "sing": {
+      "display_name": "Canto",
+      "description": "Dolce ninnananna, cantata da una voce suadente, che causa sonnolenza nel bersaglio."
+    },
+    "skill-swap": {
+      "display_name": "Baratto",
+      "description": "Il Pokémon sfrutta i suoi poteri psichici per scambiare l'abilità con quella del bersaglio."
+    },
+    "skitter-smack": {
+      "display_name": "Strisciacolpo",
+      "description": "Il Pokémon attacca il bersaglio strisciandogli alle spalle e riducendo il suo Attacco Speciale."
+    },
+    "skull-bash": {
+      "display_name": "Capocciata",
+      "description": "Il Pokémon ritira la testa aumentando la Difesa per un po' di tempo, per poi attaccare il bersaglio lanciandoglisi contro. L'attacco richiede tempo."
+    },
+    "sky-attack": {
+      "display_name": "Aeroattacco",
+      "description": "Il Pokémon accumula energia per poi lanciarsi contro il bersaglio. Può anche farlo tentennare. Probabile brutto colpo. L'attacco richiede tempo."
+    },
+    "sky-drop": {
+      "display_name": "Cadutalibera",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "sky-uppercut": {
+      "display_name": "Stramontante",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "slack-off": {
+      "display_name": "Pigro",
+      "description": "Il Pokémon si rilassa recuperando metà dei propri PS massimi."
+    },
+    "slam": {
+      "display_name": "Schianto",
+      "description": "Il Pokémon attacca il bersaglio con la coda, con una liana o con qualcosa di simile."
+    },
+    "slash": {
+      "display_name": "Lacerazione",
+      "description": "Il Pokémon attacca il bersaglio lacerandolo con artigli, falci o altro. Probabile brutto colpo."
+    },
+    "sleep-powder": {
+      "display_name": "Sonnifero",
+      "description": "Il Pokémon investe il bersaglio con una nuvola di polvere soporifera che gli causa sonnolenza."
+    },
+    "sleep-talk": {
+      "display_name": "Sonnolalia",
+      "description": "Il Pokémon sferra a caso una delle proprie mosse, solo mentre dorme."
+    },
+    "sludge": {
+      "display_name": "Fango",
+      "description": "Il Pokémon attacca lanciando fango malsano sul bersaglio. Può anche avvelenarlo."
+    },
+    "sludge-bomb": {
+      "display_name": "Fangobomba",
+      "description": "Il Pokémon attacca lanciando fango malsano sul bersaglio. Può anche avvelenarlo."
+    },
+    "sludge-wave": {
+      "display_name": "Fangonda",
+      "description": "Il Pokémon attacca tutto intorno con un'onda di fango che può anche avvelenare."
+    },
+    "smack-down": {
+      "display_name": "Abbattimento",
+      "description": "Il Pokémon lancia una pietra o un proiettile contro un bersaglio in volo e lo fa cadere."
+    },
+    "smart-strike": {
+      "display_name": "Sottilcorno",
+      "description": "Il Pokémon attacca il bersaglio con un corno appuntito. Questo attacco va sempre a segno."
+    },
+    "smelling-salts": {
+      "display_name": "Maniereforti",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "smog": {
+      "display_name": "Smog",
+      "description": "Il Pokémon attacca il bersaglio con una scarica di gas maleodoranti. Può anche avvelenarlo."
+    },
+    "smokescreen": {
+      "display_name": "Muro di Fumo",
+      "description": "Il Pokémon crea una nuvola di fumo o inchiostro attorno a sé. Rimanendo al suo interno non si viene notati dai Pokémon selvatici."
+    },
+    "snarl": {
+      "display_name": "Urlorabbia",
+      "description": "Il Pokémon si mette a urlare per un po', riducendo l'Attacco Speciale del bersaglio per un po' di tempo."
+    },
+    "snatch": {
+      "display_name": "Scippo",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "snore": {
+      "display_name": "Russare",
+      "description": "Attacco che può essere usato solo mentre si dorme. Il chiasso assordante può anche far tentennare il bersaglio."
+    },
+    "snowscape": {
+      "display_name": "Vista Innevata",
+      "description": "Il Pokémon causa una nevicata che dura per cinque turni e aumenta la Difesa dei Pokémon di tipo Ghiaccio."
+    },
+    "soak": {
+      "display_name": "Inondazione",
+      "description": "Il Pokémon proietta un lungo getto d'acqua contro il bersaglio e lo rende di tipo Acqua."
+    },
+    "solar-beam": {
+      "display_name": "Solarraggio",
+      "description": "Il Pokémon assorbe luce e poi la emette per attaccare. L'attacco richiede tempo."
+    },
+    "solar-blade": {
+      "display_name": "Lama Solare",
+      "description": "Il Pokémon assorbe la luce per poi condensarla in una lama e attaccare il bersaglio. L'attacco richiede tempo."
+    },
+    "sonic-boom": {
+      "display_name": "Sonicboom",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "spark": {
+      "display_name": "Scintilla",
+      "description": "Il Pokémon attacca il bersaglio con una scarica elettrica che può anche paralizzarlo."
+    },
+    "spikes": {
+      "display_name": "Punte",
+      "description": "Il Pokémon piazza davanti a sé delle punte che danneggiano gli avversari che le calpestano."
+    },
+    "spiky-shield": {
+      "display_name": "Agodifesa",
+      "description": "Il Pokémon si protegge dagli attacchi, riducendo inoltre i PS di chi entra in contatto con lui a causa di un attacco."
+    },
+    "spit-up": {
+      "display_name": "Sfoghenergia",
+      "description": "Tutta l'energia accumulata in precedenza con Accumulo è rilasciata nell'attacco. Maggiore è l'energia, più la potenza aumenta."
+    },
+    "spite": {
+      "display_name": "Dispetto",
+      "description": "Il Pokémon sfoga la propria rabbia sull'ultima mossa usata dal bersaglio e le sottrae quattro PP."
+    },
+    "splash": {
+      "display_name": "Splash",
+      "description": "Il Pokémon saltella senza ottenere alcun effetto."
+    },
+    "spore": {
+      "display_name": "Spora",
+      "description": "Il Pokémon sparge una nube di spore soporifere intorno a sé, causando sonnolenza nel bersaglio."
+    },
+    "spotlight": {
+      "display_name": "Riflettore",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "stealth-rock": {
+      "display_name": "Levitoroccia",
+      "description": "Il Pokémon piazza davanti a sé delle rocce sospese che danneggiano gli avversari che le toccano."
+    },
+    "steel-beam": {
+      "display_name": "Raggio d'Acciaio",
+      "description": "Il Pokémon utilizza l'acciaio del proprio corpo per sparare un violento raggio, ma subisce danni."
+    },
+    "steel-roller": {
+      "display_name": "Ferrorullo",
+      "description": "Il Pokémon attacca eliminando lo stato del terreno di lotta. La mossa fallisce se nel terreno non è attivo alcuno stato."
+    },
+    "steel-wing": {
+      "display_name": "Alacciaio",
+      "description": "Il Pokémon attacca colpendo con ali d'acciaio. Può anche aumentare la propria Difesa."
+    },
+    "sticky-web": {
+      "display_name": "Rete Vischiosa",
+      "description": "Il Pokémon stende una rete appiccicosa ai piedi del bersaglio, rallentando i movimenti degli avversari che la calpestano."
+    },
+    "stockpile": {
+      "display_name": "Accumulo",
+      "description": "Il Pokémon accumula energia aumentando la Difesa e la Difesa Speciale. Si può utilizzare massimo tre volte."
+    },
+    "stomp": {
+      "display_name": "Pestone",
+      "description": "Il Pokémon attacca il bersaglio pestandolo con un grosso piede e può anche farlo tentennare."
+    },
+    "stomping-tantrum": {
+      "display_name": "Battipiedi",
+      "description": "Il Pokémon attacca battendo i piedi per la rabbia. Se la mossa usata al turno precedente non è andata a segno, la potenza raddoppia."
+    },
+    "stone-edge": {
+      "display_name": "Pietrataglio",
+      "description": "Il Pokémon attacca il bersaglio infilzandolo con pietre affilate. Probabile brutto colpo."
+    },
+    "stored-power": {
+      "display_name": "Veicolaforza",
+      "description": "Il Pokémon attacca il bersaglio con l'energia accumulata. Più sono state aumentate le statistiche, maggiore è la potenza della mossa."
+    },
+    "strength": {
+      "display_name": "Forza",
+      "description": "Il Pokémon attacca il bersaglio colpendolo con tutte le sue forze."
+    },
+    "string-shot": {
+      "display_name": "Millebave",
+      "description": "Il Pokémon produce della seta che avvolge l'avversario e ne rallenta i movimenti per un po' di tempo."
+    },
+    "struggle-bug": {
+      "display_name": "Entomoblocco",
+      "description": "Il Pokémon attacca il bersaglio opponendo resistenza e riducendone l'Attacco Speciale."
+    },
+    "stuff-cheeks": {
+      "display_name": "Riempiguance",
+      "description": "Se il Pokémon ha con sé una bacca, la mangia e la sua Difesa aumenta di molto."
+    },
+    "stun-spore": {
+      "display_name": "Paralizzante",
+      "description": "Il Pokémon investe il bersaglio con una nuvola di polvere che paralizza."
+    },
+    "substitute": {
+      "display_name": "Sostituto",
+      "description": "Il Pokémon crea una copia di se stesso usando alcuni PS."
+    },
+    "sucker-punch": {
+      "display_name": "Sbigoattacco",
+      "description": "Il Pokémon può attaccare per primo, ma fallisce se il bersaglio sferra una mossa che non è di attacco."
+    },
+    "sunny-day": {
+      "display_name": "Giornodisole",
+      "description": "Il Pokémon intensifica i raggi solari per cinque turni, aumentando la potenza delle mosse di tipo Fuoco e riducendo la potenza di quelle di tipo Acqua."
+    },
+    "super-fang": {
+      "display_name": "Superzanna",
+      "description": "Il Pokémon attacca il bersaglio azzannandolo con i suoi incisivi affilati e infliggendo una quantità di danni che cambia in base ai PS del bersaglio."
+    },
+    "superpower": {
+      "display_name": "Troppoforte",
+      "description": "Il Pokémon attacca il bersaglio con grande forza, ma il suo Attacco e la sua Difesa diminuiscono."
+    },
+    "supersonic": {
+      "display_name": "Supersuono",
+      "description": "Il Pokémon genera dal proprio corpo strane onde acustiche che confondono il bersaglio."
+    },
+    "surf": {
+      "display_name": "Surf",
+      "description": "Il Pokémon attacca tutto intorno con un'onda enorme."
+    },
+    "swagger": {
+      "display_name": "Bullo",
+      "description": "Il Pokémon provoca il bersaglio e lo confonde, facendo aumentare il suo Attacco per un certo tempo."
+    },
+    "swallow": {
+      "display_name": "Introenergia",
+      "description": "Il Pokémon assorbe l'energia raccolta con la mossa Accumulo e recupera PS. Maggiore è l'energia, più PS si recuperano."
+    },
+    "sweet-kiss": {
+      "display_name": "Dolcebacio",
+      "description": "Il Pokémon bacia il bersaglio con una dolcezza angelica, confondendolo."
+    },
+    "sweet-scent": {
+      "display_name": "Profumino",
+      "description": "Il Pokémon riduce di molto l'elusione degli avversari con un dolce profumo."
+    },
+    "swift": {
+      "display_name": "Comete",
+      "description": "Il Pokémon attacca il bersaglio con raggi a forma di stella."
+    },
+    "switcheroo": {
+      "display_name": "Rapidscambio",
+      "description": "Il Pokémon scambia lo strumento che ha con quello del bersaglio a una velocità impressionante."
+    },
+    "swords-dance": {
+      "display_name": "Danzaspada",
+      "description": "Il Pokémon si esibisce in una frenetica danza da battaglia che aumenta il suo Attacco per un certo tempo."
+    },
+    "synchronoise": {
+      "display_name": "Sincrumore",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "synthesis": {
+      "display_name": "Sintesi",
+      "description": "Il Pokémon recupera PS per effetto dei nutrienti generati tramite la fotosintesi."
+    },
+    "tackle": {
+      "display_name": "Azione",
+      "description": "Il Pokémon attacca il bersaglio lanciandosi contro di lui con tutto il suo corpo."
+    },
+    "tail-glow": {
+      "display_name": "Codadiluce",
+      "description": "Il Pokémon fissa una luce intermittente per concentrarsi e aumentare moltissimo l'Attacco Speciale."
+    },
+    "tail-slap": {
+      "display_name": "Spazzasberla",
+      "description": "Il Pokémon attacca colpendo il bersaglio con la sua coda dura da due a cinque volte di fila."
+    },
+    "tail-whip": {
+      "display_name": "Colpocoda",
+      "description": "Il Pokémon agita la coda per distrarre il bersaglio, riducendone la Difesa per un po' di tempo."
+    },
+    "tailwind": {
+      "display_name": "Ventoincoda",
+      "description": "Il Pokémon scatena un turbine che aumenta la Velocità di tutti i Pokémon della squadra per quattro turni."
+    },
+    "take-down": {
+      "display_name": "Riduttore",
+      "description": "Il Pokémon attacca lanciandosi contro il bersaglio con forza straordinaria, ma subisce dei danni."
+    },
+    "taunt": {
+      "display_name": "Provocazione",
+      "description": "Il Pokémon provoca il bersaglio inducendolo a usare solo mosse che infliggono danni per un po' di tempo."
+    },
+    "tearful-look": {
+      "display_name": "Occhionilucidi",
+      "description": "Il Pokémon guarda il bersaglio con gli occhi pieni di lacrime e gli fa perdere lo spirito combattivo, riducendone l'Attacco e l'Attacco Speciale."
+    },
+    "teeter-dance": {
+      "display_name": "Strampadanza",
+      "description": "Chi la usa esegue una danza goffa che confonde gli altri Pokémon attorno."
+    },
+    "telekinesis": {
+      "display_name": "Telecinesi",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "teleport": {
+      "display_name": "Teletrasporto",
+      "description": "Il Pokémon si sposta all'istante vicino al suo Allenatore."
+    },
+    "temper-flare": {
+      "display_name": "Rabbia Bruciante",
+      "description": "Il Pokémon attacca con l'impeto di chi è pronto a tutto. Se la mossa usata al turno precedente non è andata a segno, la potenza raddoppia."
+    },
+    "tera-blast": {
+      "display_name": "Terascoppio",
+      "description": "Se il Pokémon è teracristallizzato, attacca con l'energia del suo teratipo. Infligge danni in base all'Attacco o all'Attacco Speciale scegliendo il più alto tra i due. (Qualsiasi tipo eccetto l'Astrale) Il Pokémon infligge danni in base al più alto tra Attacco o Attacco Speciale, ma entrambi diminuiscono. La mossa è superefficace se il bersaglio è teracristallizzato. (Tipo Astrale)"
+    },
+    "terrain-pulse": {
+      "display_name": "Campopulsar",
+      "description": "Il Pokémon attacca sfruttando l'energia del terreno di lotta. Il tipo e la potenza della mossa variano a seconda dello stato del terreno stesso."
+    },
+    "thief": {
+      "display_name": "Furto",
+      "description": "Il Pokémon attacca il bersaglio e può rubargli lo strumento, se non ne ha già uno."
+    },
+    "thrash": {
+      "display_name": "Colpo",
+      "description": "Il Pokémon s'infuria e attacca il bersaglio per due o tre turni, ma rimane confuso."
+    },
+    "throat-chop": {
+      "display_name": "Colpo Infernale",
+      "description": "Chi viene colpito da questa mossa prova un dolore lancinante e non può più usare mosse basate sul suono per due turni."
+    },
+    "thunder": {
+      "display_name": "Tuono",
+      "description": "Il Pokémon attacca il bersaglio con un fulmine molto violento che può anche paralizzarlo."
+    },
+    "thunder-fang": {
+      "display_name": "Fulmindenti",
+      "description": "Il Pokémon morde con denti elettrificati che possono anche paralizzare o far tentennare il bersaglio."
+    },
+    "thunder-punch": {
+      "display_name": "Tuonopugno",
+      "description": "Il Pokémon attacca il bersaglio con un pugno elettrico che può paralizzarlo."
+    },
+    "thunder-wave": {
+      "display_name": "Tuononda",
+      "description": "Il Pokémon colpisce il bersaglio con una debole scarica elettrica che lo paralizza."
+    },
+    "thunderbolt": {
+      "display_name": "Fulmine",
+      "description": "Il Pokémon attacca il bersaglio con una potente scarica elettrica che può anche paralizzarlo."
+    },
+    "tickle": {
+      "display_name": "Solletico",
+      "description": "Il Pokémon solletica il bersaglio e lo fa ridere, riducendone l'Attacco e la Difesa."
+    },
+    "torment": {
+      "display_name": "Attaccalite",
+      "description": "Il Pokémon tormenta e fa infuriare il bersaglio, rendendogli più difficile usare la stessa mossa più volte di fila."
+    },
+    "toxic": {
+      "display_name": "Tossina",
+      "description": "Il Pokémon iperavvelena il bersaglio con una potente tossina. I danni aumentano con il passare del tempo."
+    },
+    "toxic-spikes": {
+      "display_name": "Fielepunte",
+      "description": "Il Pokémon piazza davanti a sé delle punte velenose che avvelenano gli avversari che le calpestano."
+    },
+    "trailblaze": {
+      "display_name": "Apripista",
+      "description": "Il Pokémon attacca come se saltasse fuori dall'erba alta e si muove con passo leggiadro, accelerando per un po' di tempo i propri movimenti."
+    },
+    "tri-attack": {
+      "display_name": "Tripletta",
+      "description": "Il Pokémon attacca il bersaglio con tre raggi di luce che possono paralizzarlo, scottarlo o congelarlo."
+    },
+    "trick": {
+      "display_name": "Raggiro",
+      "description": "Il Pokémon coglie il bersaglio in contropiede e lo obbliga a scambiare il suo strumento con il proprio."
+    },
+    "trick-room": {
+      "display_name": "Distortozona",
+      "description": "Chi la usa crea una dimensione in cui i Pokémon più lenti agiscono per primi per cinque turni."
+    },
+    "triple-axel": {
+      "display_name": "Triplo Axel",
+      "description": "Il Pokémon attacca sferrando tre calci in rapida successione. L'area d'effetto di questa mossa aumenta con ogni salto."
+    },
+    "trump-card": {
+      "display_name": "Asso",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "twister": {
+      "display_name": "Tornado",
+      "description": "Il Pokémon attacca scatenando un potente tornado che si abbatte sul bersaglio. Può anche farlo tentennare."
+    },
+    "u-turn": {
+      "display_name": "Retromarcia",
+      "description": "Dopo aver sferrato l'attacco il Pokémon torna rapidamente vicino al proprio Allenatore."
+    },
+    "upper-hand": {
+      "display_name": "Colpo di Mano",
+      "description": "Il Pokémon reagisce al movimento del bersaglio e, colpendo con il palmo, lo fa tentennare. Se il bersaglio non sferra un attacco ad alta priorità, la mossa fallisce."
+    },
+    "uproar": {
+      "display_name": "Baraonda",
+      "description": "Il Pokémon attacca per tre turni con un frastuono che non fa dormire nessuno."
+    },
+    "vacuum-wave": {
+      "display_name": "Vuotonda",
+      "description": "Il Pokémon rotea i pugni per lanciare rapidamente un'onda di vuoto assoluto verso il bersaglio."
+    },
+    "venom-drench": {
+      "display_name": "Velenotrappola",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "venoshock": {
+      "display_name": "Velenoshock",
+      "description": "Il Pokémon lancia uno speciale liquido tossico sul bersaglio. Se questi è avvelenato, la potenza raddoppia."
+    },
+    "vice-grip": {
+      "display_name": "Presa",
+      "description": "Il Pokémon stringe il bersaglio in una morsa, infliggendogli danni."
+    },
+    "vital-throw": {
+      "display_name": "Vitaltiro",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "volt-switch": {
+      "display_name": "Invertivolt",
+      "description": "Dopo aver sferrato l'attacco il Pokémon torna rapidamente vicino al proprio Allenatore."
+    },
+    "wake-up-slap": {
+      "display_name": "Svegliopacca",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "water-gun": {
+      "display_name": "Pistolacqua",
+      "description": "Il Pokémon attacca il bersaglio con un potente getto d'acqua."
+    },
+    "water-pledge": {
+      "display_name": "Acquapatto",
+      "description": "Il Pokémon attacca il bersaglio con una colonna d'acqua. Se usata con Fiammapatto, la potenza aumenta e appare un arcobaleno."
+    },
+    "water-pulse": {
+      "display_name": "Idropulsar",
+      "description": "Il Pokémon attacca lanciando sul bersaglio un getto d'acqua potentissimo che può anche confonderlo."
+    },
+    "water-sport": {
+      "display_name": "Docciascudo",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "water-spout": {
+      "display_name": "Zampillo",
+      "description": "Il Pokémon attacca lanciando un getto d'acqua. Più i suoi PS sono bassi, più la potenza della mossa diminuisce."
+    },
+    "waterfall": {
+      "display_name": "Cascata",
+      "description": "Il Pokémon carica il bersaglio a grande velocità e può farlo tentennare."
+    },
+    "weather-ball": {
+      "display_name": "Palla Clima",
+      "description": "Mossa il cui tipo e la cui potenza variano in base alle condizioni atmosferiche."
+    },
+    "whirlpool": {
+      "display_name": "Mulinello",
+      "description": "Il Pokémon genera un turbine d'acqua che continua a infliggere danni agli avversari che si trovano al suo interno."
+    },
+    "whirlwind": {
+      "display_name": "Turbine",
+      "description": "Il Pokémon crea una forte folata di vento e spinge il bersaglio molto indietro."
+    },
+    "wide-guard": {
+      "display_name": "Bodyguard",
+      "description": "Il Pokémon protegge sé e gli alleati da attacchi ad ampio raggio per un turno."
+    },
+    "wild-charge": {
+      "display_name": "Sprizzalampo",
+      "description": "Il Pokémon si carica di elettricità per poi scagliarsi sul bersaglio, ma subisce danni."
+    },
+    "will-o-wisp": {
+      "display_name": "Fuocofatuo",
+      "description": "Il Pokémon lancia fiamme sinistre e misteriose che causano una scottatura al bersaglio."
+    },
+    "wing-attack": {
+      "display_name": "Attacco d'Ala",
+      "description": "Il Pokémon attacca il bersaglio spiegando delle grandi ali possenti."
+    },
+    "wish": {
+      "display_name": "Desiderio",
+      "description": "Poco dopo l'utilizzo della mossa, il Pokémon o chi lo sostituisce recupera PS."
+    },
+    "withdraw": {
+      "display_name": "Ritirata",
+      "description": "Il Pokémon si ritira nel suo duro guscio per aumentare la Difesa."
+    },
+    "wonder-room": {
+      "display_name": "Mirabilzona",
+      "description": "Il Pokémon crea una dimensione in cui Difesa e Difesa Speciale di tutti i Pokémon vengono scambiate per cinque turni."
+    },
+    "work-up": {
+      "display_name": "Cuordileone",
+      "description": "Il Pokémon si tira su di morale, aumentando l'Attacco e l'Attacco Speciale per un po' di tempo."
+    },
+    "worry-seed": {
+      "display_name": "Affannoseme",
+      "description": "Il Pokémon pianta un seme che causa ansia, mutando l'abilità del bersaglio in Insonnia e impedendogli di dormire."
+    },
+    "wrap": {
+      "display_name": "Avvolgibotta",
+      "description": "Il Pokémon attacca il bersaglio stritolandolo con il suo lungo corpo o le sue liane per quattro o cinque turni."
+    },
+    "wring-out": {
+      "display_name": "Strizzata",
+      "description": "Questa mossa non può essere usata. È consigliabile farla dimenticare al Pokémon. Tuttavia, una volta dimenticata, non potrà più essere ricordata."
+    },
+    "x-scissor": {
+      "display_name": "Forbice X",
+      "description": "Il Pokémon squarcia il bersaglio con un attacco che ricorda un colpo di forbici."
+    },
+    "yawn": {
+      "display_name": "Sbadiglio",
+      "description": "Il Pokémon fa un grande sbadiglio che addormenta il bersaglio al turno seguente."
+    },
+    "zap-cannon": {
+      "display_name": "Falcecannone",
+      "description": "Nessuna descrizione disponibile."
+    },
+    "zen-headbutt": {
+      "display_name": "Cozzata Zen",
+      "description": "Il Pokémon concentra le energie psichiche nella testa e attacca il bersaglio. Può anche farlo tentennare."
+    }
+  },
+  "locations": {
+    "abandoned-ship-area": "Vecchia Nave",
+    "altering-cave-area": "Grotta Mutevole",
+    "aqua-hideout-area": "Rifugio Idro",
+    "cave-of-origin-area": "Grotta dei Tempi",
+    "dewford-town-area": "Bluruvia",
+    "ever-grande-city-area": "Iridopoli",
+    "granite-cave-area": "Grotta Pietrosa",
+    "hoenn-route-101-area": "Percorso 101",
+    "hoenn-route-102-area": "Percorso 102",
+    "hoenn-route-103-area": "Percorso 103",
+    "hoenn-route-104-area": "Percorso 104",
+    "hoenn-route-105-area": "Percorso 105",
+    "hoenn-route-106-area": "Percorso 106",
+    "hoenn-route-107-area": "Percorso 107",
+    "hoenn-route-108-area": "Percorso 108",
+    "hoenn-route-109-area": "Percorso 109",
+    "hoenn-route-110-area": "Percorso 110",
+    "hoenn-route-111-area": "Percorso 111",
+    "hoenn-route-112-area": "Percorso 112",
+    "hoenn-route-113-area": "Percorso 113",
+    "hoenn-route-114-area": "Percorso 114",
+    "hoenn-route-115-area": "Percorso 115",
+    "hoenn-route-116-area": "Percorso 116",
+    "hoenn-route-117-area": "Percorso 117",
+    "hoenn-route-118-area": "Percorso 118",
+    "hoenn-route-119-area": "Percorso 119",
+    "hoenn-route-120-area": "Percorso 120",
+    "hoenn-route-121-area": "Percorso 121",
+    "hoenn-route-122-area": "Percorso 122",
+    "hoenn-route-123-area": "Percorso 123",
+    "hoenn-route-124-area": "Percorso 124",
+    "hoenn-route-125-area": "Percorso 125",
+    "hoenn-route-126-area": "Percorso 126",
+    "hoenn-route-127-area": "Percorso 127",
+    "hoenn-route-128-area": "Percorso 128",
+    "hoenn-route-129-area": "Percorso 129",
+    "hoenn-route-130-area": "Percorso 130",
+    "hoenn-route-131-area": "Percorso 131",
+    "hoenn-route-132-area": "Percorso 132",
+    "hoenn-route-133-area": "Percorso 133",
+    "hoenn-route-134-area": "Percorso 134",
+    "hoenn-victory-road-area": "Via Vittoria",
+    "jagged-pass-area": "Passo Selvaggio",
+    "lilycove-city-area": "Porto Alghepoli",
+    "meteor-falls-area": "Cascate Meteora",
+    "mirage-tower-area": "Torre Miraggio",
+    "mossdeep-city-area": "Verdeazzupoli",
+    "mt-pyre-area": "Monte Pira",
+    "new-mauville-area": "Ciclanova",
+    "pacifidlog-town-area": "Orocea",
+    "petalburg-city-area": "Petalipoli",
+    "petalburg-woods-area": "Bosco Petalo",
+    "rusturf-tunnel-area": "Tunnel Menferro",
+    "safari-zone-area": "Zona Safari",
+    "scorched-slab-area": "Grottino Solare",
+    "seafloor-cavern-area": "Antro Abissale",
+    "sealed-chamber-area": "Sala Incisa",
+    "shoal-cave-area": "Grotta Ondosa",
+    "slateport-city-area": "Porto Selcepoli",
+    "sootopolis-city-area": "Ceneride",
+    "underwater-area": "Sott'acqua"
+  },
+  "abilities": {
+    "air-lock": {
+      "display_name": "Riparo",
+      "description": "Il Pokémon non subisce gli effetti di nessuna condizione atmosferica."
+    },
+    "anticipation": {
+      "display_name": "Presagio",
+      "description": "Rivela se il nemico ha mosse pericolose."
+    },
+    "arena-trap": {
+      "display_name": "Trappoarena",
+      "description": "Impedisce la fuga al nemico."
+    },
+    "battle-armor": {
+      "display_name": "Lottascudo",
+      "description": "Il Pokémon è protetto da una dura corazza che gli evita di subire brutti colpi."
+    },
+    "blaze": {
+      "display_name": "Aiutofuoco",
+      "description": "Quando il Pokémon ha pochi PS, la potenza delle sue mosse di tipo Fuoco aumenta."
+    },
+    "chlorophyll": {
+      "display_name": "Clorofilla",
+      "description": "Se la luce del sole è intensa, la Velocità aumenta."
+    },
+    "clear-body": {
+      "display_name": "Corpochiaro",
+      "description": "Rende immuni alla diminuzione delle statistiche causata da abilità o mosse di altri Pokémon."
+    },
+    "cloud-nine": {
+      "display_name": "Antimeteo",
+      "description": "Neutralizza gli effetti di tutte le condizioni atmosferiche."
+    },
+    "color-change": {
+      "display_name": "Cambiacolore",
+      "description": "Il Pokémon acquisisce il tipo della mossa subita."
+    },
+    "competitive": {
+      "display_name": "Tenacia",
+      "description": "L’Attacco Speciale aumenta di molto quando le statistiche diminuiscono a causa di un nemico."
+    },
+    "compound-eyes": {
+      "display_name": "Insettocchi",
+      "description": "La precisione del Pokémon aumenta grazie ai suoi occhi composti."
+    },
+    "cute-charm": {
+      "display_name": "Incantevole",
+      "description": "Può causare infatuazione a chi manda a segno un attacco diretto."
+    },
+    "damp": {
+      "display_name": "Umidità",
+      "description": "Aumenta l’umidità circostante, impedendo l’uso di Autodistruzione e di altre mosse esplosive."
+    },
+    "drizzle": {
+      "display_name": "Piovischio",
+      "description": "Quando scende in campo, il Pokémon attira la pioggia."
+    },
+    "drought": {
+      "display_name": "Siccità",
+      "description": "Quando il Pokémon entra in campo, la luce solare diventa intensa."
+    },
+    "early-bird": {
+      "display_name": "Sveglialampo",
+      "description": "Il Pokémon impiega metà del tempo per risvegliarsi dal sonno rispetto agli altri."
+    },
+    "effect-spore": {
+      "display_name": "Spargispora",
+      "description": "Può causare avvelenamento, paralisi o sonno a chi manda a segno un attacco diretto."
+    },
+    "flame-body": {
+      "display_name": "Corpodifuoco",
+      "description": "Al contatto subito, chi sferra l’attacco può venire scottato."
+    },
+    "flash-fire": {
+      "display_name": "Fuocardore",
+      "description": "Se il Pokémon subisce una mossa di tipo Fuoco, ne sfrutta il calore per potenziare le proprie mosse dello stesso tipo."
+    },
+    "forecast": {
+      "display_name": "Previsioni",
+      "description": "Cambia il tipo del Pokémon in Acqua, Fuoco o Ghiaccio in base alle condizioni atmosferiche."
+    },
+    "frisk": {
+      "display_name": "Indagine",
+      "description": "Quando il Pokémon entra in campo, rivela lo strumento del nemico."
+    },
+    "gluttony": {
+      "display_name": "Voracità",
+      "description": "Il Pokémon non attende di aver perso molti PS per mangiare certe bacche, ma lo fa non appena i suoi PS scendono a metà o meno."
+    },
+    "guts": {
+      "display_name": "Dentistretti",
+      "description": "Se è affetto da un problema di stato, il Pokémon tira fuori la grinta e aumenta il proprio Attacco."
+    },
+    "huge-power": {
+      "display_name": "Macroforza",
+      "description": "Migliora la statistica Attacco del Pokémon."
+    },
+    "hustle": {
+      "display_name": "Tuttafretta",
+      "description": "Aumenta l’Attacco, ma diminuisce la precisione."
+    },
+    "hydration": {
+      "display_name": "Idratazione",
+      "description": "Se piove, il Pokémon guarisce dai problemi di stato."
+    },
+    "hyper-cutter": {
+      "display_name": "Ipertaglio",
+      "description": "L’Attacco del Pokémon non può diminuire grazie alla morsa micidiale in cui è in grado di stringere i nemici."
+    },
+    "ice-body": {
+      "display_name": "Corpogelo",
+      "description": "Quando grandina, il Pokémon recupera PS."
+    },
+    "illuminate": {
+      "display_name": "Risplendi",
+      "description": "Illumina tutto intorno, rendendo più probabile incontrare Pokémon selvatici."
+    },
+    "immunity": {
+      "display_name": "Immunità",
+      "description": "L’immunità naturale del Pokémon gli impedisce di essere avvelenato."
+    },
+    "inner-focus": {
+      "display_name": "Forza Interiore",
+      "description": "La capacità di concentrazione del Pokémon evita che tentenni per gli attacchi del nemico."
+    },
+    "insomnia": {
+      "display_name": "Insonnia",
+      "description": "Il Pokémon soffre d’insonnia e non può finire addormentato."
+    },
+    "intimidate": {
+      "display_name": "Prepotenza",
+      "description": "Quando il Pokémon entra in campo, la sua prepotenza intimidisce i nemici, riducendone l’Attacco."
+    },
+    "keen-eye": {
+      "display_name": "Sguardofermo",
+      "description": "La vista acuta del Pokémon impedisce che la sua precisione diminuisca."
+    },
+    "levitate": {
+      "display_name": "Levitazione",
+      "description": "La capacità di levitare senza toccare il suolo conferisce immunità agli attacchi di tipo Terra."
+    },
+    "lightning-rod": {
+      "display_name": "Parafulmine",
+      "description": "Il Pokémon attira e neutralizza le mosse di tipo Elettro e fa aumentare il suo Attacco Speciale."
+    },
+    "limber": {
+      "display_name": "Scioltezza",
+      "description": "Il corpo flessibile del Pokémon gli impedisce di subire gli effetti della paralisi."
+    },
+    "liquid-ooze": {
+      "display_name": "Melma",
+      "description": "Il Pokémon secerne delle sostanze tossiche. Se un nemico manda a segno una mossa che assorbe i PS, subisce dei danni."
+    },
+    "magma-armor": {
+      "display_name": "Magmascudo",
+      "description": "Il magma riveste il corpo del Pokémon impedendogli di venire congelato."
+    },
+    "magnet-pull": {
+      "display_name": "Magnetismo",
+      "description": "La carica magnetica attrae i Pokémon di tipo Acciaio impedendogli la fuga o la sostituzione."
+    },
+    "marvel-scale": {
+      "display_name": "Pelledura",
+      "description": "Se il Pokémon è affetto da un problema di stato, le squame sulla sua pelle si induriscono aumentando la sua Difesa."
+    },
+    "minus": {
+      "display_name": "Meno",
+      "description": "Aumenta l’Attacco Speciale se ci sono alleati con l’abilità Meno o Più."
+    },
+    "mold-breaker": {
+      "display_name": "Rompiforma",
+      "description": "Quando il Pokémon attacca, ignora l’abilità del bersaglio se questa ha effetto sulle mosse."
+    },
+    "natural-cure": {
+      "display_name": "Alternacura",
+      "description": "Quando il Pokémon viene sostituito, guarisce dai problemi di stato."
+    },
+    "no-guard": {
+      "display_name": "Nullodifesa",
+      "description": "Il Pokémon e chiunque lo attacchi abbassano la guardia e le loro mosse vanno sempre a segno."
+    },
+    "normalize": {
+      "display_name": "Normalità",
+      "description": "Tutte le mosse del Pokémon diventano di tipo Normale e la loro potenza aumenta un po’."
+    },
+    "oblivious": {
+      "display_name": "Indifferenza",
+      "description": "L’imperturbabilità del Pokémon lo protegge da infatuazioni e provocazioni."
+    },
+    "overgrow": {
+      "display_name": "Erbaiuto",
+      "description": "Quando il Pokémon ha pochi PS, la potenza delle sue mosse di tipo Erba aumenta."
+    },
+    "own-tempo": {
+      "display_name": "Mente Locale",
+      "description": "Il Pokémon affronta la vita al proprio ritmo e per questo non può essere colpito dalla confusione."
+    },
+    "pickup": {
+      "display_name": "Raccolta",
+      "description": "Il Pokémon può raccogliere lo strumento usato da un nemico durante la lotta. A volte potrebbe raccogliere strumenti anche fuori dalla lotta."
+    },
+    "plus": {
+      "display_name": "Più",
+      "description": "Aumenta l’Attacco Speciale se ci sono alleati con l’abilità Meno o Più."
+    },
+    "poison-heal": {
+      "display_name": "Velencura",
+      "description": "Se il Pokémon è avvelenato, recupera PS anziché perderli."
+    },
+    "poison-point": {
+      "display_name": "Velenopunto",
+      "description": "Può avvelenare chi manda a segno un attacco diretto."
+    },
+    "pressure": {
+      "display_name": "Pressione",
+      "description": "Il Pokémon mette pressione al nemico, facendogli consumare più PP."
+    },
+    "pure-power": {
+      "display_name": "Forzapura",
+      "description": "L’Attacco del Pokémon raddoppia grazie alla sua padronanza delle tecniche yoga."
+    },
+    "quick-feet": {
+      "display_name": "Piedisvelti",
+      "description": "Se il Pokémon è affetto da un problema di stato, la Velocità aumenta."
+    },
+    "rain-dish": {
+      "display_name": "Copripioggia",
+      "description": "Il Pokémon recupera PS quando piove."
+    },
+    "rock-head": {
+      "display_name": "Testadura",
+      "description": "Protegge il Pokémon dai contraccolpi."
+    },
+    "rough-skin": {
+      "display_name": "Cartavetro",
+      "description": "Se il Pokémon è colpito da un attacco diretto, grazie alla sua pelle ruvida infligge danni a sua volta."
+    },
+    "run-away": {
+      "display_name": "Fugafacile",
+      "description": "Garantisce la fuga dai Pokémon selvatici."
+    },
+    "sand-veil": {
+      "display_name": "Sabbiavelo",
+      "description": "L’elusione aumenta durante le tempeste di sabbia."
+    },
+    "scrappy": {
+      "display_name": "Nervisaldi",
+      "description": "Permette di colpire Pokémon di tipo Spettro con mosse di tipo Normale e Lotta."
+    },
+    "serene-grace": {
+      "display_name": "Leggiadro",
+      "description": "Rende più probabili gli effetti aggiuntivi delle mosse."
+    },
+    "shadow-tag": {
+      "display_name": "Pedinombra",
+      "description": "Il Pokémon calpesta l’ombra del nemico impedendogli la fuga o la sostituzione."
+    },
+    "shed-skin": {
+      "display_name": "Muta",
+      "description": "Il Pokémon può guarire dai problemi di stato facendo la muta completa della pelle."
+    },
+    "shell-armor": {
+      "display_name": "Guscioscudo",
+      "description": "Il Pokémon è protetto da un guscio robusto che gli evita di subire brutti colpi."
+    },
+    "shield-dust": {
+      "display_name": "Polvoscudo",
+      "description": "Il Pokémon è protetto da uno strato di scaglie che annulla gli effetti aggiuntivi delle mosse subite."
+    },
+    "simple": {
+      "display_name": "Disinvoltura",
+      "description": "Le modifiche alle statistiche sono più accentuate."
+    },
+    "sniper": {
+      "display_name": "Cecchino",
+      "description": "Aumenta ulteriormente i danni inflitti dai brutti colpi."
+    },
+    "solar-power": {
+      "display_name": "Solarpotere",
+      "description": "Se la luce del sole è intensa, l’Attacco Speciale aumenta, ma il Pokémon perde PS a ogni turno."
+    },
+    "solid-rock": {
+      "display_name": "Solidroccia",
+      "description": "Riduce la potenza delle mosse superefficaci subite."
+    },
+    "soundproof": {
+      "display_name": "Antisuono",
+      "description": "Il Pokémon è dotato di una sorta di isolamento acustico che lo rende immune alle mosse basate sul suono."
+    },
+    "speed-boost": {
+      "display_name": "Acceleratore",
+      "description": "La statistica Velocità aumenta gradualmente."
+    },
+    "stall": {
+      "display_name": "Rallentatore",
+      "description": "I nemici attaccano sempre per primi, anche se sono più lenti."
+    },
+    "static": {
+      "display_name": "Statico",
+      "description": "Il contatto fisico con il corpo percorso dall’elettricità statica del Pokémon può causare paralisi."
+    },
+    "sticky-hold": {
+      "display_name": "Antifurto",
+      "description": "Gli strumenti restano appiccicati al corpo adesivo del Pokémon e non possono essere rubati."
+    },
+    "sturdy": {
+      "display_name": "Vigore",
+      "description": "Se il Pokémon ha tutti i PS, evita che vada KO in un sol colpo. Inoltre, è immune alle mosse che causano KO immediato."
+    },
+    "suction-cups": {
+      "display_name": "Ventose",
+      "description": "Il Pokémon resiste a strumenti e mosse che causano la sostituzione appiccicandosi al terreno con le ventose."
+    },
+    "super-luck": {
+      "display_name": "Supersorte",
+      "description": "Il Pokémon ha una fortuna incredibile che aumenta la sua probabilità di infliggere brutti colpi."
+    },
+    "swarm": {
+      "display_name": "Aiutinsetto",
+      "description": "Quando il Pokémon ha pochi PS, la potenza delle sue mosse di tipo Coleottero aumenta."
+    },
+    "swift-swim": {
+      "display_name": "Nuotovelox",
+      "description": "Se piove, la statistica Velocità aumenta."
+    },
+    "synchronize": {
+      "display_name": "Sincronismo",
+      "description": "Se un nemico avvelena, paralizza o scotta un Pokémon con questa abilità, viene colpito dallo stesso problema di stato."
+    },
+    "tangled-feet": {
+      "display_name": "Intricopiedi",
+      "description": "Se il Pokémon è confuso, la sua elusione aumenta."
+    },
+    "thick-fat": {
+      "display_name": "Grassospesso",
+      "description": "Il Pokémon è protetto da uno spesso strato di grasso che dimezza il danno causato da mosse di tipo Fuoco e Ghiaccio."
+    },
+    "tinted-lens": {
+      "display_name": "Lentifumé",
+      "description": "Permette alle mosse non molto efficaci di infliggere danni normalmente senza essere penalizzate dalla compatibilità di tipo sfavorevole."
+    },
+    "torrent": {
+      "display_name": "Acquaiuto",
+      "description": "Quando il Pokémon ha pochi PS, la potenza delle sue mosse di tipo Acqua aumenta."
+    },
+    "trace": {
+      "display_name": "Traccia",
+      "description": "Quando il Pokémon entra in campo, copia l’abilità di un nemico."
+    },
+    "truant": {
+      "display_name": "Pigrone",
+      "description": "Quando il Pokémon usa una mossa, nel turno successivo si riposerà."
+    },
+    "vital-spirit": {
+      "display_name": "Spiritovivo",
+      "description": "Il Pokémon è talmente vivace che non può addormentarsi."
+    },
+    "volt-absorb": {
+      "display_name": "Assorbivolt",
+      "description": "Se il Pokémon viene colpito da una mossa di tipo Elettro, recupera PS anziché subire danni."
+    },
+    "water-veil": {
+      "display_name": "Idrovelo",
+      "description": "Un velo d’acqua riveste il corpo del Pokémon impedendogli di venire scottato."
+    },
+    "white-smoke": {
+      "display_name": "Fumochiaro",
+      "description": "Il Pokémon è protetto da un fumo chiaro che impedisce ai nemici di diminuire le sue statistiche."
+    },
+    "wind-rider": {
+      "display_name": "Vento Propizio",
+      "description": "Nessuna descrizione disponibile."
+    },
+    "wonder-guard": {
+      "display_name": "Magidifesa",
+      "description": "Un potere misterioso protegge il Pokémon e lo rende vulnerabile solo alle mosse superefficaci."
+    }
+  }
+}

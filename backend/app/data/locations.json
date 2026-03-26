@@ -1,0 +1,3849 @@
+[
+  {
+    "name": "abundant-shrine-area",
+    "pokemon_ids": [
+      333,
+      334,
+      358
+    ]
+  },
+  {
+    "name": "acuity-lakefront-area",
+    "pokemon_ids": [
+      307,
+      308,
+      361
+    ]
+  },
+  {
+    "name": "akala-outskirts-area",
+    "pokemon_ids": [
+      278,
+      299
+    ]
+  },
+  {
+    "name": "alola-route-1-hauoli-outskirts",
+    "pokemon_ids": [
+      278
+    ]
+  },
+  {
+    "name": "alola-route-11-area",
+    "pokemon_ids": [
+      288
+    ]
+  },
+  {
+    "name": "alola-route-12-area",
+    "pokemon_ids": [
+      310,
+      324
+    ]
+  },
+  {
+    "name": "alola-route-14-area",
+    "pokemon_ids": [
+      279,
+      359,
+      361
+    ]
+  },
+  {
+    "name": "alola-route-15-main",
+    "pokemon_ids": [
+      279,
+      366,
+      367,
+      368
+    ]
+  },
+  {
+    "name": "alola-route-16-east",
+    "pokemon_ids": [
+      279
+    ]
+  },
+  {
+    "name": "alola-route-16-main",
+    "pokemon_ids": [
+      279
+    ]
+  },
+  {
+    "name": "alola-route-16-west",
+    "pokemon_ids": [
+      279
+    ]
+  },
+  {
+    "name": "alola-route-17-northeast",
+    "pokemon_ids": [
+      351
+    ]
+  },
+  {
+    "name": "alola-route-17-west",
+    "pokemon_ids": [
+      351
+    ]
+  },
+  {
+    "name": "alola-route-2-north",
+    "pokemon_ids": [
+      296
+    ]
+  },
+  {
+    "name": "alola-route-2-south",
+    "pokemon_ids": [
+      296
+    ]
+  },
+  {
+    "name": "alola-route-3-south",
+    "pokemon_ids": [
+      371,
+      373
+    ]
+  },
+  {
+    "name": "alola-route-5-area",
+    "pokemon_ids": [
+      253
+    ]
+  },
+  {
+    "name": "alola-route-6-north",
+    "pokemon_ids": [
+      280
+    ]
+  },
+  {
+    "name": "alola-route-7-area",
+    "pokemon_ids": [
+      278,
+      363
+    ]
+  },
+  {
+    "name": "alola-route-8-fossil-restoration-center",
+    "pokemon_ids": [
+      345,
+      347
+    ]
+  },
+  {
+    "name": "alola-route-8-main",
+    "pokemon_ids": [
+      256
+    ]
+  },
+  {
+    "name": "alola-route-9-main",
+    "pokemon_ids": [
+      370
+    ]
+  },
+  {
+    "name": "ambrette-town-area",
+    "pokemon_ids": [
+      320,
+      369,
+      370
+    ]
+  },
+  {
+    "name": "ancient-poni-path-area",
+    "pokemon_ids": [
+      279,
+      318,
+      319,
+      320,
+      321,
+      369
+    ]
+  },
+  {
+    "name": "ancient-tomb-area",
+    "pokemon_ids": [
+      379
+    ]
+  },
+  {
+    "name": "azure-bay-area",
+    "pokemon_ids": [
+      278,
+      370
+    ]
+  },
+  {
+    "name": "battle-resort-area",
+    "pokemon_ids": [
+      319,
+      323
+    ]
+  },
+  {
+    "name": "bell-tower-10f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "bell-tower-2f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "bell-tower-3f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "bell-tower-4f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "bell-tower-5f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "bell-tower-6f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "bell-tower-7f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "bell-tower-8f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "bell-tower-9f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "birth-island-area",
+    "pokemon_ids": [
+      386
+    ]
+  },
+  {
+    "name": "blush-mountain-area",
+    "pokemon_ids": [
+      324
+    ]
+  },
+  {
+    "name": "brooklet-hill-main",
+    "pokemon_ids": [
+      259
+    ]
+  },
+  {
+    "name": "brooklet-hill-north",
+    "pokemon_ids": [
+      278,
+      283,
+      349
+    ]
+  },
+  {
+    "name": "brooklet-hill-south",
+    "pokemon_ids": [
+      278,
+      283,
+      349
+    ]
+  },
+  {
+    "name": "brooklet-hill-totems-den",
+    "pokemon_ids": [
+      278
+    ]
+  },
+  {
+    "name": "burned-tower-1f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "burned-tower-b1f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "canalave-city-area",
+    "pokemon_ids": [
+      278,
+      279
+    ]
+  },
+  {
+    "name": "castelia-city-area",
+    "pokemon_ids": [
+      300,
+      301
+    ]
+  },
+  {
+    "name": "cave-of-origin-1f",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "cave-of-origin-b1f",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "cave-of-origin-b2f",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "cave-of-origin-b3f",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "cave-of-origin-b4f",
+    "pokemon_ids": [
+      382,
+      383
+    ]
+  },
+  {
+    "name": "celestic-town-area",
+    "pokemon_ids": [
+      339,
+      340,
+      341,
+      342
+    ]
+  },
+  {
+    "name": "cerulean-cave-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "cerulean-cave-2f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "cerulean-cave-b1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "challengers-cave-1f",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "challengers-cave-b1f",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "challengers-cave-b2f",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "chargestone-cave-1f",
+    "pokemon_ids": [
+      299
+    ]
+  },
+  {
+    "name": "chargestone-cave-b1f",
+    "pokemon_ids": [
+      299
+    ]
+  },
+  {
+    "name": "chargestone-cave-b2f",
+    "pokemon_ids": [
+      299
+    ]
+  },
+  {
+    "name": "clay-tunnel-area",
+    "pokemon_ids": [
+      299,
+      305
+    ]
+  },
+  {
+    "name": "connecting-cave-area",
+    "pokemon_ids": [
+      293,
+      307
+    ]
+  },
+  {
+    "name": "couriway-town-area",
+    "pokemon_ids": [
+      271
+    ]
+  },
+  {
+    "name": "cyllage-city-area",
+    "pokemon_ids": [
+      320,
+      369,
+      370
+    ]
+  },
+  {
+    "name": "dark-cave-blackthorn-city-entrance",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "dark-cave-violet-city-entrance",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "desert-resort-area",
+    "pokemon_ids": [
+      328
+    ]
+  },
+  {
+    "name": "desert-ruins-area",
+    "pokemon_ids": [
+      377
+    ]
+  },
+  {
+    "name": "desert-underpass-area",
+    "pokemon_ids": [
+      293,
+      294
+    ]
+  },
+  {
+    "name": "dewford-town-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320
+    ]
+  },
+  {
+    "name": "digletts-cave-area",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "dividing-peak-tunnel-area",
+    "pokemon_ids": [
+      352
+    ]
+  },
+  {
+    "name": "dreamyard-area",
+    "pokemon_ids": [
+      380,
+      381
+    ]
+  },
+  {
+    "name": "driftveil-city-area",
+    "pokemon_ids": [
+      370
+    ]
+  },
+  {
+    "name": "embedded-tower-groundon-room",
+    "pokemon_ids": [
+      383
+    ]
+  },
+  {
+    "name": "embedded-tower-kyogre-room",
+    "pokemon_ids": [
+      382
+    ]
+  },
+  {
+    "name": "embedded-tower-rayquaza-room",
+    "pokemon_ids": [
+      384
+    ]
+  },
+  {
+    "name": "eterna-city-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "eterna-forest-area",
+    "pokemon_ids": [
+      265,
+      266,
+      267,
+      268,
+      269,
+      273,
+      287,
+      290
+    ]
+  },
+  {
+    "name": "ever-grande-city-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320,
+      370
+    ]
+  },
+  {
+    "name": "exeggutor-island-area",
+    "pokemon_ids": [
+      279,
+      351,
+      357
+    ]
+  },
+  {
+    "name": "fiery-path-area",
+    "pokemon_ids": [
+      322,
+      324
+    ]
+  },
+  {
+    "name": "floccesy-ranch-inner",
+    "pokemon_ids": [
+      298
+    ]
+  },
+  {
+    "name": "floccesy-ranch-outer",
+    "pokemon_ids": [
+      298
+    ]
+  },
+  {
+    "name": "fuego-ironworks-area",
+    "pokemon_ids": [
+      278,
+      279,
+      304
+    ]
+  },
+  {
+    "name": "giant-chasm-area",
+    "pokemon_ids": [
+      337,
+      338
+    ]
+  },
+  {
+    "name": "giant-chasm-forest",
+    "pokemon_ids": [
+      337,
+      338,
+      375,
+      376
+    ]
+  },
+  {
+    "name": "giant-chasm-forest-cave",
+    "pokemon_ids": [
+      337,
+      338,
+      375,
+      376
+    ]
+  },
+  {
+    "name": "giant-chasm-outside",
+    "pokemon_ids": [
+      277,
+      279,
+      337,
+      338,
+      359
+    ]
+  },
+  {
+    "name": "glacier-room-area",
+    "pokemon_ids": [
+      299,
+      305
+    ]
+  },
+  {
+    "name": "glittering-cave-unknown-area-303",
+    "pokemon_ids": [
+      303,
+      337,
+      338
+    ]
+  },
+  {
+    "name": "granite-cave-1f",
+    "pokemon_ids": [
+      296
+    ]
+  },
+  {
+    "name": "granite-cave-1fsmall-room",
+    "pokemon_ids": [
+      296,
+      304
+    ]
+  },
+  {
+    "name": "granite-cave-b1f",
+    "pokemon_ids": [
+      296,
+      302,
+      303,
+      304
+    ]
+  },
+  {
+    "name": "granite-cave-b2f",
+    "pokemon_ids": [
+      299,
+      302,
+      303,
+      304
+    ]
+  },
+  {
+    "name": "great-marsh-area-1",
+    "pokemon_ids": [
+      298,
+      318,
+      339,
+      340,
+      357
+    ]
+  },
+  {
+    "name": "great-marsh-area-2",
+    "pokemon_ids": [
+      298,
+      318,
+      339,
+      340,
+      357
+    ]
+  },
+  {
+    "name": "great-marsh-area-3",
+    "pokemon_ids": [
+      298,
+      318,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "great-marsh-area-4",
+    "pokemon_ids": [
+      298,
+      318,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "great-marsh-area-5",
+    "pokemon_ids": [
+      298,
+      318,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "great-marsh-area-6",
+    "pokemon_ids": [
+      298,
+      318,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "guidance-chamber-area",
+    "pokemon_ids": [
+      304
+    ]
+  },
+  {
+    "name": "haina-desert-area",
+    "pokemon_ids": [
+      328,
+      343,
+      351
+    ]
+  },
+  {
+    "name": "hano-beach-area",
+    "pokemon_ids": [
+      278
+    ]
+  },
+  {
+    "name": "hauoli-city-beachfront",
+    "pokemon_ids": [
+      278,
+      366,
+      367,
+      368,
+      370
+    ]
+  },
+  {
+    "name": "hauoli-city-shopping-district",
+    "pokemon_ids": [
+      278
+    ]
+  },
+  {
+    "name": "hoenn-pokecenter-area",
+    "pokemon_ids": [
+      385
+    ]
+  },
+  {
+    "name": "hoenn-route-101-area",
+    "pokemon_ids": [
+      252,
+      255,
+      258,
+      261,
+      263,
+      265
+    ]
+  },
+  {
+    "name": "hoenn-route-102-area",
+    "pokemon_ids": [
+      261,
+      263,
+      265,
+      270,
+      273,
+      280,
+      283,
+      341
+    ]
+  },
+  {
+    "name": "hoenn-route-103-area",
+    "pokemon_ids": [
+      261,
+      263,
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-104-area",
+    "pokemon_ids": [
+      261,
+      263,
+      265,
+      276,
+      278,
+      279
+    ]
+  },
+  {
+    "name": "hoenn-route-104-north-oras",
+    "pokemon_ids": [
+      263,
+      276
+    ]
+  },
+  {
+    "name": "hoenn-route-104-south-oras",
+    "pokemon_ids": [
+      263,
+      278
+    ]
+  },
+  {
+    "name": "hoenn-route-105-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-106-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-107-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-108-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-109-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-110-area",
+    "pokemon_ids": [
+      261,
+      263,
+      278,
+      279,
+      309,
+      311,
+      312,
+      316,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-111-area",
+    "pokemon_ids": [
+      283,
+      328,
+      331,
+      339,
+      343
+    ]
+  },
+  {
+    "name": "hoenn-route-112-area",
+    "pokemon_ids": [
+      322
+    ]
+  },
+  {
+    "name": "hoenn-route-113-area",
+    "pokemon_ids": [
+      327
+    ]
+  },
+  {
+    "name": "hoenn-route-114-area",
+    "pokemon_ids": [
+      270,
+      271,
+      273,
+      274,
+      283,
+      333,
+      335,
+      336,
+      339
+    ]
+  },
+  {
+    "name": "hoenn-route-115-area",
+    "pokemon_ids": [
+      276,
+      277,
+      278,
+      279,
+      320,
+      333
+    ]
+  },
+  {
+    "name": "hoenn-route-116-area",
+    "pokemon_ids": [
+      261,
+      263,
+      276,
+      290,
+      293,
+      300
+    ]
+  },
+  {
+    "name": "hoenn-route-117-area",
+    "pokemon_ids": [
+      261,
+      263,
+      273,
+      283,
+      313,
+      314,
+      315,
+      341
+    ]
+  },
+  {
+    "name": "hoenn-route-118-area",
+    "pokemon_ids": [
+      263,
+      264,
+      278,
+      279,
+      309,
+      310,
+      318,
+      319,
+      352
+    ]
+  },
+  {
+    "name": "hoenn-route-119-area",
+    "pokemon_ids": [
+      263,
+      264,
+      278,
+      279,
+      318,
+      349,
+      352,
+      357
+    ]
+  },
+  {
+    "name": "hoenn-route-119-weather-institute",
+    "pokemon_ids": [
+      351
+    ]
+  },
+  {
+    "name": "hoenn-route-120-area",
+    "pokemon_ids": [
+      261,
+      262,
+      263,
+      264,
+      273,
+      283,
+      339,
+      352,
+      359
+    ]
+  },
+  {
+    "name": "hoenn-route-121-area",
+    "pokemon_ids": [
+      261,
+      262,
+      263,
+      264,
+      278,
+      279,
+      320,
+      352,
+      353,
+      355
+    ]
+  },
+  {
+    "name": "hoenn-route-122-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-123-area",
+    "pokemon_ids": [
+      261,
+      262,
+      263,
+      264,
+      278,
+      279,
+      320,
+      352,
+      353,
+      355
+    ]
+  },
+  {
+    "name": "hoenn-route-124-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-124-underwater",
+    "pokemon_ids": [
+      366,
+      369
+    ]
+  },
+  {
+    "name": "hoenn-route-125-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-126-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-126-underwater",
+    "pokemon_ids": [
+      366,
+      369
+    ]
+  },
+  {
+    "name": "hoenn-route-127-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-128-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320,
+      370
+    ]
+  },
+  {
+    "name": "hoenn-route-129-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320,
+      321
+    ]
+  },
+  {
+    "name": "hoenn-route-130-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320,
+      360
+    ]
+  },
+  {
+    "name": "hoenn-route-131-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-132-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-133-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-route-134-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "hoenn-victory-road-1f",
+    "pokemon_ids": [
+      293,
+      294,
+      296,
+      297,
+      304,
+      305
+    ]
+  },
+  {
+    "name": "hoenn-victory-road-b1f",
+    "pokemon_ids": [
+      294,
+      297,
+      303,
+      304,
+      305,
+      307,
+      308
+    ]
+  },
+  {
+    "name": "hoenn-victory-road-b2f",
+    "pokemon_ids": [
+      302,
+      303,
+      305,
+      308,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "humilau-city-area",
+    "pokemon_ids": [
+      370
+    ]
+  },
+  {
+    "name": "ice-path-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "ice-path-b1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "ice-path-b2f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "ice-path-b3f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "icirrus-city-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "ilex-forest-area",
+    "pokemon_ids": [
+      322,
+      325
+    ]
+  },
+  {
+    "name": "iron-island-area",
+    "pokemon_ids": [
+      278,
+      279
+    ]
+  },
+  {
+    "name": "iron-island-b1f-left",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "iron-island-b1f-right",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "iron-island-b2f-left",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "iron-island-b2f-right",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "iron-island-b3f",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "iron-room-area",
+    "pokemon_ids": [
+      299,
+      305
+    ]
+  },
+  {
+    "name": "island-cave-area",
+    "pokemon_ids": [
+      378
+    ]
+  },
+  {
+    "name": "jagged-pass-area",
+    "pokemon_ids": [
+      322,
+      325
+    ]
+  },
+  {
+    "name": "johto-route-29-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "johto-route-30-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-31-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-32-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-33-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "johto-route-34-area",
+    "pokemon_ids": [
+      264,
+      280,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-35-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-36-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "johto-route-37-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "johto-route-38-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "johto-route-39-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "johto-route-42-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-43-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-44-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-45-area",
+    "pokemon_ids": [
+      264,
+      293,
+      333
+    ]
+  },
+  {
+    "name": "johto-route-46-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "johto-route-47-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "johto-route-47-inside-cave",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "johto-route-48-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "johto-safari-zone-zone-mountain",
+    "pokemon_ids": [
+      364
+    ]
+  },
+  {
+    "name": "kalae-bay-area",
+    "pokemon_ids": [
+      278,
+      371,
+      372
+    ]
+  },
+  {
+    "name": "kalos-route-10-area",
+    "pokemon_ids": [
+      299,
+      309
+    ]
+  },
+  {
+    "name": "kalos-route-11-area",
+    "pokemon_ids": [
+      297
+    ]
+  },
+  {
+    "name": "kalos-route-12-area",
+    "pokemon_ids": [
+      278,
+      366,
+      367,
+      368,
+      370
+    ]
+  },
+  {
+    "name": "kalos-route-13-area",
+    "pokemon_ids": [
+      328
+    ]
+  },
+  {
+    "name": "kalos-route-14-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "kalos-route-15-area",
+    "pokemon_ids": [
+      262,
+      271
+    ]
+  },
+  {
+    "name": "kalos-route-16-area",
+    "pokemon_ids": [
+      271
+    ]
+  },
+  {
+    "name": "kalos-route-18-area",
+    "pokemon_ids": [
+      305,
+      324
+    ]
+  },
+  {
+    "name": "kalos-route-19-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "kalos-route-2-area",
+    "pokemon_ids": [
+      263
+    ]
+  },
+  {
+    "name": "kalos-route-21-area",
+    "pokemon_ids": [
+      271,
+      327,
+      333,
+      334
+    ]
+  },
+  {
+    "name": "kalos-route-22-area",
+    "pokemon_ids": [
+      298,
+      318,
+      319
+    ]
+  },
+  {
+    "name": "kalos-route-3-area",
+    "pokemon_ids": [
+      284,
+      298,
+      341,
+      342
+    ]
+  },
+  {
+    "name": "kalos-route-4-area",
+    "pokemon_ids": [
+      280,
+      300
+    ]
+  },
+  {
+    "name": "kalos-route-5-area",
+    "pokemon_ids": [
+      311,
+      312,
+      316
+    ]
+  },
+  {
+    "name": "kalos-route-6-area",
+    "pokemon_ids": [
+      290,
+      352
+    ]
+  },
+  {
+    "name": "kalos-route-7-area",
+    "pokemon_ids": [
+      313,
+      314,
+      315
+    ]
+  },
+  {
+    "name": "kalos-route-8-area",
+    "pokemon_ids": [
+      276,
+      278,
+      320,
+      325,
+      335,
+      336,
+      359,
+      370,
+      371
+    ]
+  },
+  {
+    "name": "kalos-victory-road-outside",
+    "pokemon_ids": [
+      271
+    ]
+  },
+  {
+    "name": "kanto-route-1-area",
+    "pokemon_ids": [
+      261,
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-10-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-11-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-12-area",
+    "pokemon_ids": [
+      369
+    ]
+  },
+  {
+    "name": "kanto-route-13-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-14-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-15-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-16-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-17-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-18-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-2-north-towards-pewter-city",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-2-south-towards-viridian-city",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-22-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-24-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-25-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-26-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-27-area",
+    "pokemon_ids": [
+      264,
+      293,
+      370
+    ]
+  },
+  {
+    "name": "kanto-route-28-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-3-area",
+    "pokemon_ids": [
+      311,
+      312,
+      316,
+      343
+    ]
+  },
+  {
+    "name": "kanto-route-4-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-5-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-6-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-route-7-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-8-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "kanto-route-9-area",
+    "pokemon_ids": [
+      264,
+      293,
+      302,
+      303
+    ]
+  },
+  {
+    "name": "kanto-sea-route-19-area",
+    "pokemon_ids": [
+      366
+    ]
+  },
+  {
+    "name": "kanto-sea-route-21-area",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "kanto-victory-road-1-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "kanto-victory-road-1-2f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "kanto-victory-road-1-3f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "lake-acuity-area",
+    "pokemon_ids": [
+      337,
+      338,
+      361
+    ]
+  },
+  {
+    "name": "lake-valor-area",
+    "pokemon_ids": [
+      337,
+      338
+    ]
+  },
+  {
+    "name": "lake-verity-after-galactic-intervention",
+    "pokemon_ids": [
+      283,
+      337,
+      338
+    ]
+  },
+  {
+    "name": "lake-verity-before-galactic-intervention",
+    "pokemon_ids": [
+      283,
+      337,
+      338
+    ]
+  },
+  {
+    "name": "lavaridge-town-area",
+    "pokemon_ids": [
+      352,
+      360
+    ]
+  },
+  {
+    "name": "lilycove-city-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320
+    ]
+  },
+  {
+    "name": "lost-tower-1f",
+    "pokemon_ids": [
+      355
+    ]
+  },
+  {
+    "name": "lost-tower-2f",
+    "pokemon_ids": [
+      355
+    ]
+  },
+  {
+    "name": "lost-tower-3f",
+    "pokemon_ids": [
+      355
+    ]
+  },
+  {
+    "name": "lost-tower-4f",
+    "pokemon_ids": [
+      355
+    ]
+  },
+  {
+    "name": "lost-tower-5f",
+    "pokemon_ids": [
+      355
+    ]
+  },
+  {
+    "name": "lostlorn-forest-area",
+    "pokemon_ids": [
+      315
+    ]
+  },
+  {
+    "name": "lush-jungle-north",
+    "pokemon_ids": [
+      351
+    ]
+  },
+  {
+    "name": "lush-jungle-south",
+    "pokemon_ids": [
+      351
+    ]
+  },
+  {
+    "name": "lush-jungle-west",
+    "pokemon_ids": [
+      351
+    ]
+  },
+  {
+    "name": "magma-hideout-area",
+    "pokemon_ids": [
+      324
+    ]
+  },
+  {
+    "name": "malie-garden-area",
+    "pokemon_ids": [
+      284,
+      351
+    ]
+  },
+  {
+    "name": "marine-cave-area",
+    "pokemon_ids": [
+      382
+    ]
+  },
+  {
+    "name": "melemele-sea-area",
+    "pokemon_ids": [
+      278,
+      366,
+      367,
+      368,
+      370
+    ]
+  },
+  {
+    "name": "meteor-falls-area",
+    "pokemon_ids": [
+      337,
+      338,
+      339
+    ]
+  },
+  {
+    "name": "meteor-falls-b1f",
+    "pokemon_ids": [
+      337,
+      338,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "meteor-falls-back",
+    "pokemon_ids": [
+      337,
+      338,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "meteor-falls-backsmall-room",
+    "pokemon_ids": [
+      337,
+      338,
+      339,
+      340,
+      371
+    ]
+  },
+  {
+    "name": "mirage-island-area",
+    "pokemon_ids": [
+      360
+    ]
+  },
+  {
+    "name": "mirage-tower-area",
+    "pokemon_ids": [
+      328
+    ]
+  },
+  {
+    "name": "mistralton-cave-area",
+    "pokemon_ids": [
+      304
+    ]
+  },
+  {
+    "name": "moor-of-icirrus-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "mossdeep-city-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "mossdeep-city-stevens-house",
+    "pokemon_ids": [
+      374
+    ]
+  },
+  {
+    "name": "mossdeep-space-center-area",
+    "pokemon_ids": [
+      352
+    ]
+  },
+  {
+    "name": "mount-hokulani-east",
+    "pokemon_ids": [
+      374
+    ]
+  },
+  {
+    "name": "mount-hokulani-main",
+    "pokemon_ids": [
+      374
+    ]
+  },
+  {
+    "name": "mount-hokulani-west",
+    "pokemon_ids": [
+      374
+    ]
+  },
+  {
+    "name": "mount-lanakila-base",
+    "pokemon_ids": [
+      351,
+      359,
+      361
+    ]
+  },
+  {
+    "name": "mount-lanakila-cave",
+    "pokemon_ids": [
+      359,
+      361,
+      362
+    ]
+  },
+  {
+    "name": "mount-lanakila-outside",
+    "pokemon_ids": [
+      351,
+      359,
+      361,
+      362
+    ]
+  },
+  {
+    "name": "mt-coronet-1f-from-exterior",
+    "pokemon_ids": [
+      299,
+      308,
+      337,
+      338
+    ]
+  },
+  {
+    "name": "mt-coronet-1f-route-207",
+    "pokemon_ids": [
+      299,
+      307,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "mt-coronet-1f-route-211",
+    "pokemon_ids": [
+      299,
+      307
+    ]
+  },
+  {
+    "name": "mt-coronet-1f-route-216",
+    "pokemon_ids": [
+      299,
+      307
+    ]
+  },
+  {
+    "name": "mt-coronet-2f",
+    "pokemon_ids": [
+      299,
+      308,
+      337,
+      338
+    ]
+  },
+  {
+    "name": "mt-coronet-3f",
+    "pokemon_ids": [
+      299,
+      308,
+      337,
+      338
+    ]
+  },
+  {
+    "name": "mt-coronet-4f",
+    "pokemon_ids": [
+      299,
+      308,
+      337,
+      338,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "mt-coronet-4f-small-room",
+    "pokemon_ids": [
+      299,
+      308,
+      337,
+      338,
+      358
+    ]
+  },
+  {
+    "name": "mt-coronet-5f",
+    "pokemon_ids": [
+      299,
+      308,
+      337,
+      338,
+      358
+    ]
+  },
+  {
+    "name": "mt-coronet-6f",
+    "pokemon_ids": [
+      299,
+      308,
+      337,
+      338,
+      358
+    ]
+  },
+  {
+    "name": "mt-coronet-b1f",
+    "pokemon_ids": [
+      299,
+      307,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "mt-coronet-exterior-blizzard",
+    "pokemon_ids": [
+      294,
+      299,
+      308,
+      337,
+      338,
+      359
+    ]
+  },
+  {
+    "name": "mt-coronet-exterior-snowfall",
+    "pokemon_ids": [
+      294,
+      299,
+      308,
+      337,
+      338,
+      359
+    ]
+  },
+  {
+    "name": "mt-moon-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-moon-2f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-mortar-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-mortar-b1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-mortar-lower-cave",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-mortar-upper-cave",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-pyre-1f",
+    "pokemon_ids": [
+      353,
+      355
+    ]
+  },
+  {
+    "name": "mt-pyre-2f",
+    "pokemon_ids": [
+      353,
+      355
+    ]
+  },
+  {
+    "name": "mt-pyre-3f",
+    "pokemon_ids": [
+      353,
+      355
+    ]
+  },
+  {
+    "name": "mt-pyre-4f",
+    "pokemon_ids": [
+      353,
+      355
+    ]
+  },
+  {
+    "name": "mt-pyre-5f",
+    "pokemon_ids": [
+      353,
+      355
+    ]
+  },
+  {
+    "name": "mt-pyre-6f",
+    "pokemon_ids": [
+      353,
+      355
+    ]
+  },
+  {
+    "name": "mt-pyre-outside",
+    "pokemon_ids": [
+      278,
+      307,
+      353,
+      355
+    ]
+  },
+  {
+    "name": "mt-pyre-summit",
+    "pokemon_ids": [
+      307,
+      353,
+      355,
+      358
+    ]
+  },
+  {
+    "name": "mt-silver-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-silver-1f-top",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-silver-2f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-silver-3f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-silver-4f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-silver-mountainside",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "mt-silver-outside",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "mt-silver-top",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "national-park-area",
+    "pokemon_ids": [
+      311,
+      312
+    ]
+  },
+  {
+    "name": "nature-sanctuary-area",
+    "pokemon_ids": [
+      274,
+      275,
+      334,
+      352
+    ]
+  },
+  {
+    "name": "oreburgh-gate-b1f",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "pacifidlog-town-area",
+    "pokemon_ids": [
+      278,
+      279,
+      319,
+      320
+    ]
+  },
+  {
+    "name": "paniola-town-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "parfum-palace-area",
+    "pokemon_ids": [
+      341,
+      342
+    ]
+  },
+  {
+    "name": "pastoria-city-area",
+    "pokemon_ids": [
+      278,
+      279
+    ]
+  },
+  {
+    "name": "petalburg-city-area",
+    "pokemon_ids": [
+      341
+    ]
+  },
+  {
+    "name": "petalburg-woods-area",
+    "pokemon_ids": [
+      261,
+      263,
+      265,
+      266,
+      268,
+      276,
+      285,
+      287
+    ]
+  },
+  {
+    "name": "pinwheel-forest-inside",
+    "pokemon_ids": [
+      288,
+      289
+    ]
+  },
+  {
+    "name": "poke-pelago-elite-four-defeated",
+    "pokemon_ids": [
+      278,
+      309,
+      354,
+      357,
+      375
+    ]
+  },
+  {
+    "name": "poke-pelago-poni-island-reached",
+    "pokemon_ids": [
+      278,
+      309,
+      354,
+      375
+    ]
+  },
+  {
+    "name": "poke-pelago-ulaula-island-reached",
+    "pokemon_ids": [
+      278
+    ]
+  },
+  {
+    "name": "pokemon-village-area",
+    "pokemon_ids": [
+      271
+    ]
+  },
+  {
+    "name": "poni-breaker-coast-area",
+    "pokemon_ids": [
+      279,
+      318,
+      319,
+      320,
+      321,
+      369
+    ]
+  },
+  {
+    "name": "poni-gauntlet-area",
+    "pokemon_ids": [
+      279,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "poni-meadow-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "poni-plains-center",
+    "pokemon_ids": [
+      297,
+      306
+    ]
+  },
+  {
+    "name": "poni-plains-east",
+    "pokemon_ids": [
+      279
+    ]
+  },
+  {
+    "name": "poni-plains-north",
+    "pokemon_ids": [
+      297
+    ]
+  },
+  {
+    "name": "poni-wilds-area",
+    "pokemon_ids": [
+      279,
+      320,
+      321,
+      369
+    ]
+  },
+  {
+    "name": "ravaged-path-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "realgam-tower-colosseum",
+    "pokemon_ids": [
+      376
+    ]
+  },
+  {
+    "name": "reflection-cave-unknown-area-305",
+    "pokemon_ids": [
+      302
+    ]
+  },
+  {
+    "name": "reflection-cave-unknown-area-306",
+    "pokemon_ids": [
+      302
+    ]
+  },
+  {
+    "name": "reflection-cave-unknown-area-307",
+    "pokemon_ids": [
+      302
+    ]
+  },
+  {
+    "name": "reflection-cave-unknown-area-308",
+    "pokemon_ids": [
+      302
+    ]
+  },
+  {
+    "name": "relic-castle-d",
+    "pokemon_ids": [
+      343,
+      344
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-48",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326,
+      328,
+      329
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-49",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-50",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-51",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-52",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-53",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-54",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-55",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-56",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-57",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-58",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-59",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "reversal-mountain-unknown-area-60",
+    "pokemon_ids": [
+      322,
+      323,
+      325,
+      326
+    ]
+  },
+  {
+    "name": "roaming-hoenn-area",
+    "pokemon_ids": [
+      380,
+      381
+    ]
+  },
+  {
+    "name": "roaming-johto-area",
+    "pokemon_ids": [
+      380,
+      381
+    ]
+  },
+  {
+    "name": "rock-tunnel-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "rock-tunnel-b1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "rocky-mountain-room-area",
+    "pokemon_ids": [
+      299,
+      305
+    ]
+  },
+  {
+    "name": "royal-avenue-area",
+    "pokemon_ids": [
+      339
+    ]
+  },
+  {
+    "name": "ruins-of-alph-outside",
+    "pokemon_ids": [
+      264,
+      293
+    ]
+  },
+  {
+    "name": "rustboro-city-area",
+    "pokemon_ids": [
+      345,
+      347
+    ]
+  },
+  {
+    "name": "rusturf-tunnel-area",
+    "pokemon_ids": [
+      293
+    ]
+  },
+  {
+    "name": "saffron-city-silph-co",
+    "pokemon_ids": [
+      252,
+      255,
+      258
+    ]
+  },
+  {
+    "name": "seafloor-cavern-area",
+    "pokemon_ids": [
+      320
+    ]
+  },
+  {
+    "name": "seafoam-islands-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "seafoam-islands-b1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "seafoam-islands-b2f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "seafoam-islands-b3f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "seafoam-islands-b4f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "seafolk-village-main",
+    "pokemon_ids": [
+      320,
+      321
+    ]
+  },
+  {
+    "name": "seaside-cave-1f",
+    "pokemon_ids": [
+      370
+    ]
+  },
+  {
+    "name": "seaward-cave-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "secluded-shore-area",
+    "pokemon_ids": [
+      279
+    ]
+  },
+  {
+    "name": "sendoff-spring-area",
+    "pokemon_ids": [
+      337,
+      338,
+      356,
+      358
+    ]
+  },
+  {
+    "name": "shadow-pokemon-lab-bf1",
+    "pokemon_ids": [
+      329
+    ]
+  },
+  {
+    "name": "shalour-city-area",
+    "pokemon_ids": [
+      370
+    ]
+  },
+  {
+    "name": "shoal-cave-b1f",
+    "pokemon_ids": [
+      363
+    ]
+  },
+  {
+    "name": "shoal-cave-b2f",
+    "pokemon_ids": [
+      363
+    ]
+  },
+  {
+    "name": "shoal-cave-b3f",
+    "pokemon_ids": [
+      361,
+      363
+    ]
+  },
+  {
+    "name": "shoal-cave-high-tide",
+    "pokemon_ids": [
+      320,
+      363
+    ]
+  },
+  {
+    "name": "shoal-cave-low-tide",
+    "pokemon_ids": [
+      363
+    ]
+  },
+  {
+    "name": "sinnoh-pokemon-league-area",
+    "pokemon_ids": [
+      278,
+      279,
+      370
+    ]
+  },
+  {
+    "name": "sinnoh-route-202-area",
+    "pokemon_ids": [
+      263
+    ]
+  },
+  {
+    "name": "sinnoh-route-203-area",
+    "pokemon_ids": [
+      270,
+      273,
+      280,
+      281
+    ]
+  },
+  {
+    "name": "sinnoh-route-204-north-towards-floaroma-town",
+    "pokemon_ids": [
+      265,
+      270,
+      273
+    ]
+  },
+  {
+    "name": "sinnoh-route-204-south-towards-jubilife-city",
+    "pokemon_ids": [
+      265,
+      270,
+      273,
+      280,
+      281
+    ]
+  },
+  {
+    "name": "sinnoh-route-205-east-towards-eterna-city",
+    "pokemon_ids": [
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "sinnoh-route-205-south-towards-floaroma-town",
+    "pokemon_ids": [
+      278,
+      279
+    ]
+  },
+  {
+    "name": "sinnoh-route-206-area",
+    "pokemon_ids": [
+      299,
+      343
+    ]
+  },
+  {
+    "name": "sinnoh-route-208-area",
+    "pokemon_ids": [
+      280,
+      307,
+      315,
+      335,
+      336,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "sinnoh-route-209-area",
+    "pokemon_ids": [
+      280,
+      281,
+      315,
+      355
+    ]
+  },
+  {
+    "name": "sinnoh-route-210-south-towards-solaceon-town",
+    "pokemon_ids": [
+      273,
+      274,
+      315
+    ]
+  },
+  {
+    "name": "sinnoh-route-210-west-towards-celestic-town",
+    "pokemon_ids": [
+      307,
+      333,
+      335,
+      336,
+      339,
+      340,
+      352,
+      371
+    ]
+  },
+  {
+    "name": "sinnoh-route-211-east-towards-celestic-town",
+    "pokemon_ids": [
+      307,
+      333
+    ]
+  },
+  {
+    "name": "sinnoh-route-211-west-towards-eterna-city",
+    "pokemon_ids": [
+      307
+    ]
+  },
+  {
+    "name": "sinnoh-route-212-east-towards-pastoria-city",
+    "pokemon_ids": [
+      270,
+      271,
+      315,
+      339,
+      340
+    ]
+  },
+  {
+    "name": "sinnoh-route-212-north-towards-hearthome-city",
+    "pokemon_ids": [
+      280,
+      281,
+      315
+    ]
+  },
+  {
+    "name": "sinnoh-route-213-area",
+    "pokemon_ids": [
+      277,
+      278,
+      279,
+      319,
+      359
+    ]
+  },
+  {
+    "name": "sinnoh-route-214-area",
+    "pokemon_ids": [
+      261,
+      262,
+      325
+    ]
+  },
+  {
+    "name": "sinnoh-route-215-area",
+    "pokemon_ids": [
+      262
+    ]
+  },
+  {
+    "name": "sinnoh-route-216-area",
+    "pokemon_ids": [
+      307,
+      361
+    ]
+  },
+  {
+    "name": "sinnoh-route-217-area",
+    "pokemon_ids": [
+      307,
+      308,
+      361
+    ]
+  },
+  {
+    "name": "sinnoh-route-218-area",
+    "pokemon_ids": [
+      278,
+      279
+    ]
+  },
+  {
+    "name": "sinnoh-route-219-area",
+    "pokemon_ids": [
+      278,
+      279,
+      366
+    ]
+  },
+  {
+    "name": "sinnoh-route-221-area",
+    "pokemon_ids": [
+      278,
+      279,
+      315,
+      366
+    ]
+  },
+  {
+    "name": "sinnoh-route-222-area",
+    "pokemon_ids": [
+      278,
+      279,
+      300,
+      319
+    ]
+  },
+  {
+    "name": "sinnoh-route-224-area",
+    "pokemon_ids": [
+      267,
+      269,
+      279,
+      315,
+      355,
+      356,
+      370
+    ]
+  },
+  {
+    "name": "sinnoh-route-225-area",
+    "pokemon_ids": [
+      296,
+      315,
+      339,
+      340,
+      354
+    ]
+  },
+  {
+    "name": "sinnoh-route-227-area",
+    "pokemon_ids": [
+      322,
+      323,
+      324,
+      327,
+      339,
+      340,
+      354
+    ]
+  },
+  {
+    "name": "sinnoh-route-228-area",
+    "pokemon_ids": [
+      328,
+      329,
+      331,
+      332,
+      339,
+      340,
+      374
+    ]
+  },
+  {
+    "name": "sinnoh-route-229-area",
+    "pokemon_ids": [
+      267,
+      269,
+      271,
+      274,
+      278,
+      279,
+      283,
+      284,
+      313,
+      314,
+      315
+    ]
+  },
+  {
+    "name": "sinnoh-sea-route-220-area",
+    "pokemon_ids": [
+      278,
+      279
+    ]
+  },
+  {
+    "name": "sinnoh-sea-route-223-area",
+    "pokemon_ids": [
+      279,
+      320,
+      321
+    ]
+  },
+  {
+    "name": "sinnoh-sea-route-226-area",
+    "pokemon_ids": [
+      278,
+      279,
+      354,
+      363,
+      364,
+      369
+    ]
+  },
+  {
+    "name": "sinnoh-sea-route-230-area",
+    "pokemon_ids": [
+      267,
+      269,
+      278,
+      279,
+      315,
+      320,
+      321,
+      363,
+      364
+    ]
+  },
+  {
+    "name": "sinnoh-victory-road-1f",
+    "pokemon_ids": [
+      308
+    ]
+  },
+  {
+    "name": "sinnoh-victory-road-2f",
+    "pokemon_ids": [
+      308
+    ]
+  },
+  {
+    "name": "sinnoh-victory-road-b1f",
+    "pokemon_ids": [
+      308
+    ]
+  },
+  {
+    "name": "sinnoh-victory-road-inside",
+    "pokemon_ids": [
+      308
+    ]
+  },
+  {
+    "name": "sinnoh-victory-road-inside-b1f",
+    "pokemon_ids": [
+      308
+    ]
+  },
+  {
+    "name": "sinnoh-victory-road-inside-exit",
+    "pokemon_ids": [
+      308
+    ]
+  },
+  {
+    "name": "sky-pillar-1f",
+    "pokemon_ids": [
+      302,
+      303,
+      333,
+      344,
+      354,
+      356
+    ]
+  },
+  {
+    "name": "sky-pillar-3f",
+    "pokemon_ids": [
+      302,
+      303,
+      333,
+      344,
+      354,
+      356
+    ]
+  },
+  {
+    "name": "sky-pillar-5f",
+    "pokemon_ids": [
+      302,
+      303,
+      333,
+      334,
+      344,
+      354,
+      356
+    ]
+  },
+  {
+    "name": "sky-pillar-apex",
+    "pokemon_ids": [
+      384,
+      386
+    ]
+  },
+  {
+    "name": "slateport-city-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320
+    ]
+  },
+  {
+    "name": "slowpoke-well-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "slowpoke-well-b1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "southern-island-area",
+    "pokemon_ids": [
+      380,
+      381
+    ]
+  },
+  {
+    "name": "sprout-tower-2f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "sprout-tower-3f",
+    "pokemon_ids": [
+      263,
+      307,
+      327
+    ]
+  },
+  {
+    "name": "stark-mountain-area",
+    "pokemon_ids": [
+      322,
+      323,
+      324,
+      354
+    ]
+  },
+  {
+    "name": "stark-mountain-entrance",
+    "pokemon_ids": [
+      323
+    ]
+  },
+  {
+    "name": "stark-mountain-inside",
+    "pokemon_ids": [
+      323
+    ]
+  },
+  {
+    "name": "strange-house-1f",
+    "pokemon_ids": [
+      354
+    ]
+  },
+  {
+    "name": "strange-house-b1f",
+    "pokemon_ids": [
+      354
+    ]
+  },
+  {
+    "name": "striaton-city-area",
+    "pokemon_ids": [
+      341,
+      342
+    ]
+  },
+  {
+    "name": "sunyshore-city-area",
+    "pokemon_ids": [
+      278,
+      279
+    ]
+  },
+  {
+    "name": "tapu-village-area",
+    "pokemon_ids": [
+      279,
+      351,
+      359,
+      361
+    ]
+  },
+  {
+    "name": "ten-carat-hill-farthest-hollow",
+    "pokemon_ids": [
+      327
+    ]
+  },
+  {
+    "name": "ten-carat-hill-inside",
+    "pokemon_ids": [
+      302,
+      303
+    ]
+  },
+  {
+    "name": "terminus-cave-1f",
+    "pokemon_ids": [
+      304,
+      305
+    ]
+  },
+  {
+    "name": "terminus-cave-b1f-left",
+    "pokemon_ids": [
+      304,
+      305
+    ]
+  },
+  {
+    "name": "terminus-cave-b1f-right",
+    "pokemon_ids": [
+      304,
+      305
+    ]
+  },
+  {
+    "name": "terminus-cave-b2f",
+    "pokemon_ids": [
+      304,
+      305
+    ]
+  },
+  {
+    "name": "terminus-cave-zygardes-chamber",
+    "pokemon_ids": [
+      304,
+      305
+    ]
+  },
+  {
+    "name": "terra-cave-area",
+    "pokemon_ids": [
+      383
+    ]
+  },
+  {
+    "name": "thrifty-megamart-abandoned-site",
+    "pokemon_ids": [
+      353
+    ]
+  },
+  {
+    "name": "tohjo-falls-area",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "trophy-garden-area",
+    "pokemon_ids": [
+      315
+    ]
+  },
+  {
+    "name": "turnback-cave-after-pillar-3",
+    "pokemon_ids": [
+      337,
+      338,
+      356,
+      358
+    ]
+  },
+  {
+    "name": "turnback-cave-before-pillar-1",
+    "pokemon_ids": [
+      337,
+      338,
+      355,
+      356
+    ]
+  },
+  {
+    "name": "turnback-cave-between-pillars-1-and-2",
+    "pokemon_ids": [
+      337,
+      338,
+      355,
+      356,
+      358
+    ]
+  },
+  {
+    "name": "turnback-cave-between-pillars-2-and-3",
+    "pokemon_ids": [
+      337,
+      338,
+      356,
+      358
+    ]
+  },
+  {
+    "name": "turnback-cave-pillar-1",
+    "pokemon_ids": [
+      337,
+      338,
+      355,
+      356
+    ]
+  },
+  {
+    "name": "turnback-cave-pillar-2",
+    "pokemon_ids": [
+      337,
+      338,
+      356,
+      358
+    ]
+  },
+  {
+    "name": "turnback-cave-pillar-3",
+    "pokemon_ids": [
+      337,
+      338,
+      356,
+      358
+    ]
+  },
+  {
+    "name": "ulaula-meadow-area",
+    "pokemon_ids": [
+      315
+    ]
+  },
+  {
+    "name": "ultra-space-ultra-space-wilds-cave",
+    "pokemon_ids": [
+      377,
+      378,
+      379,
+      383
+    ]
+  },
+  {
+    "name": "ultra-space-ultra-space-wilds-cliff",
+    "pokemon_ids": [
+      384
+    ]
+  },
+  {
+    "name": "ultra-space-ultra-space-wilds-water",
+    "pokemon_ids": [
+      380,
+      381,
+      382
+    ]
+  },
+  {
+    "name": "ultra-space-wilds-cave",
+    "pokemon_ids": [
+      308,
+      377,
+      378,
+      379,
+      383
+    ]
+  },
+  {
+    "name": "ultra-space-wilds-cliff",
+    "pokemon_ids": [
+      277,
+      334,
+      384
+    ]
+  },
+  {
+    "name": "ultra-space-wilds-crag",
+    "pokemon_ids": [
+      274,
+      326
+    ]
+  },
+  {
+    "name": "ultra-space-wilds-waterfall",
+    "pokemon_ids": [
+      271,
+      380,
+      381,
+      382
+    ]
+  },
+  {
+    "name": "undella-bay-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320,
+      321,
+      363,
+      364,
+      365,
+      370
+    ]
+  },
+  {
+    "name": "undella-town-area",
+    "pokemon_ids": [
+      278,
+      279,
+      320,
+      370
+    ]
+  },
+  {
+    "name": "underground-ruins-area",
+    "pokemon_ids": [
+      299,
+      305,
+      377,
+      378,
+      379
+    ]
+  },
+  {
+    "name": "union-cave-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "union-cave-b1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "union-cave-b2f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "unknown-all-rattata-area",
+    "pokemon_ids": [
+      263
+    ]
+  },
+  {
+    "name": "unova-route-1-area",
+    "pokemon_ids": [
+      349,
+      350
+    ]
+  },
+  {
+    "name": "unova-route-11-area",
+    "pokemon_ids": [
+      335,
+      336
+    ]
+  },
+  {
+    "name": "unova-route-12-area",
+    "pokemon_ids": [
+      315
+    ]
+  },
+  {
+    "name": "unova-route-13-area",
+    "pokemon_ids": [
+      277,
+      278,
+      279,
+      337,
+      338,
+      359,
+      370
+    ]
+  },
+  {
+    "name": "unova-route-14-area",
+    "pokemon_ids": [
+      333,
+      334,
+      357,
+      359
+    ]
+  },
+  {
+    "name": "unova-route-18-area",
+    "pokemon_ids": [
+      357
+    ]
+  },
+  {
+    "name": "unova-route-20-area",
+    "pokemon_ids": [
+      298
+    ]
+  },
+  {
+    "name": "unova-route-21-area",
+    "pokemon_ids": [
+      370
+    ]
+  },
+  {
+    "name": "unova-route-22-area",
+    "pokemon_ids": [
+      279,
+      337,
+      338
+    ]
+  },
+  {
+    "name": "unova-route-3-area",
+    "pokemon_ids": [
+      341,
+      342
+    ]
+  },
+  {
+    "name": "unova-route-4-area",
+    "pokemon_ids": [
+      366,
+      367,
+      368,
+      369,
+      370
+    ]
+  },
+  {
+    "name": "unova-route-6-area",
+    "pokemon_ids": [
+      351
+    ]
+  },
+  {
+    "name": "unova-route-7-area",
+    "pokemon_ids": [
+      335,
+      336
+    ]
+  },
+  {
+    "name": "unova-route-8-area",
+    "pokemon_ids": [
+      339,
+      340
+    ]
+  },
+  {
+    "name": "unova-victory-road-2-unknown-area-71",
+    "pokemon_ids": [
+      354
+    ]
+  },
+  {
+    "name": "unova-victory-road-2-unknown-area-72",
+    "pokemon_ids": [
+      315
+    ]
+  },
+  {
+    "name": "unova-victory-road-2-unknown-area-73",
+    "pokemon_ids": [
+      334
+    ]
+  },
+  {
+    "name": "unova-victory-road-2-unknown-area-78",
+    "pokemon_ids": [
+      354
+    ]
+  },
+  {
+    "name": "unova-victory-road-2-unknown-area-79",
+    "pokemon_ids": [
+      334
+    ]
+  },
+  {
+    "name": "valley-windworks-area",
+    "pokemon_ids": [
+      278,
+      279,
+      309
+    ]
+  },
+  {
+    "name": "vast-poni-canyon-inside",
+    "pokemon_ids": [
+      302
+    ]
+  },
+  {
+    "name": "vast-poni-canyon-northwest",
+    "pokemon_ids": [
+      302,
+      339,
+      340,
+      341,
+      342
+    ]
+  },
+  {
+    "name": "vermilion-city-area",
+    "pokemon_ids": [
+      278
+    ]
+  },
+  {
+    "name": "vermilion-city-ss-anne-dock",
+    "pokemon_ids": [
+      278
+    ]
+  },
+  {
+    "name": "village-bridge-area",
+    "pokemon_ids": [
+      318,
+      319,
+      335,
+      336
+    ]
+  },
+  {
+    "name": "violet-city-area",
+    "pokemon_ids": [
+      340
+    ]
+  },
+  {
+    "name": "viridian-forest-area",
+    "pokemon_ids": [
+      322,
+      325
+    ]
+  },
+  {
+    "name": "whirl-islands-1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "whirl-islands-b1f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "whirl-islands-b2f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  },
+  {
+    "name": "whirl-islands-b3f",
+    "pokemon_ids": [
+      296,
+      359
+    ]
+  }
+]

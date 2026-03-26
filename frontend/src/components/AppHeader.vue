@@ -1,0 +1,127 @@
+<template>
+  <header class="mx-auto flex w-full max-w-6xl flex-col gap-3 pt-6 sm:flex-row sm:items-center sm:justify-between">
+    <div class="flex w-full items-center justify-between sm:w-auto">
+      <RouterLink to="/" class="font-display text-2xl font-bold tracking-tight text-text" @click="closeMenu">
+        cater.py
+      </RouterLink>
+      <button
+        type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-white/80 text-text backdrop-blur transition hover:bg-black/5 sm:hidden"
+        :aria-expanded="isMenuOpen"
+        aria-controls="primary-nav"
+        aria-label="Toggle menu"
+        @click="toggleMenu"
+      >
+        <span class="relative h-4 w-5">
+          <span
+            class="absolute left-0 top-0 h-0.5 w-5 rounded bg-current transition-transform duration-200"
+            :class="isMenuOpen ? 'translate-y-[7px] rotate-45' : ''"
+          />
+          <span
+            class="absolute left-0 top-[7px] h-0.5 w-5 rounded bg-current transition-opacity duration-200"
+            :class="isMenuOpen ? 'opacity-0' : 'opacity-100'"
+          />
+          <span
+            class="absolute left-0 top-[14px] h-0.5 w-5 rounded bg-current transition-transform duration-200"
+            :class="isMenuOpen ? '-translate-y-[7px] -rotate-45' : ''"
+          />
+        </span>
+      </button>
+    </div>
+
+    <nav
+      id="primary-nav"
+      class="w-full rounded-3xl border border-black/10 bg-white/95 px-2 py-2 sm:w-auto sm:rounded-full sm:bg-white/70 sm:py-1 sm:backdrop-blur"
+      :class="isMenuOpen ? 'block sm:block' : 'hidden sm:block'"
+    >
+      <div class="flex w-full flex-col items-stretch gap-2 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-start">
+        <RouterLink
+          v-for="item in navItems"
+          :key="item.to"
+          :to="item.to"
+          class="rounded-full px-3 py-1.5 text-center text-sm font-medium text-muted transition hover:bg-black/5 hover:text-text"
+          active-class="bg-accent text-white hover:bg-accent hover:text-white"
+          @click="closeMenu"
+        >
+          {{ item.label }}
+        </RouterLink>
+        <div class="grid grid-cols-2 gap-1 rounded-full border border-black/10 bg-white p-1 text-xs sm:hidden">
+          <button
+            type="button"
+            class="rounded-full px-3 py-1.5 font-semibold transition"
+            :class="locale === 'en' ? 'bg-accent text-white' : 'text-muted hover:bg-black/5 hover:text-text'"
+            @click="setAppLocale('en')"
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            class="rounded-full px-3 py-1.5 font-semibold transition"
+            :class="locale === 'it' ? 'bg-accent text-white' : 'text-muted hover:bg-black/5 hover:text-text'"
+            @click="setAppLocale('it')"
+          >
+            IT
+          </button>
+        </div>
+        <label
+          class="relative z-10 hidden items-center justify-center gap-1 rounded-full border border-black/10 bg-white px-2 py-1 text-xs sm:ml-1 sm:inline-flex"
+        >
+          <select
+            :value="locale"
+            class="cursor-pointer appearance-auto rounded-full bg-white px-2 py-1 text-sm font-semibold text-text outline-none"
+            @change="onLocaleChange"
+          >
+            <option value="en">EN</option>
+            <option value="it">IT</option>
+          </select>
+        </label>
+      </div>
+    </nav>
+  </header>
+</template>
+
+<script setup lang="ts">
+import { computed, ref, watch } from "vue";
+import { RouterLink, useRoute } from "vue-router";
+import type { AppLocale } from "@/i18n";
+import { t, useLocale } from "@/i18n";
+
+const { locale, setLocale } = useLocale();
+const route = useRoute();
+const isMenuOpen = ref(false);
+
+const navItems = computed(() => [
+  { label: t("nav.pokedex"), to: "/pokedex" },
+  { label: t("nav.moves"), to: "/moves" },
+  { label: t("nav.locations"), to: "/locations" },
+  { label: t("nav.about"), to: "/about" }
+]);
+
+watch(
+  () => route.fullPath,
+  () => {
+    isMenuOpen.value = false;
+  }
+);
+
+function toggleMenu() {
+  isMenuOpen.value = !isMenuOpen.value;
+}
+
+function closeMenu() {
+  isMenuOpen.value = false;
+}
+
+function setAppLocale(nextLocale: AppLocale) {
+  setLocale(nextLocale);
+  closeMenu();
+}
+
+function onLocaleChange(event: Event) {
+  const target = event.target as HTMLSelectElement | null;
+  if (!target) {
+    return;
+  }
+  setLocale(target.value as AppLocale);
+}
+</script>
