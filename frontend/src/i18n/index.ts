@@ -164,17 +164,17 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "about.eyebrow": "Info",
     "about.title": "Cos'è Sursk.it",
     "about.intro":
-      "Sursk.it e un punto di accesso leggero per esplorare i dati Pokemon che io e i miei amici usiamo per il nostro torneo PokeMMO di terza generazione. L'obiettivo e semplice: tenere tutte le informazioni che ci servono in un'interfaccia veloce e pulita, invece di spargerle su una dozzina di schede aperte.",
+      "Sursk.it è un punto di accesso leggero per esplorare i dati Pokémon che io e i miei amici usiamo per il nostro torneo PokeMMO di terza generazione. L'obiettivo è semplice: tenere tutte le informazioni che ci servono in un'interfaccia veloce e pulita, invece di spargerle su una dozzina di schede aperte.",
     "about.purpose_title": "A cosa serve questo sito",
     "about.purpose_body_1":
-      "Questo progetto e nato come strumento personale attorno a un'esigenza concreta: costruzione team, verifica mosse, studio dei matchup e consultazioni rapide durante la preparazione al torneo. Le risorse della community che gia esistono fanno un ottimo lavoro. Sursk.it non vuole sostituirle. Vuole raccogliere in un'unica esperienza fluida le parti che uso piu spesso, in modo piu rapido e piu semplice da navigare.",
+      "Questo progetto è nato come strumento personale attorno a un'esigenza concreta: costruzione team, verifica mosse, studio dei matchup e consultazioni rapide durante la preparazione al torneo. Le risorse della community che già esistono fanno un ottimo lavoro. Sursk.it non vuole sostituirle. Vuole raccogliere in un'unica esperienza fluida le parti che uso più spesso, in modo più rapido e più semplice da navigare.",
     "about.purpose_body_2":
-      "Il focus principale resta il mio flusso di lavoro, quindi il prodotto continuera a evolversi seguendo esigenze pratiche. Se può esserti utile per run, tornei o pianificazione personale, usalo liberamente.",
+      "Il focus principale resta il mio flusso di lavoro, quindi il prodotto continuerà a evolversi seguendo esigenze pratiche. Se può esserti utile per run, tornei o pianificazione personale, usalo liberamente.",
     "about.purpose_body_3":
       "I contributi sono sempre benvenuti. Se vuoi migliorare i dati, gli strumenti o l'interfaccia, puoi partecipare in qualsiasi momento.",
-    "about.name_title": "Perche Surskit?",
+    "about.name_title": "Perché Surskit?",
     "about.name_body_1":
-      "\"Ho scelto Surskit perche può camminare sull'acqua. Costruire qualcosa che non affondi sembrava un buon inizio.\"",
+      "\"Ho scelto Surskit perché può camminare sull'acqua. Costruire qualcosa che non affondi sembrava un buon inizio.\"",
     "about.thanks_title": "Ringraziamenti",
     "about.thanks_body":
       "Questo progetto si appoggia a molto del grande lavoro fatto dalla community. Queste sono alcune delle risorse che lo hanno aiutato a prendere forma:",
@@ -182,15 +182,15 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "about.legal_body_1":
       "Pokémon © 2002–2026 Pokémon. © 1995–2026 Nintendo/Creatures Inc./GAME FREAK inc. ™, ® e i nomi dei personaggi Pokémon sono marchi registrati di Nintendo.",
     "about.legal_body_2": "Non si intende violare alcun copyright o marchio tramite l'uso di contenuti Pokémon in questa pagina.",
-    "about.signature_prefix": "Sviluppato dal Pokemon Trainer",
+    "about.signature_prefix": "Sviluppato dal Pokémon Trainer",
     "about.signature_suffix": "Creato con pazienza, dati e qualche Repellente.",
 
     "home.eyebrow": "Scivola In Hoenn",
     "home.title": "Un Pokédex leggero per preparare in fretta il Gen 3 su PokeMMO.",
-    "home.description": "Sursk.it riunisce Pokemon, mosse e luoghi di Hoenn in un'unica interfaccia fluida, cosi puoi cercare in fretta, confrontare con chiarezza e smettere di combattere con una pila di schede aperte.",
+    "home.description": "Sursk.it riunisce Pokémon, mosse e luoghi di Hoenn in un'unica interfaccia fluida, così puoi cercare in fretta, confrontare con chiarezza e smettere di combattere con una pila di schede aperte.",
     "home.open_pokedex": "Apri Pokédex",
     "home.browse_moves": "Sfoglia mosse",
-    "home.notes_title": "Perche Sembra Leggero",
+    "home.notes_title": "Perché Sembra Leggero",
     "home.note_static_data": "Dati statici, caricamenti rapidi, poco rumore.",
     "home.note_shareable_filters": "Filtri guidati da URL per ricerche rapide e condivisibili.",
     "home.note_single_deploy": "Pensato per restare semplice, non per diventare una dashboard pesante.",
