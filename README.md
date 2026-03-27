@@ -6,7 +6,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-black)
 
-Sursk.it is a full-stack Pokemon data application focused on a Gen 3 PokeMMO workflow.
+[Sursk.it](https://sursk.it) is a full-stack Pokemon data application focused on a Gen 3 PokeMMO workflow.
 It ships as a monorepo with:
 
 - a FastAPI backend that serves prebuilt JSON datasets
@@ -40,7 +40,7 @@ Instead of scraping at runtime, it serves versioned data files from the reposito
 Current branding/domain in the codebase:
 
 - App name: `Sursk.it`
-- Domain: `sursk.it`
+- Domain: [sursk.it](https://sursk.it)
 
 ## Features
 
