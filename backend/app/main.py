@@ -7,6 +7,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from app.api.routes import router as api_router
 from app.core.config import APP_DOMAIN, APP_NAME, DATA_DIR, STATIC_DIR
@@ -24,10 +25,12 @@ class SPAStaticFiles(StaticFiles):
             ).model_dump()
             return JSONResponse(status_code=404, content=payload)
 
-        response = await super().get_response(path, scope)
-        if response.status_code == 404:
+        try:
+            return await super().get_response(path, scope)
+        except StarletteHTTPException as exc:
+            if exc.status_code != 404:
+                raise
             return await super().get_response("index.html", scope)
-        return response
 
 
 @asynccontextmanager
