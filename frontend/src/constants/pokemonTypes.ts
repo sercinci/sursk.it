@@ -17,7 +17,7 @@ export const TYPE_STYLES: Record<string, TypeStyle> = {
   fire: { background: "#e62829", color: "#ffffff", border: "#d01f20" },
   water: { background: "#2980ef", color: "#ffffff", border: "#1f70df" },
   grass: { background: "#3fa129", color: "#ffffff", border: "#328820" },
-  electric: { background: "#fac000", color: "#513f00", border: "#e3ad00" },
+  electric: { background: "#fac000", color: "#ffffff", border: "#e3ad00" },
   psychic: { background: "#ef4179", color: "#ffffff", border: "#de2f69" },
   ice: { background: "#3fc8ef", color: "#ffffff", border: "#2ab4dd" },
   dragon: { background: "#5060e1", color: "#ffffff", border: "#4352cc" },
