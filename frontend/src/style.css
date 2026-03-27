@@ -5,13 +5,19 @@
 @tailwind utilities;
 
 :root {
-  --color-shell: #f4f6ee;
-  --color-panel: #ffffff;
-  --color-accent: #1b7f53;
-  --color-ember: #ce6e2b;
-  --color-mint: #dff3d9;
-  --color-text: #172321;
-  --color-muted: #4c605b;
+  --color-shell: #eaf8fb;
+  --color-panel: rgba(255, 255, 255, 0.78);
+  --color-accent: #00b4d8;
+  --color-ember: #48cae4;
+  --color-mint: #caf0f8;
+  --color-sun: #f4d35e;
+  --color-text: #12303d;
+  --color-muted: #4e6e7b;
+  --color-line: rgba(18, 48, 61, 0.1);
+}
+
+html {
+  color-scheme: light;
 }
 
 body {
@@ -19,10 +25,25 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--color-text);
   background:
-    radial-gradient(circle at 15% 0%, rgba(206, 110, 43, 0.22), transparent 35%),
-    radial-gradient(circle at 80% 15%, rgba(27, 127, 83, 0.22), transparent 42%),
-    var(--color-shell);
+    radial-gradient(circle at 32% 8%, rgba(244, 211, 94, 0.18), transparent 16%),
+    radial-gradient(circle at 10% 0%, rgba(144, 224, 239, 0.82), transparent 28%),
+    radial-gradient(circle at 86% 12%, rgba(0, 180, 216, 0.2), transparent 24%),
+    radial-gradient(circle at 50% 100%, rgba(202, 240, 248, 0.88), transparent 38%),
+    linear-gradient(180deg, #f8fdff 0%, #eaf8fb 48%, #e2f2f7 100%);
   min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.65) 1px, transparent 0),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0));
+  background-size: 120px 120px, auto;
+  opacity: 0.45;
 }
 
 #app {
@@ -30,10 +51,19 @@ body {
 }
 
 .card-surface {
-  background: linear-gradient(145deg, #ffffff, #f6f8f0);
-  border: 1px solid rgba(23, 35, 33, 0.08);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.68));
+  border: 1px solid var(--color-line);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 24px 60px -34px rgba(10, 64, 86, 0.34);
 }
 
 input[type="search"]::-webkit-search-cancel-button {
   cursor: pointer;
+}
+
+::selection {
+  background: rgba(0, 180, 216, 0.22);
+  color: var(--color-text);
 }

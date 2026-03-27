@@ -100,6 +100,7 @@
                   <p v-else class="mt-1 text-sm leading-relaxed text-text">
                     {{ currentMoveDetail?.description ?? t("moves.no_description") }}
                   </p>
+
                   <div
                     v-if="currentMoveDetail?.tm_purchase"
                     class="mt-3 rounded-lg border border-black/10 bg-white px-3 py-2 text-sm"
@@ -118,6 +119,38 @@
                         formatPokeyen(currentMoveDetail.tm_purchase.price_pokeyen)
                       }}
                     </p>
+                  </div>
+
+                  <div v-if="isDamagingMove(move.category)" class="mt-3 text-sm">
+                    <p class="text-xs font-semibold uppercase tracking-wide text-muted">{{ t("moves.effectiveness") }}</p>
+                    <p v-if="!move.type" class="mt-1 text-sm text-muted">{{ t("moves.no_matchups") }}</p>
+                    <p
+                      v-else-if="!getMoveEffectivenessGroups(move.type).length"
+                      class="mt-1 text-sm text-muted"
+                    >
+                      {{ t("moves.no_matchups") }}
+                    </p>
+                    <div v-else class="mt-2 flex flex-wrap gap-1.5">
+                      <div
+                        v-for="group in getMoveEffectivenessGroups(move.type)"
+                        :key="`move-effectiveness-${move.name}-${group.multiplier}`"
+                        class="inline-flex items-center gap-1.5 rounded-md border border-black/10 bg-white px-2 py-1"
+                      >
+                        <span class="font-mono text-[11px] font-semibold text-muted">
+                          {{ formatDamageMultiplier(group.multiplier) }}
+                        </span>
+                        <div class="flex flex-wrap items-center gap-1">
+                          <span
+                            v-for="defendingType in group.types"
+                            :key="`${move.name}-${group.multiplier}-${defendingType}`"
+                            class="inline-flex rounded-full border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+                            :style="getTypeChipStyle(defendingType)"
+                          >
+                            {{ labelType(defendingType) }}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="mt-4">
@@ -184,15 +217,24 @@ import { useQuery } from "@tanstack/vue-query";
 
 import { fetchMoveDetail, fetchMoves } from "@/api/client";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
+import { getOffensiveDamageGroups } from "@/constants/typeEffectiveness";
 import { labelLearnMethod, labelMoveCategory, labelType, t, useLocale } from "@/i18n";
 import type { MoveTmPurchase } from "@/types";
 import type { MoveLearnMethod, MoveLearner } from "@/types";
+
+type DamageMultiplier = 2 | 0.5 | 0;
+
+interface MoveEffectivenessGroup {
+  multiplier: DamageMultiplier;
+  types: string[];
+}
 
 const query = ref("");
 const expandedMove = ref<string | null>(null);
 const selectedTypeFilter = ref("");
 const selectedCategoryFilter = ref("");
 const { locale } = useLocale();
+const DAMAGE_MULTIPLIERS: DamageMultiplier[] = [2, 0.5, 0];
 
 const movesQuery = useQuery({
   queryKey: computed(() => ["moves", locale.value]),
@@ -277,6 +319,26 @@ function resetFilters() {
 
 function normalizeQuery(value: string) {
   return value.trim().toLowerCase().replaceAll("-", " ").replace(/\s+/g, " ");
+}
+
+function getMoveEffectivenessGroups(moveType: string): MoveEffectivenessGroup[] {
+  const grouped = getOffensiveDamageGroups([moveType.toLowerCase()]);
+
+  return DAMAGE_MULTIPLIERS.map((multiplier) => {
+    const row = grouped.find((group) => group.multiplier === multiplier);
+    return {
+      multiplier,
+      types: row ? row.entries.map((entry) => entry.type) : []
+    };
+  }).filter((group) => group.types.length > 0);
+}
+
+function formatDamageMultiplier(multiplier: DamageMultiplier) {
+  return `${multiplier}x`;
+}
+
+function isDamagingMove(category: string | null) {
+  return category === "physical" || category === "special";
 }
 
 function formatLabel(value: string | null) {

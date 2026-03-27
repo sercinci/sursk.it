@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: cater-py
+    name: surskit
     env: docker
     plan: starter
     autoDeploy: true

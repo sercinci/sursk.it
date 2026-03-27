@@ -11,7 +11,7 @@ from urllib.request import Request, urlopen
 
 REQUEST_TIMEOUT = 25
 REQUEST_SLEEP_SECONDS = 0.03
-USER_AGENT = "cater.py/1.0 (pokemmo-hoenn-wiki-builder)"
+USER_AGENT = "surskit/1.0 (pokemmo-hoenn-wiki-builder)"
 WIKI_PARSE_API = "https://pokemmo.shoutwiki.com/w/api.php?action=parse&page={page}&prop=wikitext&format=json&formatversion=2"
 WIKI_API = "https://pokemmo.shoutwiki.com/w/api.php"
 POKEAPI_LOCATION_AREA_API = "https://pokeapi.co/api/v2/location-area/{name}"

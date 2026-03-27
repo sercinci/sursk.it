@@ -1077,7 +1077,7 @@ class DataRepository:
         )
         request = Request(
             f"{api_url}?{params}",
-            headers={"User-Agent": "cater.py/1.0"},
+            headers={"User-Agent": "Sursk.it/1.0"},
         )
         try:
             with urlopen(request, timeout=20) as response:

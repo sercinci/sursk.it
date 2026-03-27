@@ -2,11 +2,13 @@ import { computed, readonly, ref } from "vue";
 
 export type AppLocale = "en" | "it";
 
-const STORAGE_KEY = "caterpy.locale";
+const STORAGE_KEY = "surskit.locale";
 const SUPPORTED_LOCALES: AppLocale[] = ["en", "it"];
 
 const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
   en: {
+    "brand.tagline": "Walks on water",
+
     "nav.pokedex": "Pokédex",
     "nav.moves": "Moves",
     "nav.locations": "Locations",
@@ -37,16 +39,16 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "about.signature_prefix": "Developed by Pokemon Trainer",
     "about.signature_suffix": "Built with patience, data, and a few Repels.",
 
-    "home.eyebrow": "Hoenn Explorer",
-    "home.title": "Browse Gen 3 data fast with a clean API and a focused UI.",
-    "home.description": "cater.py is a single deployable Pokédex platform powered by FastAPI + Vue, with static JSON data and search-first interactions.",
+    "home.eyebrow": "Glide Through Hoenn",
+    "home.title": "A lightweight Pokédex for fast Gen 3 PokeMMO prep.",
+    "home.description": "Sursk.it brings Pokemon, moves, and Hoenn locations into one fluid interface so you can search quickly, compare cleanly, and stop wrestling with a stack of tabs.",
     "home.open_pokedex": "Open Pokédex",
     "home.browse_moves": "Browse Moves",
-    "home.notes_title": "Project Notes",
-    "home.note_static_data": "No runtime scraping, static JSON only.",
-    "home.note_shareable_filters": "URL-driven filters for shareable searches.",
-    "home.note_single_deploy": "Single Docker deployment target for Render/Koyeb.",
-    "home.domain": "Domain: caterp.ie",
+    "home.notes_title": "Why It Feels Light",
+    "home.note_static_data": "Static data, fast load times, minimal noise.",
+    "home.note_shareable_filters": "URL-driven filters for quick, shareable searches.",
+    "home.note_single_deploy": "Built to stay simple instead of becoming a dashboard.",
+    "home.domain": "Domain: sursk.it",
 
     "pokedex.title": "Pokédex Search",
     "pokedex.subtitle": "Search by name or Pokédex number and open a Pokémon to see details.",
@@ -58,7 +60,7 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
 
     "filters.search": "Search",
     "filters.search_placeholder": "Search by name or number (e.g. pikachu or 25)",
-    "filters.hoenn_only": "Hoenn only",
+    "filters.hoenn_only": "Gen.3 only",
     "filters.type": "Type",
     "filters.ev_yield": "EV Yield",
     "filters.ev_all": "All EV yields",
@@ -78,6 +80,8 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "moves.column.pp": "PP",
     "moves.column.accuracy": "Accuracy",
     "moves.description": "Description",
+    "moves.effectiveness": "Effectiveness",
+    "moves.no_matchups": "No type matchup data available.",
     "moves.loading_detail": "Loading move details...",
     "moves.no_description": "No description available.",
     "moves.tm_purchase": "TM purchase",
@@ -149,6 +153,8 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "pokemon.evolution_loading": "Loading...",
   },
   it: {
+    "brand.tagline": "Walks on water",
+
     "nav.pokedex": "Pokédex",
     "nav.moves": "Mosse",
     "nav.locations": "Luoghi",
@@ -179,16 +185,16 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "about.signature_prefix": "Sviluppato dal Pokemon Trainer",
     "about.signature_suffix": "Creato con pazienza, dati e qualche Repellente.",
 
-    "home.eyebrow": "Esplora Hoenn",
-    "home.title": "Consulta velocemente i dati di terza generazione con API pulita e interfaccia essenziale.",
-    "home.description": "cater.py è una piattaforma Pokédex distribuibile con FastAPI + Vue, basata su dati JSON statici e interazioni orientate alla ricerca.",
+    "home.eyebrow": "Scivola In Hoenn",
+    "home.title": "Un Pokédex leggero per preparare in fretta il Gen 3 su PokeMMO.",
+    "home.description": "Sursk.it riunisce Pokemon, mosse e luoghi di Hoenn in un'unica interfaccia fluida, cosi puoi cercare in fretta, confrontare con chiarezza e smettere di combattere con una pila di schede aperte.",
     "home.open_pokedex": "Apri Pokédex",
     "home.browse_moves": "Sfoglia mosse",
-    "home.notes_title": "Note progetto",
-    "home.note_static_data": "Nessuno scraping a runtime, solo JSON statico.",
-    "home.note_shareable_filters": "Filtri guidati da URL per ricerche condivisibili.",
-    "home.note_single_deploy": "Un unico target Docker per Render/Koyeb.",
-    "home.domain": "Dominio: caterp.ie",
+    "home.notes_title": "Perche Sembra Leggero",
+    "home.note_static_data": "Dati statici, caricamenti rapidi, poco rumore.",
+    "home.note_shareable_filters": "Filtri guidati da URL per ricerche rapide e condivisibili.",
+    "home.note_single_deploy": "Pensato per restare semplice, non per diventare una dashboard pesante.",
+    "home.domain": "Dominio: sursk.it",
 
     "pokedex.title": "Ricerca Pokédex",
     "pokedex.subtitle": "Cerca per nome o numero Pokédex e apri un Pokémon per vedere i dettagli.",
@@ -200,7 +206,7 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
 
     "filters.search": "Cerca",
     "filters.search_placeholder": "Cerca per nome o numero (es. pikachu o 25)",
-    "filters.hoenn_only": "Solo Hoenn",
+    "filters.hoenn_only": "Solo Gen.3",
     "filters.type": "Tipo",
     "filters.ev_yield": "EV",
     "filters.ev_all": "Tutte le EV",
@@ -220,6 +226,8 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "moves.column.pp": "PP",
     "moves.column.accuracy": "Precisione",
     "moves.description": "Descrizione",
+    "moves.effectiveness": "Efficacia",
+    "moves.no_matchups": "Nessun dato matchup disponibile.",
     "moves.loading_detail": "Caricamento dettagli mossa...",
     "moves.no_description": "Nessuna descrizione disponibile.",
     "moves.tm_purchase": "Acquisto MT",
