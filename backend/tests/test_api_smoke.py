@@ -61,6 +61,27 @@ def test_pokemon_detail_localizes_abilities_for_italian() -> None:
         assert abilities[0]["description"]
 
 
+def test_pokemon_detail_uses_legacy_gen_2_5_types() -> None:
+    with TestClient(app) as client:
+        gardevoir_response = client.get("/api/pokemon/282")
+        assert gardevoir_response.status_code == 200
+        gardevoir = gardevoir_response.json()["data"]
+        assert gardevoir["types"] == ["psychic"]
+
+        jigglypuff_response = client.get("/api/pokemon/39")
+        assert jigglypuff_response.status_code == 200
+        jigglypuff = jigglypuff_response.json()["data"]
+        assert jigglypuff["types"] == ["normal"]
+
+
+def test_meta_types_excludes_fairy() -> None:
+    with TestClient(app) as client:
+        response = client.get("/api/meta/types")
+        assert response.status_code == 200
+        payload = response.json()
+        assert "fairy" not in payload["data"]
+
+
 def test_pokemon_search_filter_by_type() -> None:
     with TestClient(app) as client:
         response = client.get("/api/pokemon", params={"type": "fire", "limit": 100})

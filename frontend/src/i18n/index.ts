@@ -319,8 +319,7 @@ const TYPE_LABELS: Record<AppLocale, Record<string, string>> = {
     psychic: "Psico",
     ice: "Ghiaccio",
     dragon: "Drago",
-    dark: "Buio",
-    fairy: "Folletto"
+    dark: "Buio"
   }
 };
 

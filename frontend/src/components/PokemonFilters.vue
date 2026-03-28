@@ -160,9 +160,7 @@ watch(hoennOnlyDraft, (value) => {
   emit("update:hoennOnly", value);
 });
 
-const typeOptions = Object.keys(TYPE_STYLES)
-  .filter((type) => type !== "fairy")
-  .sort((a, b) => a.localeCompare(b));
+const typeOptions = Object.keys(TYPE_STYLES).sort((a, b) => a.localeCompare(b));
 
 const { isItalian } = useLocale();
 const evYieldOptions = computed(() => [

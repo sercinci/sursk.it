@@ -126,9 +126,13 @@ class DataRepository:
         self.by_move: dict[str, list[Pokemon]] = {}
 
     def load(self) -> None:
-        self.pokemon = TypeAdapter(list[Pokemon]).validate_python(
+        loaded_pokemon = TypeAdapter(list[Pokemon]).validate_python(
             self._load_json("pokemon.json")
         )
+        self.pokemon = [
+            pokemon.model_copy(update={"types": self._legacy_pokemon_types(pokemon.types)})
+            for pokemon in loaded_pokemon
+        ]
         self.moves = TypeAdapter(list[Move]).validate_python(self._load_json("moves.json"))
         self.moves_by_name = {move.name.lower(): move for move in self.moves}
         parsed_move_details = TypeAdapter(list[MoveDetail]).validate_python(
@@ -872,6 +876,26 @@ class DataRepository:
         if move_type.lower() == "fairy":
             return "normal"
         return move_type
+
+    def _legacy_pokemon_types(self, pokemon_types: list[str]) -> list[str]:
+        normalized: list[str] = []
+        has_fairy = False
+
+        for pokemon_type in pokemon_types:
+            key = pokemon_type.strip().lower()
+            if not key:
+                continue
+            if key == "fairy":
+                has_fairy = True
+                continue
+            if key not in normalized:
+                normalized.append(key)
+
+        if normalized:
+            return normalized
+        if has_fairy:
+            return ["normal"]
+        return normalized
 
     def _fallback_encounters(self, pokemon_ids: list[int]):
         rows = []

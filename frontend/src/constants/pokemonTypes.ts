@@ -21,8 +21,7 @@ export const TYPE_STYLES: Record<string, TypeStyle> = {
   psychic: { background: "#ef4179", color: "#ffffff", border: "#de2f69" },
   ice: { background: "#3fc8ef", color: "#ffffff", border: "#2ab4dd" },
   dragon: { background: "#5060e1", color: "#ffffff", border: "#4352cc" },
-  dark: { background: "#50413f", color: "#ffffff", border: "#433533" },
-  fairy: { background: "#ef70ef", color: "#ffffff", border: "#de5fde" }
+  dark: { background: "#50413f", color: "#ffffff", border: "#433533" }
 };
 
 const DEFAULT_TYPE_STYLE: TypeStyle = {
