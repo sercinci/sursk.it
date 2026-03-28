@@ -244,7 +244,7 @@
                 {{ ability.display_name ?? formatLabel(ability.name) }}
               </button>
               <div
-                class="pointer-events-none absolute top-full z-20 mt-2 w-64 rounded-lg border border-black/10 bg-white px-3 py-2 text-xs font-medium normal-case leading-relaxed text-text shadow-soft transition-opacity"
+                class="pointer-events-none absolute bottom-full left-0 z-20 mb-2 w-48 rounded-lg border border-black/10 bg-white px-3 py-2 text-xs font-medium normal-case leading-relaxed text-text shadow-soft transition-opacity sm:left-0 sm:top-full sm:bottom-auto sm:mt-2 sm:mb-0 sm:w-64"
                 :class="isAbilityTooltipVisible(ability.name) ? 'opacity-100' : 'opacity-0'"
               >
                 {{ ability.description }}
