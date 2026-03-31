@@ -38,6 +38,7 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "about.legal_body_2": "No copyright or trademark infringement is intended in using Pokémon content on this page.",
     "about.signature_prefix": "Developed by Pokemon Trainer",
     "about.signature_suffix": "Built with patience, data, and a few Repels.",
+    "about.bmc": "Buy me a coffee",
 
     "home.eyebrow": "Glide Through Hoenn",
     "home.title": "A lightweight Pokédex for fast Gen 3 PokeMMO prep.",
@@ -184,6 +185,7 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "about.legal_body_2": "Non si intende violare alcun copyright o marchio tramite l'uso di contenuti Pokémon in questa pagina.",
     "about.signature_prefix": "Sviluppato dal Pokémon Trainer",
     "about.signature_suffix": "Creato con pazienza, dati e qualche Repellente.",
+    "about.bmc": "Offrimi un caffè",
 
     "home.eyebrow": "Scivola In Hoenn",
     "home.title": "Un Pokédex leggero per preparare in fretta il Gen 3 su PokeMMO.",

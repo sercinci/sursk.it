@@ -109,6 +109,18 @@
         class="underline decoration-black/30 underline-offset-2 transition hover:text-text hover:decoration-black/60"
       >ercole.dev</a>. {{ t("about.signature_suffix") }}
     </p>
+
+    <div class="flex justify-center pb-4">
+      <a
+        href="https://www.buymeacoffee.com/ercole.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-lg bg-[#FFDD00] px-5 py-2.5 font-[Cookie] text-lg text-black shadow-sm transition hover:brightness-95"
+      >
+        <span>☕</span>
+        <span>{{ t("about.bmc") }}</span>
+      </a>
+    </div>
   </section>
 </template>
 
