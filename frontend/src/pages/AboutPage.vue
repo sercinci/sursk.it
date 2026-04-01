@@ -111,14 +111,12 @@
     </p>
 
     <div class="flex justify-center pb-4">
-      <a
-        href="https://www.buymeacoffee.com/ercole.dev"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 rounded-lg bg-[#FFDD00] px-5 py-2.5 font-[Cookie] text-lg text-black shadow-sm transition hover:brightness-95"
-      >
-        <span>☕</span>
-        <span>{{ t("about.bmc") }}</span>
+      <a href="https://www.buymeacoffee.com/ercole.dev" target="_blank">
+        <img
+          src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+          alt="Buy Me a Coffee"
+          style="height: 60px !important; width: 217px !important;"
+        />
       </a>
     </div>
   </section>
