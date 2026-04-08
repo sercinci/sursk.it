@@ -208,7 +208,22 @@
       </aside>
 
       <div class="pr-0 sm:pr-36">
-        <p class="font-mono text-xs uppercase tracking-[0.2em] text-muted">Pokémon #{{ pokemon.id }}</p>
+        <div class="flex items-center gap-2">
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-muted">Pokémon #{{ pokemon.id }}</p>
+          <RouterLink
+            :to="`/compare?a=${pokemon.id}`"
+            :title="t('nav.compare')"
+            class="rounded-md p-0.5 text-muted transition hover:bg-accent/10 hover:text-accent"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" aria-hidden="true">
+              <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+              <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+              <path d="M7 21h10"/>
+              <path d="M12 3v18"/>
+              <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+            </svg>
+          </RouterLink>
+        </div>
         <h1 class="mt-1 font-display text-4xl font-bold capitalize">{{ pokemon.name }}</h1>
 
         <div class="mt-4 flex flex-wrap gap-2">
@@ -252,6 +267,7 @@
             </li>
           </ul>
         </div>
+
 
       </div>
 

@@ -155,6 +155,13 @@ export function getOffensiveDamageGroups(types: string[]): DamageModifierGroup[]
     }));
 }
 
+export function getAttackMultiplierForTypes(attackType: string, defenderTypes: string[]): number {
+  return defenderTypes.reduce(
+    (acc, defendType) => acc * getAttackMultiplier(attackType.toLowerCase(), defendType.toLowerCase()),
+    1
+  );
+}
+
 export function getDefensiveDamageGroups(types: string[]): DamageModifierGroup[] {
   const defenderTypes = types
     .map((type) => type.toLowerCase())
