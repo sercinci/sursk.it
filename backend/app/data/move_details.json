@@ -222,6 +222,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png"
+      },
+      {
+        "pokemon_id": 231,
+        "pokemon_name": "phanpy",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/231.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -715,6 +737,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -1417,6 +1443,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png"
@@ -1661,6 +1691,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png"
@@ -1749,6 +1783,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -2081,6 +2119,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png"
+      },
+      {
+        "pokemon_id": 178,
+        "pokemon_name": "xatu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/178.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -2455,6 +2504,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -3251,6 +3304,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+      },
+      {
+        "pokemon_id": 284,
+        "pokemon_name": "masquerain",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -3672,6 +3736,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png"
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -4215,6 +4290,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png"
+      },
+      {
+        "pokemon_id": 354,
+        "pokemon_name": "banette",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -5980,6 +6066,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png"
@@ -6489,6 +6579,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png"
@@ -6499,6 +6593,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -6526,6 +6624,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/291.png"
@@ -6536,6 +6638,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -6819,6 +6925,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/294.png"
@@ -7009,6 +7119,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png"
+      },
+      {
+        "pokemon_id": 130,
+        "pokemon_name": "gyarados",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -7058,6 +7179,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -8470,6 +8595,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -10459,6 +10588,39 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png"
+      },
+      {
+        "pokemon_id": 129,
+        "pokemon_name": "magikarp",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 130,
+        "pokemon_name": "gyarados",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 272,
+        "pokemon_name": "ludicolo",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -10532,6 +10694,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -10610,6 +10776,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/266.png"
@@ -10620,6 +10790,10 @@
         "methods": [
           {
             "method": "tutor",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -10632,6 +10806,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/268.png"
@@ -10642,6 +10820,10 @@
         "methods": [
           {
             "method": "tutor",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -12929,6 +13111,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png"
@@ -13703,6 +13889,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/381.png"
+      },
+      {
+        "pokemon_id": 38,
+        "pokemon_name": "ninetales",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -14278,6 +14475,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png"
@@ -14437,6 +14638,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -14537,6 +14749,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/366.png"
+      },
+      {
+        "pokemon_id": 367,
+        "pokemon_name": "huntail",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 368,
+        "pokemon_name": "gorebyss",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -15055,6 +15289,10 @@
           {
             "method": "level-up",
             "level": 12
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/269.png"
@@ -15209,6 +15447,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/375.png"
@@ -15345,6 +15587,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png"
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -15546,6 +15799,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png"
+      },
+      {
+        "pokemon_id": 354,
+        "pokemon_name": "banette",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -16191,6 +16455,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      },
+      {
+        "pokemon_id": 202,
+        "pokemon_name": "wobbuffet",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -16272,6 +16547,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png"
@@ -16323,6 +16602,10 @@
         "methods": [
           {
             "method": "tutor",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -16588,6 +16871,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -16891,6 +17178,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png"
+      },
+      {
+        "pokemon_id": 42,
+        "pokemon_name": "golbat",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -19104,6 +19402,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png"
+      },
+      {
+        "pokemon_id": 202,
+        "pokemon_name": "wobbuffet",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -20477,6 +20786,61 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 39,
+        "pokemon_name": "jigglypuff",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 183,
+        "pokemon_name": "marill",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/183.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 184,
+        "pokemon_name": "azumarill",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/184.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -21026,6 +21390,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png"
@@ -21287,6 +21655,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -21994,6 +22366,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -22058,6 +22441,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/256.png"
@@ -22083,6 +22470,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/335.png"
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -22556,6 +22954,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -23771,6 +24173,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png"
@@ -23815,6 +24221,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -23960,6 +24370,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -24340,6 +24754,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -25318,6 +25736,36 @@
     ]
   },
   {
+    "name": "drill-peck",
+    "description": "Inflicts regular damage with no additional effect.",
+    "learners": [
+      {
+        "pokemon_id": 84,
+        "pokemon_name": "doduo",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 85,
+        "pokemon_name": "dodrio",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 177,
+        "pokemon_name": "natu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/177.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 227,
+        "pokemon_name": "skarmory",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/227.png",
+        "methods": []
+      }
+    ]
+  },
+  {
     "name": "drill-run",
     "description": "Has an increased chance for a critical hit.",
     "learners": [
@@ -25359,6 +25807,10 @@
           },
           {
             "method": "tutor",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -28742,6 +29194,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
@@ -29806,6 +30262,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -30236,6 +30703,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+      },
+      {
+        "pokemon_id": 358,
+        "pokemon_name": "chimecho",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/358.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -30657,6 +31135,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -31180,6 +31680,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -32105,6 +32609,377 @@
     ]
   },
   {
+    "name": "faint-attack",
+    "description": "Never misses.",
+    "learners": [
+      {
+        "pokemon_id": 274,
+        "pokemon_name": "nuzleaf",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 24
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png"
+      },
+      {
+        "pokemon_id": 275,
+        "pokemon_name": "shiftry",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 1
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png"
+      },
+      {
+        "pokemon_id": 287,
+        "pokemon_name": "slakoth",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 14
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/287.png"
+      },
+      {
+        "pokemon_id": 288,
+        "pokemon_name": "vigoroth",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png"
+      },
+      {
+        "pokemon_id": 289,
+        "pokemon_name": "slaking",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 14
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
+      },
+      {
+        "pokemon_id": 290,
+        "pokemon_name": "nincada",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/290.png"
+      },
+      {
+        "pokemon_id": 291,
+        "pokemon_name": "ninjask",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/291.png"
+      },
+      {
+        "pokemon_id": 292,
+        "pokemon_name": "shedinja",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/292.png"
+      },
+      {
+        "pokemon_id": 296,
+        "pokemon_name": "makuhita",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/296.png"
+      },
+      {
+        "pokemon_id": 297,
+        "pokemon_name": "hariyama",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/297.png"
+      },
+      {
+        "pokemon_id": 300,
+        "pokemon_name": "skitty",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 22
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png"
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png"
+      },
+      {
+        "pokemon_id": 302,
+        "pokemon_name": "sableye",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 19
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png"
+      },
+      {
+        "pokemon_id": 303,
+        "pokemon_name": "mawile",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 21
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png"
+      },
+      {
+        "pokemon_id": 327,
+        "pokemon_name": "spinda",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 10
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png"
+      },
+      {
+        "pokemon_id": 328,
+        "pokemon_name": "trapinch",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 1
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/328.png"
+      },
+      {
+        "pokemon_id": 329,
+        "pokemon_name": "vibrava",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 1
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png"
+      },
+      {
+        "pokemon_id": 330,
+        "pokemon_name": "flygon",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 1
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/330.png"
+      },
+      {
+        "pokemon_id": 331,
+        "pokemon_name": "cacnea",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 19
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png"
+      },
+      {
+        "pokemon_id": 332,
+        "pokemon_name": "cacturne",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 19
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/332.png"
+      },
+      {
+        "pokemon_id": 352,
+        "pokemon_name": "kecleon",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 16
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png"
+      },
+      {
+        "pokemon_id": 353,
+        "pokemon_name": "shuppet",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 19
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/353.png"
+      },
+      {
+        "pokemon_id": 354,
+        "pokemon_name": "banette",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 19
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png"
+      },
+      {
+        "pokemon_id": 355,
+        "pokemon_name": "duskull",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/355.png"
+      },
+      {
+        "pokemon_id": 356,
+        "pokemon_name": "dusclops",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png"
+      },
+      {
+        "pokemon_id": 359,
+        "pokemon_name": "absol",
+        "methods": [
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
+      },
+      {
+        "pokemon_id": 367,
+        "pokemon_name": "huntail",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 11
+          },
+          {
+            "method": "tutor",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png"
+      }
+    ]
+  },
+  {
     "name": "fairy-wind",
     "description": "Inflicts regular damage with no additional effect.",
     "learners": []
@@ -32796,6 +33671,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/333.png"
+      },
+      {
+        "pokemon_id": 276,
+        "pokemon_name": "taillow",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/276.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 277,
+        "pokemon_name": "swellow",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/277.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -32945,377 +33842,56 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
+      },
+      {
+        "pokemon_id": 329,
+        "pokemon_name": "vibrava",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
   {
     "name": "feint-attack",
-    "description": "Never misses.",
+    "description": "No description available.",
     "learners": [
       {
-        "pokemon_id": 274,
-        "pokemon_name": "nuzleaf",
+        "pokemon_id": 38,
+        "pokemon_name": "ninetales",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
         "methods": [
           {
-            "method": "level-up",
-            "level": 24
-          },
-          {
-            "method": "tutor",
+            "method": "prevo",
             "level": null
           }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png"
-      },
-      {
-        "pokemon_id": 275,
-        "pokemon_name": "shiftry",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 1
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png"
-      },
-      {
-        "pokemon_id": 287,
-        "pokemon_name": "slakoth",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 14
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/287.png"
+        ]
       },
       {
         "pokemon_id": 288,
         "pokemon_name": "vigoroth",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png",
         "methods": [
           {
-            "method": "tutor",
+            "method": "prevo",
             "level": null
           }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png"
-      },
-      {
-        "pokemon_id": 289,
-        "pokemon_name": "slaking",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 14
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
-      },
-      {
-        "pokemon_id": 290,
-        "pokemon_name": "nincada",
-        "methods": [
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/290.png"
-      },
-      {
-        "pokemon_id": 291,
-        "pokemon_name": "ninjask",
-        "methods": [
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/291.png"
-      },
-      {
-        "pokemon_id": 292,
-        "pokemon_name": "shedinja",
-        "methods": [
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/292.png"
-      },
-      {
-        "pokemon_id": 296,
-        "pokemon_name": "makuhita",
-        "methods": [
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/296.png"
-      },
-      {
-        "pokemon_id": 297,
-        "pokemon_name": "hariyama",
-        "methods": [
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/297.png"
-      },
-      {
-        "pokemon_id": 300,
-        "pokemon_name": "skitty",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 22
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png"
+        ]
       },
       {
         "pokemon_id": 301,
         "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
         "methods": [
           {
-            "method": "tutor",
+            "method": "prevo",
             "level": null
           }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png"
-      },
-      {
-        "pokemon_id": 302,
-        "pokemon_name": "sableye",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 19
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png"
-      },
-      {
-        "pokemon_id": 303,
-        "pokemon_name": "mawile",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 21
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png"
-      },
-      {
-        "pokemon_id": 327,
-        "pokemon_name": "spinda",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 10
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png"
-      },
-      {
-        "pokemon_id": 328,
-        "pokemon_name": "trapinch",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 1
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/328.png"
-      },
-      {
-        "pokemon_id": 329,
-        "pokemon_name": "vibrava",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 1
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png"
-      },
-      {
-        "pokemon_id": 330,
-        "pokemon_name": "flygon",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 1
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/330.png"
-      },
-      {
-        "pokemon_id": 331,
-        "pokemon_name": "cacnea",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 19
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png"
-      },
-      {
-        "pokemon_id": 332,
-        "pokemon_name": "cacturne",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 19
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/332.png"
-      },
-      {
-        "pokemon_id": 352,
-        "pokemon_name": "kecleon",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 16
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png"
-      },
-      {
-        "pokemon_id": 353,
-        "pokemon_name": "shuppet",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 19
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/353.png"
-      },
-      {
-        "pokemon_id": 354,
-        "pokemon_name": "banette",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 19
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png"
-      },
-      {
-        "pokemon_id": 355,
-        "pokemon_name": "duskull",
-        "methods": [
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/355.png"
-      },
-      {
-        "pokemon_id": 356,
-        "pokemon_name": "dusclops",
-        "methods": [
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png"
-      },
-      {
-        "pokemon_id": 359,
-        "pokemon_name": "absol",
-        "methods": [
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
-      },
-      {
-        "pokemon_id": 367,
-        "pokemon_name": "huntail",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 11
-          },
-          {
-            "method": "tutor",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png"
+        ]
       }
     ]
   },
@@ -34241,6 +34817,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/256.png"
@@ -34251,6 +34831,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -34737,6 +35321,39 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+      },
+      {
+        "pokemon_id": 41,
+        "pokemon_name": "zubat",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 42,
+        "pokemon_name": "golbat",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 288,
+        "pokemon_name": "vigoroth",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -34798,6 +35415,39 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png"
+      },
+      {
+        "pokemon_id": 38,
+        "pokemon_name": "ninetales",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 256,
+        "pokemon_name": "combusken",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/256.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 257,
+        "pokemon_name": "blaziken",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -35104,6 +35754,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -37018,6 +37672,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png"
@@ -37058,6 +37716,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -37454,6 +38134,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
@@ -37783,6 +38467,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
@@ -38018,6 +38706,45 @@
     ]
   },
   {
+    "name": "follow-me",
+    "description": "Redirects the target’s single-target effects to the user for this turn.",
+    "learners": [
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 385,
+        "pokemon_name": "jirachi",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "force-palm",
     "description": "Has a 30% chance to paralyze the target.",
     "learners": [
@@ -38202,6 +38929,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png"
+      },
+      {
+        "pokemon_id": 63,
+        "pokemon_name": "abra",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -39947,6 +40696,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png"
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -39975,6 +40735,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -40126,6 +40890,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -40621,6 +41389,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png"
+      },
+      {
+        "pokemon_id": 289,
+        "pokemon_name": "slaking",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -41138,6 +41928,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -43813,6 +44607,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png"
@@ -43824,6 +44622,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/269.png"
@@ -44002,443 +44804,6 @@
     ]
   },
   {
-    "name": "hail",
-    "description": "Changes the weather to a hailstorm for five turns.",
-    "learners": [
-      {
-        "pokemon_id": 258,
-        "pokemon_name": "mudkip",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png"
-      },
-      {
-        "pokemon_id": 259,
-        "pokemon_name": "marshtomp",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png"
-      },
-      {
-        "pokemon_id": 260,
-        "pokemon_name": "swampert",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png"
-      },
-      {
-        "pokemon_id": 270,
-        "pokemon_name": "lotad",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/270.png"
-      },
-      {
-        "pokemon_id": 271,
-        "pokemon_name": "lombre",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png"
-      },
-      {
-        "pokemon_id": 272,
-        "pokemon_name": "ludicolo",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png"
-      },
-      {
-        "pokemon_id": 278,
-        "pokemon_name": "wingull",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/278.png"
-      },
-      {
-        "pokemon_id": 279,
-        "pokemon_name": "pelipper",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png"
-      },
-      {
-        "pokemon_id": 298,
-        "pokemon_name": "azurill",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/298.png"
-      },
-      {
-        "pokemon_id": 318,
-        "pokemon_name": "carvanha",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/318.png"
-      },
-      {
-        "pokemon_id": 319,
-        "pokemon_name": "sharpedo",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png"
-      },
-      {
-        "pokemon_id": 320,
-        "pokemon_name": "wailmer",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/320.png"
-      },
-      {
-        "pokemon_id": 321,
-        "pokemon_name": "wailord",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png"
-      },
-      {
-        "pokemon_id": 325,
-        "pokemon_name": "spoink",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/325.png"
-      },
-      {
-        "pokemon_id": 326,
-        "pokemon_name": "grumpig",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/326.png"
-      },
-      {
-        "pokemon_id": 334,
-        "pokemon_name": "altaria",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png"
-      },
-      {
-        "pokemon_id": 337,
-        "pokemon_name": "lunatone",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/337.png"
-      },
-      {
-        "pokemon_id": 339,
-        "pokemon_name": "barboach",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/339.png"
-      },
-      {
-        "pokemon_id": 340,
-        "pokemon_name": "whiscash",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/340.png"
-      },
-      {
-        "pokemon_id": 341,
-        "pokemon_name": "corphish",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/341.png"
-      },
-      {
-        "pokemon_id": 342,
-        "pokemon_name": "crawdaunt",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png"
-      },
-      {
-        "pokemon_id": 349,
-        "pokemon_name": "feebas",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png"
-      },
-      {
-        "pokemon_id": 350,
-        "pokemon_name": "milotic",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
-      },
-      {
-        "pokemon_id": 351,
-        "pokemon_name": "castform",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 20
-          },
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/351.png"
-      },
-      {
-        "pokemon_id": 359,
-        "pokemon_name": "absol",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
-      },
-      {
-        "pokemon_id": 361,
-        "pokemon_name": "snorunt",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 45
-          },
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/361.png"
-      },
-      {
-        "pokemon_id": 362,
-        "pokemon_name": "glalie",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 47
-          },
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png"
-      },
-      {
-        "pokemon_id": 363,
-        "pokemon_name": "spheal",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 48
-          },
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png"
-      },
-      {
-        "pokemon_id": 364,
-        "pokemon_name": "sealeo",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 58
-          },
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/364.png"
-      },
-      {
-        "pokemon_id": 365,
-        "pokemon_name": "walrein",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 64
-          },
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/365.png"
-      },
-      {
-        "pokemon_id": 366,
-        "pokemon_name": "clamperl",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/366.png"
-      },
-      {
-        "pokemon_id": 367,
-        "pokemon_name": "huntail",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png"
-      },
-      {
-        "pokemon_id": 368,
-        "pokemon_name": "gorebyss",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png"
-      },
-      {
-        "pokemon_id": 369,
-        "pokemon_name": "relicanth",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png"
-      },
-      {
-        "pokemon_id": 370,
-        "pokemon_name": "luvdisc",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
-      },
-      {
-        "pokemon_id": 378,
-        "pokemon_name": "regice",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/378.png"
-      },
-      {
-        "pokemon_id": 382,
-        "pokemon_name": "kyogre",
-        "methods": [
-          {
-            "method": "tm",
-            "level": null
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/382.png"
-      }
-    ]
-  },
-  {
     "name": "hammer-arm",
     "description": "Lowers user’s Speed by one stage.",
     "learners": [
@@ -44493,6 +44858,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png"
@@ -44559,6 +44928,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/266.png"
@@ -44570,6 +44943,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/268.png"
@@ -44782,6 +45159,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png"
+      },
+      {
+        "pokemon_id": 267,
+        "pokemon_name": "beautifly",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 269,
+        "pokemon_name": "dustox",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/269.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -44843,6 +45242,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/355.png"
+      },
+      {
+        "pokemon_id": 116,
+        "pokemon_name": "horsea",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 284,
+        "pokemon_name": "masquerain",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -46116,6 +46537,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png"
@@ -46400,6 +46825,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -47779,6 +48226,45 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png"
+      }
+    ]
+  },
+  {
+    "name": "hi-jump-kick",
+    "description": "If the user misses, it takes half the damage it would have inflicted in recoil.",
+    "learners": [
+      {
+        "pokemon_id": 257,
+        "pokemon_name": "blaziken",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 1
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png"
+      },
+      {
+        "pokemon_id": 307,
+        "pokemon_name": "meditite",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 28
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/307.png"
+      },
+      {
+        "pokemon_id": 308,
+        "pokemon_name": "medicham",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 28
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png"
       }
     ]
   },
@@ -49232,45 +49718,6 @@
     "learners": []
   },
   {
-    "name": "high-jump-kick",
-    "description": "If the user misses, it takes half the damage it would have inflicted in recoil.",
-    "learners": [
-      {
-        "pokemon_id": 257,
-        "pokemon_name": "blaziken",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 1
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png"
-      },
-      {
-        "pokemon_id": 307,
-        "pokemon_name": "meditite",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 28
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/307.png"
-      },
-      {
-        "pokemon_id": 308,
-        "pokemon_name": "medicham",
-        "methods": [
-          {
-            "method": "level-up",
-            "level": 28
-          }
-        ],
-        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png"
-      }
-    ]
-  },
-  {
     "name": "hone-claws",
     "description": "Raises the user’s Attack and accuracy by one stage.",
     "learners": [
@@ -49688,6 +50135,66 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png"
+      }
+    ]
+  },
+  {
+    "name": "horn-attack",
+    "description": "Inflicts regular damage with no additional effect.",
+    "learners": [
+      {
+        "pokemon_id": 111,
+        "pokemon_name": "rhyhorn",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 118,
+        "pokemon_name": "goldeen",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 119,
+        "pokemon_name": "seaking",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 214,
+        "pokemon_name": "heracross",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/214.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": []
+      }
+    ]
+  },
+  {
+    "name": "horn-drill",
+    "description": "Causes a one-hit KO.",
+    "learners": [
+      {
+        "pokemon_id": 111,
+        "pokemon_name": "rhyhorn",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 118,
+        "pokemon_name": "goldeen",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 119,
+        "pokemon_name": "seaking",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png",
+        "methods": []
       }
     ]
   },
@@ -50885,6 +51392,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -52676,6 +53187,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -54647,6 +55162,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/266.png"
@@ -54672,6 +55191,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -54870,6 +55393,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png"
@@ -54880,6 +55407,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -55784,6 +56315,42 @@
     ]
   },
   {
+    "name": "jump-kick",
+    "description": "If the user misses, it takes half the damage it would have inflicted in recoil.",
+    "learners": [
+      {
+        "pokemon_id": 84,
+        "pokemon_name": "doduo",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 85,
+        "pokemon_name": "dodrio",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 234,
+        "pokemon_name": "stantler",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/234.png",
+        "methods": []
+      }
+    ]
+  },
+  {
+    "name": "karate-chop",
+    "description": "Has an increased chance for a critical hit.",
+    "learners": [
+      {
+        "pokemon_id": 66,
+        "pokemon_name": "machop",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+        "methods": []
+      }
+    ]
+  },
+  {
     "name": "knock-off",
     "description": "Target drops its held item.",
     "learners": [
@@ -56072,6 +56639,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png"
@@ -56302,6 +56873,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/358.png"
@@ -56342,6 +56917,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -56619,6 +57205,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png"
@@ -56887,6 +57477,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/357.png"
+      },
+      {
+        "pokemon_id": 43,
+        "pokemon_name": "oddish",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 44,
+        "pokemon_name": "gloom",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -58231,6 +58843,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+      },
+      {
+        "pokemon_id": 282,
+        "pokemon_name": "gardevoir",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -58267,6 +58890,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/286.png"
@@ -58793,6 +59420,18 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/357.png"
+      }
+    ]
+  },
+  {
+    "name": "magnet-bomb",
+    "description": "Never misses.",
+    "learners": [
+      {
+        "pokemon_id": 81,
+        "pokemon_name": "magnemite",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png",
+        "methods": []
       }
     ]
   },
@@ -60723,6 +61362,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/375.png"
@@ -60806,6 +61449,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/306.png"
+      },
+      {
+        "pokemon_id": 100,
+        "pokemon_name": "voltorb",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -60850,6 +61504,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+      },
+      {
+        "pokemon_id": 386,
+        "pokemon_name": "deoxys-normal",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -61120,6 +61785,18 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+      }
+    ]
+  },
+  {
+    "name": "milk-drink",
+    "description": "Heals the user by half its max HP.",
+    "learners": [
+      {
+        "pokemon_id": 241,
+        "pokemon_name": "miltank",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/241.png",
+        "methods": []
       }
     ]
   },
@@ -62654,6 +63331,18 @@
     ]
   },
   {
+    "name": "minimize",
+    "description": "Raises the user’s evasion by two stages.",
+    "learners": [
+      {
+        "pokemon_id": 120,
+        "pokemon_name": "staryu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png",
+        "methods": []
+      }
+    ]
+  },
+  {
     "name": "miracle-eye",
     "description": "Forces the target to have no evasion, and allows it to be hit by Psychic moves even if it’s Dark.",
     "learners": [
@@ -62739,6 +63428,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png"
+      },
+      {
+        "pokemon_id": 202,
+        "pokemon_name": "wobbuffet",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -62800,6 +63500,29 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/333.png"
+      },
+      {
+        "pokemon_id": 334,
+        "pokemon_name": "altaria",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "mirror-shot",
+    "description": "Has a 30% chance to lower the target’s accuracy by one stage.",
+    "learners": [
+      {
+        "pokemon_id": 81,
+        "pokemon_name": "magnemite",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png",
+        "methods": []
       }
     ]
   },
@@ -62927,6 +63650,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png"
+      },
+      {
+        "pokemon_id": 284,
+        "pokemon_name": "masquerain",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -63148,6 +63882,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -65015,6 +65753,72 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+      },
+      {
+        "pokemon_id": 54,
+        "pokemon_name": "psyduck",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 55,
+        "pokemon_name": "golduck",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 222,
+        "pokemon_name": "corsola",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/222.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 283,
+        "pokemon_name": "surskit",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/283.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 284,
+        "pokemon_name": "masquerain",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 312,
+        "pokemon_name": "minun",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/312.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -65654,6 +66458,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png"
@@ -65664,6 +66472,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -66912,6 +67724,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -67662,6 +68485,29 @@
     "name": "nuzzle",
     "description": "Has a 100% chance to paralyze the target.",
     "learners": []
+  },
+  {
+    "name": "octazooka",
+    "description": "Has a 50% chance to lower the target’s accuracy by one stage.",
+    "learners": [
+      {
+        "pokemon_id": 116,
+        "pokemon_name": "horsea",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 302,
+        "pokemon_name": "sableye",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "odor-sleuth",
@@ -68638,6 +69484,48 @@
     ]
   },
   {
+    "name": "pay-day",
+    "description": "Scatters money on the ground worth five times the user’s level.",
+    "learners": [
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 54,
+        "pokemon_name": "psyduck",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 55,
+        "pokemon_name": "golduck",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 300,
+        "pokemon_name": "skitty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": []
+      }
+    ]
+  },
+  {
     "name": "payback",
     "description": "Power is doubled if the target has already moved this turn.",
     "learners": [
@@ -68755,6 +69643,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -68992,6 +69884,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png"
+      },
+      {
+        "pokemon_id": 38,
+        "pokemon_name": "ninetales",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -69158,6 +70061,61 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 39,
+        "pokemon_name": "jigglypuff",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 54,
+        "pokemon_name": "psyduck",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 55,
+        "pokemon_name": "golduck",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -69780,6 +70738,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png"
@@ -70726,6 +71688,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -71786,6 +72752,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -73945,6 +74915,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      },
+      {
+        "pokemon_id": 279,
+        "pokemon_name": "pelipper",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -74225,6 +75206,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
+      },
+      {
+        "pokemon_id": 120,
+        "pokemon_name": "staryu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -75737,6 +76729,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/347.png"
+      },
+      {
+        "pokemon_id": 74,
+        "pokemon_name": "geodude",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 75,
+        "pokemon_name": "graveler",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -75762,6 +76776,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png"
@@ -75798,6 +76816,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/357.png"
+      },
+      {
+        "pokemon_id": 271,
+        "pokemon_name": "lombre",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -75906,6 +76935,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -76499,6 +77532,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/380.png"
+      },
+      {
+        "pokemon_id": 352,
+        "pokemon_name": "kecleon",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -76615,6 +77659,215 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 100,
+        "pokemon_name": "voltorb",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 273,
+        "pokemon_name": "seedot",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/273.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 274,
+        "pokemon_name": "nuzleaf",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 275,
+        "pokemon_name": "shiftry",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 285,
+        "pokemon_name": "shroomish",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/285.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 286,
+        "pokemon_name": "breloom",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/286.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 296,
+        "pokemon_name": "makuhita",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/296.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 297,
+        "pokemon_name": "hariyama",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/297.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 310,
+        "pokemon_name": "manectric",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/310.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 318,
+        "pokemon_name": "carvanha",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/318.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 319,
+        "pokemon_name": "sharpedo",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 335,
+        "pokemon_name": "zangoose",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/335.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 343,
+        "pokemon_name": "baltoy",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/343.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 344,
+        "pokemon_name": "claydol",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/344.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 373,
+        "pokemon_name": "salamence",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 375,
+        "pokemon_name": "metang",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/375.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 376,
+        "pokemon_name": "metagross",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -77003,6 +78256,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -80183,6 +81440,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
@@ -81635,6 +82896,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png"
@@ -83017,6 +84282,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/377.png"
+      },
+      {
+        "pokemon_id": 127,
+        "pokemon_name": "pinsir",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -84018,6 +85294,18 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      }
+    ]
+  },
+  {
+    "name": "rolling-kick",
+    "description": "Has a 30% chance to make the target flinch.",
+    "learners": [
+      {
+        "pokemon_id": 66,
+        "pokemon_name": "machop",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+        "methods": []
       }
     ]
   },
@@ -86665,6 +87953,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      },
+      {
+        "pokemon_id": 202,
+        "pokemon_name": "wobbuffet",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -88480,6 +89779,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -90946,7 +92249,7 @@
     ]
   },
   {
-    "name": "self-destruct",
+    "name": "selfdestruct",
     "description": "User faints.",
     "learners": [
       {
@@ -92173,6 +93476,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png"
@@ -92364,6 +93671,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/366.png"
+      },
+      {
+        "pokemon_id": 367,
+        "pokemon_name": "huntail",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 368,
+        "pokemon_name": "gorebyss",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -93595,6 +94924,127 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 280,
+        "pokemon_name": "ralts",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/280.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 281,
+        "pokemon_name": "kirlia",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/281.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 282,
+        "pokemon_name": "gardevoir",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 303,
+        "pokemon_name": "mawile",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 316,
+        "pokemon_name": "gulpin",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/316.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 317,
+        "pokemon_name": "swalot",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/317.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 327,
+        "pokemon_name": "spinda",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 361,
+        "pokemon_name": "snorunt",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/361.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 362,
+        "pokemon_name": "glalie",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -94066,6 +95516,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
+      },
+      {
+        "pokemon_id": 288,
+        "pokemon_name": "vigoroth",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -94196,6 +95657,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/264.png"
@@ -94240,6 +95705,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png"
@@ -94320,6 +95789,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png"
+      },
+      {
+        "pokemon_id": 289,
+        "pokemon_name": "slaking",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -96322,7 +97802,7 @@
     "learners": []
   },
   {
-    "name": "smelling-salts",
+    "name": "smelling-salt",
     "description": "If the target is paralyzed, inflicts double damage and cures the paralysis.",
     "learners": [
       {
@@ -96433,7 +97913,7 @@
     ]
   },
   {
-    "name": "smokescreen",
+    "name": "smoke-screen",
     "description": "Lowers the target’s accuracy by one stage.",
     "learners": [
       {
@@ -96485,6 +97965,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -98406,7 +99890,439 @@
   {
     "name": "snowscape",
     "description": "The user summons a snowstorm lasting five turns. This boosts the Defense stats of Ice types.",
-    "learners": []
+    "learners": [
+      {
+        "pokemon_id": 258,
+        "pokemon_name": "mudkip",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png"
+      },
+      {
+        "pokemon_id": 259,
+        "pokemon_name": "marshtomp",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png"
+      },
+      {
+        "pokemon_id": 260,
+        "pokemon_name": "swampert",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png"
+      },
+      {
+        "pokemon_id": 270,
+        "pokemon_name": "lotad",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/270.png"
+      },
+      {
+        "pokemon_id": 271,
+        "pokemon_name": "lombre",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png"
+      },
+      {
+        "pokemon_id": 272,
+        "pokemon_name": "ludicolo",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png"
+      },
+      {
+        "pokemon_id": 278,
+        "pokemon_name": "wingull",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/278.png"
+      },
+      {
+        "pokemon_id": 279,
+        "pokemon_name": "pelipper",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png"
+      },
+      {
+        "pokemon_id": 298,
+        "pokemon_name": "azurill",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/298.png"
+      },
+      {
+        "pokemon_id": 318,
+        "pokemon_name": "carvanha",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/318.png"
+      },
+      {
+        "pokemon_id": 319,
+        "pokemon_name": "sharpedo",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png"
+      },
+      {
+        "pokemon_id": 320,
+        "pokemon_name": "wailmer",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/320.png"
+      },
+      {
+        "pokemon_id": 321,
+        "pokemon_name": "wailord",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png"
+      },
+      {
+        "pokemon_id": 325,
+        "pokemon_name": "spoink",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/325.png"
+      },
+      {
+        "pokemon_id": 326,
+        "pokemon_name": "grumpig",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/326.png"
+      },
+      {
+        "pokemon_id": 334,
+        "pokemon_name": "altaria",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png"
+      },
+      {
+        "pokemon_id": 337,
+        "pokemon_name": "lunatone",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/337.png"
+      },
+      {
+        "pokemon_id": 339,
+        "pokemon_name": "barboach",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/339.png"
+      },
+      {
+        "pokemon_id": 340,
+        "pokemon_name": "whiscash",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/340.png"
+      },
+      {
+        "pokemon_id": 341,
+        "pokemon_name": "corphish",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/341.png"
+      },
+      {
+        "pokemon_id": 342,
+        "pokemon_name": "crawdaunt",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png"
+      },
+      {
+        "pokemon_id": 349,
+        "pokemon_name": "feebas",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png"
+      },
+      {
+        "pokemon_id": 350,
+        "pokemon_name": "milotic",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
+      },
+      {
+        "pokemon_id": 351,
+        "pokemon_name": "castform",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 20
+          },
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/351.png"
+      },
+      {
+        "pokemon_id": 359,
+        "pokemon_name": "absol",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png"
+      },
+      {
+        "pokemon_id": 361,
+        "pokemon_name": "snorunt",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 45
+          },
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/361.png"
+      },
+      {
+        "pokemon_id": 362,
+        "pokemon_name": "glalie",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 47
+          },
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png"
+      },
+      {
+        "pokemon_id": 363,
+        "pokemon_name": "spheal",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 48
+          },
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png"
+      },
+      {
+        "pokemon_id": 364,
+        "pokemon_name": "sealeo",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 58
+          },
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/364.png"
+      },
+      {
+        "pokemon_id": 365,
+        "pokemon_name": "walrein",
+        "methods": [
+          {
+            "method": "level-up",
+            "level": 64
+          },
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/365.png"
+      },
+      {
+        "pokemon_id": 366,
+        "pokemon_name": "clamperl",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/366.png"
+      },
+      {
+        "pokemon_id": 367,
+        "pokemon_name": "huntail",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png"
+      },
+      {
+        "pokemon_id": 368,
+        "pokemon_name": "gorebyss",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png"
+      },
+      {
+        "pokemon_id": 369,
+        "pokemon_name": "relicanth",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png"
+      },
+      {
+        "pokemon_id": 370,
+        "pokemon_name": "luvdisc",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+      },
+      {
+        "pokemon_id": 378,
+        "pokemon_name": "regice",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/378.png"
+      },
+      {
+        "pokemon_id": 382,
+        "pokemon_name": "kyogre",
+        "methods": [
+          {
+            "method": "tm",
+            "level": null
+          }
+        ],
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/382.png"
+      }
+    ]
   },
   {
     "name": "soak",
@@ -99253,6 +101169,18 @@
     ]
   },
   {
+    "name": "spike-cannon",
+    "description": "Hits 2-5 times in one turn.",
+    "learners": [
+      {
+        "pokemon_id": 222,
+        "pokemon_name": "corsola",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/222.png",
+        "methods": []
+      }
+    ]
+  },
+  {
     "name": "spikes",
     "description": "Scatters Spikes, hurting opposing Pokémon that switch in.",
     "learners": [
@@ -99450,6 +101378,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png"
+      },
+      {
+        "pokemon_id": 171,
+        "pokemon_name": "lanturn",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/171.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -99848,6 +101787,39 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+      },
+      {
+        "pokemon_id": 183,
+        "pokemon_name": "marill",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/183.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 184,
+        "pokemon_name": "azumarill",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/184.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 191,
+        "pokemon_name": "sunkern",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/191.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -99865,6 +101837,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/285.png"
+      },
+      {
+        "pokemon_id": 286,
+        "pokemon_name": "breloom",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/286.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -100464,6 +102447,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png"
+      },
+      {
+        "pokemon_id": 171,
+        "pokemon_name": "lanturn",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/171.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -101073,6 +103067,18 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+      }
+    ]
+  },
+  {
+    "name": "storm-throw",
+    "description": "Always scores a critical hit.",
+    "learners": [
+      {
+        "pokemon_id": 127,
+        "pokemon_name": "pinsir",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+        "methods": []
       }
     ]
   },
@@ -101911,6 +103917,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/266.png"
@@ -101921,6 +103931,10 @@
         "methods": [
           {
             "method": "tutor",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -101933,6 +103947,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/268.png"
@@ -101943,6 +103961,10 @@
         "methods": [
           {
             "method": "tutor",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -102302,6 +104324,78 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png"
+      }
+    ]
+  },
+  {
+    "name": "submission",
+    "description": "User receives 1/4 the damage it inflicts in recoil.",
+    "learners": [
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 27,
+        "pokemon_name": "sandshrew",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 39,
+        "pokemon_name": "jigglypuff",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 54,
+        "pokemon_name": "psyduck",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 55,
+        "pokemon_name": "golduck",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 63,
+        "pokemon_name": "abra",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 66,
+        "pokemon_name": "machop",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 74,
+        "pokemon_name": "geodude",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 75,
+        "pokemon_name": "graveler",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 127,
+        "pokemon_name": "pinsir",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+        "methods": []
       }
     ]
   },
@@ -106679,6 +108773,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
@@ -107517,6 +109615,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/364.png"
@@ -107860,6 +109962,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png"
+      },
+      {
+        "pokemon_id": 171,
+        "pokemon_name": "lanturn",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/171.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -107899,6 +110012,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 315,
+        "pokemon_name": "roselia",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -108658,6 +110793,10 @@
           },
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "on-evolution",
             "level": null
           }
         ],
@@ -110159,6 +112298,28 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png"
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -110265,6 +112426,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png"
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -111290,6 +113462,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png"
+      },
+      {
+        "pokemon_id": 232,
+        "pokemon_name": "donphan",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -111754,6 +113937,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/326.png"
@@ -111779,6 +113966,61 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 293,
+        "pokemon_name": "whismur",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/293.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 294,
+        "pokemon_name": "loudred",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/294.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 295,
+        "pokemon_name": "exploud",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/295.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -112819,6 +115061,10 @@
           {
             "method": "level-up",
             "level": 1
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/340.png"
@@ -112833,6 +115079,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/371.png"
+      },
+      {
+        "pokemon_id": 66,
+        "pokemon_name": "machop",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -113868,6 +116125,47 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "thunder-shock",
+    "description": "Has a 10% chance to paralyze the target.",
+    "learners": [
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 81,
+        "pokemon_name": "magnemite",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png",
+        "methods": []
+      },
+      {
+        "pokemon_id": 100,
+        "pokemon_name": "voltorb",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+        "methods": []
       }
     ]
   },
@@ -114819,6 +117117,50 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png"
+      },
+      {
+        "pokemon_id": 39,
+        "pokemon_name": "jigglypuff",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 202,
+        "pokemon_name": "wobbuffet",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 302,
+        "pokemon_name": "sableye",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 360,
+        "pokemon_name": "wynaut",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -116646,6 +118988,18 @@
     "learners": []
   },
   {
+    "name": "transform",
+    "description": "User becomes a copy of the target until it leaves battle.",
+    "learners": [
+      {
+        "pokemon_id": 132,
+        "pokemon_name": "ditto",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+        "methods": []
+      }
+    ]
+  },
+  {
     "name": "tri-attack",
     "description": "Has a 20% chance to burn, freeze, or paralyze the target.",
     "learners": [
@@ -116670,6 +119024,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/381.png"
+      },
+      {
+        "pokemon_id": 85,
+        "pokemon_name": "dodrio",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -117756,6 +120121,10 @@
           {
             "method": "tutor",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png"
@@ -117803,6 +120172,10 @@
         "methods": [
           {
             "method": "tutor",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -118169,6 +120542,23 @@
     ]
   },
   {
+    "name": "v-create",
+    "description": "Lowers the user’s Defense, Special Defense, and Speed by one stage each.",
+    "learners": [
+      {
+        "pokemon_id": 384,
+        "pokemon_name": "rayquaza",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "vacuum-wave",
     "description": "Inflicts regular damage with no additional effect.",
     "learners": [
@@ -118517,6 +120907,34 @@
     ]
   },
   {
+    "name": "volt-tackle",
+    "description": "User takes 1/3 the damage inflicted in recoil. Has a 10% chance to paralyze the target.",
+    "learners": [
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special-egg",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special-egg",
+            "level": null
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "wake-up-slap",
     "description": "If the target is asleep, has double power and wakes it up.",
     "learners": [
@@ -118563,6 +120981,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png"
+      },
+      {
+        "pokemon_id": 301,
+        "pokemon_name": "delcatty",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -118952,6 +121381,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png"
@@ -118962,6 +121395,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -119551,6 +121988,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "on-evolution",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
@@ -119791,6 +122232,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+      },
+      {
+        "pokemon_id": 130,
+        "pokemon_name": "gyarados",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+        "methods": [
+          {
+            "method": "on-evolution",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -119951,6 +122403,61 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/380.png"
+      },
+      {
+        "pokemon_id": 272,
+        "pokemon_name": "ludicolo",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 311,
+        "pokemon_name": "plusle",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/311.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 315,
+        "pokemon_name": "roselia",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 341,
+        "pokemon_name": "corphish",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/341.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 342,
+        "pokemon_name": "crawdaunt",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -120538,6 +123045,10 @@
           {
             "method": "tm",
             "level": null
+          },
+          {
+            "method": "prevo",
+            "level": null
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png"
@@ -120548,6 +123059,10 @@
         "methods": [
           {
             "method": "tm",
+            "level": null
+          },
+          {
+            "method": "prevo",
             "level": null
           }
         ],
@@ -121264,6 +123779,17 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png"
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -121661,6 +124187,72 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+      },
+      {
+        "pokemon_id": 280,
+        "pokemon_name": "ralts",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/280.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 281,
+        "pokemon_name": "kirlia",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/281.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 359,
+        "pokemon_name": "absol",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 371,
+        "pokemon_name": "bagon",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/371.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 372,
+        "pokemon_name": "shelgon",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/372.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 373,
+        "pokemon_name": "salamence",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
       }
     ]
   },
@@ -122857,6 +125449,39 @@
           }
         ],
         "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png"
+      },
+      {
+        "pokemon_id": 25,
+        "pokemon_name": "pikachu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 26,
+        "pokemon_name": "raichu",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+        "methods": [
+          {
+            "method": "special",
+            "level": null
+          }
+        ]
+      },
+      {
+        "pokemon_id": 288,
+        "pokemon_name": "vigoroth",
+        "pokemon_sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png",
+        "methods": [
+          {
+            "method": "prevo",
+            "level": null
+          }
+        ]
       }
     ]
   },

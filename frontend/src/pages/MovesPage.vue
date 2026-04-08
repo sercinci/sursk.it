@@ -69,6 +69,7 @@
           <tbody>
             <template v-for="move in filtered" :key="move.name">
               <tr
+                :id="`move-row-${move.name}`"
                 class="cursor-pointer border-t border-black/5 transition-colors hover:bg-black/[0.03]"
                 @click="toggleExpanded(move.name)"
               >
@@ -212,8 +213,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, nextTick, ref, watch } from "vue";
 import { useQuery } from "@tanstack/vue-query";
+import { useRoute } from "vue-router";
 
 import { fetchMoveDetail, fetchMoves } from "@/api/client";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
@@ -234,6 +236,7 @@ const expandedMove = ref<string | null>(null);
 const selectedTypeFilter = ref("");
 const selectedCategoryFilter = ref("");
 const { locale } = useLocale();
+const route = useRoute();
 const DAMAGE_MULTIPLIERS: DamageMultiplier[] = [2, 0.5, 0];
 
 const movesQuery = useQuery({
@@ -301,6 +304,47 @@ const moveDetailErrorMessage = computed(() =>
 
 const isMoveDetailLoading = computed(
   () => moveDetailQuery.isLoading.value || moveDetailQuery.isFetching.value
+);
+
+const requestedMoveQuery = computed(() => {
+  const moveQuery = route.query.move;
+  if (typeof moveQuery === "string" && moveQuery.trim()) {
+    return moveQuery.trim();
+  }
+  if (Array.isArray(moveQuery)) {
+    const firstValue = moveQuery.find(
+      (value): value is string => typeof value === "string" && Boolean(value.trim())
+    );
+    return firstValue?.trim() ?? null;
+  }
+  return null;
+});
+
+watch(
+  [requestedMoveQuery, computed(() => movesQuery.data.value?.data ?? [])],
+  ([requestedMove, moves]) => {
+    if (!requestedMove || !moves.length) {
+      return;
+    }
+
+    const normalizedRequestedMove = normalizeQuery(requestedMove);
+    const matchedMove = moves.find(
+      (move) =>
+        normalizeQuery(move.name) === normalizedRequestedMove ||
+        normalizeQuery(move.display_name ?? move.name) === normalizedRequestedMove
+    );
+
+    if (matchedMove) {
+      expandedMove.value = matchedMove.name;
+      void nextTick(() => {
+        document.getElementById(`move-row-${matchedMove.name}`)?.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      });
+    }
+  },
+  { immediate: true }
 );
 
 function toggleExpanded(moveName: string) {

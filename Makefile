@@ -1,7 +1,17 @@
-.PHONY: backend frontend test build-data
+.PHONY: backend frontend test build-data install
 
-backend:
-	cd backend && uvicorn app.main:app --reload
+VENV := .venv
+PY   := $(VENV)/bin/python
+
+$(VENV):
+	python3 -m venv $(VENV)
+	$(PY) -m pip install --upgrade pip
+
+install: $(VENV)
+	$(PY) -m pip install -r backend/requirements.txt
+
+backend: install
+	cd backend && ../$(PY) -m uvicorn app.main:app --reload
 
 frontend:
 	cd frontend && npm run dev

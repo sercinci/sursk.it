@@ -167,8 +167,8 @@ def test_fairy_moves_are_mapped_to_legacy_normal_type() -> None:
         assert response.status_code == 200
         payload = response.json()
         moves = payload["data"]
-        moonblast = next(move for move in moves if move["name"] == "moonblast")
-        assert moonblast["type"] == "normal"
+        charm = next(move for move in moves if move["name"] == "charm")
+        assert charm["type"] == "normal"
         assert all(move["type"] != "fairy" for move in moves if move.get("type"))
 
 
@@ -177,18 +177,29 @@ def test_selected_move_detail_stays_localized_in_italian() -> None:
         move_list_response = client.get("/api/moves", params={"lang": "it"})
         assert move_list_response.status_code == 200
         move_list_payload = move_list_response.json()
-        moonblast_row = next(move for move in move_list_payload["data"] if move["name"] == "moonblast")
-        assert moonblast_row["display_name"] == "Forza Lunare"
-        assert moonblast_row["type"] == "normal"
+        tackle_row = next(move for move in move_list_payload["data"] if move["name"] == "tackle")
+        assert tackle_row["display_name"] == "Azione"
+        assert tackle_row["type"] == "normal"
 
-        detail_response = client.get("/api/moves/moonblast", params={"lang": "it"})
+        detail_response = client.get("/api/moves/tackle", params={"lang": "it"})
         assert detail_response.status_code == 200
         detail_payload = detail_response.json()
         detail = detail_payload["data"]
-        assert detail["display_name"] == "Forza Lunare"
+        assert detail["display_name"] == "Azione"
         assert detail["description"]
         assert "the target" not in detail["description"].lower()
         assert "inflicts" not in detail["description"].lower()
+
+
+def test_move_list_hides_moves_without_visible_learners() -> None:
+    with TestClient(app) as client:
+        response = client.get("/api/moves")
+        assert response.status_code == 200
+        payload = response.json()
+        move_names = {move["name"] for move in payload["data"]}
+        assert "tackle" in move_names
+        assert "moonblast" not in move_names
+        assert "doom-desire" not in move_names
 
 
 def test_hoenn_location_localized_with_lang_query() -> None:

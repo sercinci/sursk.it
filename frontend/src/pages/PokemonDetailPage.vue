@@ -305,6 +305,20 @@
           <span class="font-mono text-sm text-muted">{{ isMobileSectionOpen('damage-dealt') ? "−" : "+" }}</span>
         </button>
         <div v-show="isMobileSectionOpen('damage-dealt')" class="border-t border-black/10 px-4 py-4">
+          <div v-if="showStabTypeFilters" class="mb-3 flex justify-end gap-2">
+            <button
+              v-for="typeOption in stabDamageTypeOptions"
+              :key="`mobile-stab-type-filter-${typeOption}`"
+              type="button"
+              class="rounded-full border px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide transition"
+              :class="isStabDamageTypeSelected(typeOption) ? 'opacity-100 ring-1 ring-black/15' : 'opacity-45 hover:opacity-80'"
+              :style="getTypeChipStyle(typeOption)"
+              :aria-pressed="isStabDamageTypeSelected(typeOption)"
+              @click="toggleStabDamageType(typeOption)"
+            >
+              {{ labelType(typeOption) }}
+            </button>
+          </div>
           <div class="space-y-5">
             <section v-for="group in offensiveDamageGroups" :key="`multiplier-${group.multiplier}`">
               <h3 class="font-display text-lg font-semibold">
@@ -463,6 +477,7 @@
                       {{ t("pokemon.filter.learn") }} <span class="font-mono">{{ moveSortIndicator('learn') }}</span>
                     </button>
                   </th>
+                  <th class="px-3 py-2 text-right" aria-hidden="true"></th>
                 </tr>
               </thead>
               <tbody>
@@ -510,6 +525,16 @@
                   <td class="px-3 py-2">{{ move.pp ?? "-" }}</td>
                   <td class="px-3 py-2">{{ move.accuracy ?? "-" }}</td>
                   <td class="px-3 py-2 text-muted">{{ formatLearnMethods(move.methods) }}</td>
+                  <td class="px-3 py-2 text-right">
+                    <RouterLink
+                      :to="{ name: 'moves', query: { move: move.name } }"
+                      class="inline-flex h-7 w-7 items-center justify-center rounded-md border border-black/10 bg-white text-xs font-semibold text-muted transition hover:text-text"
+                      :title="t('pokemon.open_move')"
+                      :aria-label="t('pokemon.open_move')"
+                    >
+                      ↗
+                    </RouterLink>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -548,6 +573,23 @@
 
     <section class="hidden gap-4 xl:grid-cols-2 md:grid">
       <article class="card-surface rounded-2xl p-4">
+        <div class="mb-4 flex items-start justify-between gap-3">
+          <h2 class="font-display text-xl font-semibold">{{ t("pokemon.damage_dealt") }}</h2>
+          <div v-if="showStabTypeFilters" class="flex flex-wrap justify-end gap-2">
+            <button
+              v-for="typeOption in stabDamageTypeOptions"
+              :key="`desktop-stab-type-filter-${typeOption}`"
+              type="button"
+              class="rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide transition"
+              :class="isStabDamageTypeSelected(typeOption) ? 'opacity-100 ring-1 ring-black/15' : 'opacity-45 hover:opacity-80'"
+              :style="getTypeChipStyle(typeOption)"
+              :aria-pressed="isStabDamageTypeSelected(typeOption)"
+              @click="toggleStabDamageType(typeOption)"
+            >
+              {{ labelType(typeOption) }}
+            </button>
+          </div>
+        </div>
         <div class="space-y-5">
           <section v-for="group in offensiveDamageGroups" :key="`desktop-multiplier-${group.multiplier}`">
             <h3 class="font-display text-lg font-semibold">{{ t("pokemon.stab_damage_to", { multiplier: formatMultiplier(group.multiplier) }) }}</h3>
@@ -684,6 +726,7 @@
                     {{ t("pokemon.filter.learn") }} <span class="font-mono">{{ moveSortIndicator('learn') }}</span>
                   </button>
                 </th>
+                <th class="px-3 py-2 text-right" aria-hidden="true"></th>
               </tr>
             </thead>
             <tbody>
@@ -735,6 +778,16 @@
                 <td class="px-3 py-2">{{ move.pp ?? "-" }}</td>
                 <td class="px-3 py-2">{{ move.accuracy ?? "-" }}</td>
                 <td class="px-3 py-2 text-muted">{{ formatLearnMethods(move.methods) }}</td>
+                <td class="px-3 py-2 text-right">
+                  <RouterLink
+                    :to="{ name: 'moves', query: { move: move.name } }"
+                    class="inline-flex h-7 w-7 items-center justify-center rounded-md border border-black/10 bg-white text-xs font-semibold text-muted transition hover:text-text"
+                    :title="t('pokemon.open_move')"
+                    :aria-label="t('pokemon.open_move')"
+                  >
+                    ↗
+                  </RouterLink>
+                </td>
               </tr>
             </tbody>
             </table>
@@ -769,7 +822,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, ref, watch } from "vue";
 import { useQuery } from "@tanstack/vue-query";
 import { RouterLink, useRoute } from "vue-router";
 
@@ -888,7 +941,18 @@ const evYieldEntries = computed(() => {
   }));
   return entries.sort((a, b) => STAT_ORDER.indexOf(a.name) - STAT_ORDER.indexOf(b.name));
 });
-const offensiveDamageGroups = computed(() => getOffensiveDamageGroups(pokemon.value?.types ?? []));
+const stabDamageTypeOptions = computed(() => pokemon.value?.types ?? []);
+const selectedStabDamageTypes = ref<string[]>([]);
+const showStabTypeFilters = computed(() => stabDamageTypeOptions.value.length > 1);
+const offensiveDamageTypes = computed(() => {
+  const availableTypes = stabDamageTypeOptions.value;
+  if (!availableTypes.length) {
+    return [];
+  }
+  const selectedTypes = selectedStabDamageTypes.value.filter((type) => availableTypes.includes(type));
+  return selectedTypes.length ? selectedTypes : availableTypes;
+});
+const offensiveDamageGroups = computed(() => getOffensiveDamageGroups(offensiveDamageTypes.value));
 const defensiveDamageGroups = computed(() => getDefensiveDamageGroups(pokemon.value?.types ?? []));
 const isLoading = computed(() => pokemonQuery.isPending.value);
 const errorMessage = computed(() =>
@@ -969,8 +1033,39 @@ const activeMove = ref<string | null>(null);
 const moveButtonRefs = ref<Record<string, HTMLElement>>({});
 const mobileOpenSection = ref<MobileSection | null>("damage-dealt");
 
+watch(
+  stabDamageTypeOptions,
+  (types) => {
+    selectedStabDamageTypes.value = [...types];
+  },
+  { immediate: true }
+);
+
 function formatLabel(value: string) {
   return value.replace(/-/g, " ");
+}
+
+function isStabDamageTypeSelected(type: string) {
+  return selectedStabDamageTypes.value.includes(type);
+}
+
+function toggleStabDamageType(type: string) {
+  if (!showStabTypeFilters.value) {
+    return;
+  }
+
+  if (!selectedStabDamageTypes.value.includes(type)) {
+    selectedStabDamageTypes.value = [...selectedStabDamageTypes.value, type];
+    return;
+  }
+
+  if (selectedStabDamageTypes.value.length === 1) {
+    return;
+  }
+
+  selectedStabDamageTypes.value = selectedStabDamageTypes.value.filter(
+    (selectedType) => selectedType !== type
+  );
 }
 
 function formatLearnMethods(methods: MoveLearnMethod[]) {

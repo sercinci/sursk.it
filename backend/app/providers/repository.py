@@ -97,6 +97,15 @@ LEGENDARY_POKEMON_IDS = {
 GEN3_START = 252
 GEN3_END = 386
 
+MOVE_NAME_ALIASES = {
+    "hail": "snowscape",
+    "feint-attack": "faint-attack",
+    "self-destruct": "selfdestruct",
+    "smelling-salts": "smelling-salt",
+    "smokescreen": "smoke-screen",
+    "high-jump-kick": "hi-jump-kick",
+}
+
 
 class DataRepository:
     def __init__(self, data_dir: Path) -> None:
@@ -134,20 +143,24 @@ class DataRepository:
             for pokemon in loaded_pokemon
         ]
         self.moves = TypeAdapter(list[Move]).validate_python(self._load_json("moves.json"))
-        self.moves_by_name = {move.name.lower(): move for move in self.moves}
+        self.moves_by_name = self._apply_move_aliases(
+            {move.name.lower(): move for move in self.moves}
+        )
         parsed_move_details = TypeAdapter(list[MoveDetail]).validate_python(
             self._load_json("move_details.json")
         )
-        self.move_details = {
-            detail.name.lower(): detail for detail in parsed_move_details
-        }
-        self.move_tm_by_name = self._load_move_tm_catalog()
-        self.move_methods_by_move = {
-            detail.name.lower(): {
-                learner.pokemon_id: learner.methods for learner in detail.learners
+        self.move_details = self._apply_move_aliases(
+            {detail.name.lower(): detail for detail in parsed_move_details}
+        )
+        self.move_tm_by_name = self._apply_move_aliases(self._load_move_tm_catalog())
+        self.move_methods_by_move = self._apply_move_aliases(
+            {
+                detail.name.lower(): {
+                    learner.pokemon_id: learner.methods for learner in detail.learners
+                }
+                for detail in parsed_move_details
             }
-            for detail in parsed_move_details
-        }
+        )
         self.locations = TypeAdapter(list[Location]).validate_python(
             self._load_json("locations.json")
         )
@@ -209,6 +222,11 @@ class DataRepository:
                 self.it_location_display_by_slug[key] = display_name
                 english_name = self._format_location_display_name(key)
                 self.it_location_display_by_en[english_name] = display_name
+
+        self.it_move_display_by_slug = self._apply_move_aliases(self.it_move_display_by_slug)
+        self.it_move_description_by_slug = self._apply_move_aliases(
+            self.it_move_description_by_slug
+        )
 
     def _reload_pokemmo_hoenn_locations(self, force: bool = False) -> None:
         file_path = self.data_dir / "pokemmo_hoenn_locations.json"
@@ -285,8 +303,21 @@ class DataRepository:
                 self.by_type.setdefault(key, []).append(pokemon)
 
             for move in pokemon.moves:
-                key = move.lower()
+                key = self._normalize_move_slug(move)
                 self.by_move.setdefault(key, []).append(pokemon)
+
+    def _normalize_move_slug(self, move_name: str) -> str:
+        normalized = move_name.strip().lower()
+        return MOVE_NAME_ALIASES.get(normalized, normalized)
+
+    def _apply_move_aliases(self, rows: dict[str, object]) -> dict[str, object]:
+        aliased = dict(rows)
+        for old_name, new_name in MOVE_NAME_ALIASES.items():
+            if new_name in aliased and old_name not in aliased:
+                aliased[old_name] = aliased[new_name]
+            if old_name in aliased and new_name not in aliased:
+                aliased[new_name] = aliased[old_name]
+        return aliased
 
     def _load_move_tm_catalog(self) -> dict[str, MoveTmPurchase]:
         rows = self._load_json_optional("move_tm_hoenn_lookup.json")
@@ -374,7 +405,10 @@ class DataRepository:
                 ids = type_ids
 
         if move:
-            move_ids = {pokemon.id for pokemon in self.by_move.get(move.lower(), [])}
+            move_ids = {
+                pokemon.id
+                for pokemon in self.by_move.get(self._normalize_move_slug(move), [])
+            }
             ids = move_ids if ids is None else ids & move_ids
 
         if ev_yield:
@@ -468,7 +502,14 @@ class DataRepository:
         return pokemon.model_copy(update={"abilities": localized_abilities})
 
     def list_moves(self, locale: str = "en") -> list[Move]:
-        rows = sorted(self.moves, key=lambda move: move.name)
+        rows = sorted(
+            (
+                move
+                for move in self.moves
+                if self._has_visible_move_learners(move.name)
+            ),
+            key=lambda move: move.name,
+        )
         if locale != "it":
             return [
                 move.model_copy(
@@ -489,17 +530,13 @@ class DataRepository:
         ]
 
     def get_move_detail(self, move_name: str, locale: str = "en") -> MoveDetail | None:
-        normalized_name = move_name.lower()
+        normalized_name = self._normalize_move_slug(move_name)
         move_detail = self.move_details.get(normalized_name)
         if not move_detail:
             return None
 
         tm_purchase = self.move_tm_by_name.get(normalized_name)
-        filtered_learners = [
-            learner
-            for learner in move_detail.learners
-            if learner.pokemon_id not in LEGENDARY_POKEMON_IDS
-        ]
+        filtered_learners = self._filter_visible_move_learners(move_detail.learners)
 
         updates: dict[str, object] = {}
         if tm_purchase:
@@ -516,6 +553,21 @@ class DataRepository:
             return move_detail
         return move_detail.model_copy(update=updates)
 
+    def _filter_visible_move_learners(
+        self, learners: list[MoveLearner]
+    ) -> list[MoveLearner]:
+        return [
+            learner
+            for learner in learners
+            if learner.pokemon_id not in LEGENDARY_POKEMON_IDS
+        ]
+
+    def _has_visible_move_learners(self, move_name: str) -> bool:
+        move_detail = self.move_details.get(self._normalize_move_slug(move_name))
+        if not move_detail:
+            return False
+        return bool(self._filter_visible_move_learners(move_detail.learners))
+
     def list_pokemon_moves(self, pokemon_id: int, locale: str = "en") -> list[PokemonMove]:
         pokemon = self.by_id.get(pokemon_id)
         if not pokemon:
@@ -523,7 +575,7 @@ class DataRepository:
 
         rows: list[PokemonMove] = []
         for move_name in sorted(pokemon.moves):
-            normalized_name = move_name.lower()
+            normalized_name = self._normalize_move_slug(move_name)
             move_meta = self.moves_by_name.get(normalized_name)
             move_detail = self.move_details.get(normalized_name)
             methods = self.move_methods_by_move.get(normalized_name, {}).get(

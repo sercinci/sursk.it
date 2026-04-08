@@ -413,6 +413,104 @@
     ]
   },
   {
+    "name": "fiery-path-area",
+    "display_name": "Fiery Path",
+    "birdview_image_url": "https://images.shoutwiki.com/pokemmo/a/a7/Fiery_Path.png",
+    "birdview_source_url": "https://pokemmo.shoutwiki.com/wiki/File%3AFiery_Path.png",
+    "birdview_images": [
+      {
+        "label": "Fiery Path",
+        "image_url": "https://images.shoutwiki.com/pokemmo/a/a7/Fiery_Path.png",
+        "source_url": "https://pokemmo.shoutwiki.com/wiki/File%3AFiery_Path.png"
+      }
+    ],
+    "map_image_url": "https://archives.bulbagarden.net/media/upload/0/0c/Hoenn_Fiery_Path_Map.png",
+    "map_source_url": "https://bulbapedia.bulbagarden.net/wiki/Fiery_Path#/media/File:Hoenn_Fiery_Path_Map.png",
+    "source_url": "https://pokemmo.shoutwiki.com/wiki/Fiery_Path",
+    "encounters": [
+      {
+        "pokemon_name": "Grimer",
+        "pokemon_id": 88,
+        "sub_location": "Fiery Path",
+        "level_range": "15-16",
+        "method": "Cave",
+        "rate": "Uncommon",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Koffing",
+        "pokemon_id": 109,
+        "sub_location": "Fiery Path",
+        "level_range": "15-16",
+        "method": "Cave",
+        "rate": "Uncommon",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Machop",
+        "pokemon_id": 66,
+        "sub_location": "Fiery Path",
+        "level_range": "15-16",
+        "method": "Cave",
+        "rate": "Rare",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Numel",
+        "pokemon_id": 322,
+        "sub_location": "Fiery Path",
+        "level_range": "13-14",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Numel",
+        "pokemon_id": 322,
+        "sub_location": "Fiery Path",
+        "level_range": "15-16",
+        "method": "Cave",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Slugma",
+        "pokemon_id": 218,
+        "sub_location": "Fiery Path",
+        "level_range": "15",
+        "method": "Cave",
+        "rate": "Uncommon",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Torkoal",
+        "pokemon_id": 324,
+        "sub_location": "Fiery Path",
+        "level_range": "13-14",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Torkoal",
+        "pokemon_id": 324,
+        "sub_location": "Fiery Path",
+        "level_range": "15-16",
+        "method": "Cave",
+        "rate": "Uncommon",
+        "period": null,
+        "category": "Wild"
+      }
+    ]
+  },
+  {
     "name": "granite-cave-area",
     "display_name": "Granite Cave",
     "birdview_image_url": "https://images.shoutwiki.com/pokemmo/f/ff/Granite_Cave.png",
@@ -5457,6 +5555,89 @@
     ]
   },
   {
+    "name": "magma-hideout-area",
+    "display_name": "Magma Hideout",
+    "birdview_image_url": "https://images.shoutwiki.com/pokemmo/6/69/Magma_Hideout_entrance.png",
+    "birdview_source_url": "https://pokemmo.shoutwiki.com/wiki/File%3AMagma_Hideout_entrance.png",
+    "birdview_images": [
+      {
+        "label": "Magma Hideout",
+        "image_url": "https://images.shoutwiki.com/pokemmo/6/69/Magma_Hideout_entrance.png",
+        "source_url": "https://pokemmo.shoutwiki.com/wiki/File%3AMagma_Hideout_entrance.png"
+      },
+      {
+        "label": "Magma Hideout (Sealed)",
+        "image_url": "https://images.shoutwiki.com/pokemmo/f/f5/Magma_Hideout_entrance_sealed.png",
+        "source_url": "https://pokemmo.shoutwiki.com/wiki/File%3AMagma_Hideout_entrance_sealed.png"
+      }
+    ],
+    "map_image_url": "https://archives.bulbagarden.net/media/upload/4/4a/Hoenn_Jagged_Pass_Map.png",
+    "map_source_url": "https://bulbapedia.bulbagarden.net/wiki/Jagged_Pass",
+    "source_url": "https://pokemmo.shoutwiki.com/wiki/Magma_Hideout",
+    "encounters": [
+      {
+        "pokemon_name": "Geodude",
+        "pokemon_id": 74,
+        "sub_location": "Magma Hideout",
+        "level_range": "26-28",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Geodude",
+        "pokemon_id": 74,
+        "sub_location": "Magma Hideout",
+        "level_range": "27-30",
+        "method": "Cave",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Graveler",
+        "pokemon_id": 75,
+        "sub_location": "Magma Hideout",
+        "level_range": "26-28",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Graveler",
+        "pokemon_id": 75,
+        "sub_location": "Magma Hideout",
+        "level_range": "30-33",
+        "method": "Cave",
+        "rate": "Uncommon",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Torkoal",
+        "pokemon_id": 324,
+        "sub_location": "Magma Hideout",
+        "level_range": "26-28",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Torkoal",
+        "pokemon_id": 324,
+        "sub_location": "Magma Hideout",
+        "level_range": "28-30",
+        "method": "Cave",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      }
+    ]
+  },
+  {
     "name": "meteor-falls-area",
     "display_name": "Meteor Falls",
     "birdview_image_url": "https://images.shoutwiki.com/pokemmo/9/97/Meteor_Falls.png",
@@ -8405,6 +8586,174 @@
         "rate": "Uncommon",
         "period": null,
         "category": "Wild"
+      }
+    ]
+  },
+  {
+    "name": "sky-pillar-area",
+    "display_name": "Sky Pillar",
+    "birdview_image_url": "https://images.shoutwiki.com/pokemmo/4/47/Sky_Pillar.png",
+    "birdview_source_url": "https://pokemmo.shoutwiki.com/wiki/File%3ASky_Pillar.png",
+    "birdview_images": [
+      {
+        "label": "Sky Pillar",
+        "image_url": "https://images.shoutwiki.com/pokemmo/4/47/Sky_Pillar.png",
+        "source_url": "https://pokemmo.shoutwiki.com/wiki/File%3ASky_Pillar.png"
+      }
+    ],
+    "map_image_url": "https://archives.bulbagarden.net/media/upload/7/70/Hoenn_Sky_Pillar_Map.png",
+    "map_source_url": "https://bulbapedia.bulbagarden.net/wiki/Sky_Pillar#/media/File:Hoenn_Sky_Pillar_Map.png",
+    "source_url": "https://pokemmo.shoutwiki.com/wiki/Sky_Pillar",
+    "encounters": [
+      {
+        "pokemon_name": "Altaria",
+        "pokemon_id": 334,
+        "sub_location": "Sky Pillar",
+        "level_range": "35-37",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Altaria",
+        "pokemon_id": 334,
+        "sub_location": "Sky Pillar",
+        "level_range": "37-39",
+        "method": "Cave",
+        "rate": "Very Rare",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Ariados",
+        "pokemon_id": 168,
+        "sub_location": "Sky Pillar",
+        "level_range": "37-38",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": "Night",
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Ariados",
+        "pokemon_id": 168,
+        "sub_location": "Sky Pillar",
+        "level_range": "37-38",
+        "method": "Cave",
+        "rate": "Uncommon",
+        "period": "Night",
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Banette",
+        "pokemon_id": 354,
+        "sub_location": "Sky Pillar",
+        "level_range": "37",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Banette",
+        "pokemon_id": 354,
+        "sub_location": "Sky Pillar",
+        "level_range": "37-38",
+        "method": "Cave",
+        "rate": "Rare",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Claydol",
+        "pokemon_id": 344,
+        "sub_location": "Sky Pillar",
+        "level_range": "36-37",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Claydol",
+        "pokemon_id": 344,
+        "sub_location": "Sky Pillar",
+        "level_range": "37-39",
+        "method": "Cave",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Dusclops",
+        "pokemon_id": 356,
+        "sub_location": "Sky Pillar",
+        "level_range": "37-38",
+        "method": "Cave",
+        "rate": "Uncommon",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Golbat",
+        "pokemon_id": 42,
+        "sub_location": "Sky Pillar",
+        "level_range": "35-37",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Golbat",
+        "pokemon_id": 42,
+        "sub_location": "Sky Pillar",
+        "level_range": "37-38",
+        "method": "Cave",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Mawile",
+        "pokemon_id": 303,
+        "sub_location": "Sky Pillar",
+        "level_range": "35-37",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Mawile",
+        "pokemon_id": 303,
+        "sub_location": "Sky Pillar",
+        "level_range": "37-38",
+        "method": "Cave",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Sableye",
+        "pokemon_id": 302,
+        "sub_location": "Sky Pillar",
+        "level_range": "37",
+        "method": "Cave",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Sableye",
+        "pokemon_id": 302,
+        "sub_location": "Sky Pillar",
+        "level_range": "37",
+        "method": "Cave",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
       }
     ]
   },

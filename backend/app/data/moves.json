@@ -1016,6 +1016,14 @@
     "category": "special"
   },
   {
+    "name": "drill-peck",
+    "type": "flying",
+    "category": "physical",
+    "power": 80,
+    "pp": 20,
+    "accuracy": 100
+  },
+  {
     "name": "drill-run",
     "type": "ground",
     "power": 80,
@@ -1208,6 +1216,14 @@
     "category": "physical"
   },
   {
+    "name": "faint-attack",
+    "type": "dark",
+    "power": 60,
+    "pp": 20,
+    "accuracy": null,
+    "category": "physical"
+  },
+  {
     "name": "fairy-wind",
     "type": "fairy",
     "power": 40,
@@ -1253,14 +1269,6 @@
     "power": 30,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
-  },
-  {
-    "name": "feint-attack",
-    "type": "dark",
-    "power": 60,
-    "pp": 20,
-    "accuracy": null,
     "category": "physical"
   },
   {
@@ -1454,6 +1462,14 @@
     "pp": 20,
     "accuracy": 100,
     "category": "physical"
+  },
+  {
+    "name": "follow-me",
+    "type": "normal",
+    "category": "status",
+    "power": null,
+    "pp": 20,
+    "accuracy": null
   },
   {
     "name": "force-palm",
@@ -1696,14 +1712,6 @@
     "category": "physical"
   },
   {
-    "name": "hail",
-    "type": "ice",
-    "power": null,
-    "pp": 10,
-    "accuracy": null,
-    "category": "status"
-  },
-  {
     "name": "hammer-arm",
     "type": "fighting",
     "power": 100,
@@ -1840,6 +1848,14 @@
     "category": "special"
   },
   {
+    "name": "hi-jump-kick",
+    "type": "fighting",
+    "power": 130,
+    "pp": 10,
+    "accuracy": 90,
+    "category": "physical"
+  },
+  {
     "name": "hidden-power",
     "type": "normal",
     "power": 60,
@@ -1856,20 +1872,28 @@
     "category": "physical"
   },
   {
-    "name": "high-jump-kick",
-    "type": "fighting",
-    "power": 130,
-    "pp": 10,
-    "accuracy": 90,
-    "category": "physical"
-  },
-  {
     "name": "hone-claws",
     "type": "dark",
     "power": null,
     "pp": 15,
     "accuracy": null,
     "category": "status"
+  },
+  {
+    "name": "horn-attack",
+    "type": "normal",
+    "category": "physical",
+    "power": 65,
+    "pp": 25,
+    "accuracy": 100
+  },
+  {
+    "name": "horn-drill",
+    "type": "normal",
+    "category": "physical",
+    "power": null,
+    "pp": 5,
+    "accuracy": 30
   },
   {
     "name": "howl",
@@ -2062,6 +2086,22 @@
     "pp": 15,
     "accuracy": 75,
     "category": "physical"
+  },
+  {
+    "name": "jump-kick",
+    "type": "fighting",
+    "category": "physical",
+    "power": 100,
+    "pp": 10,
+    "accuracy": 95
+  },
+  {
+    "name": "karate-chop",
+    "type": "fighting",
+    "category": "physical",
+    "power": 50,
+    "pp": 25,
+    "accuracy": 100
   },
   {
     "name": "knock-off",
@@ -2272,6 +2312,14 @@
     "category": "special"
   },
   {
+    "name": "magnet-bomb",
+    "type": "steel",
+    "category": "physical",
+    "power": 60,
+    "pp": 20,
+    "accuracy": null
+  },
+  {
     "name": "magnet-rise",
     "type": "electric",
     "power": null,
@@ -2400,6 +2448,14 @@
     "category": "status"
   },
   {
+    "name": "milk-drink",
+    "type": "normal",
+    "category": "status",
+    "power": null,
+    "pp": 5,
+    "accuracy": null
+  },
+  {
     "name": "mimic",
     "type": "normal",
     "power": null,
@@ -2414,6 +2470,14 @@
     "pp": 5,
     "accuracy": null,
     "category": "status"
+  },
+  {
+    "name": "minimize",
+    "type": "normal",
+    "category": "status",
+    "power": null,
+    "pp": 10,
+    "accuracy": null
   },
   {
     "name": "miracle-eye",
@@ -2438,6 +2502,14 @@
     "pp": 20,
     "accuracy": null,
     "category": "status"
+  },
+  {
+    "name": "mirror-shot",
+    "type": "steel",
+    "category": "special",
+    "power": 65,
+    "pp": 10,
+    "accuracy": 85
   },
   {
     "name": "mist",
@@ -2616,6 +2688,14 @@
     "category": "physical"
   },
   {
+    "name": "octazooka",
+    "type": "water",
+    "category": "special",
+    "power": 65,
+    "pp": 10,
+    "accuracy": 85
+  },
+  {
     "name": "odor-sleuth",
     "type": "normal",
     "power": null,
@@ -2662,6 +2742,14 @@
     "pp": 20,
     "accuracy": null,
     "category": "status"
+  },
+  {
+    "name": "pay-day",
+    "type": "normal",
+    "category": "physical",
+    "power": 40,
+    "pp": 20,
+    "accuracy": 100
   },
   {
     "name": "payback",
@@ -3248,6 +3336,14 @@
     "category": "status"
   },
   {
+    "name": "rolling-kick",
+    "type": "fighting",
+    "category": "physical",
+    "power": 60,
+    "pp": 15,
+    "accuracy": 85
+  },
+  {
     "name": "rollout",
     "type": "rock",
     "power": 30,
@@ -3384,7 +3480,7 @@
     "category": "physical"
   },
   {
-    "name": "self-destruct",
+    "name": "selfdestruct",
     "type": "normal",
     "power": 200,
     "pp": 5,
@@ -3616,7 +3712,7 @@
     "category": "physical"
   },
   {
-    "name": "smelling-salts",
+    "name": "smelling-salt",
     "type": "normal",
     "power": 70,
     "pp": 10,
@@ -3632,7 +3728,7 @@
     "category": "special"
   },
   {
-    "name": "smokescreen",
+    "name": "smoke-screen",
     "type": "normal",
     "power": null,
     "pp": 20,
@@ -3666,7 +3762,7 @@
   {
     "name": "snowscape",
     "type": "ice",
-    "power": 0,
+    "power": null,
     "pp": 10,
     "accuracy": null,
     "category": "status"
@@ -3710,6 +3806,14 @@
     "pp": 20,
     "accuracy": 100,
     "category": "physical"
+  },
+  {
+    "name": "spike-cannon",
+    "type": "normal",
+    "category": "physical",
+    "power": 20,
+    "pp": 15,
+    "accuracy": 100
   },
   {
     "name": "spikes",
@@ -3848,6 +3952,14 @@
     "category": "special"
   },
   {
+    "name": "storm-throw",
+    "type": "fighting",
+    "category": "physical",
+    "power": 60,
+    "pp": 10,
+    "accuracy": 100
+  },
+  {
     "name": "strength",
     "type": "normal",
     "power": 80,
@@ -3886,6 +3998,14 @@
     "pp": 30,
     "accuracy": 75,
     "category": "status"
+  },
+  {
+    "name": "submission",
+    "type": "fighting",
+    "category": "physical",
+    "power": 80,
+    "pp": 20,
+    "accuracy": 80
   },
   {
     "name": "substitute",
@@ -4176,6 +4296,14 @@
     "category": "physical"
   },
   {
+    "name": "thunder-shock",
+    "type": "electric",
+    "category": "special",
+    "power": 40,
+    "pp": 30,
+    "accuracy": 100
+  },
+  {
     "name": "thunder-wave",
     "type": "electric",
     "power": null,
@@ -4230,6 +4358,14 @@
     "pp": 20,
     "accuracy": 100,
     "category": "physical"
+  },
+  {
+    "name": "transform",
+    "type": "normal",
+    "category": "status",
+    "power": null,
+    "pp": 10,
+    "accuracy": null
   },
   {
     "name": "tri-attack",
@@ -4304,6 +4440,14 @@
     "category": "special"
   },
   {
+    "name": "v-create",
+    "type": "fire",
+    "category": "physical",
+    "power": 180,
+    "pp": 5,
+    "accuracy": 95
+  },
+  {
     "name": "vacuum-wave",
     "type": "fighting",
     "power": 40,
@@ -4350,6 +4494,14 @@
     "pp": 20,
     "accuracy": 100,
     "category": "special"
+  },
+  {
+    "name": "volt-tackle",
+    "type": "electric",
+    "category": "physical",
+    "power": 120,
+    "pp": 15,
+    "accuracy": 100
   },
   {
     "name": "wake-up-slap",

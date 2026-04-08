@@ -146,6 +146,7 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "pokemon.filter.type": "Type",
     "pokemon.filter.category": "Category",
     "pokemon.filter.learn": "Learn",
+    "pokemon.open_move": "Open",
     "pokemon.stab_damage_to": "STAB moves deal {multiplier} damage to",
     "pokemon.takes_from": "Takes {multiplier} from",
     "pokemon.ev_yield": "EV Yield",
@@ -293,6 +294,7 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "pokemon.filter.type": "Tipo",
     "pokemon.filter.category": "Categoria",
     "pokemon.filter.learn": "Apprendimento",
+    "pokemon.open_move": "Apri",
     "pokemon.stab_damage_to": "Le mosse STAB infliggono {multiplier} a",
     "pokemon.takes_from": "Subisce {multiplier} da",
     "pokemon.ev_yield": "EV",
@@ -331,8 +333,8 @@ const MOVE_CATEGORY_LABELS: Record<AppLocale, Record<string, string>> = {
 };
 
 const LEARN_METHOD_LABELS: Record<AppLocale, Record<string, string>> = {
-  en: { "level-up": "Level-up", tm: "TM", tutor: "Tutor", egg: "Egg" },
-  it: { "level-up": "Livello", tm: "MT", tutor: "Tutor", egg: "Uovo" }
+  en: { "level-up": "Level-up", tm: "TM", tutor: "Tutor", egg: "Egg", special: "Special", prevo: "Pre-Evo", "on-evolution": "On Evolution", "special-egg": "Special Egg" },
+  it: { "level-up": "Livello", tm: "MT", tutor: "Tutor", egg: "Uovo", special: "Special", prevo: "Pre-Evo", "on-evolution": "On Evolution", "special-egg": "Special Egg" }
 };
 
 const STAT_LABELS: Record<AppLocale, Record<string, string>> = {

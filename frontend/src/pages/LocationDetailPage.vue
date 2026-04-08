@@ -94,6 +94,7 @@
                 class="max-h-[460px] w-full rounded-xl border border-black/10 bg-white object-contain transition-opacity duration-300"
                 :class="isMediaLoaded(locationDetail.map_image_url) ? 'opacity-100' : 'opacity-0'"
                 loading="lazy"
+                referrerpolicy="no-referrer"
                 @load="markMediaLoaded(locationDetail.map_image_url)"
                 @error="markMediaLoaded(locationDetail.map_image_url)"
               />
