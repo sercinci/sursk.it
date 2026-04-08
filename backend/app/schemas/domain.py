@@ -83,6 +83,7 @@ class Location(BaseModel):
 class LocationEncounter(BaseModel):
     pokemon_name: str
     pokemon_id: int | None = None
+    ev_yield: dict[str, int] = Field(default_factory=dict)
     sub_location: str | None = None
     level_range: str
     method: str

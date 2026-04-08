@@ -749,7 +749,7 @@
                     >
                       {{ move.display_name ?? formatLabel(move.name) }}
                     </button>
-                    <Teleport v-if="isMoveTooltipVisible(move.name)" to="body">
+                    <Teleport v-if="isDesktopViewport && isMoveTooltipVisible(move.name)" to="body">
                       <p
                         class="pointer-events-none fixed z-50 rounded-md border border-black/10 bg-white px-2 py-1 text-xs normal-case leading-relaxed text-muted shadow-soft"
                         style="max-width: calc(100vw - 2rem); width: 18rem;"
@@ -822,7 +822,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
+import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import { useQuery } from "@tanstack/vue-query";
 import { RouterLink, useRoute } from "vue-router";
 
@@ -1032,6 +1032,7 @@ const hoveredMove = ref<string | null>(null);
 const activeMove = ref<string | null>(null);
 const moveButtonRefs = ref<Record<string, HTMLElement>>({});
 const mobileOpenSection = ref<MobileSection | null>("damage-dealt");
+const isDesktopViewport = ref(false);
 
 watch(
   stabDamageTypeOptions,
@@ -1040,6 +1041,23 @@ watch(
   },
   { immediate: true }
 );
+
+function updateViewportFlags() {
+  if (typeof window === "undefined") {
+    isDesktopViewport.value = false;
+    return;
+  }
+  isDesktopViewport.value = window.matchMedia("(min-width: 768px)").matches;
+}
+
+onMounted(() => {
+  updateViewportFlags();
+  window.addEventListener("resize", updateViewportFlags);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("resize", updateViewportFlags);
+});
 
 function formatLabel(value: string) {
   return value.replace(/-/g, " ");

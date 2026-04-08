@@ -841,6 +841,7 @@ class DataRepository:
         locale: str,
     ) -> list[LocationEncounter]:
         rows = TypeAdapter(list[LocationEncounter]).validate_python(encounters)
+        rows = [self._with_encounter_ev_yield(encounter) for encounter in rows]
         if locale != "it":
             return rows
 
@@ -900,6 +901,18 @@ class DataRepository:
                 )
             )
         return localized
+
+    def _with_encounter_ev_yield(self, encounter: LocationEncounter) -> LocationEncounter:
+        if encounter.ev_yield:
+            return encounter
+        if encounter.pokemon_id is None:
+            return encounter.model_copy(update={"ev_yield": {}})
+
+        pokemon = self.by_id.get(encounter.pokemon_id)
+        if not pokemon:
+            return encounter.model_copy(update={"ev_yield": {}})
+
+        return encounter.model_copy(update={"ev_yield": pokemon.ev_yield})
 
     def _localize_freeform_location_text(self, value: str, locale: str) -> str:
         if locale != "it":

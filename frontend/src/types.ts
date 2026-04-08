@@ -130,6 +130,7 @@ export interface Location {
 export interface LocationEncounter {
   pokemon_name: string;
   pokemon_id: number | null;
+  ev_yield: Record<string, number>;
   sub_location?: string | null;
   level_range: string;
   method: string;

@@ -210,6 +210,8 @@ def test_hoenn_location_localized_with_lang_query() -> None:
         location = payload["data"]
         assert location["display_name"] == "Bluruvia"
         assert location["encounters"]
+        assert all(isinstance(encounter.get("ev_yield"), dict) for encounter in location["encounters"])
+        assert any(encounter.get("ev_yield") for encounter in location["encounters"])
         assert any(
             encounter["method"] in {"Amo Vecchio", "Amo Buono", "Super Amo"}
             for encounter in location["encounters"]

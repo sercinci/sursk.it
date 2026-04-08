@@ -180,7 +180,7 @@
                     <RouterLink
                       v-if="encounter.pokemon_id !== null"
                       :to="{ name: 'pokemon-detail', params: { id: encounter.pokemon_id } }"
-                      class="inline-flex items-center gap-2 rounded-md px-1 py-0.5 transition hover:bg-black/5"
+                      class="inline-flex min-w-0 items-center gap-2 rounded-md px-1 py-0.5 transition hover:bg-black/5"
                     >
                       <img
                         :src="getPokemonSpriteUrl(encounter.pokemon_id)"
@@ -189,9 +189,31 @@
                         loading="lazy"
                         @error="(event) => handleSpriteError(event, encounter.pokemon_id!)"
                       />
-                      <span class="font-semibold hover:underline">{{ encounter.pokemon_name }}</span>
+                      <div class="min-w-0">
+                        <span class="font-semibold hover:underline">{{ encounter.pokemon_name }}</span>
+                        <ul v-if="encounterEvYieldChips(encounter).length" class="mt-0.5 flex flex-wrap gap-1">
+                          <li
+                            v-for="chip in encounterEvYieldChips(encounter)"
+                            :key="`${encounter.pokemon_name}-${chip}`"
+                            class="rounded-full border border-black/10 bg-white/80 px-1.5 py-0.5 text-[10px] font-mono font-semibold leading-none text-muted"
+                          >
+                            {{ chip }}
+                          </li>
+                        </ul>
+                      </div>
                     </RouterLink>
-                    <span v-else class="font-semibold">{{ encounter.pokemon_name }}</span>
+                    <div v-else class="min-w-0">
+                      <span class="font-semibold">{{ encounter.pokemon_name }}</span>
+                      <ul v-if="encounterEvYieldChips(encounter).length" class="mt-0.5 flex flex-wrap gap-1">
+                        <li
+                          v-for="chip in encounterEvYieldChips(encounter)"
+                          :key="`${encounter.pokemon_name}-${chip}`"
+                          class="rounded-full border border-black/10 bg-white/80 px-1.5 py-0.5 text-[10px] font-mono font-semibold leading-none text-muted"
+                        >
+                          {{ chip }}
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </td>
                 <td class="px-4 py-2">{{ encounter.sub_location ?? "—" }}</td>
@@ -214,7 +236,7 @@ import { useQuery } from "@tanstack/vue-query";
 import { RouterLink, useRoute } from "vue-router";
 
 import { fetchPokemmoHoennLocation } from "@/api/client";
-import { t, useLocale } from "@/i18n";
+import { labelStatShort, t, useLocale } from "@/i18n";
 import type { LocationEncounter } from "@/types";
 
 const POKEMON_SPRITE_BASE = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon";
@@ -295,6 +317,7 @@ const mergedEncounters = computed<EncounterRow[]>(() => {
       method: string;
       rate: string;
       category: string;
+      ev_yield: Record<string, number>;
       periods: Set<string>;
     }
   >();
@@ -313,6 +336,9 @@ const mergedEncounters = computed<EncounterRow[]>(() => {
     const existing = grouped.get(key);
     if (existing) {
       existing.periods.add(encounter.period ?? "Any");
+      if (!Object.keys(existing.ev_yield).length && Object.keys(encounter.ev_yield ?? {}).length) {
+        existing.ev_yield = encounter.ev_yield ?? {};
+      }
       continue;
     }
 
@@ -324,6 +350,7 @@ const mergedEncounters = computed<EncounterRow[]>(() => {
       method: encounter.method,
       rate: encounter.rate,
       category: encounter.category,
+      ev_yield: encounter.ev_yield ?? {},
       periods: new Set([encounter.period ?? t("location_detail.any_period")])
     });
   }
@@ -468,5 +495,12 @@ function periodTokenSortOrder(token: string) {
   if (bit === 2) return 1;
   if (bit === 4) return 2;
   return Number.MAX_SAFE_INTEGER;
+}
+
+function encounterEvYieldChips(encounter: EncounterRow): string[] {
+  const entries = Object.entries(encounter.ev_yield ?? {})
+    .filter(([, value]) => Number(value) > 0)
+    .sort(([left], [right]) => left.localeCompare(right, undefined, { sensitivity: "base" }));
+  return entries.map(([name, value]) => `+${value} ${labelStatShort(name)}`);
 }
 </script>
