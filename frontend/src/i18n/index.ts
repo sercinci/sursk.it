@@ -173,6 +173,7 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "compare.loading_moves": "Loading moves…",
     "compare.no_damage_moves": "No damaging moves.",
     "compare.immune": "Immune",
+    "compare.swap": "Swap Pokémon",
   },
   it: {
     "brand.tagline": "Walks on water",
@@ -341,6 +342,7 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "compare.loading_moves": "Caricamento mosse…",
     "compare.no_damage_moves": "Nessuna mossa offensiva.",
     "compare.immune": "Immune",
+    "compare.swap": "Inverti Pokémon",
   },
 };
 

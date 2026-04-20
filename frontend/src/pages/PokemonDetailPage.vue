@@ -862,6 +862,7 @@ import {
 } from "@/constants/typeEffectiveness";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
 import type { Location, MoveLearnMethod, PokemonEvolutionMethod, PokemonMove } from "@/types";
+import { formatLearnMethodLabels } from "@/utils/moveLearnMethods";
 
 type MobileSection =
   | "damage-dealt"
@@ -1103,17 +1104,11 @@ function toggleStabDamageType(type: string) {
 }
 
 function formatLearnMethods(methods: MoveLearnMethod[]) {
-  if (!methods.length) {
+  const labels = formatLearnMethodLabels(methods, labelLearnMethod);
+  if (!labels.length) {
     return "-";
   }
-  return methods
-    .map((method) => {
-      if (method.method === "level-up") {
-        return method.level !== null ? `Lv ${method.level}` : labelLearnMethod(method.method);
-      }
-      return labelLearnMethod(method.method);
-    })
-    .join(", ");
+  return labels.join(", ");
 }
 
 function formatLearnMethodName(method: string) {

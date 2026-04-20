@@ -50357,6 +50357,10 @@
             "level": 1
           },
           {
+            "method": "level-up",
+            "level": 55
+          },
+          {
             "method": "tm",
             "level": null
           }

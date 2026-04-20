@@ -86,7 +86,10 @@ def extract_learn_methods(version_group_details: list[dict]) -> list[dict]:
 
     methods: list[dict] = []
     if level_values:
-        methods.append({"method": "level-up", "level": level_values[0]})
+        methods.extend(
+            {"method": "level-up", "level": level_value}
+            for level_value in level_values
+        )
     if has_tm:
         methods.append({"method": "tm", "level": None})
     if has_tutor:

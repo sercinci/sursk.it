@@ -8,7 +8,7 @@
     </header>
 
     <!-- Pokemon selectors -->
-    <div class="relative z-10 grid grid-cols-[1fr_56px_1fr] items-center gap-3">
+    <div class="relative z-10 grid grid-cols-1 items-center gap-3 md:grid-cols-[1fr_56px_1fr]">
       <!-- ── Picker A ── -->
       <div class="card-surface min-h-[88px] rounded-2xl p-4">
         <!-- Loading -->
@@ -87,9 +87,21 @@
         </div>
       </div>
 
-      <!-- VS badge -->
-      <div class="flex items-center justify-center">
+      <!-- VS badge + swap -->
+      <div class="flex flex-col items-center justify-center gap-1.5">
         <span class="select-none rounded-full bg-sun/25 px-3 py-1.5 font-display text-base font-bold text-text shadow-soft">VS</span>
+        <button
+          class="rounded-full p-1 text-muted transition hover:bg-black/8 hover:text-text"
+          :title="t('compare.swap')"
+          @click="swapPokemon"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
+            <path d="M8 3 4 7l4 4"/>
+            <path d="M4 7h16"/>
+            <path d="m16 21 4-4-4-4"/>
+            <path d="M20 17H4"/>
+          </svg>
+        </button>
       </div>
 
       <!-- ── Picker B ── -->
@@ -185,9 +197,9 @@
         <div class="p-5">
           <!-- Column headers -->
           <div class="mb-3 grid grid-cols-[1fr_48px_1fr] items-center gap-2">
-            <p class="truncate text-right font-mono text-xs font-bold capitalize text-sky-700">{{ pokemonA.name }}</p>
+            <p class="truncate text-right font-mono text-xs font-bold capitalize text-sky-600">{{ pokemonA.name }}</p>
             <div />
-            <p class="truncate font-mono text-xs font-bold capitalize text-amber-700">{{ pokemonB.name }}</p>
+            <p class="truncate font-mono text-xs font-bold capitalize text-amber-600">{{ pokemonB.name }}</p>
           </div>
 
           <!-- Stat rows -->
@@ -195,7 +207,7 @@
             <div v-for="row in statRows" :key="row.stat" class="grid grid-cols-[1fr_48px_1fr] items-center gap-2">
               <!-- A: value + bar (right-to-left) -->
               <div class="flex items-center justify-end gap-2">
-                <span :class="['w-8 text-right font-mono text-sm font-bold', row.aWins ? 'text-sky-700' : 'text-muted']">{{ row.a }}</span>
+                <span :class="['w-8 text-right font-mono text-sm font-bold', row.aWins ? 'text-sky-600' : 'text-slate-300']">{{ row.a }}</span>
                 <div class="h-2 flex-1 overflow-hidden rounded-full bg-black/8">
                   <div
                     class="ml-auto h-full rounded-full bg-sky-500 transition-all duration-300"
@@ -215,7 +227,7 @@
                     :style="{ width: statBarPct(row.b) + '%' }"
                   />
                 </div>
-                <span :class="['w-8 font-mono text-sm font-bold', row.bWins ? 'text-amber-700' : 'text-muted']">{{ row.b }}</span>
+                <span :class="['w-8 font-mono text-sm font-bold', row.bWins ? 'text-amber-600' : 'text-slate-300']">{{ row.b }}</span>
               </div>
             </div>
           </div>
@@ -225,28 +237,28 @@
             <p class="mb-3 text-[10px] font-semibold uppercase tracking-widest text-muted">{{ t("compare.offense_vs_defense") }}</p>
 
             <!-- Physical: A.Atk → B.Def  |  B.Atk → A.Def -->
-            <div class="grid grid-cols-[1fr_80px_1fr] items-center gap-3 text-xs">
+            <div class="grid grid-cols-[1fr_52px_1fr] items-center gap-2 text-xs sm:grid-cols-[1fr_80px_1fr] sm:gap-3">
               <div class="flex items-center justify-end gap-1.5">
-                <span class="text-muted">{{ labelStatShort("attack") }}&nbsp;{{ physicalA.atk }} → Def&nbsp;{{ physicalA.def }}</span>
+                <span class="text-muted"><span class="hidden sm:inline">{{ labelStatShort("attack") }}&nbsp;</span>{{ physicalA.atk }}&nbsp;→&nbsp;<span class="hidden sm:inline">Def&nbsp;</span>{{ physicalA.def }}</span>
                 <span :class="['rounded-full border px-1.5 py-0.5 text-[11px] font-bold', diffBadgeClass(physicalA.diff)]">{{ formatSignedDiff(physicalA.diff) }}</span>
               </div>
               <div class="text-center text-[10px] font-semibold uppercase tracking-wide text-muted">{{ t("compare.physical") }}</div>
               <div class="flex items-center gap-1.5">
                 <span :class="['rounded-full border px-1.5 py-0.5 text-[11px] font-bold', diffBadgeClass(physicalB.diff)]">{{ formatSignedDiff(physicalB.diff) }}</span>
-                <span class="text-muted">{{ labelStatShort("attack") }}&nbsp;{{ physicalB.atk }} → Def&nbsp;{{ physicalB.def }}</span>
+                <span class="text-muted"><span class="hidden sm:inline">{{ labelStatShort("attack") }}&nbsp;</span>{{ physicalB.atk }}&nbsp;→&nbsp;<span class="hidden sm:inline">Def&nbsp;</span>{{ physicalB.def }}</span>
               </div>
             </div>
 
             <!-- Special: A.SpA → B.SpD  |  B.SpA → A.SpD -->
-            <div class="grid grid-cols-[1fr_80px_1fr] items-center gap-3 text-xs">
+            <div class="grid grid-cols-[1fr_52px_1fr] items-center gap-2 text-xs sm:grid-cols-[1fr_80px_1fr] sm:gap-3">
               <div class="flex items-center justify-end gap-1.5">
-                <span class="text-muted">{{ labelStatShort("special-attack") }}&nbsp;{{ specialA.spa }} → SpD&nbsp;{{ specialA.spd }}</span>
+                <span class="text-muted"><span class="hidden sm:inline">{{ labelStatShort("special-attack") }}&nbsp;</span>{{ specialA.spa }}&nbsp;→&nbsp;<span class="hidden sm:inline">SpD&nbsp;</span>{{ specialA.spd }}</span>
                 <span :class="['rounded-full border px-1.5 py-0.5 text-[11px] font-bold', diffBadgeClass(specialA.diff)]">{{ formatSignedDiff(specialA.diff) }}</span>
               </div>
               <div class="text-center text-[10px] font-semibold uppercase tracking-wide text-muted">{{ t("compare.special") }}</div>
               <div class="flex items-center gap-1.5">
                 <span :class="['rounded-full border px-1.5 py-0.5 text-[11px] font-bold', diffBadgeClass(specialB.diff)]">{{ formatSignedDiff(specialB.diff) }}</span>
-                <span class="text-muted">{{ labelStatShort("special-attack") }}&nbsp;{{ specialB.spa }} → SpD&nbsp;{{ specialB.spd }}</span>
+                <span class="text-muted"><span class="hidden sm:inline">{{ labelStatShort("special-attack") }}&nbsp;</span>{{ specialB.spa }}&nbsp;→&nbsp;<span class="hidden sm:inline">SpD&nbsp;</span>{{ specialB.spd }}</span>
               </div>
             </div>
           </div>
@@ -258,7 +270,7 @@
         <div class="border-b border-black/8 px-5 py-3.5">
           <h2 class="font-display font-semibold text-text">{{ t("compare.section.type_matchup") }}</h2>
         </div>
-        <div class="grid grid-cols-2 divide-x divide-black/8">
+        <div class="grid grid-cols-1 divide-y divide-black/8 md:grid-cols-2 md:divide-x md:divide-y-0">
           <!-- A STAB vs B -->
           <div class="space-y-3 p-5">
             <p class="text-[11px] font-semibold uppercase tracking-widest text-muted">
@@ -301,7 +313,7 @@
         <div class="border-b border-black/8 px-5 py-3.5">
           <h2 class="font-display font-semibold text-text">{{ t("compare.section.moves") }}</h2>
         </div>
-        <div class="grid grid-cols-2 divide-x divide-black/8">
+        <div class="grid grid-cols-1 divide-y divide-black/8 md:grid-cols-2 md:divide-x md:divide-y-0">
           <!-- A moves vs B -->
           <div class="flex flex-col p-5">
             <p class="mb-3 text-[11px] font-semibold uppercase tracking-widest text-muted">
@@ -309,7 +321,7 @@
             </p>
             <p v-if="movesAQuery.isPending.value" class="text-xs text-muted">{{ t("compare.loading_moves") }}</p>
             <p v-else-if="!damageMovesAvsB.length" class="text-xs text-muted">{{ t("compare.no_damage_moves") }}</p>
-            <div v-else class="max-h-96 space-y-0.5 overflow-y-auto pr-1">
+            <div v-else class="max-h-64 space-y-0.5 overflow-y-auto pr-1 md:max-h-96">
               <div
                 v-for="move in damageMovesAvsB"
                 :key="move.name"
@@ -325,6 +337,24 @@
                   :to="`/moves?move=${encodeURIComponent(move.name)}`"
                   class="min-w-0 flex-1 truncate text-xs capitalize text-text underline-offset-2 hover:underline"
                 >{{ move.display_name ?? move.name }}</RouterLink>
+                <div class="flex shrink-0 gap-0.5">
+                  <span
+                    v-for="(methodLabel, index) in getLearnMethodBadges(move.methods)"
+                    :key="`${move.name}-a-${methodLabel}-${index}`"
+                    class="rounded border border-black/10 bg-black/5 px-1 py-0.5 font-mono text-[9px] text-muted"
+                  >{{ methodLabel }}</span>
+                </div>
+                <span
+                  v-if="getMoveCategoryIcon(move.category)"
+                  class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded border border-black/10 bg-white/90"
+                  :title="labelMoveCategory(move.category)"
+                >
+                  <img
+                    :src="getMoveCategoryIcon(move.category) ?? ''"
+                    :alt="labelMoveCategory(move.category)"
+                    class="h-[11px] w-auto"
+                  />
+                </span>
                 <span class="w-7 shrink-0 text-right font-mono text-xs text-muted">{{ move.power }}</span>
                 <span :class="['shrink-0 rounded-full border px-1.5 py-0.5 text-[11px] font-bold', multiplierBadgeClass(move.multiplier)]">{{ formatMultiplier(move.multiplier) }}</span>
               </div>
@@ -337,7 +367,7 @@
             </p>
             <p v-if="movesBQuery.isPending.value" class="text-xs text-muted">{{ t("compare.loading_moves") }}</p>
             <p v-else-if="!damageMovesBvsA.length" class="text-xs text-muted">{{ t("compare.no_damage_moves") }}</p>
-            <div v-else class="max-h-96 space-y-0.5 overflow-y-auto pr-1">
+            <div v-else class="max-h-64 space-y-0.5 overflow-y-auto pr-1 md:max-h-96">
               <div
                 v-for="move in damageMovesBvsA"
                 :key="move.name"
@@ -353,6 +383,24 @@
                   :to="`/moves?move=${encodeURIComponent(move.name)}`"
                   class="min-w-0 flex-1 truncate text-xs capitalize text-text underline-offset-2 hover:underline"
                 >{{ move.display_name ?? move.name }}</RouterLink>
+                <div class="flex shrink-0 gap-0.5">
+                  <span
+                    v-for="(methodLabel, index) in getLearnMethodBadges(move.methods)"
+                    :key="`${move.name}-b-${methodLabel}-${index}`"
+                    class="rounded border border-black/10 bg-black/5 px-1 py-0.5 font-mono text-[9px] text-muted"
+                  >{{ methodLabel }}</span>
+                </div>
+                <span
+                  v-if="getMoveCategoryIcon(move.category)"
+                  class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded border border-black/10 bg-white/90"
+                  :title="labelMoveCategory(move.category)"
+                >
+                  <img
+                    :src="getMoveCategoryIcon(move.category) ?? ''"
+                    :alt="labelMoveCategory(move.category)"
+                    class="h-[11px] w-auto"
+                  />
+                </span>
                 <span class="w-7 shrink-0 text-right font-mono text-xs text-muted">{{ move.power }}</span>
                 <span :class="['shrink-0 rounded-full border px-1.5 py-0.5 text-[11px] font-bold', multiplierBadgeClass(move.multiplier)]">{{ formatMultiplier(move.multiplier) }}</span>
               </div>
@@ -368,12 +416,13 @@
 import { computed, nextTick, ref } from "vue";
 import { RouterLink, useRoute, useRouter } from "vue-router";
 import { useQuery } from "@tanstack/vue-query";
-import type { Pokemon, PokemonListItem, PokemonMove } from "@/types";
+import type { Pokemon, PokemonListItem, PokemonMove, MoveLearnMethod } from "@/types";
 import { fetchPokemon, fetchPokemonList, fetchPokemonMoves } from "@/api/client";
-import { t, labelType, labelStatShort, useLocale } from "@/i18n";
+import { t, labelType, labelStatShort, labelMoveCategory, labelLearnMethod, useLocale } from "@/i18n";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
 import { getAttackMultiplierForTypes } from "@/constants/typeEffectiveness";
 import { useDebouncedValue } from "@/composables/useDebouncedValue";
+import { formatLearnMethodLabels } from "@/utils/moveLearnMethods";
 
 const route = useRoute();
 const router = useRouter();
@@ -381,6 +430,10 @@ const { locale } = useLocale();
 
 const STAT_ORDER = ["hp", "attack", "defense", "special-attack", "special-defense", "speed"];
 const MAX_STAT = 200;
+const MOVE_CATEGORY_ICONS: Record<string, string> = {
+  physical: "/move-category/physical.png",
+  special: "/move-category/special.png",
+};
 
 // ── URL-driven IDs ──────────────────────────────────────────────────────────
 const idA = computed(() => {
@@ -394,6 +447,13 @@ const idB = computed(() => {
 
 function setId(side: "a" | "b", id: number | null) {
   router.replace({ query: { ...route.query, [side]: id ?? undefined } });
+}
+
+function swapPokemon() {
+  const tmpEdit = isEditingA.value;
+  isEditingA.value = isEditingB.value;
+  isEditingB.value = tmpEdit;
+  router.replace({ query: { ...route.query, a: idB.value ?? undefined, b: idA.value ?? undefined } });
 }
 
 // ── Picker state ────────────────────────────────────────────────────────────
@@ -582,6 +642,15 @@ function multiplierBadgeClass(mult: number): string {
   if (mult >= 2) return "border-green-200 bg-green-50 text-green-700";
   if (mult <= 0.5) return "border-red-200 bg-red-50 text-red-500";
   return "border-black/10 bg-black/5 text-muted";
+}
+
+function getLearnMethodBadges(methods: MoveLearnMethod[]): string[] {
+  return formatLearnMethodLabels(methods, labelLearnMethod, "Lv ");
+}
+
+function getMoveCategoryIcon(category: string | null): string | null {
+  if (!category) return null;
+  return MOVE_CATEGORY_ICONS[category.toLowerCase()] ?? null;
 }
 
 function diffBadgeClass(diff: number): string {
