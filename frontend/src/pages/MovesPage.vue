@@ -186,11 +186,11 @@
                             <p class="truncate text-sm font-semibold text-text">{{ formatLabel(learner.pokemon_name) }}</p>
                             <div class="mt-1 flex flex-wrap gap-1">
                               <span
-                                v-for="method in learner.methods"
-                                :key="`${learner.pokemon_id}-${method.method}-${method.level ?? 'na'}`"
+                                v-for="(methodLabel, index) in formatLearnMethodBadges(learner.methods)"
+                                :key="`${learner.pokemon_id}-${methodLabel}-${index}`"
                                 class="rounded-md border border-black/10 bg-black/[0.03] px-2 py-0.5 text-xs font-semibold text-muted"
                               >
-                                {{ formatLearnMethod(method) }}
+                                {{ methodLabel }}
                               </span>
                             </div>
                           </div>
@@ -223,6 +223,7 @@ import { getOffensiveDamageGroups } from "@/constants/typeEffectiveness";
 import { labelLearnMethod, labelMoveCategory, labelType, t, useLocale } from "@/i18n";
 import type { MoveTmPurchase } from "@/types";
 import type { MoveLearnMethod, MoveLearner } from "@/types";
+import { formatLearnMethodLabels } from "@/utils/moveLearnMethods";
 
 type DamageMultiplier = 2 | 0.5 | 0;
 
@@ -396,11 +397,8 @@ function formatLabel(value: string | null) {
     .join(" ");
 }
 
-function formatLearnMethod(method: MoveLearnMethod) {
-  if (method.method === "level-up") {
-    return method.level !== null ? `Lv ${method.level}` : labelLearnMethod(method.method);
-  }
-  return labelLearnMethod(method.method);
+function formatLearnMethodBadges(methods: MoveLearnMethod[]) {
+  return formatLearnMethodLabels(methods, labelLearnMethod);
 }
 
 function getLearnerSpriteUrl(learner: MoveLearner) {

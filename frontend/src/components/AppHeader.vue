@@ -108,6 +108,7 @@ const navItems = computed(() => [
   { label: t("nav.pokedex"), to: "/pokedex" },
   { label: t("nav.moves"), to: "/moves" },
   { label: t("nav.locations"), to: "/locations" },
+  { label: t("nav.compare"), to: "/compare" },
   { label: t("nav.about"), to: "/about" }
 ]);
 
