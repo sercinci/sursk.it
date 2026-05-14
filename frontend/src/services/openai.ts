@@ -115,10 +115,12 @@ function abilityThatBlocks(
 // ── Speed pre-computation ─────────────────────────────────────────────────────
 
 function speedLv50(base: number) {
-  // Formula: floor((2*base + 31 + floor(252/4)) * 50/100) + 5 = base + 52
+  // Gen 3–8 stat formula (non-HP): floor((2*Base + IV + floor(EV/4)) * Level/100) + 5) * Nature
+  // Assumes max investment: 31 IVs, 252 EVs, Level 50
+  const neutral = Math.floor((2 * base + 31 + Math.floor(252 / 4)) * 50 / 100) + 5;
   return {
-    plus_nature:    Math.floor((base + 52) * 1.1),   // +spe nature, 252 EVs, lv50
-    neutral_nature: base + 52,                        // neutral nature, 252 EVs, lv50
+    plus_nature:    Math.floor(neutral * 1.1),
+    neutral_nature: neutral,
   };
 }
 
