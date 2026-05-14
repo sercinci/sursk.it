@@ -90,6 +90,11 @@ const ABILITY_TYPE_IMMUNITIES: Record<string, string> = {
   "flash-fire":    "fire",
   "volt-absorb":   "electric",
   "lightning-rod": "electric",
+  "motor-drive":   "electric",
+  "water-absorb":  "water",
+  "dry-skin":      "water",
+  "sap-sipper":    "grass",
+  "storm-drain":   "water",
 };
 
 // Moves with the Gen 9 "wind" flag — blocked by Wind Rider
@@ -110,9 +115,10 @@ function abilityThatBlocks(
 // ── Speed pre-computation ─────────────────────────────────────────────────────
 
 function speedLv50(base: number) {
+  // Formula: floor((2*base + 31 + floor(252/4)) * 50/100) + 5 = base + 52
   return {
-    plus_nature:    Math.floor((base + 99) * 1.1),   // +spe nature, 252 EVs, lv50
-    neutral_nature: base + 99,                        // neutral nature, 252 EVs, lv50
+    plus_nature:    Math.floor((base + 52) * 1.1),   // +spe nature, 252 EVs, lv50
+    neutral_nature: base + 52,                        // neutral nature, 252 EVs, lv50
   };
 }
 

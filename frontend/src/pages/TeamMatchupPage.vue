@@ -1076,6 +1076,9 @@ async function refreshXcoreHistory() {
   }
 }
 
+const onVisibility = () => { if (document.visibilityState === 'visible') refreshXcoreHistory(); };
+onUnmounted(() => document.removeEventListener('visibilitychange', onVisibility));
+
 onMounted(async () => {
   cachedHistory.value = loadAllAnalyses();
   (async () => {
@@ -1104,9 +1107,7 @@ onMounted(async () => {
   }
   await refreshXcoreHistory();
 
-  const onVisibility = () => { if (document.visibilityState === 'visible') refreshXcoreHistory(); };
   document.addEventListener('visibilitychange', onVisibility);
-  onUnmounted(() => document.removeEventListener('visibilitychange', onVisibility));
 });
 
 function loadEntry(entry: CachedAnalysis) {
@@ -1151,6 +1152,9 @@ async function removeXcoreEntry(id: string) {
   try {
     await deleteXcoreAnalysis(id);
     xcoreHistory.value = xcoreHistory.value.filter(e => e.id !== id);
+    if (displayedXcoreEntry.value?.id === id) {
+      displayedXcoreEntry.value = null;
+    }
   } catch {
     // non-fatal
   }
