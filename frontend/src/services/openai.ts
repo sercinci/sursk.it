@@ -839,8 +839,6 @@ export async function analyzeMatchup(
   } catch {
     throw new Error(`${providerName}: Response is not valid JSON`);
   }
-  // eslint-disable-next-line no-console
-  console.log(`[${providerName}] raw response:`, JSON.stringify(data).slice(0, 2000));
   const choice = (data as { choices?: Array<{ finish_reason?: string; message?: { content?: string } }> })
     ?.choices?.[0];
   const content: string | undefined = choice?.message?.content;
@@ -883,10 +881,10 @@ export async function analyzeMatchupXcore(
 
   if (!response.ok) {
     const err = await response.json().catch(() => null) as Record<string, unknown> | null;
-    let msg: string =
-      (err as any)?.error?.message as string ||
-      (err as any)?.detail as string ||
-      `xcore analysis failed (${response.status})`;
+    const errorMsg = typeof err?.error === "object" && err.error !== null
+      ? String((err.error as Record<string, unknown>).message ?? "")
+      : typeof err?.detail === "string" ? err.detail : "";
+    let msg = errorMsg || `xcore analysis failed (${response.status})`;
     // xcore errors are JSON-encoded strings like '{"message":"Token expired"}'
     try {
       const inner = JSON.parse(msg) as Record<string, unknown>;
@@ -895,7 +893,8 @@ export async function analyzeMatchupXcore(
     throw new Error(msg);
   }
 
-  const reader = response.body!.getReader();
+  if (!response.body) throw new Error("xcore: response has no body");
+  const reader = response.body.getReader();
   const decoder = new TextDecoder();
   let lineBuffer = "";
   let currentEvent = "";

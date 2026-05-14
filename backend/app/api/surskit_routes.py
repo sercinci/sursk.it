@@ -42,7 +42,7 @@ async def _try_refresh(request: Request) -> str:
     try:
         config = await get_oidc_config(XCORE_BASE_URL)
         tokens = await refresh_access_token(config, XCORE_CLIENT_ID, XCORE_CLIENT_SECRET, refresh_token)
-    except httpx.HTTPStatusError:
+    except httpx.HTTPError:
         request.session.clear()
         raise HTTPException(status_code=401, detail="Session expired — please log in again")
 
