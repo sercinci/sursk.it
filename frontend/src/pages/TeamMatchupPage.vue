@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-5xl space-y-5 px-4 py-6">
+  <div class="mx-auto max-w-5xl space-y-5 px-0 py-6 sm:px-4">
 
     <!-- Header -->
     <header class="space-y-1">
@@ -12,7 +12,7 @@
     <div class="relative z-10 grid grid-cols-1 gap-4 md:grid-cols-2">
 
       <!-- ── My Team ── -->
-      <div class="card-surface rounded-2xl p-4 space-y-3">
+      <div class="card-surface rounded-2xl p-3 space-y-3 sm:p-4">
         <div class="flex items-center gap-2">
           <span class="h-2 w-2 rounded-full bg-sky-500" />
           <h2 class="flex-1 font-display text-base font-semibold text-sky-700">{{ t("team.my_team") }}</h2>
@@ -118,7 +118,7 @@
       </div>
 
       <!-- ── Opponent Team ── -->
-      <div class="card-surface rounded-2xl p-4 space-y-3">
+      <div class="card-surface rounded-2xl p-3 space-y-3 sm:p-4">
         <div class="flex items-center gap-2">
           <span class="h-2 w-2 rounded-full bg-amber-500" />
           <h2 class="flex-1 font-display text-base font-semibold text-amber-700">{{ t("team.opp_team") }}</h2>
@@ -265,16 +265,16 @@
           <div class="divide-y divide-black/8">
 
             <!-- ── Matrix 1: My STAB → Their Team ── -->
-            <div class="p-5">
-              <div class="mb-3 flex items-center gap-2">
+            <div class="p-3 sm:p-5">
+              <div class="mb-3 flex flex-wrap items-center gap-2">
                 <span class="h-2 w-2 rounded-full bg-sky-500" />
                 <p class="font-display text-sm font-semibold text-sky-700">{{ t("team.my_team") }}</p>
                 <span class="text-xs text-muted">{{ t("team.matrix.coverage_hint") }}</span>
               </div>
-              <div class="overflow-x-auto">
+              <div class="team-matrix-scroll overflow-x-auto">
                 <!-- Column headers: their Pokémon -->
                 <div class="grid items-end gap-x-1 pb-3" :style="myGridStyle">
-                  <div />
+                  <div class="team-matrix-sticky-col" />
                   <RouterLink v-for="pkmn in oppTeam" :key="pkmn.id" :to="`/pokemon/${pkmn.id}`" class="flex flex-col items-center gap-0.5 overflow-hidden transition hover:opacity-75">
                     <img :src="pokemonSprite(pkmn)" :alt="pkmn.name" class="h-7 w-7 object-contain" />
                     <span class="w-full truncate text-center font-mono text-[9px] capitalize leading-tight text-muted">{{ pkmn.name }}</span>
@@ -289,7 +289,7 @@
                   class="mb-1 grid items-center gap-x-1"
                   :style="myGridStyle"
                 >
-                  <div class="flex items-center gap-1">
+                  <div class="team-matrix-sticky-col flex items-center gap-1">
                     <span :style="getTypeChipStyle(row.attackType)" class="min-w-0 flex-1 rounded-full border px-1.5 py-0.5 text-center text-[10px] font-semibold uppercase leading-tight">{{ labelType(row.attackType) }}</span>
                     <span :class="row.isStab ? 'bg-accent/15 text-accent' : 'opacity-0'" class="shrink-0 rounded px-1 py-0.5 font-mono text-[8px] font-bold">S</span>
                   </div>
@@ -307,16 +307,16 @@
             </div>
 
             <!-- ── Matrix 2: Their STAB → My Team ── -->
-            <div class="p-5">
-              <div class="mb-3 flex items-center gap-2">
+            <div class="p-3 sm:p-5">
+              <div class="mb-3 flex flex-wrap items-center gap-2">
                 <span class="h-2 w-2 rounded-full bg-amber-500" />
                 <p class="font-display text-sm font-semibold text-amber-700">{{ t("team.opp_team") }}</p>
                 <span class="text-xs text-muted">{{ t("team.matrix.threats_hint") }}</span>
               </div>
-              <div class="overflow-x-auto">
+              <div class="team-matrix-scroll overflow-x-auto">
                 <!-- Column headers: my Pokémon -->
                 <div class="grid items-end gap-x-1 pb-3" :style="oppGridStyle">
-                  <div />
+                  <div class="team-matrix-sticky-col" />
                   <RouterLink v-for="pkmn in myTeam" :key="pkmn.id" :to="`/pokemon/${pkmn.id}`" class="flex flex-col items-center gap-0.5 overflow-hidden transition hover:opacity-75">
                     <img :src="pokemonSprite(pkmn)" :alt="pkmn.name" class="h-7 w-7 object-contain" />
                     <span class="w-full truncate text-center font-mono text-[9px] capitalize leading-tight text-muted">{{ pkmn.name }}</span>
@@ -331,7 +331,7 @@
                   class="mb-1 grid items-center gap-x-1"
                   :style="oppGridStyle"
                 >
-                  <div class="flex items-center gap-1">
+                  <div class="team-matrix-sticky-col flex items-center gap-1">
                     <span :style="getTypeChipStyle(row.attackType)" class="min-w-0 flex-1 rounded-full border px-1.5 py-0.5 text-center text-[10px] font-semibold uppercase leading-tight">{{ labelType(row.attackType) }}</span>
                     <span :class="row.isStab ? 'bg-accent/15 text-accent' : 'opacity-0'" class="shrink-0 rounded px-1 py-0.5 font-mono text-[8px] font-bold">S</span>
                   </div>
@@ -428,11 +428,11 @@
 
       <!-- Unauthenticated CTA -->
       <template v-if="!authStore.isLoading && !authStore.isAuthenticated">
-        <div class="border-t border-black/8 px-5 py-4 flex items-center justify-between gap-4">
+        <div class="border-t border-black/8 px-5 py-4 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
           <p class="text-xs text-muted">Login with your <img src="/xcore_logo.png" alt="" class="inline-block h-[1em] w-[1em] align-middle object-contain" /> XCORE.GG account to run analyses and access your history across devices.</p>
           <button
             type="button"
-            class="shrink-0 inline-flex items-center gap-2 rounded-xl bg-sun px-4 py-2 text-sm font-semibold text-text transition hover:bg-sun/90"
+            class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-sun px-4 py-2 text-sm font-semibold text-text transition hover:bg-sun/90"
             @click="authStore.login()"
           ><img src="/xcore_logo.png" alt="" class="shrink-0 h-[1em] w-[1em] object-contain" /> Login with XCORE.GG</button>
         </div>
@@ -446,7 +446,7 @@
         <p class="font-mono text-[10px] uppercase tracking-widest text-muted">Options</p>
 
         <!-- Level cap -->
-        <div class="flex items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3">
           <input id="opt-level-cap" v-model="useLevelCap" type="checkbox" class="h-3.5 w-3.5 rounded accent-accent" />
           <label for="opt-level-cap" class="text-xs text-text">Level cap</label>
           <Transition enter-active-class="transition-opacity duration-150" leave-active-class="transition-opacity duration-100" enter-from-class="opacity-0" leave-to-class="opacity-0">
@@ -463,13 +463,13 @@
         </div>
 
         <!-- Exclude tutor -->
-        <div class="flex items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3">
           <input id="opt-excl-tutor" v-model="excludeTutor" type="checkbox" class="h-3.5 w-3.5 rounded accent-accent" />
           <label for="opt-excl-tutor" class="text-xs text-text">Exclude tutor moves</label>
         </div>
 
         <!-- Exclude egg -->
-        <div class="flex items-center gap-3">
+        <div class="flex flex-wrap items-center gap-3">
           <input id="opt-excl-egg" v-model="excludeEgg" type="checkbox" class="h-3.5 w-3.5 rounded accent-accent" />
           <label for="opt-excl-egg" class="text-xs text-text">Exclude egg moves</label>
         </div>
@@ -552,7 +552,7 @@
           v-for="entry in cachedHistory"
           :key="entry.id"
           :class="[
-            ' flex !cursor-pointer transition-none items-center gap-3 px-4 py-2.5 transition',
+            ' flex !cursor-pointer transition-none flex-wrap items-center gap-x-2 gap-y-2 px-4 py-2.5 transition sm:flex-nowrap sm:gap-3',
             entry.id === displayedEntry?.id ? 'bg-accent/5' : 'hover:bg-black/[0.03]'
           ]"
           @click="loadEntry(entry)"
@@ -594,7 +594,7 @@
           <!-- Result badge -->
           <span
             :class="[
-              'shrink-0 rounded-full px-2 py-0.5 font-mono text-[9px] font-bold',
+              'ml-auto shrink-0 rounded-full px-2 py-0.5 font-mono text-[9px] font-bold sm:ml-0',
               entry.analysis.overall_advantage === 'my_team'  ? 'bg-sky-100 text-sky-700'    :
               entry.analysis.overall_advantage === 'opponent' ? 'bg-amber-100 text-amber-700' : 'bg-gray-100 text-gray-600'
             ]"
@@ -602,7 +602,7 @@
             {{ entry.analysis.overall_advantage === 'my_team' ? 'WIN' : entry.analysis.overall_advantage === 'opponent' ? 'LOSE' : 'EVEN' }}
           </span>
 
-          <span class="font-mono text-[9px] text-muted/60">{{ formatAge(entry.timestamp) }}</span>
+          <span class="basis-full pl-3 font-mono text-[9px] text-muted/60 sm:basis-auto sm:pl-0">{{ formatAge(entry.timestamp) }}</span>
 
           <span v-if="entry.source === 'xcore'" class="rounded-full border border-indigo-200 bg-indigo-50 px-1.5 py-px font-mono text-[8px] font-semibold text-indigo-500">☁</span>
 
@@ -638,7 +638,7 @@
           v-for="entry in xcoreHistory"
           :key="entry.id"
           :class="[
-            'flex !cursor-pointer transition-none items-center gap-3 px-4 py-2.5 transition',
+            'flex !cursor-pointer transition-none flex-wrap items-center gap-x-2 gap-y-2 px-4 py-2.5 transition sm:flex-nowrap sm:gap-3',
             entry.id === displayedXcoreEntry?.id ? 'bg-accent/5' : 'hover:bg-black/[0.03]'
           ]"
           @click="loadXcoreEntry(entry)"
@@ -680,7 +680,7 @@
           <!-- Result badge -->
           <span
             :class="[
-              'shrink-0 rounded-full px-2 py-0.5 font-mono text-[9px] font-bold',
+              'ml-auto shrink-0 rounded-full px-2 py-0.5 font-mono text-[9px] font-bold sm:ml-0',
               entry.analysis.overall_advantage === 'my_team'  ? 'bg-sky-100 text-sky-700'    :
               entry.analysis.overall_advantage === 'opponent' ? 'bg-amber-100 text-amber-700' : 'bg-gray-100 text-gray-600'
             ]"
@@ -688,7 +688,7 @@
             {{ entry.analysis.overall_advantage === 'my_team' ? 'WIN' : entry.analysis.overall_advantage === 'opponent' ? 'LOSE' : 'EVEN' }}
           </span>
 
-          <span class="font-mono text-[9px] text-muted/60">{{ formatAge(new Date(entry.created_at).getTime()) }}</span>
+          <span class="basis-full pl-3 font-mono text-[9px] text-muted/60 sm:basis-auto sm:pl-0">{{ formatAge(new Date(entry.created_at).getTime()) }}</span>
 
           <!-- Options chips -->
           <template v-if="entry.options">
@@ -907,10 +907,10 @@ const myOffenseMatrix  = computed<MatrixRow[]>(() => buildMatrix(myStabTypes.val
 const oppOffenseMatrix = computed<MatrixRow[]>(() => buildMatrix(oppStabTypes.value, myTeam.value));
 
 const myGridStyle = computed(() => ({
-  gridTemplateColumns: `88px repeat(${oppTeam.value.length}, 40px) 52px`,
+  gridTemplateColumns: `var(--team-matrix-label, 88px) repeat(${oppTeam.value.length}, var(--team-matrix-cell, 40px)) var(--team-matrix-summary, 52px)`,
 }));
 const oppGridStyle = computed(() => ({
-  gridTemplateColumns: `88px repeat(${myTeam.value.length}, 40px) 52px`,
+  gridTemplateColumns: `var(--team-matrix-label, 88px) repeat(${myTeam.value.length}, var(--team-matrix-cell, 40px)) var(--team-matrix-summary, 52px)`,
 }));
 
 // ── Solo-team defensive exposure (shown before opponent is added) ─────────────
@@ -1185,3 +1185,24 @@ async function runAnalysisXcore() {
   }
 }
 </script>
+
+<style scoped>
+@media (max-width: 640px) {
+  .team-matrix-scroll {
+    --team-matrix-label: 72px;
+    --team-matrix-cell: 32px;
+    --team-matrix-summary: 36px;
+    margin-inline: -0.25rem;
+    padding-inline: 0.25rem;
+  }
+
+  .team-matrix-sticky-col {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 0;
+    background: rgba(248, 253, 255, 0.96);
+    box-shadow: 8px 0 12px -12px rgba(18, 48, 61, 0.35);
+  }
+}
+</style>

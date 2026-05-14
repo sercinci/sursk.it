@@ -4,15 +4,15 @@
     <!-- ── Header: overall advantage ─────────────────────────────────────── -->
     <div
       :class="[
-        'border-b border-black/8 px-5 py-4',
+        'border-b border-black/8 px-4 py-4 sm:px-5',
         analysis.overall_advantage === 'my_team'  ? 'bg-sky-50/60'   :
         analysis.overall_advantage === 'opponent' ? 'bg-amber-50/60' : 'bg-gray-50/60'
       ]"
     >
       <div class="flex flex-wrap items-center gap-3">
-        <div class="flex items-center gap-2">
+        <div class="flex min-w-0 flex-wrap items-center gap-2">
           <span class="font-mono text-xs uppercase tracking-widest text-accent">AI Analysis</span>
-          <span class="rounded-full px-3 py-0.5 text-xs font-bold" :class="
+          <span class="max-w-full rounded-full px-3 py-0.5 text-xs font-bold" :class="
             analysis.overall_advantage === 'my_team'  ? 'bg-sky-500 text-white' :
             analysis.overall_advantage === 'opponent' ? 'bg-amber-500 text-white' : 'bg-gray-400 text-white'
           ">
@@ -31,16 +31,16 @@
     </div>
 
     <!-- ── Pool selection result (shown when my_pool > 6) ──────────────────── -->
-    <div v-if="analysis.team_recommendation?.bench?.length > 0" class="border-b border-black/8 bg-sky-50/40 px-5 py-4">
+    <div v-if="analysis.team_recommendation?.bench?.length > 0" class="border-b border-black/8 bg-sky-50/40 px-4 py-4 sm:px-5">
       <p class="mb-2.5 font-mono text-[10px] uppercase tracking-widest text-muted">Recommended Team from Your Pool</p>
       <div class="flex flex-wrap gap-2 mb-3">
         <div
           v-for="name in analysis.team_recommendation.selected"
           :key="name"
-          class="flex items-center gap-1.5 rounded-xl border border-sky-200 bg-white px-2.5 py-1.5"
+          class="flex min-w-0 items-center gap-1.5 rounded-xl border border-sky-200 bg-white px-2.5 py-1.5"
         >
           <img v-if="spriteFor(name, myTeam)" :src="spriteFor(name, myTeam)" :alt="name" class="h-7 w-7 object-contain" />
-          <span class="font-mono text-xs font-semibold capitalize text-sky-700">{{ name }}</span>
+          <span class="min-w-0 truncate font-mono text-xs font-semibold capitalize text-sky-700">{{ name }}</span>
         </div>
       </div>
       <p class="mb-2 text-xs text-muted">{{ analysis.team_recommendation.selection_reason }}</p>
@@ -106,8 +106,8 @@
       </div>
 
       <!-- ── Head-to-Head matrix ───────────────────────────────────────────── -->
-      <div class="p-5">
-        <div class="mb-3 flex items-center gap-4">
+      <div class="p-3 sm:p-5">
+        <div class="mb-3 flex flex-wrap items-center gap-x-4 gap-y-1.5">
           <div class="flex items-center gap-1.5">
             <span class="h-2 w-2 rounded-full bg-sky-500" />
             <span class="font-mono text-[10px] font-semibold uppercase tracking-widest text-sky-700">My Team</span>
@@ -119,11 +119,11 @@
           </div>
           <span class="font-mono text-[10px] text-muted">→ columns</span>
         </div>
-        <div class="overflow-x-auto">
+        <div class="analysis-matrix-scroll overflow-x-auto">
           <div :style="gridStyle" class="grid gap-1 mb-1">
 
             <!-- Top-left spacer -->
-            <div />
+            <div class="analysis-sticky-col" />
 
             <!-- Column headers: opponent Pokémon -->
             <div
@@ -138,7 +138,7 @@
             <!-- Rows: my Pokémon -->
             <template v-for="mine in myTeam" :key="mine.id">
               <!-- Row header -->
-              <div class="flex items-center gap-1.5 pr-2">
+              <div class="analysis-sticky-col flex items-center gap-1.5 pr-2">
                 <img :src="pokemonSprite(mine)" :alt="mine.name" class="h-8 w-8 shrink-0 object-contain" />
                 <span class="min-w-0 truncate font-mono text-[9px] capitalize leading-tight text-sky-700">{{ mine.name }}</span>
               </div>
@@ -170,7 +170,7 @@
             class="mt-3 overflow-hidden rounded-xl border border-accent/20 bg-accent/5"
           >
             <!-- Header row -->
-            <div class="flex items-center gap-2 border-b border-accent/10 px-4 py-2.5">
+            <div class="flex flex-wrap items-center gap-2 border-b border-accent/10 px-4 py-2.5">
               <span class="font-mono text-xs font-semibold capitalize text-sky-700">{{ selectedMatchup.my_pokemon }}</span>
               <span class="font-mono text-[10px] text-muted">vs</span>
               <span class="font-mono text-xs font-semibold capitalize text-amber-700">{{ selectedMatchup.opponent_pokemon }}</span>
@@ -204,8 +204,8 @@
             <div class="divide-y divide-accent/8">
 
               <!-- Speed -->
-              <div v-if="selectedMatchup.speed_note" class="flex items-start gap-3 px-4 py-2">
-                <span class="w-14 shrink-0 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted pt-0.5">Speed</span>
+              <div v-if="selectedMatchup.speed_note" class="flex flex-col gap-1.5 px-4 py-2 sm:flex-row sm:items-start sm:gap-3">
+                <span class="shrink-0 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted sm:w-14 sm:pt-0.5">Speed</span>
                 <div class="space-y-0.5">
                   <span class="block font-mono text-[11px] text-text">{{ selectedMatchup.speed_note }}</span>
                   <span
@@ -216,8 +216,8 @@
               </div>
 
               <!-- Key moves -->
-              <div v-if="selectedMatchup.key_moves.length > 0" class="flex items-start gap-3 px-4 py-2">
-                <span class="w-14 shrink-0 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted pt-0.5">Use</span>
+              <div v-if="selectedMatchup.key_moves.length > 0" class="flex flex-col gap-1.5 px-4 py-2 sm:flex-row sm:items-start sm:gap-3">
+                <span class="shrink-0 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted sm:w-14 sm:pt-0.5">Use</span>
                 <div class="flex flex-wrap gap-1">
                   <span
                     v-for="m in selectedMatchup.key_moves"
@@ -234,8 +234,8 @@
               </div>
 
               <!-- Threats / abilities -->
-              <div v-if="selectedMatchup.threats_to_watch.length > 0" class="flex items-start gap-3 px-4 py-2">
-                <span class="w-14 shrink-0 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted pt-0.5">Watch</span>
+              <div v-if="selectedMatchup.threats_to_watch.length > 0" class="flex flex-col gap-1.5 px-4 py-2 sm:flex-row sm:items-start sm:gap-3">
+                <span class="shrink-0 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted sm:w-14 sm:pt-0.5">Watch</span>
                 <div class="flex flex-wrap gap-1">
                   <span
                     v-for="t in selectedMatchup.threats_to_watch"
@@ -246,8 +246,8 @@
               </div>
 
               <!-- Reasoning note -->
-              <div v-if="selectedMatchup.reasoning" class="flex items-start gap-3 px-4 py-2">
-                <span class="w-14 shrink-0 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted pt-0.5">Note</span>
+              <div v-if="selectedMatchup.reasoning" class="flex flex-col gap-1.5 px-4 py-2 sm:flex-row sm:items-start sm:gap-3">
+                <span class="shrink-0 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted sm:w-14 sm:pt-0.5">Note</span>
                 <p class="text-[11px] leading-snug text-text/80">{{ selectedMatchup.reasoning }}</p>
               </div>
             </div>
@@ -257,7 +257,7 @@
       </div>
 
       <!-- ── Key threats ────────────────────────────────────────────────────── -->
-      <div v-if="analysis.key_threats.length > 0" class="p-5">
+      <div v-if="analysis.key_threats.length > 0" class="p-4 sm:p-5">
         <p class="mb-3 font-mono text-[10px] uppercase tracking-widest text-muted">Key Threats</p>
         <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
           <div
@@ -288,7 +288,7 @@
       </div>
 
       <!-- ── Game Plan ─────────────────────────────────────────────────────── -->
-      <div class="p-5">
+      <div class="p-4 sm:p-5">
         <p class="mb-3 font-mono text-[10px] uppercase tracking-widest text-muted">Game Plan</p>
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
           <div
@@ -303,16 +303,16 @@
       </div>
 
       <!-- ── Switch Advice ─────────────────────────────────────────────────── -->
-      <div v-if="analysis.switch_advice.length > 0" class="p-5">
+      <div v-if="analysis.switch_advice.length > 0" class="p-4 sm:p-5">
         <p class="mb-3 font-mono text-[10px] uppercase tracking-widest text-muted">Switch Guide</p>
         <div class="space-y-1.5">
           <div
             v-for="sw in analysis.switch_advice"
             :key="sw.opponent_pokemon"
-            class="flex items-center gap-3 rounded-xl border border-black/8 bg-white/60 px-3 py-2"
+            class="flex flex-wrap items-center gap-3 rounded-xl border border-black/8 bg-white/60 px-3 py-2 sm:flex-nowrap"
           >
             <!-- Opponent -->
-            <div class="flex w-28 shrink-0 items-center gap-1.5">
+            <div class="flex w-24 shrink-0 items-center gap-1.5 sm:w-28">
               <img
                 v-if="spriteFor(sw.opponent_pokemon, oppTeam)"
                 :src="spriteFor(sw.opponent_pokemon, oppTeam)"
@@ -328,7 +328,7 @@
             </svg>
 
             <!-- My switch-in -->
-            <div class="flex w-28 shrink-0 items-center gap-1.5">
+            <div class="flex w-24 shrink-0 items-center gap-1.5 sm:w-28">
               <img
                 v-if="spriteFor(sw.switch_to, myTeam)"
                 :src="spriteFor(sw.switch_to, myTeam)"
@@ -339,7 +339,7 @@
             </div>
 
             <!-- Reason -->
-            <p class="min-w-0 flex-1 text-[11px] leading-snug text-muted">{{ sw.reason }}</p>
+            <p class="min-w-0 basis-full text-[11px] leading-snug text-muted sm:flex-1 sm:basis-auto">{{ sw.reason }}</p>
           </div>
         </div>
       </div>
@@ -363,7 +363,7 @@ const props = defineProps<{
 // ── Grid layout ───────────────────────────────────────────────────────────────
 
 const gridStyle = computed(() => ({
-  gridTemplateColumns: `128px repeat(${props.oppTeam.length}, 72px)`,
+  gridTemplateColumns: `var(--analysis-matrix-label, 128px) repeat(${props.oppTeam.length}, var(--analysis-matrix-cell, 72px))`,
 }));
 
 // ── Matchup lookup ────────────────────────────────────────────────────────────
@@ -501,5 +501,23 @@ function sourceLabel(source: KeyMove["source"]): string {
 .slide-down-leave-to {
   opacity: 0;
   transform: translateY(-4px);
+}
+
+@media (max-width: 640px) {
+  .analysis-matrix-scroll {
+    --analysis-matrix-label: 96px;
+    --analysis-matrix-cell: 50px;
+    margin-inline: -0.25rem;
+    padding-inline: 0.25rem;
+  }
+
+  .analysis-sticky-col {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 0;
+    background: rgba(248, 253, 255, 0.96);
+    box-shadow: 8px 0 12px -12px rgba(18, 48, 61, 0.35);
+  }
 }
 </style>
