@@ -16,3 +16,13 @@ frontend/dist/
 # Runtime
 *.log
 coverage/
+
+# Secrets
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+.claude
+.playwright-mcp

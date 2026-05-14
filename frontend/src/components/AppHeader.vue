@@ -89,6 +89,44 @@
             <option value="it">IT</option>
           </select>
         </label>
+
+        <!-- Auth: login button -->
+        <button
+          v-if="!authStore.isLoading && !authStore.isAuthenticated"
+          type="button"
+          class="ml-1 hidden rounded-full border border-accent/20 bg-accent/10 px-3 py-1.5 text-xs font-semibold text-accent transition hover:bg-accent/20 sm:inline-flex sm:items-center sm:gap-1.5"
+          @click="authStore.login()"
+        >
+          Login
+        </button>
+
+        <!-- Auth: user avatar + logout -->
+        <div v-if="authStore.isAuthenticated" class="ml-1 hidden items-center gap-1.5 sm:flex">
+          <a
+            v-if="authStore.user?.profile"
+            :href="authStore.user.profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-1.5 transition hover:opacity-75"
+          >
+            <img
+              v-if="authStore.user?.picture"
+              :src="authStore.user.picture"
+              :alt="authStore.user.name ?? ''"
+              class="h-7 w-7 rounded-full border border-accent/20 object-cover"
+            />
+            <span class="max-w-[80px] truncate font-mono text-[10px] font-semibold text-muted">
+              {{ authStore.user?.name ?? '' }}
+            </span>
+          </a>
+          <button
+            type="button"
+            class="rounded-full px-2 py-1 text-xs text-muted transition hover:text-red-500"
+            @click="authStore.logout()"
+          >
+            Logout
+          </button>
+        </div>
       </div>
     </nav>
   </header>
@@ -99,16 +137,19 @@ import { computed, ref, watch } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import type { AppLocale } from "@/i18n";
 import { t, useLocale } from "@/i18n";
+import { useAuthStore } from "@/stores/auth";
 
 const { locale, setLocale } = useLocale();
 const route = useRoute();
 const isMenuOpen = ref(false);
+const authStore = useAuthStore();
 
 const navItems = computed(() => [
   { label: t("nav.pokedex"), to: "/pokedex" },
   { label: t("nav.moves"), to: "/moves" },
   { label: t("nav.locations"), to: "/locations" },
   { label: t("nav.compare"), to: "/compare" },
+  { label: t("nav.team"), to: "/team" },
   { label: t("nav.about"), to: "/about" }
 ]);
 

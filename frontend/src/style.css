@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --color-shell: #eaf8fb;
   --color-panel: rgba(255, 255, 255, 0.78);
@@ -66,4 +67,19 @@ input[type="search"]::-webkit-search-cancel-button {
 ::selection {
   background: rgba(0, 180, 216, 0.22);
   color: var(--color-text);
+}
+
+:where(a[href], button:not(:disabled), [role="button"], select:not(:disabled), summary, label[for]) {
+  cursor: pointer;
+}
+
+:where(a[href], button:not(:disabled), [role="button"], select:not(:disabled), summary, label[for]) * {
+  cursor: inherit;
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
 }

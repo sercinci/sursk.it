@@ -11,7 +11,8 @@ import type {
   PokemonMove,
   Pokemon,
   PokemonListQuery,
-  PokemonListItem
+  PokemonListItem,
+  XcoreUser,
 } from "@/types";
 import { getCurrentLocale } from "@/i18n";
 
@@ -267,6 +268,14 @@ export function fetchPokemmoHoennLocation(locationName: string) {
 
 export function fetchTypes() {
   return request<string[]>("/meta/types");
+}
+
+export function fetchCurrentUser() {
+  return request<XcoreUser>("/auth/me");
+}
+
+export async function logoutUser(): Promise<void> {
+  await fetch(`${API_BASE}/auth/logout`, { method: "POST" });
 }
 
 export async function fetchPokemonEvolutionLine(pokemonId: number): Promise<PokemonEvolutionLine | null> {

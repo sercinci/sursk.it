@@ -1,7 +1,7 @@
 <template>
   <RouterLink
     :to="`/pokemon/${pokemon.id}`"
-    class="card-surface group flex items-center gap-3 rounded-2xl p-3 shadow-soft transition hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-accent/30 sm:gap-4 sm:p-4 lg:h-full lg:flex-col lg:items-center lg:gap-4 lg:p-5"
+    class="card-surface group flex items-center gap-3 rounded-2xl p-3 shadow-soft transition hover:ring-1 hover:ring-accent/20 focus-visible:ring-2 focus-visible:ring-accent/30 sm:gap-4 sm:p-4 lg:h-full lg:flex-col lg:items-center lg:gap-4 lg:p-5"
   >
     <div class="shrink-0 rounded-xl bg-white/80 p-1.5">
       <img
