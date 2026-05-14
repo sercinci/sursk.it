@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from typing import Any, AsyncIterator
 
 import httpx
@@ -83,7 +84,7 @@ async def surskit_matchup(request: Request) -> StreamingResponse:
             async for chunk in resp.aiter_bytes():
                 yield chunk
         except Exception as exc:
-            yield f"event: error\ndata: {str(exc)}\n\n".encode()
+            yield f"event: error\ndata: {json.dumps({'message': str(exc)})}\n\n".encode()
         finally:
             await resp.aclose()
             await client.aclose()

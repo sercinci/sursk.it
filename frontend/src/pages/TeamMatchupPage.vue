@@ -1078,9 +1078,19 @@ async function refreshXcoreHistory() {
 
 onMounted(async () => {
   cachedHistory.value = loadAllAnalyses();
-  fetchPokemonList({ limit: 300 }).then(r => {
-    allPokemonByName.value = new Map(r.data.map(p => [p.name, p]));
-  }).catch(() => {});  // non-fatal
+  (async () => {
+    const pageSize = 100;
+    let offset = 0;
+    let total = 0;
+    const entries: [string, PokemonListItem][] = [];
+    do {
+      const r = await fetchPokemonList({ limit: pageSize, offset });
+      for (const p of r.data) entries.push([p.name, p]);
+      total = Number(r.meta.total ?? entries.length);
+      offset += pageSize;
+    } while (offset < total);
+    allPokemonByName.value = new Map(entries);
+  })().catch(() => {});  // non-fatal
   // Auto-load only if the most recent analysis matches the current teams exactly
   const first = cachedHistory.value[0];
   if (first) {
