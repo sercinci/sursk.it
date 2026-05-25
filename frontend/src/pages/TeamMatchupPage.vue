@@ -509,7 +509,7 @@
     </div>
 
     <!-- ══ AI Analysis Results (always visible) ══ -->
-    <div :ref="(el) => { analysisRef.value = el as HTMLElement | null }">
+    <div ref="analysisRef">
 
       <!-- Stale warning -->
       <div v-if="analysis && isStale" class="mb-3 flex items-center gap-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-xs text-amber-700">
