@@ -1501,6 +1501,36 @@
         "category": "Lure"
       },
       {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 103",
+        "level_range": "15-30",
+        "method": "Good Rod",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 103",
+        "level_range": "5-15",
+        "method": "Old Rod",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 103",
+        "level_range": "20-30",
+        "method": "Surfing",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
         "pokemon_name": "Wingull",
         "pokemon_id": 278,
         "sub_location": "Route 103",
@@ -1630,7 +1660,7 @@
         "pokemon_name": "Magikarp",
         "pokemon_id": 129,
         "sub_location": "Route 105",
-        "level_range": "10-30",
+        "level_range": "15-30",
         "method": "Good Rod",
         "rate": "Very Common",
         "period": null,
@@ -1660,7 +1690,7 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 105",
-        "level_range": "10-30",
+        "level_range": "15-30",
         "method": "Good Rod",
         "rate": "Common",
         "period": null,
@@ -1672,7 +1702,7 @@
         "sub_location": "Route 105",
         "level_range": "5-15",
         "method": "Old Rod",
-        "rate": "Common",
+        "rate": "Very Common",
         "period": null,
         "category": "Wild"
       },
@@ -1690,7 +1720,7 @@
         "pokemon_name": "Wailmer",
         "pokemon_id": 320,
         "sub_location": "Route 105",
-        "level_range": "10-30",
+        "level_range": "15-30",
         "method": "Good Rod",
         "rate": "Common",
         "period": null,
@@ -1748,7 +1778,7 @@
         "pokemon_name": "Magikarp",
         "pokemon_id": 129,
         "sub_location": "Route 106",
-        "level_range": "10-30",
+        "level_range": "15-30",
         "method": "Good Rod",
         "rate": "Very Common",
         "period": null,
@@ -1778,7 +1808,7 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 106",
-        "level_range": "10-30",
+        "level_range": "15-30",
         "method": "Good Rod",
         "rate": "Common",
         "period": null,
@@ -1790,9 +1820,19 @@
         "sub_location": "Route 106",
         "level_range": "5-15",
         "method": "Old Rod",
-        "rate": "Common",
+        "rate": "Very Common",
         "period": null,
         "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 106",
+        "level_range": "20-30",
+        "method": "Surfing",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
       },
       {
         "pokemon_name": "Tentacool",
@@ -1808,7 +1848,7 @@
         "pokemon_name": "Wailmer",
         "pokemon_id": 320,
         "sub_location": "Route 106",
-        "level_range": "10-30",
+        "level_range": "15-30",
         "method": "Good Rod",
         "rate": "Common",
         "period": null,
@@ -2009,16 +2049,6 @@
         "rate": "Very Common",
         "period": null,
         "category": "Wild"
-      },
-      {
-        "pokemon_name": "Tentacool",
-        "pokemon_id": 72,
-        "sub_location": "Route 108",
-        "level_range": "20-30",
-        "method": "Surfing",
-        "rate": "Horde",
-        "period": null,
-        "category": "Horde"
       },
       {
         "pokemon_name": "Tentacool",
@@ -2315,6 +2345,16 @@
         "rate": "Very Common",
         "period": null,
         "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 110",
+        "level_range": "20-30",
+        "method": "Surfing",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
       },
       {
         "pokemon_name": "Tentacool",
@@ -2990,6 +3030,26 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 115",
+        "level_range": "5-15",
+        "method": "Good Rod",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 115",
+        "level_range": "5-15",
+        "method": "Old Rod",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 115",
         "level_range": "20-30",
         "method": "Surfing",
         "rate": "Very Common",
@@ -3351,6 +3411,46 @@
         "category": "Wild"
       },
       {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 118",
+        "level_range": "15-30",
+        "method": "Good Rod",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 118",
+        "level_range": "5-15",
+        "method": "Old Rod",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 118",
+        "level_range": "20-30",
+        "method": "Surfing",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 118",
+        "level_range": "20-30",
+        "method": "Surfing",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
         "pokemon_name": "Wingull",
         "pokemon_id": 278,
         "sub_location": "Route 118",
@@ -3514,6 +3614,26 @@
         "sub_location": "Route 119",
         "level_range": "5-15",
         "method": "Old Rod",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 119",
+        "level_range": "20-30",
+        "method": "Surfing",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 119",
+        "level_range": "20-30",
+        "method": "Surfing",
         "rate": "Very Common",
         "period": null,
         "category": "Wild"
@@ -3891,6 +4011,46 @@
         "level_range": "27-29",
         "method": "Grass",
         "rate": "Uncommon",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 121",
+        "level_range": "15-30",
+        "method": "Good Rod",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 121",
+        "level_range": "5-15",
+        "method": "Old Rod",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 121",
+        "level_range": "25-30",
+        "method": "Surfing",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 121",
+        "level_range": "25-30",
+        "method": "Surfing",
+        "rate": "Very Common",
         "period": null,
         "category": "Wild"
       },
@@ -4330,7 +4490,7 @@
         "pokemon_name": "Pelipper",
         "pokemon_id": 279,
         "sub_location": "Route 125",
-        "level_range": "25-35",
+        "level_range": "25-30",
         "method": "Surfing",
         "rate": "Rare",
         "period": null,
@@ -4425,6 +4585,36 @@
     "source_url": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_126",
     "encounters": [
       {
+        "pokemon_name": "Chinchou",
+        "pokemon_id": 170,
+        "sub_location": "Route 126",
+        "level_range": "30-35",
+        "method": "Seaweed",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Clamperl",
+        "pokemon_id": 366,
+        "sub_location": "Route 126",
+        "level_range": "30-35",
+        "method": "Seaweed",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Lanturn",
+        "pokemon_id": 171,
+        "sub_location": "Route 126",
+        "level_range": "34",
+        "method": "Seaweed",
+        "rate": "Uncommon",
+        "period": null,
+        "category": "Wild"
+      },
+      {
         "pokemon_name": "Pelipper",
         "pokemon_id": 279,
         "sub_location": "Route 126",
@@ -4433,6 +4623,36 @@
         "rate": "Very Common",
         "period": null,
         "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 126",
+        "level_range": "15-30",
+        "method": "Good Rod",
+        "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 126",
+        "level_range": "5-15",
+        "method": "Old Rod",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 126",
+        "level_range": "30-35",
+        "method": "Surfing",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
       },
       {
         "pokemon_name": "Tentacool",
@@ -4508,9 +4728,9 @@
         "sub_location": "Route 127",
         "level_range": "30-35",
         "method": "Surfing",
-        "rate": "Unknown",
+        "rate": "Horde",
         "period": null,
-        "category": "Wild"
+        "category": "Horde"
       },
       {
         "pokemon_name": "Sharpedo",
@@ -4546,6 +4766,16 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 127",
+        "level_range": "25-35",
+        "method": "Surfing",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacruel",
+        "pokemon_id": 73,
+        "sub_location": "Route 127",
         "level_range": "30-35",
         "method": "Surfing",
         "rate": "Common",
@@ -4558,19 +4788,9 @@
         "sub_location": "Route 127",
         "level_range": "30-35",
         "method": "Surfing",
-        "rate": "Uncommon",
+        "rate": "Horde",
         "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Tentacruel",
-        "pokemon_id": 73,
-        "sub_location": "Route 127",
-        "level_range": "30-35",
-        "method": "Surfing",
-        "rate": "Unknown",
-        "period": null,
-        "category": "Wild"
+        "category": "Horde"
       },
       {
         "pokemon_name": "Wailmer",
@@ -4621,62 +4841,12 @@
     "source_url": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_128",
     "encounters": [
       {
-        "pokemon_name": "Corsola",
-        "pokemon_id": 222,
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
         "sub_location": "Route 128",
-        "level_range": "30-35",
-        "method": "Super Rod",
-        "rate": "Uncommon",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Luvdisc",
-        "pokemon_id": 370,
-        "sub_location": "Route 128",
-        "level_range": "10-30",
-        "method": "Good Rod",
-        "rate": "Uncommon",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Luvdisc",
-        "pokemon_id": 370,
-        "sub_location": "Route 128",
-        "level_range": "30-35",
-        "method": "Super Rod",
-        "rate": "Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Magikarp",
-        "pokemon_id": 129,
-        "sub_location": "Route 128",
-        "level_range": "10-30",
-        "method": "Good Rod",
-        "rate": "Very Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Magikarp",
-        "pokemon_id": 129,
-        "sub_location": "Route 128",
-        "level_range": "5-10",
+        "level_range": "5-15",
         "method": "Old Rod",
         "rate": "Very Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Pelipper",
-        "pokemon_id": 279,
-        "sub_location": "Route 128",
-        "level_range": "25-30",
-        "method": "Surfing",
-        "rate": "Very Rare",
         "period": null,
         "category": "Wild"
       },
@@ -4684,79 +4854,9 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 128",
-        "level_range": "5-10",
-        "method": "Old Rod",
-        "rate": "Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Tentacool",
-        "pokemon_id": 72,
-        "sub_location": "Route 128",
-        "level_range": "5-35",
+        "level_range": "30-35",
         "method": "Surfing",
         "rate": "Very Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wailmer",
-        "pokemon_id": 320,
-        "sub_location": "Route 128",
-        "level_range": "10-30",
-        "method": "Good Rod",
-        "rate": "Uncommon",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wailmer",
-        "pokemon_id": 320,
-        "sub_location": "Route 128",
-        "level_range": "30-35",
-        "method": "Super Rod",
-        "rate": "Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wailmer",
-        "pokemon_id": 320,
-        "sub_location": "Route 128",
-        "level_range": "35-40",
-        "method": "Super Rod",
-        "rate": "Very Rare",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wailmer",
-        "pokemon_id": 320,
-        "sub_location": "Route 128",
-        "level_range": "40-45",
-        "method": "Super Rod",
-        "rate": "Very Rare",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wingull",
-        "pokemon_id": 278,
-        "sub_location": "Route 128",
-        "level_range": "10-30",
-        "method": "Surfing",
-        "rate": "Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wingull",
-        "pokemon_id": 278,
-        "sub_location": "Route 128",
-        "level_range": "15-25",
-        "method": "Surfing",
-        "rate": "Rare",
         "period": null,
         "category": "Wild"
       }
@@ -4832,7 +4932,7 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 129",
-        "level_range": "25-35",
+        "level_range": "30-40",
         "method": "Surfing",
         "rate": "Very Common",
         "period": null,
@@ -4922,6 +5022,16 @@
         "sub_location": "Route 130",
         "level_range": "36-40",
         "method": "Surfing",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Pelipper",
+        "pokemon_id": 279,
+        "sub_location": "Route 130",
+        "level_range": "36-40",
+        "method": "Surfing",
         "rate": "Uncommon",
         "period": null,
         "category": "Wild"
@@ -4952,7 +5062,7 @@
         "sub_location": "Route 130",
         "level_range": "30-40",
         "method": "Surfing",
-        "rate": "Common",
+        "rate": "Very Common",
         "period": null,
         "category": "Wild"
       },
@@ -5058,7 +5168,7 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 131",
-        "level_range": "25-35",
+        "level_range": "30-40",
         "method": "Surfing",
         "rate": "Very Common",
         "period": null,
@@ -5113,142 +5223,32 @@
     "source_url": "https://pokemmo.shoutwiki.com/wiki/Hoenn_Route_132",
     "encounters": [
       {
-        "pokemon_name": "Horsea",
-        "pokemon_id": 116,
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
         "sub_location": "Route 132",
-        "level_range": "25-30",
-        "method": "Super Rod",
-        "rate": "Uncommon",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Magikarp",
-        "pokemon_id": 129,
-        "sub_location": "Route 132",
-        "level_range": "10-30",
+        "level_range": "15-30",
         "method": "Good Rod",
-        "rate": "Very Common",
+        "rate": "Common",
         "period": null,
         "category": "Wild"
       },
       {
-        "pokemon_name": "Magikarp",
-        "pokemon_id": 129,
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
         "sub_location": "Route 132",
-        "level_range": "5-10",
+        "level_range": "5-15",
         "method": "Old Rod",
         "rate": "Very Common",
         "period": null,
         "category": "Wild"
       },
       {
-        "pokemon_name": "Pelipper",
-        "pokemon_id": 279,
-        "sub_location": "Route 132",
-        "level_range": "25-30",
-        "method": "Surfing",
-        "rate": "Very Rare",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Sharpedo",
-        "pokemon_id": 319,
-        "sub_location": "Route 132",
-        "level_range": "30-35",
-        "method": "Super Rod",
-        "rate": "Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 132",
-        "level_range": "10-30",
-        "method": "Good Rod",
-        "rate": "Uncommon",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Tentacool",
-        "pokemon_id": 72,
-        "sub_location": "Route 132",
-        "level_range": "5-10",
-        "method": "Old Rod",
-        "rate": "Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Tentacool",
-        "pokemon_id": 72,
-        "sub_location": "Route 132",
-        "level_range": "5-35",
+        "level_range": "30-40",
         "method": "Surfing",
         "rate": "Very Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wailmer",
-        "pokemon_id": 320,
-        "sub_location": "Route 132",
-        "level_range": "10-30",
-        "method": "Good Rod",
-        "rate": "Uncommon",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wailmer",
-        "pokemon_id": 320,
-        "sub_location": "Route 132",
-        "level_range": "30-35",
-        "method": "Super Rod",
-        "rate": "Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wailmer",
-        "pokemon_id": 320,
-        "sub_location": "Route 132",
-        "level_range": "35-40",
-        "method": "Super Rod",
-        "rate": "Very Rare",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wailmer",
-        "pokemon_id": 320,
-        "sub_location": "Route 132",
-        "level_range": "40-45",
-        "method": "Super Rod",
-        "rate": "Very Rare",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wingull",
-        "pokemon_id": 278,
-        "sub_location": "Route 132",
-        "level_range": "10-30",
-        "method": "Surfing",
-        "rate": "Common",
-        "period": null,
-        "category": "Wild"
-      },
-      {
-        "pokemon_name": "Wingull",
-        "pokemon_id": 278,
-        "sub_location": "Route 132",
-        "level_range": "15-25",
-        "method": "Surfing",
-        "rate": "Rare",
         "period": null,
         "category": "Wild"
       }
@@ -5274,9 +5274,29 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 133",
-        "level_range": "40",
-        "method": "Surfing",
+        "level_range": "15-30",
+        "method": "Good Rod",
         "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 133",
+        "level_range": "5-15",
+        "method": "Old Rod",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 133",
+        "level_range": "30-40",
+        "method": "Surfing",
+        "rate": "Very Common",
         "period": null,
         "category": "Wild"
       }
@@ -5312,9 +5332,39 @@
         "pokemon_name": "Tentacool",
         "pokemon_id": 72,
         "sub_location": "Route 134",
-        "level_range": "24-27",
-        "method": "Surfing",
+        "level_range": "15-30",
+        "method": "Good Rod",
         "rate": "Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 134",
+        "level_range": "5-15",
+        "method": "Old Rod",
+        "rate": "Very Common",
+        "period": null,
+        "category": "Wild"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 134",
+        "level_range": "20-30",
+        "method": "Surfing",
+        "rate": "Horde",
+        "period": null,
+        "category": "Horde"
+      },
+      {
+        "pokemon_name": "Tentacool",
+        "pokemon_id": 72,
+        "sub_location": "Route 134",
+        "level_range": "20-30",
+        "method": "Surfing",
+        "rate": "Very Common",
         "period": null,
         "category": "Wild"
       },

@@ -4,6 +4,13 @@ export interface ApiError {
   details?: unknown;
 }
 
+export interface XcoreUser {
+  sub: string;
+  name: string | null;
+  profile: string | null;
+  picture: string | null;
+}
+
 export interface ApiEnvelope<T> {
   data: T;
   meta: Record<string, unknown>;

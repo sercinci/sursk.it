@@ -8,9 +8,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
+from starlette.middleware.sessions import SessionMiddleware
 
+from app.api.auth_routes import router as auth_router
 from app.api.routes import router as api_router
-from app.core.config import APP_DOMAIN, APP_NAME, DATA_DIR, STATIC_DIR
+from app.api.surskit_routes import router as surskit_router
+from app.core.config import APP_DOMAIN, APP_NAME, DATA_DIR, IS_PROD, SESSION_SECRET_KEY, STATIC_DIR
 from app.providers.repository import DataRepository
 from app.schemas.common import failure, success
 from app.services.pokemon_service import PokemonService
@@ -43,6 +46,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title=APP_NAME, version="0.1.0", lifespan=lifespan)
 
+app.add_middleware(SessionMiddleware, secret_key=SESSION_SECRET_KEY, https_only=IS_PROD)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -74,6 +78,8 @@ async def validation_exception_handler(
 
 
 app.include_router(api_router, prefix="/api", tags=["pokedex"])
+app.include_router(auth_router, prefix="/api", tags=["auth"])
+app.include_router(surskit_router, prefix="/api", tags=["surskit"])
 
 
 if STATIC_DIR.exists():

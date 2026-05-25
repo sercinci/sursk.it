@@ -33,7 +33,7 @@
             :to="{ name: 'location-detail', params: { locationName: location.name } }"
             class="block"
           >
-            <article class="card-surface rounded-2xl p-4 transition hover:-translate-y-0.5 hover:shadow-soft">
+            <article class="card-surface rounded-2xl p-4 transition hover:ring-1 hover:ring-accent/20 hover:shadow-soft">
               <div class="flex items-start justify-between gap-3">
                 <h3 class="font-display text-lg font-semibold">{{ location.display_name }}</h3>
                 <p class="font-mono text-xs text-muted">{{ location.pokemon_ids.length }} Pokémon</p>
