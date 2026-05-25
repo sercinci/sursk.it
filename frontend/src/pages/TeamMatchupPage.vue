@@ -410,6 +410,67 @@
           </Transition>
         </article>
 
+        <!-- ══ Speed Tiers ══ -->
+        <article class="card-surface overflow-hidden rounded-2xl">
+          <button
+            type="button"
+            class="flex w-full items-center gap-3 px-5 py-3.5 text-left transition hover:bg-black/[0.02]"
+            :class="speedOpen ? 'border-b border-black/8' : ''"
+            @click="speedOpen = !speedOpen"
+          >
+            <h2 class="flex-1 font-display font-semibold text-text">{{ t("team.section.speed") }}</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+              class="h-4 w-4 shrink-0 text-muted transition-transform duration-200"
+              :class="speedOpen ? 'rotate-180' : ''"
+              aria-hidden="true"
+            ><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <Transition
+            enter-active-class="transition-all duration-200 ease-out overflow-hidden"
+            leave-active-class="transition-all duration-150 ease-in overflow-hidden"
+            enter-from-class="max-h-0 opacity-0"
+            enter-to-class="max-h-[800px] opacity-100"
+            leave-from-class="max-h-[800px] opacity-100"
+            leave-to-class="max-h-0 opacity-0"
+          >
+            <div v-show="speedOpen" class="p-4">
+              <div class="space-y-0.5">
+                <div
+                  v-for="(entry, i) in speedTierList"
+                  :key="`${entry.team}-${entry.pokemon.id}`"
+                  class="flex items-center gap-2.5 rounded-lg px-1 py-1"
+                >
+                  <span class="w-4 shrink-0 text-right font-mono text-[11px] text-muted">{{ i + 1 }}</span>
+                  <div :class="['h-7 w-1 shrink-0 rounded-full', entry.team === 'my' ? 'bg-sky-400' : 'bg-amber-400']" />
+                  <img
+                    :src="entry.pokemon.sprites?.['official_artwork'] ?? entry.pokemon.sprites?.['front_default'] ?? ''"
+                    :alt="entry.pokemon.name"
+                    class="h-8 w-8 shrink-0 object-contain"
+                  />
+                  <div class="min-w-0 flex-1">
+                    <span class="block truncate text-sm font-medium capitalize text-text">{{ entry.pokemon.name }}</span>
+                    <div class="mt-0.5 flex flex-wrap gap-1">
+                      <span
+                        v-for="type in entry.pokemon.types"
+                        :key="type"
+                        :style="getTypeChipStyle(type)"
+                        class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                      >{{ labelType(type) }}</span>
+                    </div>
+                  </div>
+                  <div class="shrink-0 text-right">
+                    <p :class="['font-mono text-sm font-bold tabular-nums', entry.team === 'my' ? 'text-sky-600' : 'text-amber-600']">{{ (entry.pokemon.stats['speed'] ?? 0) + 52 }}</p>
+                    <p class="font-mono text-[10px] text-muted tabular-nums">base {{ entry.pokemon.stats['speed'] ?? 0 }}</p>
+                  </div>
+                </div>
+              </div>
+              <p class="mt-3 text-center text-[10px] text-muted">{{ t("team.speed_tier_note") }}</p>
+            </div>
+          </Transition>
+        </article>
+
       </template>
 
     </template>
@@ -954,6 +1015,12 @@ const statRows = computed(() =>
   })
 );
 
+const speedTierList = computed(() => {
+  const my  = myTeam.value.map(p => ({ pokemon: p, team: "my"  as const }));
+  const opp = oppTeam.value.map(p => ({ pokemon: p, team: "opp" as const }));
+  return [...my, ...opp].sort((a, b) => (b.pokemon.stats["speed"] ?? 0) - (a.pokemon.stats["speed"] ?? 0));
+});
+
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
 function formatId(id: number): string {
@@ -1045,6 +1112,7 @@ const elapsedLabel = computed(() => {
 let timerHandle: ReturnType<typeof setInterval> | null = null;
 let thinkingPlaceholderHandle: ReturnType<typeof setInterval> | null = null;
 const statsOpen      = ref(false);
+const speedOpen      = ref(false);
 const analysisRef    = ref<HTMLElement | null>(null);
 
 // ── Cached analysis state ─────────────────────────────────────────────────────

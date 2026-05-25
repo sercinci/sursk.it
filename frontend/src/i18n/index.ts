@@ -199,6 +199,8 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "team.no_types": "No types available yet.",
     "team.no_weaknesses": "No type weaknesses.",
     "team.stats_avg_note": "Average base stats across loaded team members.",
+    "team.section.speed": "Speed Tiers",
+    "team.speed_tier_note": "Lv. 50, neutral nature, 252 EVs, 31 IVs. Blue = your team, yellow = opponent.",
   },
   it: {
     "brand.tagline": "Walks on water",
@@ -393,6 +395,8 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "team.no_types": "Nessun tipo disponibile.",
     "team.no_weaknesses": "Nessuna debolezza di tipo.",
     "team.stats_avg_note": "Media delle statistiche base tra i membri del team caricati.",
+    "team.section.speed": "Livelli di velocità",
+    "team.speed_tier_note": "Lv. 50, natura neutrale, 252 EV, 31 IV. Blu = tuo team, giallo = avversario.",
   },
 };
 
