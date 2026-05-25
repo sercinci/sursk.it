@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from urllib.parse import urlencode
 
+import httpx
 from fastapi import APIRouter, HTTPException, Query, Request
 from fastapi.responses import RedirectResponse
 
@@ -73,11 +74,21 @@ async def callback(
     if not code:
         raise HTTPException(status_code=400, detail="Missing authorization code")
 
-    config = await get_oidc_config(XCORE_BASE_URL)
-    tokens = await exchange_code(
-        config, XCORE_CLIENT_ID, XCORE_CLIENT_SECRET, code, XCORE_REDIRECT_URI, verifier
-    )
-    userinfo = await fetch_userinfo(config, tokens["access_token"])
+    _require_auth_config()
+    try:
+        config = await get_oidc_config(XCORE_BASE_URL)
+        tokens = await exchange_code(
+            config, XCORE_CLIENT_ID, XCORE_CLIENT_SECRET, code, XCORE_REDIRECT_URI, verifier
+        )
+        userinfo = await fetch_userinfo(config, tokens["access_token"])
+    except httpx.HTTPStatusError as exc:
+        request.session.pop("oauth_state", None)
+        request.session.pop("oauth_verifier", None)
+        raise HTTPException(status_code=401, detail=f"OAuth token exchange failed: {exc.response.status_code}") from exc
+    except httpx.RequestError as exc:
+        request.session.pop("oauth_state", None)
+        request.session.pop("oauth_verifier", None)
+        raise HTTPException(status_code=503, detail="OAuth provider unreachable") from exc
 
     request.session["access_token"] = tokens["access_token"]
     request.session["refresh_token"] = tokens.get("refresh_token")

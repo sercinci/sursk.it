@@ -1,5 +1,5 @@
 import type { Pokemon } from "@/types";
-import type { MatchupAnalysis, AnalysisOptions } from "@/services/openai";
+import type { MatchupAnalysis, AnalysisOptions } from "@/services/analysis";
 
 const CACHE_KEY = "sursk.it:matchup-cache";
 const MAX_ENTRIES = 20;

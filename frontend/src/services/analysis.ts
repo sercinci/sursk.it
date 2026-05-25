@@ -307,8 +307,8 @@ PokeMMO specifics:
 Each Pokémon in the JSON has:
 - base_stats: {hp, attack, defense, special-attack, special-defense, speed}
 - speed_lv50: pre-computed speed at level 50, 252 EVs, 31 IVs
-    plus_nature    = floor((base_speed + 99) × 1.1)  ← use this as the fast scenario
-    neutral_nature = base_speed + 99                  ← use this as the slow scenario
+    plus_nature    = floor((base_speed + 52) × 1.1)  ← use this as the fast scenario
+    neutral_nature = base_speed + 52                  ← use this as the slow scenario
   ALWAYS compare speed_lv50.plus_nature of both Pokémon to determine likely turn order.
   If within 5 points, flag as nature-dependent / uncertain.
 - abilities: ALL possible abilities the Pokémon can have (only ONE is active in battle)
@@ -476,8 +476,8 @@ EV SPREAD AND EFFECTIVE STATS — LEVEL 50
 All calculations at level 50, 31 IVs, 252 EVs in relevant stat, beneficial nature:
 
 FORMULA:
-  Non-HP, neutral nature : stat = base + 99
-  Non-HP, +10% nature    : stat = floor((base + 99) × 1.1)
+  Non-HP, neutral nature : stat = base + 52
+  Non-HP, +10% nature    : stat = floor((base + 52) × 1.1)
   HP (252 EVs, 31 IVs)   : HP  = base + 154
 
 ASSUMED EV SPREADS BY ROLE:
@@ -488,15 +488,15 @@ ASSUMED EV SPREADS BY ROLE:
 - Mixed wall/pivot  : 252 HP / 128 Def / 128 SpD
 
 SPEED TIERS at level 50 (+nature, 252 EVs):
-  Base 135 → 257 | Base 130 → 251 | Base 120 → 240 | Base 115 → 235
-  Base 110 → 229 | Base 100 → 218 | Base 90  → 207 | Base 80  → 196
-  Base 70  → 185 | Base 60  → 174 | Base 45  → 158 (Trick Room territory)
+  Base 135 → 205 | Base 130 → 200 | Base 120 → 189 | Base 115 → 183
+  Base 110 → 178 | Base 100 → 167 | Base 90  → 156 | Base 80  → 145
+  Base 70  → 134 | Base 60  → 123 | Base 45  → 106 (Trick Room territory)
 
-SPEED RULE: floor((base + 99) × 1.1). Higher value moves first.
+SPEED RULE: floor((base + 52) × 1.1). Higher value moves first.
 Speeds within 5 points are nature-dependent — flag as uncertain.
 
 DAMAGE RULE OF THUMB (level 50, no item):
-  STAB base 100 Atk vs base 100 Def (218 vs 218): ~22–30% → 3–4HKO
+  STAB base 100 Atk vs base 100 Def (167 vs 167): ~22–30% → 3–4HKO
   STAB ×2 SE (same stats):                         ~44–60% → 2HKO
   STAB ×4 SE (same stats):                         ~88–100% → likely OHKO
   After Swords Dance (+2 Atk): double damage → halve hits to KO

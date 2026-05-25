@@ -492,7 +492,13 @@
             {{ isAnalyzingXcore ? `Analyzing… ${elapsedLabel}` : 'Analyze' }}
           </button>
         </div>
-        <p v-if="isAnalyzingXcore && xcoreThinking" class="mt-2 line-clamp-1 font-mono text-[10px] text-muted/70">{{ xcoreThinking }}</p>
+        <p
+          v-if="isAnalyzingXcore && (xcoreThinking || xcoreThinkingPlaceholder)"
+          class="mt-2 line-clamp-1 font-mono text-[10px] leading-relaxed text-gray-400"
+        >
+          <template v-if="xcoreThinking">{{ xcoreThinking }}</template>
+          <template v-else>{{ xcoreThinkingPlaceholder }}<span class="thinking-dots" aria-hidden="true"></span></template>
+        </p>
         <p v-if="myTeam.length === 0 || oppTeam.length === 0" class="mt-2 text-xs text-muted/60">Add Pokémon to both teams to run an analysis.</p>
         <p v-if="analysisDuration !== null && !isAnalyzingXcore && !analysisError" class="mt-2 text-xs text-muted">
           Analysis completed in {{ analysisDuration < 60 ? `${analysisDuration}s` : `${Math.floor(analysisDuration / 60)}m ${analysisDuration % 60}s` }}
@@ -503,7 +509,7 @@
     </div>
 
     <!-- ══ AI Analysis Results (always visible) ══ -->
-    <div :ref="(el) => { analysisRef = el as HTMLElement | null }">
+    <div :ref="(el) => { analysisRef.value = el as HTMLElement | null }">
 
       <!-- Stale warning -->
       <div v-if="analysis && isStale" class="mb-3 flex items-center gap-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-xs text-amber-700">
@@ -728,8 +734,8 @@ import { useDebouncedValue } from "@/composables/useDebouncedValue";
 import { saveAnalysis, loadAllAnalyses, deleteAnalysis } from "@/utils/analysisCache";
 import type { CachedAnalysis } from "@/utils/analysisCache";
 import { fetchPokemonMoves } from "@/api/client";
-import { analyzeMatchupXcore, fetchXcoreAnalyses, deleteXcoreAnalysis } from "@/services/openai";
-import type { MatchupAnalysis, AnalysisOptions, XcoreAnalysis } from "@/services/openai";
+import { analyzeMatchupXcore, fetchXcoreAnalyses, deleteXcoreAnalysis } from "@/services/analysis";
+import type { MatchupAnalysis, AnalysisOptions, XcoreAnalysis } from "@/services/analysis";
 import type { PokemonMove } from "@/types";
 import MatchupAnalysisCard from "@/components/MatchupAnalysisCard.vue";
 
@@ -992,8 +998,33 @@ function formatMult(mult: number): string {
 
 const isAnalyzingXcore  = ref(false);
 const xcoreThinking     = ref("");
+const xcoreThinkingPlaceholder = ref("");
 const analysisError     = ref<string | null>(null);
 const analysisDuration  = ref<number | null>(null);
+const XCORE_THINKING_MAX_CHARS = 160;
+const XCORE_PLACEHOLDER_INTERVAL_MS = 5000;
+const XCORE_THINKING_PLACEHOLDERS = [
+  "throwing a Poké Ball",
+  "spraying Repel",
+  "headbutting trees",
+  "checking IVs",
+  "charging the Pokédex",
+  "scouting tall grass",
+  "spinning the Poké Radar",
+  "polishing badges",
+  "packing Escape Ropes",
+  "tuning the Pokégear",
+  "mixing berries",
+  "checking type charts",
+  "reading move tutors",
+  "counting PP",
+  "warming up the lead",
+  "setting entry hazards",
+  "tracking swarm routes",
+  "consulting Nurse Joy",
+  "shuffling held items",
+  "reviewing battle notes",
+];
 
 // Advanced options
 const useLevelCap   = ref(false);
@@ -1012,6 +1043,7 @@ const elapsedLabel = computed(() => {
   return `${Math.floor(s / 60)}m ${s % 60}s`;
 });
 let timerHandle: ReturnType<typeof setInterval> | null = null;
+let thinkingPlaceholderHandle: ReturnType<typeof setInterval> | null = null;
 const statsOpen      = ref(false);
 const analysisRef    = ref<HTMLElement | null>(null);
 
@@ -1067,6 +1099,28 @@ function formatAge(ts: number): string {
   return `${Math.floor(h / 24)}d ago`;
 }
 
+function randomThinkingPlaceholder(previous = ""): string {
+  const options = XCORE_THINKING_PLACEHOLDERS.filter(text => text !== previous);
+  const pool = options.length > 0 ? options : XCORE_THINKING_PLACEHOLDERS;
+  return pool[Math.floor(Math.random() * pool.length)] ?? "thinking";
+}
+
+function stopThinkingPlaceholder() {
+  if (thinkingPlaceholderHandle !== null) {
+    clearInterval(thinkingPlaceholderHandle);
+    thinkingPlaceholderHandle = null;
+  }
+  xcoreThinkingPlaceholder.value = "";
+}
+
+function startThinkingPlaceholder() {
+  stopThinkingPlaceholder();
+  xcoreThinkingPlaceholder.value = randomThinkingPlaceholder();
+  thinkingPlaceholderHandle = setInterval(() => {
+    xcoreThinkingPlaceholder.value = randomThinkingPlaceholder(xcoreThinkingPlaceholder.value);
+  }, XCORE_PLACEHOLDER_INTERVAL_MS);
+}
+
 async function refreshXcoreHistory() {
   if (!authStore.isAuthenticated) return;
   try {
@@ -1077,7 +1131,11 @@ async function refreshXcoreHistory() {
 }
 
 const onVisibility = () => { if (document.visibilityState === 'visible') refreshXcoreHistory(); };
-onUnmounted(() => document.removeEventListener('visibilitychange', onVisibility));
+onUnmounted(() => {
+  document.removeEventListener('visibilitychange', onVisibility);
+  stopThinkingPlaceholder();
+  if (timerHandle !== null) { clearInterval(timerHandle); timerHandle = null; }
+});
 
 onMounted(async () => {
   cachedHistory.value = loadAllAnalyses();
@@ -1164,6 +1222,7 @@ async function runAnalysisXcore() {
   if (myTeam.value.length === 0 || oppTeam.value.length === 0) return;
   isAnalyzingXcore.value = true;
   xcoreThinking.value = "";
+  startThinkingPlaceholder();
   analysisError.value = null;
   analysisDuration.value = null;
   elapsedSeconds.value = 0;
@@ -1180,7 +1239,13 @@ async function runAnalysisXcore() {
     const oppMoves = new Map<number, PokemonMove[]>(oppMovesArr);
     const { analysis: result, duration_ms } = await analyzeMatchupXcore(
       myTeam.value, oppTeam.value, myMoves, oppMoves, analysisOptions.value,
-      text => { xcoreThinking.value = text.slice(-120); },
+      text => {
+        stopThinkingPlaceholder();
+        const nextThinking = `${xcoreThinking.value}${text}`;
+        xcoreThinking.value = nextThinking.length > XCORE_THINKING_MAX_CHARS
+          ? text.slice(0, XCORE_THINKING_MAX_CHARS)
+          : nextThinking;
+      },
     );
     const entry = saveAnalysis({ timestamp: Date.now(), myTeam: myTeam.value, oppTeam: oppTeam.value, analysis: result, options: analysisOptions.value, duration: Math.round(duration_ms / 1000), source: "xcore" });
     displayedEntry.value = entry;
@@ -1193,6 +1258,7 @@ async function runAnalysisXcore() {
     analysisError.value = err instanceof Error ? err.message : "xcore analysis failed.";
   } finally {
     if (timerHandle !== null) { clearInterval(timerHandle); timerHandle = null; }
+    stopThinkingPlaceholder();
     analysisDuration.value = Math.floor((Date.now() - startTime) / 1000);
     isAnalyzingXcore.value = false;
     xcoreThinking.value = "";
@@ -1201,6 +1267,28 @@ async function runAnalysisXcore() {
 </script>
 
 <style scoped>
+.thinking-dots::after {
+  content: "";
+  animation: thinking-dots 1.2s steps(4, end) infinite;
+}
+
+@keyframes thinking-dots {
+  0%,
+  20% {
+    content: "";
+  }
+  40% {
+    content: ".";
+  }
+  60% {
+    content: "..";
+  }
+  80%,
+  100% {
+    content: "...";
+  }
+}
+
 @media (max-width: 640px) {
   .team-matrix-scroll {
     --team-matrix-label: 72px;

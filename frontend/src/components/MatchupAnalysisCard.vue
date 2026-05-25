@@ -352,7 +352,7 @@
 import { computed, ref } from "vue";
 import { RouterLink } from "vue-router";
 import type { Pokemon } from "@/types";
-import type { MatchupAnalysis, IndividualMatchup, KeyMove } from "@/services/openai";
+import type { MatchupAnalysis, IndividualMatchup, KeyMove } from "@/services/analysis";
 
 const props = defineProps<{
   analysis: MatchupAnalysis;
@@ -467,8 +467,8 @@ function speedOvertakeNote(myName: string, oppName: string): string | null {
   if (!mine || !opp) return null;
 
   // Neutral nature, 252 EVs, level 50 (matches speed_lv50.neutral_nature in the prompt)
-  const mySpd  = (mine.stats["speed"]  ?? 0) + 99;
-  const oppSpd = (opp.stats["speed"]   ?? 0) + 99;
+  const mySpd  = (mine.stats["speed"]  ?? 0) + 52;
+  const oppSpd = (opp.stats["speed"]   ?? 0) + 52;
 
   if (mySpd === oppSpd) return null;
 
