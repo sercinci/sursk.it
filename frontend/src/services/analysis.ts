@@ -622,7 +622,7 @@ For every "lose":
 TEAM RECOMMENDATION CONSISTENCY:
   → Every name in team_recommendation.selected must appear in individual_matchups as my_pokemon.
   → Every name in team_recommendation.bench must also appear in individual_matchups as my_pokemon.
-  → The selected list must contain ≤ 6 names.
+  → When pool has > 6 members, selected must contain exactly 6 names. Otherwise selected equals all pool members.
 
 Only return the corrected JSON. No commentary outside the JSON object.
 
@@ -716,7 +716,7 @@ Write detailed, specific reasoning — do not truncate or summarise prematurely.
   "overall_advantage": "my_team" | "opponent" | "even",
   "advantage_explanation": "cite specific abilities, moves, stat edges, and why they swing the matchup",
   "lead_recommendation": {
-    "pokemon": "name from my_team",
+    "pokemon": "name from selected team only — never a benched pool member",
     "reason": "cite speed tier, typing, ability, and which opponent Pokémon it handles or forces out"
   },
   "individual_matchups": [
@@ -728,7 +728,7 @@ Write detailed, specific reasoning — do not truncate or summarise prematurely.
       "speed_note": "concise speed comparison using speed_lv50 values, e.g. 'Mine 240 vs Opp 196 — I go first' or 'Opp 229 vs Mine 207 — opponent faster' or 'Mine 218 vs Opp 218 — tied, nature decides'",
       "reasoning": "1-2 sentences MAX. State: decisive ability scenario if multiple exist, the best verified SE move from super_effective_moves, and the KO likelihood. Do NOT repeat the speed (already in speed_note). Do NOT claim any move is SE unless it is in super_effective_moves.",
       "key_moves": [
-        { "name": "move name from super_effective_moves", "source": "copy the learn_source value exactly from super_effective_moves: level-up | TM | level-up+TM | tutor | other" }
+        { "name": "SE move from super_effective_moves preferred; STAB/neutral move not in immune_definite as fallback when no reliable SE exists", "source": "copy the learn_source value exactly: level-up | TM | level-up+TM | tutor | other" }
       ],
       "threats_to_watch": [
         "ability name + what it blocks, e.g. 'wind-rider blocks hurricane+gust'",
@@ -745,11 +745,9 @@ Write detailed, specific reasoning — do not truncate or summarise prematurely.
     }
   ],
   "switch_advice": [
-    // ONE entry per opponent Pokémon — cover every opponent in the list.
-    // For each opponent, identify the single best switch-in from my_team.
     {
-      "opponent_pokemon": "name from opponent_team",
-      "switch_to": "name from my_team — the best switch-in against this specific opponent",
+      "opponent_pokemon": "name from opponent_team — one entry per opponent, cover every opponent",
+      "switch_to": "name from selected team — the single best switch-in against this specific opponent",
       "reason": "1 sentence: why this Pokémon handles the opponent — cite typing, ability, or the specific SE move from super_effective_moves. Never cite an immune move."
     }
   ],
