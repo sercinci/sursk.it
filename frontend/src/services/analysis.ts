@@ -96,7 +96,7 @@ export interface MatchupAnalysis {
   };
   team_strengths: string[];
   team_weaknesses: string[];
-  bo3_adjustments: Bo3Adjustment | null;
+  bo3_adjustments?: Bo3Adjustment | null;
 }
 
 // ── Ability immunity tables ───────────────────────────────────────────────────
