@@ -302,6 +302,65 @@
         </div>
       </div>
 
+      <!-- ── BO3 Adjustments ──────────────────────────────────────────────── -->
+      <div v-if="analysis.bo3_adjustments" class="p-4 sm:p-5">
+        <p class="mb-3 font-mono text-[10px] uppercase tracking-widest text-muted">Best-of-3 Adjustments</p>
+
+        <!-- Opponent read -->
+        <div class="mb-4 rounded-xl border border-violet-200 bg-violet-50/60 px-4 py-3">
+          <p class="mb-1 font-mono text-[9px] font-semibold uppercase tracking-wide text-violet-500">Opponent Game 2 Read</p>
+          <p class="text-xs leading-relaxed text-text/90">{{ analysis.bo3_adjustments.opponent_game1_reads }}</p>
+        </div>
+
+        <!-- Recommended swaps -->
+        <div v-if="analysis.bo3_adjustments.recommended_swaps.length > 0" class="mb-4 space-y-2">
+          <p class="mb-2 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted/70">Recommended Swaps</p>
+          <div
+            v-for="(swap, i) in analysis.bo3_adjustments.recommended_swaps"
+            :key="i"
+            class="rounded-xl border border-black/8 bg-white/60 p-3"
+          >
+            <div class="mb-2 flex flex-wrap items-center gap-3">
+              <!-- Remove -->
+              <div class="flex items-center gap-1.5">
+                <span class="font-mono text-[9px] font-bold uppercase tracking-wide text-red-400">Out</span>
+                <img v-if="spriteFor(swap.remove, myTeam)" :src="spriteFor(swap.remove, myTeam)" :alt="swap.remove" class="h-7 w-7 object-contain" />
+                <span class="font-mono text-[10px] font-semibold capitalize text-red-600">{{ swap.remove }}</span>
+              </div>
+              <!-- Arrow -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5 shrink-0 text-muted/40" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+              <!-- Bring in -->
+              <div class="flex items-center gap-1.5">
+                <span class="font-mono text-[9px] font-bold uppercase tracking-wide text-green-500">In</span>
+                <img v-if="spriteFor(swap.bring_in, myTeam)" :src="spriteFor(swap.bring_in, myTeam)" :alt="swap.bring_in" class="h-7 w-7 object-contain" />
+                <span class="font-mono text-[10px] font-semibold capitalize text-green-700">{{ swap.bring_in }}</span>
+              </div>
+            </div>
+            <p class="text-[11px] leading-snug text-muted">{{ swap.reason }}</p>
+          </div>
+        </div>
+
+        <!-- Bench matchup notes -->
+        <div v-if="analysis.bo3_adjustments.bench_matchup_notes.length > 0" class="space-y-1.5">
+          <p class="mb-2 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted/70">All Bench Options</p>
+          <div
+            v-for="note in analysis.bo3_adjustments.bench_matchup_notes"
+            :key="note.bench_pokemon"
+            class="rounded-xl border border-black/8 bg-white/40 px-3 py-2.5"
+          >
+            <div class="mb-1 flex flex-wrap items-center gap-2">
+              <img v-if="spriteFor(note.bench_pokemon, myTeam)" :src="spriteFor(note.bench_pokemon, myTeam)" :alt="note.bench_pokemon" class="h-6 w-6 shrink-0 object-contain" />
+              <span class="font-mono text-[10px] font-semibold capitalize text-sky-700">{{ note.bench_pokemon }}</span>
+              <span class="font-mono text-[9px] text-muted/50">replaces</span>
+              <span class="font-mono text-[10px] capitalize text-muted line-through">{{ note.replaces }}</span>
+            </div>
+            <p class="text-[10px] leading-snug text-muted/80">{{ note.triggers }}</p>
+          </div>
+        </div>
+      </div>
+
       <!-- ── Switch Advice ─────────────────────────────────────────────────── -->
       <div v-if="analysis.switch_advice.length > 0" class="p-4 sm:p-5">
         <p class="mb-3 font-mono text-[10px] uppercase tracking-widest text-muted">Switch Guide</p>
