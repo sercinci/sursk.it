@@ -313,10 +313,10 @@
         </div>
 
         <!-- Recommended swaps -->
-        <div v-if="analysis.bo3_adjustments.recommended_swaps.length > 0" class="mb-4 space-y-2">
+        <div v-if="(analysis.bo3_adjustments.recommended_swaps ?? []).length > 0" class="mb-4 space-y-2">
           <p class="mb-2 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted/70">Recommended Swaps</p>
           <div
-            v-for="(swap, i) in analysis.bo3_adjustments.recommended_swaps"
+            v-for="(swap, i) in (analysis.bo3_adjustments.recommended_swaps ?? [])"
             :key="i"
             class="rounded-xl border border-black/8 bg-white/60 p-3"
           >
@@ -343,10 +343,10 @@
         </div>
 
         <!-- Bench matchup notes -->
-        <div v-if="analysis.bo3_adjustments.bench_matchup_notes.length > 0" class="space-y-1.5">
+        <div v-if="(analysis.bo3_adjustments.bench_matchup_notes ?? []).length > 0" class="space-y-1.5">
           <p class="mb-2 font-mono text-[9px] font-semibold uppercase tracking-wide text-muted/70">All Bench Options</p>
           <div
-            v-for="note in analysis.bo3_adjustments.bench_matchup_notes"
+            v-for="note in (analysis.bo3_adjustments.bench_matchup_notes ?? [])"
             :key="note.bench_pokemon"
             class="rounded-xl border border-black/8 bg-white/40 px-3 py-2.5"
           >

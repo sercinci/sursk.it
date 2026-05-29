@@ -755,24 +755,26 @@ Write detailed, specific reasoning — do not truncate or summarise prematurely.
   },
   "team_strengths": ["specific strength citing abilities/typing/moves that create it"],
   "team_weaknesses": ["specific weakness and which opponent Pokémon or TM move exploits it"],
-  "bo3_adjustments": {
-    "opponent_game1_reads": "1-2 sentences: what game 1 reveals about the opponent's win condition and the adjustment they will likely make for game 2",
-    "recommended_swaps": [
-      {
-        "remove": "name from selected team",
-        "bring_in": "name from bench",
-        "reason": "1-2 sentences: what specific opponent threat this solves, why the bench member is better positioned for it, and what the swap costs"
-      }
-    ],
-    "bench_matchup_notes": [
-      {
-        "bench_pokemon": "name from bench",
-        "triggers": "the opponent scenario or game 2 adjustment that makes this worth bringing (e.g. 'if opponent drops X and adds a Fairy-type sweeper')",
-        "replaces": "name of the selected team member it would displace"
-      }
-    ]
-  }
-  // set to null when no bench exists (my_team.length ≤ 6)
+  "bo3_adjustments": null
+  // ↑ MUST be null when my_team.length ≤ 6 (no bench exists).
+  // When bench is non-empty, replace null with the object below:
+  // {
+  //   "opponent_game1_reads": "1-2 sentences: what game 1 reveals about the opponent's win condition and the adjustment they will likely make for game 2",
+  //   "recommended_swaps": [
+  //     {
+  //       "remove": "name from selected team",
+  //       "bring_in": "name from bench",
+  //       "reason": "1-2 sentences: what specific opponent threat this solves, why the bench member is better positioned for it, and what the swap costs"
+  //     }
+  //   ],
+  //   "bench_matchup_notes": [
+  //     {
+  //       "bench_pokemon": "name from bench",
+  //       "triggers": "the opponent scenario or game 2 adjustment that makes this worth bringing",
+  //       "replaces": "name of the selected team member it would displace"
+  //     }
+  //   ]
+  // }
 }`;
 
 // ── Post-processing: resolve key_move sources from actual move data ───────────
