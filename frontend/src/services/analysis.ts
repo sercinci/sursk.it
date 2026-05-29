@@ -691,6 +691,11 @@ Produce 1–3 concrete swap pairs (remove X → bring in Y). A valid swap must:
 3. Be motivated by a REALISTIC opponent game 2 adjustment — not just raw
    stats, but what a smart opponent would actually change after seeing game 1.
 
+OUTPUT FIELDS — use these exact key names in bo3_adjustments:
+  opponent_game1_reads  (string) — 1-2 sentences on the opponent's likely game-2 adjustment
+  recommended_swaps     (array)  — 1-3 objects, each: { remove, bring_in, reason }
+  bench_matchup_notes   (array)  — one object per benched Pokémon: { bench_pokemon, triggers, replaces }
+
 When my_team.length ≤ 6 (no bench exists): set bo3_adjustments = null.
 
 ═══════════════════════════════════════════════════
