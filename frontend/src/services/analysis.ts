@@ -61,6 +61,22 @@ export interface TeamRecommendation {
   bench: Array<{ pokemon: string; reason: string }>;
 }
 
+export interface BenchSwapSuggestion {
+  remove: string;
+  bring_in: string;
+  reason: string;
+}
+
+export interface Bo3Adjustment {
+  opponent_game1_reads: string;
+  recommended_swaps?: BenchSwapSuggestion[] | null;
+  bench_matchup_notes?: Array<{
+    bench_pokemon: string;
+    triggers: string;
+    replaces: string;
+  }> | null;
+}
+
 export interface MatchupAnalysis {
   team_recommendation: TeamRecommendation;
   summary: string;
@@ -80,6 +96,7 @@ export interface MatchupAnalysis {
   };
   team_strengths: string[];
   team_weaknesses: string[];
+  bo3_adjustments?: Bo3Adjustment | null;
 }
 
 // ── Ability immunity tables ───────────────────────────────────────────────────
@@ -605,7 +622,7 @@ For every "lose":
 TEAM RECOMMENDATION CONSISTENCY:
   → Every name in team_recommendation.selected must appear in individual_matchups as my_pokemon.
   → Every name in team_recommendation.bench must also appear in individual_matchups as my_pokemon.
-  → The selected list must contain ≤ 6 names.
+  → When pool has > 6 members, selected must contain exactly 6 names. Otherwise selected equals all pool members.
 
 Only return the corrected JSON. No commentary outside the JSON object.
 
@@ -644,6 +661,44 @@ Set team_recommendation.selected = all names in my_team, bench = [].
 The team_recommendation field is ALWAYS required.
 
 ═══════════════════════════════════════════════════
+BEST-OF-3 BENCH ADJUSTMENTS (pool mode only)
+═══════════════════════════════════════════════════
+When bench is non-empty, produce bo3_adjustments. In a best-of-3 series,
+game 1 reveals both lineups. For games 2–3, each player can change which
+Pokémon they bring from their pool. The opponent WILL adapt after game 1.
+
+STEP 1 — READ THE OPPONENT:
+Identify what game 1 reveals about the opponent's strategy: their primary
+win condition, the Pokémon they relied on most, and any weakness your
+selected 6 exposed (e.g. "your selected team is Atk-heavy with no special
+check — opponent will likely drop their physical wall and run a fast special
+sweeper for game 2").
+
+STEP 2 — EVALUATE EACH BENCH MEMBER:
+For every benched Pokémon, ask:
+- Does it answer an opponent threat the current 6 handle poorly?
+- Does it exploit an opponent weakness the current 6 cannot pressure?
+- What is the cost of bringing it in (which selected member does it displace,
+  and what gap does that create)?
+
+STEP 3 — RECOMMEND SWAPS:
+Produce 1–3 concrete swap pairs (remove X → bring in Y). A valid swap must:
+1. Address a specific problem in the game 1 lineup (cite the opponent Pokémon
+   that caused the issue and why the bench member answers it better).
+2. Not create a new critical hole (e.g. swapping out your only Speed check
+   or your only answer to the opponent's best Pokémon is a bad swap even if
+   the new Pokémon offers value elsewhere).
+3. Be motivated by a REALISTIC opponent game 2 adjustment — not just raw
+   stats, but what a smart opponent would actually change after seeing game 1.
+
+OUTPUT FIELDS — use these exact key names in bo3_adjustments:
+  opponent_game1_reads  (string) — 1-2 sentences on the opponent's likely game-2 adjustment
+  recommended_swaps     (array)  — 1-3 objects, each: { remove, bring_in, reason }
+  bench_matchup_notes   (array)  — one object per benched Pokémon: { bench_pokemon, triggers, replaces }
+
+When my_team.length ≤ 6 (no bench exists): set bo3_adjustments = null.
+
+═══════════════════════════════════════════════════
 OUTPUT FORMAT
 ═══════════════════════════════════════════════════
 Respond with ONLY a valid JSON object — no prose, no markdown fences.
@@ -661,7 +716,7 @@ Write detailed, specific reasoning — do not truncate or summarise prematurely.
   "overall_advantage": "my_team" | "opponent" | "even",
   "advantage_explanation": "cite specific abilities, moves, stat edges, and why they swing the matchup",
   "lead_recommendation": {
-    "pokemon": "name from my_team",
+    "pokemon": "name from selected team only — never a benched pool member",
     "reason": "cite speed tier, typing, ability, and which opponent Pokémon it handles or forces out"
   },
   "individual_matchups": [
@@ -673,7 +728,7 @@ Write detailed, specific reasoning — do not truncate or summarise prematurely.
       "speed_note": "concise speed comparison using speed_lv50 values, e.g. 'Mine 240 vs Opp 196 — I go first' or 'Opp 229 vs Mine 207 — opponent faster' or 'Mine 218 vs Opp 218 — tied, nature decides'",
       "reasoning": "1-2 sentences MAX. State: decisive ability scenario if multiple exist, the best verified SE move from super_effective_moves, and the KO likelihood. Do NOT repeat the speed (already in speed_note). Do NOT claim any move is SE unless it is in super_effective_moves.",
       "key_moves": [
-        { "name": "move name from super_effective_moves", "source": "copy the learn_source value exactly from super_effective_moves: level-up | TM | level-up+TM | tutor | other" }
+        { "name": "SE move from super_effective_moves preferred; STAB/neutral move not in immune_definite as fallback when no reliable SE exists", "source": "copy the learn_source value exactly: level-up | TM | level-up+TM | tutor | other" }
       ],
       "threats_to_watch": [
         "ability name + what it blocks, e.g. 'wind-rider blocks hurricane+gust'",
@@ -690,11 +745,9 @@ Write detailed, specific reasoning — do not truncate or summarise prematurely.
     }
   ],
   "switch_advice": [
-    // ONE entry per opponent Pokémon — cover every opponent in the list.
-    // For each opponent, identify the single best switch-in from my_team.
     {
-      "opponent_pokemon": "name from opponent_team",
-      "switch_to": "name from my_team — the best switch-in against this specific opponent",
+      "opponent_pokemon": "name from opponent_team — one entry per opponent, cover every opponent",
+      "switch_to": "name from selected team — the single best switch-in against this specific opponent",
       "reason": "1 sentence: why this Pokémon handles the opponent — cite typing, ability, or the specific SE move from super_effective_moves. Never cite an immune move."
     }
   ],
@@ -704,7 +757,8 @@ Write detailed, specific reasoning — do not truncate or summarise prematurely.
     "late_game": "win condition, which Pokémon closes out, and how to execute"
   },
   "team_strengths": ["specific strength citing abilities/typing/moves that create it"],
-  "team_weaknesses": ["specific weakness and which opponent Pokémon or TM move exploits it"]
+  "team_weaknesses": ["specific weakness and which opponent Pokémon or TM move exploits it"],
+  "bo3_adjustments": null
 }`;
 
 // ── Post-processing: resolve key_move sources from actual move data ───────────
