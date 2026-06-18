@@ -199,7 +199,7 @@ function applyModifier(value: number, modifier: number): number {
   const scaled = value * modifier;
   const roundedDown = Math.floor(scaled / MODIFIER_SCALE);
   const remainder = scaled % MODIFIER_SCALE;
-  return remainder > MODIFIER_HALF ? roundedDown + 1 : roundedDown;
+  return remainder >= MODIFIER_HALF ? roundedDown + 1 : roundedDown;
 }
 
 function applyDecimalModifier(value: number, multiplier: number): number {
