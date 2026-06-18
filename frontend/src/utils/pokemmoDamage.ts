@@ -61,17 +61,21 @@ export const DEFAULT_DAMAGE_SETTINGS: DamageSettings = {
   ability: null,
 };
 
-export const DEFAULT_DAMAGE_SIDE_SETTINGS: DamageSideSettings = {
-  level: DAMAGE_LEVEL,
-  ivs: {},
-  evs: {},
-  stages: {},
-  currentHpPercent: 100,
-  weather: "clear",
-  status: "none",
-  ability: null,
-  hazards: { spikes: 0, stealthRock: false },
-};
+function createDefaultDamageSideSettings(): DamageSideSettings {
+  return {
+    level: DAMAGE_LEVEL,
+    ivs: {},
+    evs: {},
+    stages: {},
+    currentHpPercent: 100,
+    weather: "clear",
+    status: "none",
+    ability: null,
+    hazards: { spikes: 0, stealthRock: false },
+  };
+}
+
+export const DEFAULT_DAMAGE_SIDE_SETTINGS: DamageSideSettings = createDefaultDamageSideSettings();
 
 const RANDOM_ROLLS = Array.from({ length: 16 }, (_, index) => 85 + index);
 const STAB_MODIFIER = 0x1800;
@@ -816,8 +820,8 @@ export function calculateMoveDamage(
   defender: Pokemon,
   move: PokemonMove,
   typeEffectiveness: number,
-  attackerSettings: DamageSideSettings = DEFAULT_DAMAGE_SIDE_SETTINGS,
-  defenderSettings: DamageSideSettings = attackerSettings,
+  attackerSettings: DamageSideSettings = createDefaultDamageSideSettings(),
+  defenderSettings: DamageSideSettings = createDefaultDamageSideSettings(),
   options: DamageCalculationOptions = {}
 ): DamageCalculation | null {
   const weather = attackerSettings.weather ?? "clear";

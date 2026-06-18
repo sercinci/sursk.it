@@ -1221,7 +1221,7 @@ function applyAbilityWeather(ability: BattleAbility) {
   }
 }
 
-function getEffectiveStage(settings: StatIvEvSettings, stat: StatName, ability: BattleAbility, opponentAbility: BattleAbility): number {
+function getEffectiveStage(settings: StatIvEvSettings, stat: StatName): number {
   if (stat === "hp") {
     return DAMAGE_STAGE;
   }
@@ -1248,14 +1248,13 @@ function getStatSettings(
   stat: StatName,
   nature: PokemonNature | null = null,
   status: PokemonStatus = "none",
-  ability: BattleAbility = null,
-  opponentAbility: BattleAbility = null
+  ability: BattleAbility = null
 ) {
   return {
     level: calculatorLevelValue.value,
     iv: clampWholeNumber(settings[stat]?.iv, 0, 31, DAMAGE_IV),
     ev: clampWholeNumber(settings[stat]?.ev, 0, 252, DAMAGE_EV),
-    stage: getEffectiveStage(settings, stat, ability, opponentAbility),
+    stage: getEffectiveStage(settings, stat),
     nature: nature ? { increasedStat: nature.increasedStat, decreasedStat: nature.decreasedStat } : null,
     weather: battleWeather.value,
     status,
@@ -1269,7 +1268,6 @@ function getSideDamageSettings(
   nature: PokemonNature | null,
   status: PokemonStatus,
   ability: BattleAbility,
-  opponentAbility: BattleAbility,
   hazards: EntryHazards,
   currentHpPercent: number
 ): DamageSideSettings {
@@ -1277,7 +1275,7 @@ function getSideDamageSettings(
   const evs: Record<string, number> = {};
   const stages: Record<string, number> = {};
   for (const stat of STAT_ORDER) {
-    const statSettings = getStatSettings(settings, stat, nature, status, ability, opponentAbility);
+    const statSettings = getStatSettings(settings, stat, nature, status, ability);
     ivs[stat] = statSettings.iv;
     evs[stat] = statSettings.ev;
     stages[stat] = statSettings.stage ?? DAMAGE_STAGE;
@@ -1303,10 +1301,10 @@ function getSideDamageSettings(
 const natureA = computed(() => getNatureById(selectedNatureA.value));
 const natureB = computed(() => getNatureById(selectedNatureB.value));
 const damageSettingsA = computed(() =>
-  getSideDamageSettings(statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value, selectedAbilityB.value, entryHazardsA.value, currentHpPercentA.value)
+  getSideDamageSettings(statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value, entryHazardsA.value, currentHpPercentA.value)
 );
 const damageSettingsB = computed(() =>
-  getSideDamageSettings(statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value, selectedAbilityA.value, entryHazardsB.value, currentHpPercentB.value)
+  getSideDamageSettings(statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value, entryHazardsB.value, currentHpPercentB.value)
 );
 const selectedAbilityDescriptionA = computed(() => getAbilityDescription(pokemonA.value, selectedAbilityA.value));
 const selectedAbilityDescriptionB = computed(() => getAbilityDescription(pokemonB.value, selectedAbilityB.value));
@@ -1715,39 +1713,38 @@ function statVal(
   settings: StatIvEvSettings,
   nature: PokemonNature | null,
   status: PokemonStatus,
-  ability: BattleAbility,
-  opponentAbility: BattleAbility
+  ability: BattleAbility
 ): number {
-  return pokemon ? calculatePokemonStat(pokemon, stat, getStatSettings(settings, stat, nature, status, ability, opponentAbility)) : 0;
+  return pokemon ? calculatePokemonStat(pokemon, stat, getStatSettings(settings, stat, nature, status, ability)) : 0;
 }
 
 const statRows = computed(() => {
   if (!pokemonA.value || !pokemonB.value) return [];
   return STAT_ORDER.map((stat) => {
-    const a = statVal(pokemonA.value, stat, statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value, selectedAbilityB.value);
-    const b = statVal(pokemonB.value, stat, statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value, selectedAbilityA.value);
+    const a = statVal(pokemonA.value, stat, statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value);
+    const b = statVal(pokemonB.value, stat, statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value);
     return { stat, a, b, max: Math.max(a, b, 1), aWins: a > b, bWins: b > a };
   });
 });
 
 const physicalA = computed(() => {
-  const atk = statVal(pokemonA.value, "attack", statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value, selectedAbilityB.value);
-  const def = statVal(pokemonB.value, "defense", statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value, selectedAbilityA.value);
+  const atk = statVal(pokemonA.value, "attack", statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value);
+  const def = statVal(pokemonB.value, "defense", statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value);
   return { atk, def, diff: atk - def };
 });
 const specialA = computed(() => {
-  const spa = statVal(pokemonA.value, "special-attack", statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value, selectedAbilityB.value);
-  const spd = statVal(pokemonB.value, "special-defense", statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value, selectedAbilityA.value);
+  const spa = statVal(pokemonA.value, "special-attack", statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value);
+  const spd = statVal(pokemonB.value, "special-defense", statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value);
   return { spa, spd, diff: spa - spd };
 });
 const physicalB = computed(() => {
-  const atk = statVal(pokemonB.value, "attack", statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value, selectedAbilityA.value);
-  const def = statVal(pokemonA.value, "defense", statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value, selectedAbilityB.value);
+  const atk = statVal(pokemonB.value, "attack", statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value);
+  const def = statVal(pokemonA.value, "defense", statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value);
   return { atk, def, diff: atk - def };
 });
 const specialB = computed(() => {
-  const spa = statVal(pokemonB.value, "special-attack", statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value, selectedAbilityA.value);
-  const spd = statVal(pokemonA.value, "special-defense", statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value, selectedAbilityB.value);
+  const spa = statVal(pokemonB.value, "special-attack", statSettingsB.value, natureB.value, selectedStatusB.value, selectedAbilityB.value);
+  const spd = statVal(pokemonA.value, "special-defense", statSettingsA.value, natureA.value, selectedStatusA.value, selectedAbilityA.value);
   return { spa, spd, diff: spa - spd };
 });
 
