@@ -7,6 +7,7 @@ import LocationsPage from "@/pages/LocationsPage.vue";
 import MovesPage from "@/pages/MovesPage.vue";
 import PokedexPage from "@/pages/PokedexPage.vue";
 import PokemonDetailPage from "@/pages/PokemonDetailPage.vue";
+import TeamSavePage from "@/pages/TeamSavePage.vue";
 import TeamMatchupPage from "@/pages/TeamMatchupPage.vue";
 
 const router = createRouter({
@@ -18,6 +19,7 @@ const router = createRouter({
     { path: "/locations", name: "locations", component: LocationsPage },
     { path: "/compare", name: "compare", component: ComparisonPage },
     { path: "/team", name: "team", component: TeamMatchupPage },
+    { path: "/team/save", name: "team-save", component: TeamSavePage },
     { path: "/about", name: "about", component: AboutPage },
     { path: "/locations/:locationName", name: "location-detail", component: LocationDetailPage }
   ]

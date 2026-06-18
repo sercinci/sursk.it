@@ -227,14 +227,13 @@
         <h1 class="mt-1 font-display text-4xl font-bold capitalize">{{ pokemon.name }}</h1>
 
         <div class="mt-4 flex flex-wrap gap-2">
-          <span
+          <TypeEffectivenessBadge
             v-for="type in pokemon.types"
             :key="type"
-            class="rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide"
-            :style="getTypeChipStyle(type)"
-          >
-            {{ labelType(type) }}
-          </span>
+            :type="type"
+            mode="pokemon"
+            badge-class="px-3 py-1 text-xs font-semibold uppercase tracking-wide"
+          />
         </div>
 
         <div class="mt-5">
@@ -524,13 +523,12 @@
                     </div>
                   </td>
                   <td class="px-3 py-2">
-                    <span
+                    <TypeEffectivenessBadge
                       v-if="move.type"
-                      class="inline-flex rounded-full border px-2 py-0.5 text-xs font-semibold uppercase tracking-wide"
-                      :style="getTypeChipStyle(move.type)"
-                    >
-                      {{ labelType(move.type) }}
-                    </span>
+                      :type="move.type"
+                      mode="move"
+                      badge-class="px-2 py-0.5 text-xs font-semibold uppercase tracking-wide"
+                    />
                     <span v-else class="text-muted">-</span>
                   </td>
                   <td class="px-3 py-2 capitalize text-muted">{{ move.category ? labelMoveCategory(move.category) : "-" }}</td>
@@ -777,13 +775,12 @@
                   </div>
                 </td>
                 <td class="px-3 py-2">
-                  <span
+                  <TypeEffectivenessBadge
                     v-if="move.type"
-                    class="inline-flex rounded-full border px-2 py-0.5 text-xs font-semibold uppercase tracking-wide"
-                    :style="getTypeChipStyle(move.type)"
-                  >
-                    {{ labelType(move.type) }}
-                  </span>
+                    :type="move.type"
+                    mode="move"
+                    badge-class="px-2 py-0.5 text-xs font-semibold uppercase tracking-wide"
+                  />
                   <span v-else class="text-muted">-</span>
                 </td>
                 <td class="px-3 py-2 capitalize text-muted">{{ move.category ? labelMoveCategory(move.category) : "-" }}</td>
@@ -848,6 +845,7 @@ import {
   fetchPokemonEvolutionLine,
   fetchPokemonMoves
 } from "@/api/client";
+import TypeEffectivenessBadge from "@/components/TypeEffectivenessBadge.vue";
 import {
   labelLearnMethod,
   labelMoveCategory,

@@ -25,14 +25,14 @@
     </div>
 
     <div class="flex max-w-[45%] flex-wrap justify-end gap-1.5 lg:max-w-full lg:justify-center">
-      <span
+      <TypeEffectivenessBadge
         v-for="type in pokemon.types"
         :key="type"
-        class="rounded-full border px-2 py-0.5 text-xs font-semibold uppercase tracking-wide"
-        :style="getTypeChipStyle(type)"
-      >
-        {{ labelType(type) }}
-      </span>
+        :type="type"
+        mode="pokemon"
+        badge-class="px-2 py-0.5 text-xs font-semibold uppercase tracking-wide"
+        :focusable="false"
+      />
     </div>
   </RouterLink>
 </template>
@@ -41,8 +41,8 @@
 import { computed } from "vue";
 import { RouterLink } from "vue-router";
 
-import { getTypeChipStyle } from "@/constants/pokemonTypes";
-import { labelStatShort, labelType, t } from "@/i18n";
+import TypeEffectivenessBadge from "@/components/TypeEffectivenessBadge.vue";
+import { labelStatShort, t } from "@/i18n";
 import type { PokemonListItem } from "@/types";
 
 const props = defineProps<{

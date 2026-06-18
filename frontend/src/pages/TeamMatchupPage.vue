@@ -17,6 +17,21 @@
           <span class="h-2 w-2 rounded-full bg-sky-500" />
           <h2 class="flex-1 font-display text-base font-semibold text-sky-700">{{ t("team.my_team") }}</h2>
           <span class="font-mono text-xs text-muted">{{ myTeamIds.length }} Pokémon</span>
+          <RouterLink
+            v-if="myTeamIds.length > 0"
+            :to="{ name: 'team-save', query: createTeamSaveQuery('my') }"
+            class="rounded-full bg-accent/10 px-2.5 py-1 text-xs font-semibold text-accent transition hover:bg-accent/20"
+          >
+            {{ t("team.stored.save_current") }}
+          </RouterLink>
+          <button
+            v-else
+            type="button"
+            class="cursor-not-allowed rounded-full bg-black/5 px-2.5 py-1 text-xs font-semibold text-muted/60"
+            disabled
+          >
+            {{ t("team.stored.save_current") }}
+          </button>
           <button
             v-if="myTeamIds.length > 0"
             class="rounded-full px-2 py-0.5 text-xs text-muted transition hover:text-red-500"
@@ -50,12 +65,14 @@
                 <div class="min-w-0 flex-1">
                   <p class="truncate text-sm font-medium capitalize text-text">{{ mySlotData[i].pokemon!.name }}</p>
                   <div class="mt-0.5 flex flex-wrap gap-1">
-                    <span
+                    <TypeEffectivenessBadge
                       v-for="type in mySlotData[i].pokemon!.types"
                       :key="type"
-                      :style="getTypeChipStyle(type)"
-                      class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                    >{{ labelType(type) }}</span>
+                      :type="type"
+                      mode="pokemon"
+                      badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                      :focusable="false"
+                    />
                   </div>
                   <div class="mt-0.5 flex flex-wrap gap-1">
                     <span
@@ -105,12 +122,14 @@
               <span class="shrink-0 font-mono text-xs text-muted">#{{ formatId(p.id) }}</span>
               <span class="min-w-0 truncate text-sm font-medium capitalize">{{ p.name }}</span>
               <div class="ml-auto flex shrink-0 gap-1">
-                <span
+                <TypeEffectivenessBadge
                   v-for="type in p.types"
                   :key="type"
-                  :style="getTypeChipStyle(type)"
-                  class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                >{{ labelType(type) }}</span>
+                  :type="type"
+                  mode="pokemon"
+                  badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                  :focusable="false"
+                />
               </div>
             </button>
           </div>
@@ -123,6 +142,21 @@
           <span class="h-2 w-2 rounded-full bg-amber-500" />
           <h2 class="flex-1 font-display text-base font-semibold text-amber-700">{{ t("team.opp_team") }}</h2>
           <span class="font-mono text-xs text-muted">{{ oppTeamIds.length }} Pokémon</span>
+          <RouterLink
+            v-if="oppTeamIds.length > 0"
+            :to="{ name: 'team-save', query: createTeamSaveQuery('opp') }"
+            class="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-semibold text-amber-700 transition hover:bg-amber-200"
+          >
+            {{ t("team.stored.save_current") }}
+          </RouterLink>
+          <button
+            v-else
+            type="button"
+            class="cursor-not-allowed rounded-full bg-black/5 px-2.5 py-1 text-xs font-semibold text-muted/60"
+            disabled
+          >
+            {{ t("team.stored.save_current") }}
+          </button>
           <button
             v-if="oppTeamIds.length > 0"
             class="rounded-full px-2 py-0.5 text-xs text-muted transition hover:text-red-500"
@@ -156,12 +190,14 @@
                 <div class="min-w-0 flex-1">
                   <p class="truncate text-sm font-medium capitalize text-text">{{ oppSlotData[i].pokemon!.name }}</p>
                   <div class="mt-0.5 flex flex-wrap gap-1">
-                    <span
+                    <TypeEffectivenessBadge
                       v-for="type in oppSlotData[i].pokemon!.types"
                       :key="type"
-                      :style="getTypeChipStyle(type)"
-                      class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                    >{{ labelType(type) }}</span>
+                      :type="type"
+                      mode="pokemon"
+                      badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                      :focusable="false"
+                    />
                   </div>
                   <div class="mt-0.5 flex flex-wrap gap-1">
                     <span
@@ -211,18 +247,123 @@
               <span class="shrink-0 font-mono text-xs text-muted">#{{ formatId(p.id) }}</span>
               <span class="min-w-0 truncate text-sm font-medium capitalize">{{ p.name }}</span>
               <div class="ml-auto flex shrink-0 gap-1">
-                <span
+                <TypeEffectivenessBadge
                   v-for="type in p.types"
                   :key="type"
-                  :style="getTypeChipStyle(type)"
-                  class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                >{{ labelType(type) }}</span>
+                  :type="type"
+                  mode="pokemon"
+                  badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                  :focusable="false"
+                />
               </div>
             </button>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Stored teams -->
+    <article v-if="storedTeams.length > 0" class="card-surface overflow-hidden rounded-2xl">
+      <button
+        type="button"
+        class="flex w-full items-center gap-3 px-5 py-4 text-left transition hover:bg-black/[0.02]"
+        :class="storedTeamsOpen ? 'border-b border-black/8' : ''"
+        :aria-expanded="storedTeamsOpen"
+        @click="storedTeamsOpen = !storedTeamsOpen"
+      >
+        <div class="min-w-0 flex-1">
+          <p class="font-mono text-[10px] uppercase tracking-widest text-muted">{{ t("team.stored.eyebrow") }}</p>
+          <h2 class="font-display text-base font-semibold text-text">{{ t("team.stored.title") }}</h2>
+          <p class="mt-0.5 text-xs text-muted">{{ t("team.stored.load_subtitle") }}</p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+          class="h-4 w-4 shrink-0 text-muted transition-transform duration-200"
+          :class="storedTeamsOpen ? 'rotate-180' : ''"
+          aria-hidden="true"
+        ><path d="M6 9l6 6 6-6" /></svg>
+      </button>
+      <Transition
+        enter-active-class="transition duration-200 ease-out"
+        leave-active-class="transition duration-150 ease-in"
+        enter-from-class="-translate-y-1 opacity-0"
+        enter-to-class="translate-y-0 opacity-100"
+        leave-from-class="translate-y-0 opacity-100"
+        leave-to-class="-translate-y-1 opacity-0"
+      >
+        <div v-show="storedTeamsOpen" class="divide-y divide-black/8">
+          <div
+            v-for="team in storedTeams"
+            :key="team.id"
+            class="flex flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:px-5"
+          >
+            <div class="min-w-0 flex-1">
+              <p class="truncate font-display text-sm font-semibold text-text">{{ team.name }}</p>
+              <div class="mt-1 flex flex-wrap items-center gap-2">
+                <div class="flex shrink-0 -space-x-1.5">
+                  <div
+                    v-for="member in team.members"
+                    :key="member.id"
+                    class="flex h-7 w-7 items-center justify-center rounded-full border border-white bg-black/5"
+                  >
+                    <img
+                      v-if="getStoredPokemon(member.pokemonId)"
+                      :src="pokemonSprite(getStoredPokemon(member.pokemonId)!)"
+                      :alt="getStoredPokemon(member.pokemonId)!.name"
+                      class="h-full w-full rounded-full object-contain"
+                    />
+                    <span v-else class="font-mono text-[8px] text-muted">#{{ formatId(member.pokemonId) }}</span>
+                  </div>
+                </div>
+                <span class="rounded-full border border-black/10 bg-white/70 px-2 py-0.5 font-mono text-[10px] text-muted">
+                  {{ team.members.length }} Pokémon
+                </span>
+                <span class="min-w-0 truncate text-xs text-muted">
+                  {{ storedTeamMemberNames(team) }}
+                </span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2 sm:justify-end">
+              <div
+                class="inline-flex items-center overflow-hidden rounded-lg border border-black/10 bg-white/70 text-xs font-semibold"
+                role="group"
+                :aria-label="t('team.stored.load')"
+              >
+                <span class="border-r border-black/10 px-2 py-1.5 font-mono text-[9px] uppercase tracking-wide text-muted">
+                  {{ t("team.stored.load") }}
+                </span>
+                <button
+                  type="button"
+                  class="px-2.5 py-1.5 text-sky-700 transition hover:bg-sky-50"
+                  :aria-label="t('team.stored.load_as_my')"
+                  :title="t('team.stored.load_as_my')"
+                  @click="loadStoredTeamAsMy(team)"
+                >
+                  {{ t("team.stored.my_short") }}
+                </button>
+                <button
+                  type="button"
+                  class="border-l border-black/10 px-2.5 py-1.5 text-amber-700 transition hover:bg-amber-50"
+                  :aria-label="t('team.stored.load_as_opp')"
+                  :title="t('team.stored.load_as_opp')"
+                  @click="loadStoredTeamAsOpponent(team)"
+                >
+                  {{ t("team.stored.opp_short") }}
+                </button>
+              </div>
+              <RouterLink
+                :to="{ name: 'team-save', query: { id: team.id } }"
+                class="rounded-lg border border-black/10 bg-white/70 px-3 py-1.5 text-xs font-semibold text-muted transition hover:border-accent/30 hover:text-accent"
+              >
+                {{ t("team.stored.edit") }}
+              </RouterLink>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </article>
 
     <!-- Empty state -->
     <div v-if="myTeam.length === 0" class="card-surface rounded-2xl px-6 py-10 text-center text-sm text-muted">
@@ -452,12 +593,13 @@
                   <div class="min-w-0 flex-1">
                     <span class="block truncate text-sm font-medium capitalize text-text">{{ entry.pokemon.name }}</span>
                     <div class="mt-0.5 flex flex-wrap gap-1">
-                      <span
+                      <TypeEffectivenessBadge
                         v-for="type in entry.pokemon.types"
                         :key="type"
-                        :style="getTypeChipStyle(type)"
-                        class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                      >{{ labelType(type) }}</span>
+                        :type="type"
+                        mode="pokemon"
+                        badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                      />
                     </div>
                   </div>
                   <div class="shrink-0 text-right">
@@ -788,6 +930,7 @@ import { useAuthStore } from "@/stores/auth";
 import { useQuery, useQueries } from "@tanstack/vue-query";
 import type { Pokemon, PokemonListItem } from "@/types";
 import { fetchPokemon, fetchPokemonList } from "@/api/client";
+import TypeEffectivenessBadge from "@/components/TypeEffectivenessBadge.vue";
 import { t, labelType, labelStatShort, useLocale } from "@/i18n";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
 import { getAttackMultiplierForTypes } from "@/constants/typeEffectiveness";
@@ -799,6 +942,7 @@ import { analyzeMatchupXcore, fetchXcoreAnalyses, deleteXcoreAnalysis } from "@/
 import type { MatchupAnalysis, AnalysisOptions, XcoreAnalysis } from "@/services/analysis";
 import type { PokemonMove } from "@/types";
 import MatchupAnalysisCard from "@/components/MatchupAnalysisCard.vue";
+import { STORED_TEAM_MAX_MEMBERS, loadStoredTeams, type StoredTeam } from "@/utils/localTeams";
 
 const route = useRoute();
 const router = useRouter();
@@ -807,7 +951,7 @@ const authStore = useAuthStore();
 
 const STAT_ORDER = ["hp", "attack", "defense", "special-attack", "special-defense", "speed"];
 const MAX_STAT = 200;
-const MAX_POOL = 30;
+const MAX_POOL = STORED_TEAM_MAX_MEMBERS;
 const ALL_TYPES = [
   "normal", "fighting", "flying", "poison", "ground", "rock",
   "bug", "ghost", "steel", "fire", "water", "grass",
@@ -855,6 +999,17 @@ function removeFromOppTeam(index: number) {
 }
 function clearOppTeam() { setOppTeam([]); }
 
+function createTeamSaveQuery(side: "my" | "opp"): Record<string, string> {
+  const my = myTeamIds.value.join(",");
+  const opp = oppTeamIds.value.join(",");
+  return {
+    members: side === "my" ? my : opp,
+    side,
+    ...(my ? { my } : {}),
+    ...(opp ? { opp } : {}),
+  };
+}
+
 // ── Persistence ───────────────────────────────────────────────────────────────
 
 const LS_MY  = "team-matchup.my";
@@ -871,6 +1026,48 @@ onMounted(() => {
 
 watch(myTeamIds,  ids => ids.length ? localStorage.setItem(LS_MY,  ids.join(",")) : localStorage.removeItem(LS_MY));
 watch(oppTeamIds, ids => ids.length ? localStorage.setItem(LS_OPP, ids.join(",")) : localStorage.removeItem(LS_OPP));
+
+// ── Stored local teams ───────────────────────────────────────────────────────
+
+const storedTeams = ref<StoredTeam[]>(loadStoredTeams());
+const storedTeamsOpen = ref(true);
+const storedPokemonIds = computed(() => [
+  ...new Set(storedTeams.value.flatMap(team => team.members.map(member => member.pokemonId)))
+]);
+
+const storedPokemonResults = useQueries({
+  queries: computed(() => storedPokemonIds.value.map(id => ({
+    queryKey: ["pokemon", locale.value, id] as const,
+    queryFn: () => fetchPokemon(id),
+  }))),
+});
+
+const storedPokemonById = computed(() => {
+  const entries: [number, Pokemon][] = [];
+  storedPokemonIds.value.forEach((id, index) => {
+    const pokemon = storedPokemonResults.value[index]?.data?.data ?? null;
+    if (pokemon) entries.push([id, pokemon]);
+  });
+  return new Map(entries);
+});
+
+function loadStoredTeamAsMy(team: StoredTeam) {
+  setMyTeam(team.members.map(member => member.pokemonId));
+}
+
+function loadStoredTeamAsOpponent(team: StoredTeam) {
+  setOppTeam(team.members.map(member => member.pokemonId));
+}
+
+function getStoredPokemon(pokemonId: number): Pokemon | null {
+  return storedPokemonById.value.get(pokemonId) ?? null;
+}
+
+function storedTeamMemberNames(team: StoredTeam): string {
+  return team.members
+    .map(member => getStoredPokemon(member.pokemonId)?.name ?? `#${formatId(member.pokemonId)}`)
+    .join(", ");
+}
 
 // ── Search state ─────────────────────────────────────────────────────────────
 

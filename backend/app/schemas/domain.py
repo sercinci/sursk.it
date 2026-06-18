@@ -37,6 +37,7 @@ class MoveLearnMethod(BaseModel):
 class Move(BaseModel):
     name: str
     display_name: str | None = None
+    localized_names: dict[str, str] = Field(default_factory=dict)
     type: str | None = None
     category: str | None = None
     power: int | None = None
