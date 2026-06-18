@@ -80,13 +80,12 @@
                   </div>
                 </td>
                 <td class="px-4 py-3">
-                  <span
+                  <TypeEffectivenessBadge
                     v-if="move.type"
-                    class="inline-flex rounded-full border px-2 py-0.5 text-xs font-semibold uppercase tracking-wide"
-                    :style="getTypeChipStyle(move.type)"
-                  >
-                    {{ labelType(move.type) }}
-                  </span>
+                    :type="move.type"
+                    mode="move"
+                    badge-class="px-2 py-0.5 text-xs font-semibold uppercase tracking-wide"
+                  />
                   <span v-else class="text-muted">-</span>
                 </td>
                 <td class="px-4 py-3 text-muted">{{ labelMoveCategory(move.category) }}</td>
@@ -218,6 +217,7 @@ import { useQuery } from "@tanstack/vue-query";
 import { useRoute } from "vue-router";
 
 import { fetchMoveDetail, fetchMoves } from "@/api/client";
+import TypeEffectivenessBadge from "@/components/TypeEffectivenessBadge.vue";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
 import { getOffensiveDamageGroups } from "@/constants/typeEffectiveness";
 import { labelLearnMethod, labelMoveCategory, labelType, t, useLocale } from "@/i18n";

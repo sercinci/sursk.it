@@ -65,12 +65,14 @@
                 <div class="min-w-0 flex-1">
                   <p class="truncate text-sm font-medium capitalize text-text">{{ mySlotData[i].pokemon!.name }}</p>
                   <div class="mt-0.5 flex flex-wrap gap-1">
-                    <span
+                    <TypeEffectivenessBadge
                       v-for="type in mySlotData[i].pokemon!.types"
                       :key="type"
-                      :style="getTypeChipStyle(type)"
-                      class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                    >{{ labelType(type) }}</span>
+                      :type="type"
+                      mode="pokemon"
+                      badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                      :focusable="false"
+                    />
                   </div>
                   <div class="mt-0.5 flex flex-wrap gap-1">
                     <span
@@ -120,12 +122,14 @@
               <span class="shrink-0 font-mono text-xs text-muted">#{{ formatId(p.id) }}</span>
               <span class="min-w-0 truncate text-sm font-medium capitalize">{{ p.name }}</span>
               <div class="ml-auto flex shrink-0 gap-1">
-                <span
+                <TypeEffectivenessBadge
                   v-for="type in p.types"
                   :key="type"
-                  :style="getTypeChipStyle(type)"
-                  class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                >{{ labelType(type) }}</span>
+                  :type="type"
+                  mode="pokemon"
+                  badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                  :focusable="false"
+                />
               </div>
             </button>
           </div>
@@ -186,12 +190,14 @@
                 <div class="min-w-0 flex-1">
                   <p class="truncate text-sm font-medium capitalize text-text">{{ oppSlotData[i].pokemon!.name }}</p>
                   <div class="mt-0.5 flex flex-wrap gap-1">
-                    <span
+                    <TypeEffectivenessBadge
                       v-for="type in oppSlotData[i].pokemon!.types"
                       :key="type"
-                      :style="getTypeChipStyle(type)"
-                      class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                    >{{ labelType(type) }}</span>
+                      :type="type"
+                      mode="pokemon"
+                      badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                      :focusable="false"
+                    />
                   </div>
                   <div class="mt-0.5 flex flex-wrap gap-1">
                     <span
@@ -241,12 +247,14 @@
               <span class="shrink-0 font-mono text-xs text-muted">#{{ formatId(p.id) }}</span>
               <span class="min-w-0 truncate text-sm font-medium capitalize">{{ p.name }}</span>
               <div class="ml-auto flex shrink-0 gap-1">
-                <span
+                <TypeEffectivenessBadge
                   v-for="type in p.types"
                   :key="type"
-                  :style="getTypeChipStyle(type)"
-                  class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                >{{ labelType(type) }}</span>
+                  :type="type"
+                  mode="pokemon"
+                  badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                  :focusable="false"
+                />
               </div>
             </button>
           </div>
@@ -585,12 +593,13 @@
                   <div class="min-w-0 flex-1">
                     <span class="block truncate text-sm font-medium capitalize text-text">{{ entry.pokemon.name }}</span>
                     <div class="mt-0.5 flex flex-wrap gap-1">
-                      <span
+                      <TypeEffectivenessBadge
                         v-for="type in entry.pokemon.types"
                         :key="type"
-                        :style="getTypeChipStyle(type)"
-                        class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                      >{{ labelType(type) }}</span>
+                        :type="type"
+                        mode="pokemon"
+                        badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                      />
                     </div>
                   </div>
                   <div class="shrink-0 text-right">
@@ -921,6 +930,7 @@ import { useAuthStore } from "@/stores/auth";
 import { useQuery, useQueries } from "@tanstack/vue-query";
 import type { Pokemon, PokemonListItem } from "@/types";
 import { fetchPokemon, fetchPokemonList } from "@/api/client";
+import TypeEffectivenessBadge from "@/components/TypeEffectivenessBadge.vue";
 import { t, labelType, labelStatShort, useLocale } from "@/i18n";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
 import { getAttackMultiplierForTypes } from "@/constants/typeEffectiveness";

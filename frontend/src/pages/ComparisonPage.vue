@@ -30,12 +30,14 @@
               <p class="font-mono text-xs text-muted">#{{ formatId(pokemonA.id) }}</p>
               <h3 class="truncate font-display text-base font-semibold capitalize text-text transition group-hover:text-accent">{{ pokemonA.name }}</h3>
               <div class="mt-0.5 flex flex-wrap gap-1">
-                <span
+                <TypeEffectivenessBadge
                   v-for="type in pokemonA.types"
                   :key="type"
-                  :style="getTypeChipStyle(type)"
-                  class="rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
-                >{{ labelType(type) }}</span>
+                  :type="type"
+                  mode="pokemon"
+                  badge-class="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+                  :focusable="false"
+                />
               </div>
             </div>
           </RouterLink>
@@ -74,12 +76,14 @@
                 <span class="shrink-0 font-mono text-xs text-muted">#{{ formatId(p.id) }}</span>
                 <span class="min-w-0 truncate text-sm font-medium capitalize">{{ p.name }}</span>
                 <div class="ml-auto flex shrink-0 gap-1">
-                  <span
+                  <TypeEffectivenessBadge
                     v-for="type in p.types"
                     :key="type"
-                    :style="getTypeChipStyle(type)"
-                    class="rounded-full border px-1.5 py-0.5 text-[10px] font-semibold uppercase"
-                  >{{ labelType(type) }}</span>
+                    :type="type"
+                    mode="pokemon"
+                    badge-class="px-1.5 py-0.5 text-[10px] font-semibold uppercase"
+                    :focusable="false"
+                  />
                 </div>
               </button>
             </div>
@@ -125,12 +129,14 @@
               <p class="font-mono text-xs text-muted">#{{ formatId(pokemonB.id) }}</p>
               <h3 class="truncate font-display text-base font-semibold capitalize text-text transition group-hover:text-accent">{{ pokemonB.name }}</h3>
               <div class="mt-0.5 flex flex-wrap gap-1">
-                <span
+                <TypeEffectivenessBadge
                   v-for="type in pokemonB.types"
                   :key="type"
-                  :style="getTypeChipStyle(type)"
-                  class="rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
-                >{{ labelType(type) }}</span>
+                  :type="type"
+                  mode="pokemon"
+                  badge-class="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+                  :focusable="false"
+                />
               </div>
             </div>
           </RouterLink>
@@ -169,12 +175,14 @@
                 <span class="shrink-0 font-mono text-xs text-muted">#{{ formatId(p.id) }}</span>
                 <span class="min-w-0 truncate text-sm font-medium capitalize">{{ p.name }}</span>
                 <div class="ml-auto flex shrink-0 gap-1">
-                  <span
+                  <TypeEffectivenessBadge
                     v-for="type in p.types"
                     :key="type"
-                    :style="getTypeChipStyle(type)"
-                    class="rounded-full border px-1.5 py-0.5 text-[10px] font-semibold uppercase"
-                  >{{ labelType(type) }}</span>
+                    :type="type"
+                    mode="pokemon"
+                    badge-class="px-1.5 py-0.5 text-[10px] font-semibold uppercase"
+                    :focusable="false"
+                  />
                 </div>
               </button>
             </div>
@@ -817,11 +825,12 @@
                   :class="moveRowClass(move, selectedMoveAvsB, knownMoveNamesA)"
                   @click="selectedMoveAvsB = move.name"
                 >
-                  <span
+                  <TypeEffectivenessBadge
                     v-if="move.effectiveType"
-                    :style="getTypeChipStyle(move.effectiveType)"
-                    class="shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
-                  >{{ labelType(move.effectiveType) }}</span>
+                    :type="move.effectiveType"
+                    mode="move"
+                    badge-class="shrink-0 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+                  />
                   <span class="min-w-28 flex-1 truncate text-xs capitalize text-text">{{ move.display_name ?? move.name }}</span>
                   <span
                     v-if="knownMoveNamesA.includes(move.name)"
@@ -932,11 +941,12 @@
                   :class="moveRowClass(move, selectedMoveBvsA, knownMoveNamesB)"
                   @click="selectedMoveBvsA = move.name"
                 >
-                  <span
+                  <TypeEffectivenessBadge
                     v-if="move.effectiveType"
-                    :style="getTypeChipStyle(move.effectiveType)"
-                    class="shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
-                  >{{ labelType(move.effectiveType) }}</span>
+                    :type="move.effectiveType"
+                    mode="move"
+                    badge-class="shrink-0 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+                  />
                   <span class="min-w-28 flex-1 truncate text-xs capitalize text-text">{{ move.display_name ?? move.name }}</span>
                   <span
                     v-if="knownMoveNamesB.includes(move.name)"
@@ -980,6 +990,7 @@ import { RouterLink, useRoute, useRouter } from "vue-router";
 import { useQueries, useQuery } from "@tanstack/vue-query";
 import type { Pokemon, PokemonAbility, PokemonListItem, PokemonMove, MoveLearnMethod } from "@/types";
 import { fetchPokemon, fetchPokemonList, fetchPokemonMoves } from "@/api/client";
+import TypeEffectivenessBadge from "@/components/TypeEffectivenessBadge.vue";
 import { t, labelType, labelStatShort, labelMoveCategory, labelLearnMethod, useLocale } from "@/i18n";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
 import { getAttackMultiplierForTypes } from "@/constants/typeEffectiveness";

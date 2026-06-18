@@ -128,12 +128,14 @@
                   <span class="shrink-0 font-mono text-xs text-muted">#{{ formatId(p.id) }}</span>
                   <span class="min-w-0 truncate text-sm font-medium capitalize">{{ p.name }}</span>
                   <div class="ml-auto flex shrink-0 gap-1">
-                    <span
+                    <TypeEffectivenessBadge
                       v-for="type in p.types"
                       :key="type"
-                      :style="getTypeChipStyle(type)"
-                      class="rounded-full border px-1.5 py-0.5 text-[9px] font-semibold uppercase"
-                    >{{ labelType(type) }}</span>
+                      :type="type"
+                      mode="pokemon"
+                      badge-class="px-1.5 py-0.5 text-[9px] font-semibold uppercase"
+                      :focusable="false"
+                    />
                   </div>
                 </button>
               </div>
@@ -165,12 +167,13 @@
               {{ getPokemon(member.pokemonId)?.name ?? t("team_save.loading_pokemon") }}
             </h2>
             <div v-if="getPokemon(member.pokemonId)" class="mt-1 flex flex-wrap gap-1">
-              <span
+              <TypeEffectivenessBadge
                 v-for="type in getPokemon(member.pokemonId)!.types"
                 :key="type"
-                :style="getTypeChipStyle(type)"
-                class="rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase"
-              >{{ labelType(type) }}</span>
+                :type="type"
+                mode="pokemon"
+                badge-class="px-2 py-0.5 text-[10px] font-semibold uppercase"
+              />
             </div>
           </div>
           <RouterLink
@@ -381,8 +384,8 @@ import { RouterLink, useRoute, useRouter } from "vue-router";
 import { useQueries, useQuery } from "@tanstack/vue-query";
 import type { Pokemon, PokemonListItem, PokemonMove } from "@/types";
 import { fetchPokemon, fetchPokemonList, fetchPokemonMoves } from "@/api/client";
-import { t, labelStatShort, labelType, useLocale } from "@/i18n";
-import { getTypeChipStyle } from "@/constants/pokemonTypes";
+import TypeEffectivenessBadge from "@/components/TypeEffectivenessBadge.vue";
+import { t, labelStatShort, useLocale } from "@/i18n";
 import { POKEMON_NATURES, getNatureById, type PokemonNature } from "@/constants/natures";
 import { useDebouncedValue } from "@/composables/useDebouncedValue";
 import {

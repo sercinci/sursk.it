@@ -93,6 +93,10 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "moves.loading_learners": "Loading learner data...",
     "moves.no_learners": "No learner data available.",
 
+    "type_tooltip.pokemon_context": "Pokémon defense",
+    "type_tooltip.move_context": "move offense",
+    "type_tooltip.aria": "{type} type matchup: {context}",
+
     "locations.region": "Hoenn Region",
     "locations.title": "Locations",
     "locations.subtitle": "Browse each Hoenn area and preview the capturable Pokémon sprites.",
@@ -376,6 +380,10 @@ const UI_MESSAGES: Record<AppLocale, Record<string, string>> = {
     "moves.learners": "Pokémon che imparano",
     "moves.loading_learners": "Caricamento elenco Pokémon...",
     "moves.no_learners": "Nessun dato apprendimento disponibile.",
+
+    "type_tooltip.pokemon_context": "difesa Pokémon",
+    "type_tooltip.move_context": "attacco della mossa",
+    "type_tooltip.aria": "Matchup del tipo {type}: {context}",
 
     "locations.region": "Regione di Hoenn",
     "locations.title": "Luoghi",
