@@ -86,6 +86,7 @@ export interface PokemonEvolutionLine {
 export interface Move {
   name: string;
   display_name: string | null;
+  localized_names?: Record<string, string>;
   type: string | null;
   category: string | null;
   power: number | null;

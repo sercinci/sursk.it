@@ -515,6 +515,10 @@ class DataRepository:
                 move.model_copy(
                     update={
                         "type": self._legacy_move_type(move.name, move.type),
+                        "localized_names": self._move_localized_names(
+                            move.name,
+                            move.display_name,
+                        ),
                     }
                 )
                 for move in rows
@@ -524,6 +528,10 @@ class DataRepository:
                 update={
                     "type": self._legacy_move_type(move.name, move.type),
                     "display_name": self.it_move_display_by_slug.get(move.name.lower()),
+                    "localized_names": self._move_localized_names(
+                        move.name,
+                        move.display_name,
+                    ),
                 }
             )
             for move in rows
@@ -538,7 +546,12 @@ class DataRepository:
         tm_purchase = self.move_tm_by_name.get(normalized_name)
         filtered_learners = self._filter_visible_move_learners(move_detail.learners)
 
-        updates: dict[str, object] = {}
+        updates: dict[str, object] = {
+            "localized_names": self._move_localized_names(
+                normalized_name,
+                move_detail.display_name,
+            )
+        }
         if tm_purchase:
             updates["tm_purchase"] = tm_purchase
         if len(filtered_learners) != len(move_detail.learners):
@@ -589,6 +602,10 @@ class DataRepository:
                         if locale == "it"
                         else None
                     ),
+                    localized_names=self._move_localized_names(
+                        normalized_name,
+                        move_meta.display_name if move_meta else None,
+                    ),
                     type=(
                         self._legacy_move_type(move_name, move_meta.type)
                         if move_meta
@@ -607,6 +624,27 @@ class DataRepository:
                 )
             )
         return rows
+
+    def _move_localized_names(
+        self,
+        move_name: str,
+        english_display_name: str | None = None,
+    ) -> dict[str, str]:
+        normalized_name = self._normalize_move_slug(move_name)
+        names = {
+            "en": english_display_name or self._format_move_display_name(normalized_name)
+        }
+        italian_name = self.it_move_display_by_slug.get(normalized_name)
+        if italian_name:
+            names["it"] = italian_name
+        return names
+
+    def _format_move_display_name(self, move_name: str) -> str:
+        return " ".join(
+            segment.capitalize()
+            for segment in move_name.replace("_", "-").split("-")
+            if segment
+        )
 
     def list_locations(self, locale: str = "en") -> list[Location]:
         rows = sorted(self.locations, key=lambda location: location.name)

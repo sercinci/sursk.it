@@ -54,3 +54,17 @@ def test_legacy_move_slugs_alias_to_pokemmo_names() -> None:
     assert repository.get_move_detail("feint-attack").name == "faint-attack"
     assert repository.get_move_detail("self-destruct").name == "selfdestruct"
     assert repository.get_move_detail("smokescreen").name == "smoke-screen"
+
+
+def test_pokemon_move_rows_include_all_locale_names() -> None:
+    repository = load_repository()
+
+    machop_moves = {move.name: move for move in repository.list_pokemon_moves(66, locale="en")}
+    close_combat = machop_moves["close-combat"]
+
+    assert close_combat.display_name is None
+    assert close_combat.localized_names["en"] == "Close Combat"
+    assert close_combat.localized_names["it"] == "Zuffa"
+
+    machop_moves_it = {move.name: move for move in repository.list_pokemon_moves(66, locale="it")}
+    assert machop_moves_it["close-combat"].display_name == "Zuffa"

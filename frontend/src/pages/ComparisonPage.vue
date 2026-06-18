@@ -183,6 +183,47 @@
       </div>
     </div>
 
+    <!-- Stored build import -->
+    <article v-if="storedBuildOptions.length > 0" class="card-surface overflow-visible rounded-2xl p-4">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end">
+        <div class="min-w-0 flex-1">
+          <h2 class="font-display text-sm font-semibold text-text">{{ t("compare.stored.title") }}</h2>
+          <p class="mt-0.5 text-xs text-muted">{{ t("compare.stored.subtitle") }}</p>
+          <p v-if="knownMoveNamesA.length || knownMoveNamesB.length" class="mt-1 font-mono text-[10px] font-semibold uppercase tracking-wide text-accent">
+            {{ t("compare.stored.known_moves") }}
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-2 sm:w-[30rem] sm:grid-cols-2">
+          <label>
+            <span class="mb-1 block font-mono text-[10px] uppercase tracking-wide text-muted">{{ t("compare.stored.import_a") }}</span>
+            <select
+              :value="storedImportA"
+              class="h-9 w-full rounded-xl border border-sky-200 bg-white/80 px-2 text-xs text-text outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-100"
+              @change="onStoredImportChange('a', $event)"
+            >
+              <option value="">{{ t("compare.stored.none") }}</option>
+              <option v-for="option in storedBuildOptions" :key="`a-${option.value}`" :value="option.value">
+                {{ option.label }}
+              </option>
+            </select>
+          </label>
+          <label>
+            <span class="mb-1 block font-mono text-[10px] uppercase tracking-wide text-muted">{{ t("compare.stored.import_b") }}</span>
+            <select
+              :value="storedImportB"
+              class="h-9 w-full rounded-xl border border-amber-200 bg-white/80 px-2 text-xs text-text outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-100"
+              @change="onStoredImportChange('b', $event)"
+            >
+              <option value="">{{ t("compare.stored.none") }}</option>
+              <option v-for="option in storedBuildOptions" :key="`b-${option.value}`" :value="option.value">
+                {{ option.label }}
+              </option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </article>
+
     <!-- Placeholder -->
     <div v-if="!pokemonA || !pokemonB" class="card-surface rounded-2xl px-6 py-10 text-center text-sm text-muted">
       {{ t("compare.select_prompt") }}
@@ -549,6 +590,7 @@
                       step="1"
                       :aria-label="`${pokemonA.name} ${labelStatShort(row.stat)} ${t('compare.iv')}`"
                       class="h-6 w-11 rounded border border-black/10 bg-white/80 px-1 text-[11px] text-text outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20"
+                      @input="onComparisonIvInput(statSettingsA, row.stat, $event)"
                     />
                   </label>
                   <label class="flex items-center gap-1 font-mono text-[9px] uppercase text-muted">
@@ -561,6 +603,7 @@
                       step="1"
                       :aria-label="`${pokemonA.name} ${labelStatShort(row.stat)} ${t('compare.ev')}`"
                       class="h-6 w-12 rounded border border-black/10 bg-white/80 px-1 text-[11px] text-text outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20"
+                      @input="onComparisonEvInput(statSettingsA, row.stat, $event)"
                     />
                   </label>
                 </div>
@@ -632,6 +675,7 @@
                       step="1"
                       :aria-label="`${pokemonB.name} ${labelStatShort(row.stat)} ${t('compare.iv')}`"
                       class="h-6 w-11 rounded border border-black/10 bg-white/80 px-1 text-[11px] text-text outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20"
+                      @input="onComparisonIvInput(statSettingsB, row.stat, $event)"
                     />
                   </label>
                   <label class="flex items-center gap-1 font-mono text-[9px] uppercase text-muted">
@@ -644,6 +688,7 @@
                       step="1"
                       :aria-label="`${pokemonB.name} ${labelStatShort(row.stat)} ${t('compare.ev')}`"
                       class="h-6 w-12 rounded border border-black/10 bg-white/80 px-1 text-[11px] text-text outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20"
+                      @input="onComparisonEvInput(statSettingsB, row.stat, $event)"
                     />
                   </label>
                 </div>
@@ -769,7 +814,7 @@
                 <button
                   type="button"
                   class="flex w-full flex-wrap items-center gap-1.5 rounded-lg border px-2 py-1.5 text-left transition"
-                  :class="moveRowClass(move, selectedMoveAvsB)"
+                  :class="moveRowClass(move, selectedMoveAvsB, knownMoveNamesA)"
                   @click="selectedMoveAvsB = move.name"
                 >
                   <span
@@ -778,6 +823,12 @@
                     class="shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
                   >{{ labelType(move.effectiveType) }}</span>
                   <span class="min-w-28 flex-1 truncate text-xs capitalize text-text">{{ move.display_name ?? move.name }}</span>
+                  <span
+                    v-if="knownMoveNamesA.includes(move.name)"
+                    class="shrink-0 rounded border border-accent/20 bg-accent/10 px-1.5 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-accent"
+                  >
+                    {{ t("compare.stored.known_move") }}
+                  </span>
                   <div class="flex shrink-0 gap-0.5">
                     <span
                       v-for="(methodLabel, index) in getLearnMethodBadges(move.methods)"
@@ -878,7 +929,7 @@
                 <button
                   type="button"
                   class="flex w-full flex-wrap items-center gap-1.5 rounded-lg border px-2 py-1.5 text-left transition"
-                  :class="moveRowClass(move, selectedMoveBvsA)"
+                  :class="moveRowClass(move, selectedMoveBvsA, knownMoveNamesB)"
                   @click="selectedMoveBvsA = move.name"
                 >
                   <span
@@ -887,6 +938,12 @@
                     class="shrink-0 rounded-full border px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide"
                   >{{ labelType(move.effectiveType) }}</span>
                   <span class="min-w-28 flex-1 truncate text-xs capitalize text-text">{{ move.display_name ?? move.name }}</span>
+                  <span
+                    v-if="knownMoveNamesB.includes(move.name)"
+                    class="shrink-0 rounded border border-accent/20 bg-accent/10 px-1.5 py-0.5 font-mono text-[9px] font-semibold uppercase tracking-wide text-accent"
+                  >
+                    {{ t("compare.stored.known_move") }}
+                  </span>
                   <div class="flex shrink-0 gap-0.5">
                     <span
                       v-for="(methodLabel, index) in getLearnMethodBadges(move.methods)"
@@ -920,7 +977,7 @@
 <script setup lang="ts">
 import { computed, nextTick, ref, watch } from "vue";
 import { RouterLink, useRoute, useRouter } from "vue-router";
-import { useQuery } from "@tanstack/vue-query";
+import { useQueries, useQuery } from "@tanstack/vue-query";
 import type { Pokemon, PokemonAbility, PokemonListItem, PokemonMove, MoveLearnMethod } from "@/types";
 import { fetchPokemon, fetchPokemonList, fetchPokemonMoves } from "@/api/client";
 import { t, labelType, labelStatShort, labelMoveCategory, labelLearnMethod, useLocale } from "@/i18n";
@@ -948,6 +1005,13 @@ import {
   type DamageCalculation,
   type EntryHazards,
 } from "@/utils/pokemmoDamage";
+import {
+  decodeStoredMemberRef,
+  encodeStoredMemberRef,
+  findStoredMember,
+  loadStoredTeams,
+  type StoredPokemonBuild,
+} from "@/utils/localTeams";
 
 const route = useRoute();
 const router = useRouter();
@@ -975,7 +1039,8 @@ const idB = computed(() => {
 });
 
 function setId(side: "a" | "b", id: number | null) {
-  router.replace({ query: { ...route.query, [side]: id ?? undefined } });
+  const storedKey = side === "a" ? "teamA" : "teamB";
+  router.replace({ query: { ...route.query, [side]: id ?? undefined, [storedKey]: undefined } });
 }
 
 function swapPokemon() {
@@ -1000,11 +1065,25 @@ function swapPokemon() {
   const tmpCurrentHpPercent = currentHpPercentA.value;
   currentHpPercentA.value = currentHpPercentB.value;
   currentHpPercentB.value = tmpCurrentHpPercent;
+  const tmpKnownMoves = knownMoveNamesA.value;
+  knownMoveNamesA.value = knownMoveNamesB.value;
+  knownMoveNamesB.value = tmpKnownMoves;
+  const tmpStoredRef = appliedStoredRefA.value;
+  appliedStoredRefA.value = appliedStoredRefB.value;
+  appliedStoredRefB.value = tmpStoredRef;
   selectedMoveAvsB.value = null;
   selectedMoveBvsA.value = null;
   criticalAvsB.value = false;
   criticalBvsA.value = false;
-  router.replace({ query: { ...route.query, a: idB.value ?? undefined, b: idA.value ?? undefined } });
+  router.replace({
+    query: {
+      ...route.query,
+      a: idB.value ?? undefined,
+      b: idA.value ?? undefined,
+      teamA: route.query.teamB ?? undefined,
+      teamB: route.query.teamA ?? undefined,
+    }
+  });
 }
 
 // ── Picker state ────────────────────────────────────────────────────────────
@@ -1018,6 +1097,10 @@ const isEditingA = ref(!route.query.a);
 const isEditingB = ref(!route.query.b);
 const selectedMoveAvsB = ref<string | null>(null);
 const selectedMoveBvsA = ref<string | null>(null);
+const knownMoveNamesA = ref<string[]>([]);
+const knownMoveNamesB = ref<string[]>([]);
+const appliedStoredRefA = ref("");
+const appliedStoredRefB = ref("");
 const criticalAvsB = ref(false);
 const criticalBvsA = ref(false);
 const calculatorLevel = ref(DAMAGE_LEVEL);
@@ -1041,6 +1124,40 @@ const showNatureDropB = ref(false);
 const inputRefA = ref<HTMLInputElement | null>(null);
 const inputRefB = ref<HTMLInputElement | null>(null);
 
+const storedTeams = ref(loadStoredTeams());
+const storedImportA = computed(() => typeof route.query.teamA === "string" ? route.query.teamA : "");
+const storedImportB = computed(() => typeof route.query.teamB === "string" ? route.query.teamB : "");
+const storedPokemonIds = computed(() => [
+  ...new Set(storedTeams.value.flatMap(team => team.members.map(member => member.pokemonId)))
+]);
+const storedPokemonResults = useQueries({
+  queries: computed(() => storedPokemonIds.value.map(id => ({
+    queryKey: ["pokemon", locale.value, id] as const,
+    queryFn: () => fetchPokemon(id),
+  }))),
+});
+const storedPokemonById = computed(() => {
+  const entries: [number, Pokemon][] = [];
+  storedPokemonIds.value.forEach((id, index) => {
+    const pokemon = storedPokemonResults.value[index]?.data?.data ?? null;
+    if (pokemon) entries.push([id, pokemon]);
+  });
+  return new Map(entries);
+});
+const storedBuildOptions = computed(() =>
+  storedTeams.value.flatMap(team =>
+    team.members.map(member => {
+      const pokemon = storedPokemonById.value.get(member.pokemonId);
+      const pokemonLabel = pokemon?.name ?? `#${formatId(member.pokemonId)}`;
+      return {
+        value: encodeStoredMemberRef(team.id, member.id),
+        label: `${team.name} - ${pokemonLabel}`,
+        member,
+      };
+    })
+  )
+);
+
 function createDefaultStatSettings(): StatIvEvSettings {
   return Object.fromEntries(
     STAT_ORDER.map((stat) => [stat, { iv: DAMAGE_IV, ev: DAMAGE_EV, stage: DAMAGE_STAGE }])
@@ -1057,6 +1174,24 @@ function clampWholeNumber(value: unknown, min: number, max: number, fallback: nu
     return fallback;
   }
   return Math.min(max, Math.max(min, Math.trunc(numericValue)));
+}
+
+function clampBoundedStatInput(event: Event, max: number): number {
+  const input = event.target as HTMLInputElement | null;
+  const digits = (input?.value ?? "").replace(/\D/g, "").slice(0, String(max).length);
+  const nextValue = digits ? clampWholeNumber(digits, 0, max, 0) : 0;
+  if (input) {
+    input.value = String(nextValue);
+  }
+  return nextValue;
+}
+
+function onComparisonIvInput(settings: StatIvEvSettings, stat: StatName, event: Event) {
+  settings[stat].iv = clampBoundedStatInput(event, 31);
+}
+
+function onComparisonEvInput(settings: StatIvEvSettings, stat: StatName, event: Event) {
+  settings[stat].ev = clampBoundedStatInput(event, 252);
 }
 
 const calculatorLevelValue = computed(() =>
@@ -1212,6 +1347,91 @@ function getValidSelectedAbility(pokemon: Pokemon | null, abilityName: BattleAbi
     return abilityName;
   }
   return pokemon.abilities[0].name;
+}
+
+function createStatSettingsFromStoredBuild(build: StoredPokemonBuild): StatIvEvSettings {
+  return Object.fromEntries(
+    STAT_ORDER.map((stat) => [
+      stat,
+      {
+        iv: clampWholeNumber(build.ivs[stat], 0, 31, DAMAGE_IV),
+        ev: clampWholeNumber(build.evs[stat], 0, 252, DAMAGE_EV),
+        stage: DAMAGE_STAGE,
+      }
+    ])
+  ) as StatIvEvSettings;
+}
+
+function getStoredBuildFromImport(raw: string): StoredPokemonBuild | null {
+  const ref = decodeStoredMemberRef(raw);
+  return ref ? findStoredMember(storedTeams.value, ref) : null;
+}
+
+function applyStoredBuild(side: "a" | "b", build: StoredPokemonBuild, pokemon: Pokemon) {
+  const ability = getValidSelectedAbility(pokemon, build.ability);
+  const knownMoves = build.moves.filter(Boolean);
+  if (side === "a") {
+    statSettingsA.value = createStatSettingsFromStoredBuild(build);
+    selectedNatureA.value = build.nature;
+    selectedAbilityA.value = ability;
+    knownMoveNamesA.value = knownMoves;
+    selectedMoveAvsB.value = null;
+    isEditingA.value = false;
+    return;
+  }
+  statSettingsB.value = createStatSettingsFromStoredBuild(build);
+  selectedNatureB.value = build.nature;
+  selectedAbilityB.value = ability;
+  knownMoveNamesB.value = knownMoves;
+  selectedMoveBvsA.value = null;
+  isEditingB.value = false;
+}
+
+function maybeApplyStoredBuild(side: "a" | "b") {
+  const raw = side === "a" ? storedImportA.value : storedImportB.value;
+  const appliedRef = side === "a" ? appliedStoredRefA : appliedStoredRefB;
+  if (!raw) {
+    appliedRef.value = "";
+    return;
+  }
+  if (appliedRef.value === raw) {
+    return;
+  }
+  const build = getStoredBuildFromImport(raw);
+  const pokemon = side === "a" ? pokemonA.value : pokemonB.value;
+  if (!build || !pokemon || pokemon.id !== build.pokemonId) {
+    return;
+  }
+  applyStoredBuild(side, build, pokemon);
+  appliedRef.value = raw;
+}
+
+function onStoredImportChange(side: "a" | "b", event: Event) {
+  const select = event.target as HTMLSelectElement | null;
+  const raw = select?.value ?? "";
+  const storedKey = side === "a" ? "teamA" : "teamB";
+  const appliedRef = side === "a" ? appliedStoredRefA : appliedStoredRefB;
+  appliedRef.value = "";
+  if (!raw) {
+    if (side === "a") {
+      knownMoveNamesA.value = [];
+    } else {
+      knownMoveNamesB.value = [];
+    }
+    router.replace({ query: { ...route.query, [storedKey]: undefined } });
+    return;
+  }
+  const build = getStoredBuildFromImport(raw);
+  if (!build) {
+    return;
+  }
+  router.replace({
+    query: {
+      ...route.query,
+      [side]: build.pokemonId,
+      [storedKey]: raw,
+    }
+  });
 }
 
 function formatNatureModifier(nature: PokemonNature): string {
@@ -1376,6 +1596,8 @@ function onNatureBlur(side: "a" | "b") {
 }
 
 function selectA(p: PokemonListItem) {
+  knownMoveNamesA.value = [];
+  appliedStoredRefA.value = "";
   setId("a", p.id);
   searchA.value = "";
   showDropA.value = false;
@@ -1384,6 +1606,8 @@ function selectA(p: PokemonListItem) {
   selectedMoveBvsA.value = null;
 }
 function selectB(p: PokemonListItem) {
+  knownMoveNamesB.value = [];
+  appliedStoredRefB.value = "";
   setId("b", p.id);
   searchB.value = "";
   showDropB.value = false;
@@ -1465,6 +1689,12 @@ watch(selectedAbilityA, (ability) => {
 }, { immediate: true });
 watch(selectedAbilityB, (ability) => {
   applyAbilityWeather(ability);
+}, { immediate: true });
+watch([pokemonA, storedImportA], () => {
+  maybeApplyStoredBuild("a");
+}, { immediate: true });
+watch([pokemonB, storedImportB], () => {
+  maybeApplyStoredBuild("b");
 }, { immediate: true });
 
 // ── Section 1: Statistics ───────────────────────────────────────────────────
@@ -1582,19 +1812,55 @@ function sortDamageMoves(a: ScoredMove, b: ScoredMove): number {
   );
 }
 
+function sortDamageMovesWithKnownPriority(moves: ScoredMove[], knownNames: string[]): ScoredMove[] {
+  const knownOrder = new Map(knownNames.map((name, index) => [name, index]));
+  if (!knownOrder.size) {
+    return [...moves].sort(sortDamageMoves);
+  }
+  return [...moves].sort((a, b) => {
+    const knownA = knownOrder.get(a.name);
+    const knownB = knownOrder.get(b.name);
+    if (knownA !== undefined && knownB !== undefined) {
+      return knownA - knownB;
+    }
+    if (knownA !== undefined) {
+      return -1;
+    }
+    if (knownB !== undefined) {
+      return 1;
+    }
+    return sortDamageMoves(a, b);
+  });
+}
+
 const damageMovesAvsB = computed((): ScoredMove[] => {
   if (!pokemonB.value) return [];
-  return movesA.value
+  const knownMoves = knownMoveNamesA.value.filter(Boolean);
+  const scoredMoves = movesA.value
     .map((move) => scoreDamageMove(move, pokemonB.value!, selectedStatusA.value, selectedStatusB.value, selectedAbilityA.value, selectedAbilityB.value))
-    .filter((move): move is ScoredMove => move !== null)
-    .sort(sortDamageMoves);
+    .filter((move): move is ScoredMove => move !== null);
+  return sortDamageMovesWithKnownPriority(scoredMoves, knownMoves);
 });
 const damageMovesBvsA = computed((): ScoredMove[] => {
   if (!pokemonA.value) return [];
-  return movesB.value
+  const knownMoves = knownMoveNamesB.value.filter(Boolean);
+  const scoredMoves = movesB.value
     .map((move) => scoreDamageMove(move, pokemonA.value!, selectedStatusB.value, selectedStatusA.value, selectedAbilityB.value, selectedAbilityA.value))
-    .filter((move): move is ScoredMove => move !== null)
-    .sort(sortDamageMoves);
+    .filter((move): move is ScoredMove => move !== null);
+  return sortDamageMovesWithKnownPriority(scoredMoves, knownMoves);
+});
+
+watch(damageMovesAvsB, (moves) => {
+  if (!knownMoveNamesA.value.length) return;
+  if (!selectedMoveAvsB.value || !moves.some((move) => move.name === selectedMoveAvsB.value)) {
+    selectedMoveAvsB.value = moves[0]?.name ?? null;
+  }
+});
+watch(damageMovesBvsA, (moves) => {
+  if (!knownMoveNamesB.value.length) return;
+  if (!selectedMoveBvsA.value || !moves.some((move) => move.name === selectedMoveBvsA.value)) {
+    selectedMoveBvsA.value = moves[0]?.name ?? null;
+  }
 });
 
 const selectedDamageAvsB = computed((): SelectedDamage | null => {
@@ -1793,9 +2059,15 @@ function getMoveCategoryIcon(category: string | null): string | null {
   return MOVE_CATEGORY_ICONS[category.toLowerCase()] ?? null;
 }
 
-function moveRowClass(move: ScoredMove, selectedMoveName: string | null): string {
+function moveRowClass(move: ScoredMove, selectedMoveName: string | null, knownMoveNames: string[]): string {
+  const isKnownMove = knownMoveNames.includes(move.name);
   if (move.name === selectedMoveName) {
-    return "border-accent/25 bg-accent/10 shadow-soft";
+    return isKnownMove
+      ? "border-accent/40 bg-accent/15 shadow-soft"
+      : "border-accent/25 bg-accent/10 shadow-soft";
+  }
+  if (isKnownMove) {
+    return "border-accent/30 bg-accent/5 hover:bg-accent/10";
   }
   if (move.multiplier === 0) {
     return "border-transparent opacity-45";
