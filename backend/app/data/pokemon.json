@@ -9,6 +9,10 @@
       {
         "name": "static",
         "description": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+      },
+      {
+        "name": "lightning-rod",
+        "description": "Redirects single-target electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
       }
     ],
     "ev_yield": {
@@ -30,6 +34,7 @@
       "brick-break",
       "calm-mind",
       "captivate",
+      "charge",
       "charge-beam",
       "charm",
       "counter",
@@ -165,6 +170,10 @@
       {
         "name": "static",
         "description": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+      },
+      {
+        "name": "lightning-rod",
+        "description": "Redirects single-target electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
       }
     ],
     "ev_yield": {
@@ -186,6 +195,7 @@
       "brick-break",
       "calm-mind",
       "captivate",
+      "charge",
       "charge-beam",
       "charm",
       "counter",
@@ -199,6 +209,7 @@
       "double-edge",
       "double-kick",
       "double-team",
+      "drain-punch",
       "dynamic-punch",
       "echoed-voice",
       "electro-ball",
@@ -230,6 +241,7 @@
       "knock-off",
       "last-resort",
       "light-screen",
+      "magnet-bomb",
       "magnet-rise",
       "mega-kick",
       "mega-punch",
@@ -309,6 +321,10 @@
       {
         "name": "sand-veil",
         "description": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+      },
+      {
+        "name": "sand-rush",
+        "description": "Doubles Speed during a sandstorm. Protects against sandstorm damage."
       }
     ],
     "ev_yield": {
@@ -346,8 +362,10 @@
       "dynamic-punch",
       "earth-power",
       "earthquake",
+      "endeavor",
       "endure",
       "facade",
+      "false-swipe",
       "fissure",
       "flail",
       "fling",
@@ -362,6 +380,7 @@
       "iron-tail",
       "knock-off",
       "leech-life",
+      "low-kick",
       "magnitude",
       "metal-claw",
       "mimic",
@@ -393,8 +412,11 @@
       "skull-bash",
       "slash",
       "sleep-talk",
+      "smack-down",
       "snore",
+      "spikes",
       "stealth-rock",
+      "stone-edge",
       "strength",
       "submission",
       "substitute",
@@ -446,6 +468,10 @@
       {
         "name": "flash-fire",
         "description": "Protects against fire moves. Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+      },
+      {
+        "name": "drought",
+        "description": "Summons strong sunlight that lasts indefinitely upon entering battle."
       }
     ],
     "ev_yield": {
@@ -462,6 +488,7 @@
     "moves": [
       "agility",
       "attract",
+      "baton-pass",
       "bide",
       "body-slam",
       "captivate",
@@ -493,7 +520,9 @@
       "frustration",
       "grudge",
       "headbutt",
+      "healing-wish",
       "heat-wave",
+      "helping-hand",
       "hex",
       "hidden-power",
       "howl",
@@ -525,6 +554,7 @@
       "secret-power",
       "skull-bash",
       "sleep-talk",
+      "snarl",
       "snore",
       "spite",
       "substitute",
@@ -574,6 +604,10 @@
       {
         "name": "flash-fire",
         "description": "Protects against fire moves. Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+      },
+      {
+        "name": "drought",
+        "description": "Summons strong sunlight that lasts indefinitely upon entering battle."
       }
     ],
     "ev_yield": {
@@ -591,6 +625,7 @@
     "moves": [
       "agility",
       "attract",
+      "baton-pass",
       "bide",
       "body-slam",
       "calm-mind",
@@ -626,6 +661,7 @@
       "grudge",
       "headbutt",
       "heat-wave",
+      "helping-hand",
       "hex",
       "hidden-power",
       "hyper-beam",
@@ -637,6 +673,7 @@
       "mimic",
       "nasty-plot",
       "natural-gift",
+      "night-shade",
       "ominous-wind",
       "overheat",
       "pain-split",
@@ -658,6 +695,7 @@
       "shadow-ball",
       "skull-bash",
       "sleep-talk",
+      "snarl",
       "snore",
       "solar-beam",
       "spite",
@@ -689,8 +727,7 @@
     "id": 39,
     "name": "jigglypuff",
     "types": [
-      "normal",
-      "fairy"
+      "normal"
     ],
     "abilities": [
       {
@@ -698,8 +735,8 @@
         "description": "Has a 30% chance of infatuating attacking Pokémon on contact."
       },
       {
-        "name": "competitive",
-        "description": "Raises Special Attack by two stages upon having any stat lowered."
+        "name": "friend-guard",
+        "description": "Decreases all direct damage taken by friendly Pokémon to 0.75×."
       }
     ],
     "ev_yield": {
@@ -728,6 +765,7 @@
       "captivate",
       "charge-beam",
       "charm",
+      "confusion",
       "copycat",
       "counter",
       "covet",
@@ -751,6 +789,7 @@
       "energy-ball",
       "facade",
       "faint-attack",
+      "fake-out",
       "fake-tears",
       "fire-blast",
       "fire-punch",
@@ -785,6 +824,7 @@
       "natural-gift",
       "nightmare",
       "pain-split",
+      "perish-song",
       "petal-dance",
       "pound",
       "protect",
@@ -830,6 +870,7 @@
       "swallow",
       "sweet-kiss",
       "swift",
+      "tackle",
       "take-down",
       "taunt",
       "telekinesis",
@@ -847,6 +888,7 @@
       "water-gun",
       "water-pulse",
       "wild-charge",
+      "wish",
       "work-up",
       "zap-cannon",
       "zen-headbutt"
@@ -891,6 +933,10 @@
       {
         "name": "inner-focus",
         "description": "Prevents flinching."
+      },
+      {
+        "name": "infiltrator",
+        "description": "Bypasses Light Screen, Reflect, and Safeguard."
       }
     ],
     "ev_yield": {
@@ -1151,6 +1197,10 @@
       {
         "name": "inner-focus",
         "description": "Prevents flinching."
+      },
+      {
+        "name": "infiltrator",
+        "description": "Bypasses Light Screen, Reflect, and Safeguard."
       }
     ],
     "ev_yield": {
@@ -1224,6 +1274,7 @@
       "screech",
       "secret-power",
       "shadow-ball",
+      "sky-attack",
       "sleep-talk",
       "sludge-bomb",
       "snatch",
@@ -1247,6 +1298,7 @@
       "venoshock",
       "whirlwind",
       "wing-attack",
+      "x-scissor",
       "zen-headbutt"
     ],
     "sprites": {
@@ -1417,6 +1469,10 @@
       {
         "name": "chlorophyll",
         "description": "Doubles Speed during strong sunlight."
+      },
+      {
+        "name": "run-away",
+        "description": "Ensures success fleeing from wild battles."
       }
     ],
     "ev_yield": {
@@ -1433,6 +1489,7 @@
     "moves": [
       "absorb",
       "acid",
+      "acid-spray",
       "after-you",
       "attract",
       "bide",
@@ -1454,10 +1511,13 @@
       "grass-knot",
       "growth",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "ingrain",
+      "leaf-storm",
       "leech-seed",
       "lucky-chant",
+      "magical-leaf",
       "mega-drain",
       "mimic",
       "moonlight",
@@ -1545,6 +1605,10 @@
       {
         "name": "chlorophyll",
         "description": "Doubles Speed during strong sunlight."
+      },
+      {
+        "name": "stench",
+        "description": "Has a 10% chance of making target Pokémon flinch with each hit."
       }
     ],
     "ev_yield": {
@@ -1561,6 +1625,7 @@
     "moves": [
       "absorb",
       "acid",
+      "acid-spray",
       "after-you",
       "attract",
       "bide",
@@ -1583,9 +1648,12 @@
       "grass-knot",
       "growth",
       "headbutt",
+      "helping-hand",
       "hidden-power",
+      "leaf-storm",
       "leech-seed",
       "lucky-chant",
+      "magical-leaf",
       "mega-drain",
       "mimic",
       "moonlight",
@@ -1665,6 +1733,10 @@
       {
         "name": "cloud-nine",
         "description": "Negates all effects of weather, but does not prevent the weather itself."
+      },
+      {
+        "name": "swift-swim",
+        "description": "Doubles Speed during rain."
       }
     ],
     "ev_yield": {
@@ -1705,6 +1777,7 @@
       "double-team",
       "dynamic-punch",
       "encore",
+      "endeavor",
       "endure",
       "facade",
       "flash",
@@ -1714,6 +1787,7 @@
       "frustration",
       "fury-swipes",
       "future-sight",
+      "haze",
       "headbutt",
       "helping-hand",
       "hidden-power",
@@ -1724,6 +1798,7 @@
       "ice-punch",
       "icy-wind",
       "iron-tail",
+      "knock-off",
       "light-screen",
       "low-kick",
       "low-sweep",
@@ -1735,6 +1810,7 @@
       "mud-shot",
       "mud-slap",
       "mud-sport",
+      "muddy-water",
       "nasty-plot",
       "natural-gift",
       "pay-day",
@@ -1780,6 +1856,7 @@
       "thief",
       "toxic",
       "tri-attack",
+      "vacuum-wave",
       "water-gun",
       "water-pulse",
       "water-sport",
@@ -1909,6 +1986,10 @@
       {
         "name": "cloud-nine",
         "description": "Negates all effects of weather, but does not prevent the weather itself."
+      },
+      {
+        "name": "swift-swim",
+        "description": "Doubles Speed during rain."
       }
     ],
     "ev_yield": {
@@ -1949,6 +2030,7 @@
       "double-team",
       "dynamic-punch",
       "encore",
+      "endeavor",
       "endure",
       "facade",
       "flash",
@@ -1961,6 +2043,7 @@
       "future-sight",
       "giga-impact",
       "grass-knot",
+      "haze",
       "headbutt",
       "helping-hand",
       "hidden-power",
@@ -1972,6 +2055,7 @@
       "ice-punch",
       "icy-wind",
       "iron-tail",
+      "knock-off",
       "light-screen",
       "low-kick",
       "low-sweep",
@@ -2028,6 +2112,7 @@
       "thief",
       "toxic",
       "tri-attack",
+      "vacuum-wave",
       "water-gun",
       "water-pulse",
       "water-sport",
@@ -2114,6 +2199,10 @@
       {
         "name": "inner-focus",
         "description": "Prevents flinching."
+      },
+      {
+        "name": "magic-guard",
+        "description": "Protects against damage not directly caused by a move."
       }
     ],
     "ev_yield": {
@@ -2262,6 +2351,10 @@
       {
         "name": "no-guard",
         "description": "Ensures all moves used by and against the Pokémon hit."
+      },
+      {
+        "name": "steadfast",
+        "description": "Raises Speed one stage upon flinching."
       }
     ],
     "ev_yield": {
@@ -2285,6 +2378,7 @@
       "bullet-punch",
       "captivate",
       "close-combat",
+      "comet-punch",
       "counter",
       "cross-chop",
       "curse",
@@ -2293,6 +2387,7 @@
       "double-edge",
       "double-hit",
       "double-team",
+      "drain-punch",
       "dual-chop",
       "dynamic-punch",
       "earthquake",
@@ -2429,6 +2524,10 @@
       {
         "name": "liquid-ooze",
         "description": "Damages opponents using leeching moves for as much as they would heal."
+      },
+      {
+        "name": "rain-dish",
+        "description": "Heals for 1/16 max HP after each turn during rain."
       }
     ],
     "ev_yield": {
@@ -2470,6 +2569,7 @@
       "facade",
       "frustration",
       "giga-drain",
+      "gunk-shot",
       "haze",
       "headbutt",
       "hex",
@@ -2482,6 +2582,7 @@
       "mega-drain",
       "mimic",
       "mirror-coat",
+      "mud-shot",
       "muddy-water",
       "natural-gift",
       "payback",
@@ -2509,6 +2610,7 @@
       "supersonic",
       "surf",
       "swagger",
+      "swift",
       "swords-dance",
       "take-down",
       "thief",
@@ -2658,6 +2760,10 @@
       {
         "name": "liquid-ooze",
         "description": "Damages opponents using leeching moves for as much as they would heal."
+      },
+      {
+        "name": "rain-dish",
+        "description": "Heals for 1/16 max HP after each turn during rain."
       }
     ],
     "ev_yield": {
@@ -2697,6 +2803,7 @@
       "frustration",
       "giga-drain",
       "giga-impact",
+      "gunk-shot",
       "haze",
       "headbutt",
       "hex",
@@ -2710,6 +2817,7 @@
       "mega-drain",
       "mimic",
       "mirror-coat",
+      "mud-shot",
       "muddy-water",
       "natural-gift",
       "payback",
@@ -2725,6 +2833,7 @@
       "round",
       "safeguard",
       "scald",
+      "scary-face",
       "screech",
       "secret-power",
       "skull-bash",
@@ -2737,6 +2846,7 @@
       "supersonic",
       "surf",
       "swagger",
+      "swift",
       "swords-dance",
       "take-down",
       "thief",
@@ -2746,6 +2856,7 @@
       "water-gun",
       "water-pulse",
       "waterfall",
+      "weather-ball",
       "whirlpool",
       "wrap",
       "wring-out"
@@ -2843,6 +2954,10 @@
       {
         "name": "sturdy",
         "description": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
+      },
+      {
+        "name": "sand-veil",
+        "description": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
       }
     ],
     "ev_yield": {
@@ -2898,6 +3013,7 @@
       "mega-punch",
       "metronome",
       "mimic",
+      "mud-shot",
       "mud-slap",
       "mud-sport",
       "natural-gift",
@@ -2918,6 +3034,7 @@
       "round",
       "sand-attack",
       "sandstorm",
+      "scary-face",
       "secret-power",
       "seismic-toss",
       "selfdestruct",
@@ -3046,6 +3163,10 @@
       {
         "name": "sturdy",
         "description": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
+      },
+      {
+        "name": "sand-veil",
+        "description": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
       }
     ],
     "ev_yield": {
@@ -3085,14 +3206,17 @@
       "fissure",
       "flamethrower",
       "fling",
+      "focus-blast",
       "focus-punch",
       "frustration",
       "gyro-ball",
       "harden",
       "headbutt",
+      "heavy-slam",
       "hidden-power",
       "incinerate",
       "iron-defense",
+      "iron-head",
       "magnitude",
       "mega-kick",
       "mega-punch",
@@ -3119,6 +3243,7 @@
       "round",
       "sand-attack",
       "sandstorm",
+      "scary-face",
       "secret-power",
       "seismic-toss",
       "selfdestruct",
@@ -3244,6 +3369,10 @@
       {
         "name": "sturdy",
         "description": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
+      },
+      {
+        "name": "analytic",
+        "description": "Strengthens moves to 1.3× their power when moving last."
       }
     ],
     "ev_yield": {
@@ -3260,6 +3389,7 @@
     "moves": [
       "agility",
       "bide",
+      "charge",
       "charge-beam",
       "confuse-ray",
       "curse",
@@ -3371,6 +3501,10 @@
       {
         "name": "early-bird",
         "description": "Makes sleep pass twice as quickly."
+      },
+      {
+        "name": "tangled-feet",
+        "description": "Doubles evasion when confused."
       }
     ],
     "ev_yield": {
@@ -3385,12 +3519,14 @@
       "speed": 75
     },
     "moves": [
+      "acrobatics",
       "acupressure",
       "aerial-ace",
       "agility",
       "air-cutter",
       "assurance",
       "attract",
+      "baton-pass",
       "bide",
       "body-slam",
       "brave-bird",
@@ -3405,6 +3541,7 @@
       "endure",
       "facade",
       "faint-attack",
+      "feather-dance",
       "flail",
       "fly",
       "frustration",
@@ -3412,6 +3549,7 @@
       "growl",
       "haze",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "jump-kick",
       "knock-off",
@@ -3427,6 +3565,7 @@
       "pursuit",
       "quick-attack",
       "rage",
+      "rain-dance",
       "reflect",
       "rest",
       "return",
@@ -3444,6 +3583,7 @@
       "swagger",
       "swift",
       "swords-dance",
+      "tailwind",
       "take-down",
       "thief",
       "thrash",
@@ -3493,6 +3633,10 @@
       {
         "name": "early-bird",
         "description": "Makes sleep pass twice as quickly."
+      },
+      {
+        "name": "tangled-feet",
+        "description": "Doubles evasion when confused."
       }
     ],
     "ev_yield": {
@@ -3507,6 +3651,7 @@
       "speed": 110
     },
     "moves": [
+      "acrobatics",
       "acupressure",
       "aerial-ace",
       "agility",
@@ -3523,17 +3668,21 @@
       "double-hit",
       "double-team",
       "drill-peck",
+      "drill-run",
       "echoed-voice",
       "endeavor",
       "endure",
       "facade",
       "faint-attack",
+      "feather-dance",
       "fly",
       "frustration",
       "fury-attack",
       "giga-impact",
       "growl",
+      "haze",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "hyper-beam",
       "jump-kick",
@@ -3551,11 +3700,13 @@
       "pursuit",
       "quick-attack",
       "rage",
+      "rain-dance",
       "reflect",
       "rest",
       "return",
       "roost",
       "round",
+      "scary-face",
       "secret-power",
       "skull-bash",
       "sky-attack",
@@ -3568,6 +3719,7 @@
       "swagger",
       "swift",
       "swords-dance",
+      "tailwind",
       "take-down",
       "taunt",
       "thief",
@@ -3611,6 +3763,10 @@
       {
         "name": "static",
         "description": "Has a 30% chance of paralyzing attacking Pokémon on contact."
+      },
+      {
+        "name": "aftermath",
+        "description": "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
       }
     ],
     "ev_yield": {
@@ -3631,8 +3787,10 @@
       "charge-beam",
       "curse",
       "discharge",
+      "double-edge",
       "double-team",
       "electro-ball",
+      "electroweb",
       "endure",
       "explosion",
       "facade",
@@ -3715,6 +3873,10 @@
       {
         "name": "rock-head",
         "description": "Protects against recoil damage."
+      },
+      {
+        "name": "reckless",
+        "description": "Strengthens recoil moves to 1.2× their power."
       }
     ],
     "ev_yield": {
@@ -3762,6 +3924,7 @@
       "giga-impact",
       "guard-split",
       "headbutt",
+      "heavy-slam",
       "hidden-power",
       "horn-attack",
       "horn-drill",
@@ -3868,6 +4031,10 @@
       {
         "name": "sniper",
         "description": "Strengthens critical hits to inflict 3× damage rather than 2×."
+      },
+      {
+        "name": "damp",
+        "description": "Prevents self destruct, explosion, and aftermath from working while the Pokémon is in battle."
       }
     ],
     "ev_yield": {
@@ -3946,6 +4113,7 @@
       "water-gun",
       "water-pulse",
       "waterfall",
+      "weather-ball",
       "whirlpool"
     ],
     "sprites": {
@@ -4016,6 +4184,10 @@
       {
         "name": "water-veil",
         "description": "Prevents burns."
+      },
+      {
+        "name": "lightning-rod",
+        "description": "Redirects single-target electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
       }
     ],
     "ev_yield": {
@@ -4224,6 +4396,10 @@
       {
         "name": "water-veil",
         "description": "Prevents burns."
+      },
+      {
+        "name": "lightning-rod",
+        "description": "Redirects single-target electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
       }
     ],
     "ev_yield": {
@@ -4260,6 +4436,7 @@
       "fury-attack",
       "fury-cutter",
       "giga-impact",
+      "haze",
       "headbutt",
       "hidden-power",
       "horn-attack",
@@ -4395,6 +4572,10 @@
       {
         "name": "natural-cure",
         "description": "Cures any major status ailment upon switching out."
+      },
+      {
+        "name": "analytic",
+        "description": "Strengthens moves to 1.3× their power when moving last."
       }
     ],
     "ev_yield": {
@@ -4409,6 +4590,7 @@
       "speed": 85
     },
     "moves": [
+      "aqua-jet",
       "attract",
       "bide",
       "blizzard",
@@ -4458,8 +4640,10 @@
       "return",
       "rollout",
       "round",
+      "safeguard",
       "scald",
       "secret-power",
+      "selfdestruct",
       "signal-beam",
       "skull-bash",
       "sleep-talk",
@@ -4541,6 +4725,10 @@
       {
         "name": "mold-breaker",
         "description": "Bypasses targets' abilities if they could hinder or prevent a move."
+      },
+      {
+        "name": "moxie",
+        "description": "Raises Attack one stage upon KOing a Pokémon."
       }
     ],
     "ev_yield": {
@@ -4555,6 +4743,7 @@
       "speed": 85
     },
     "moves": [
+      "aerial-ace",
       "attract",
       "bide",
       "bind",
@@ -4564,9 +4753,11 @@
       "bulk-up",
       "bulldoze",
       "captivate",
+      "circle-throw",
       "close-combat",
       "curse",
       "cut",
+      "detect",
       "dig",
       "double-edge",
       "double-hit",
@@ -4630,6 +4821,7 @@
       "superpower",
       "swagger",
       "swords-dance",
+      "tackle",
       "take-down",
       "thief",
       "thrash",
@@ -4674,6 +4866,10 @@
       {
         "name": "swift-swim",
         "description": "Doubles Speed during rain."
+      },
+      {
+        "name": "rattled",
+        "description": "Raises Speed one stage upon being hit by a Dark, Ghost, or Bug move."
       }
     ],
     "ev_yield": {
@@ -4691,6 +4887,7 @@
       "bounce",
       "bubble",
       "dragon-rage",
+      "facade",
       "flail",
       "hydro-pump",
       "reversal",
@@ -4959,6 +5156,10 @@
       {
         "name": "intimidate",
         "description": "Lowers opponents' Attack one stage upon entering battle."
+      },
+      {
+        "name": "moxie",
+        "description": "Raises Attack one stage upon KOing a Pokémon."
       }
     ],
     "ev_yield": {
@@ -4997,8 +5198,10 @@
       "dragon-dance",
       "dragon-pulse",
       "dragon-rage",
+      "dragon-rush",
       "dragon-tail",
       "earthquake",
+      "endeavor",
       "endure",
       "facade",
       "fire-blast",
@@ -5218,6 +5421,10 @@
       {
         "name": "limber",
         "description": "Prevents paralysis."
+      },
+      {
+        "name": "imposter",
+        "description": "Transforms upon entering battle."
       }
     ],
     "ev_yield": {
@@ -5283,6 +5490,10 @@
       {
         "name": "illuminate",
         "description": "Doubles the wild encounter rate."
+      },
+      {
+        "name": "water-absorb",
+        "description": "Absorbs Water moves, healing for 1/4 max HP."
       }
     ],
     "ev_yield": {
@@ -5316,6 +5527,7 @@
       "double-edge",
       "double-team",
       "electro-ball",
+      "electroweb",
       "endure",
       "facade",
       "flail",
@@ -5329,6 +5541,7 @@
       "light-screen",
       "mimic",
       "mist",
+      "muddy-water",
       "natural-gift",
       "protect",
       "psybeam",
@@ -5407,6 +5620,10 @@
       {
         "name": "illuminate",
         "description": "Doubles the wild encounter rate."
+      },
+      {
+        "name": "water-absorb",
+        "description": "Absorbs Water moves, healing for 1/4 max HP."
       }
     ],
     "ev_yield": {
@@ -5441,6 +5658,7 @@
       "double-edge",
       "double-team",
       "electro-ball",
+      "electroweb",
       "endure",
       "facade",
       "flail",
@@ -5455,6 +5673,7 @@
       "icy-wind",
       "light-screen",
       "mimic",
+      "muddy-water",
       "natural-gift",
       "protect",
       "psybeam",
@@ -5532,6 +5751,10 @@
       {
         "name": "early-bird",
         "description": "Makes sleep pass twice as quickly."
+      },
+      {
+        "name": "magic-bounce",
+        "description": "Reflects most non-damaging moves back at their user."
       }
     ],
     "ev_yield": {
@@ -5669,6 +5892,10 @@
       {
         "name": "early-bird",
         "description": "Makes sleep pass twice as quickly."
+      },
+      {
+        "name": "magic-bounce",
+        "description": "Reflects most non-damaging moves back at their user."
       }
     ],
     "ev_yield": {
@@ -5703,6 +5930,7 @@
       "endure",
       "facade",
       "faint-attack",
+      "feather-dance",
       "flash",
       "fly",
       "foul-play",
@@ -5712,6 +5940,7 @@
       "giga-impact",
       "grass-knot",
       "guard-swap",
+      "haze",
       "heat-wave",
       "hidden-power",
       "hyper-beam",
@@ -5791,8 +6020,7 @@
     "id": 183,
     "name": "marill",
     "types": [
-      "water",
-      "fairy"
+      "water"
     ],
     "abilities": [
       {
@@ -5802,6 +6030,10 @@
       {
         "name": "huge-power",
         "description": "Doubles Attack in battle."
+      },
+      {
+        "name": "sap-sipper",
+        "description": "Absorbs Grass moves, raising Attack one stage."
       }
     ],
     "ev_yield": {
@@ -5964,8 +6196,7 @@
     "id": 184,
     "name": "azumarill",
     "types": [
-      "water",
-      "fairy"
+      "water"
     ],
     "abilities": [
       {
@@ -5975,6 +6206,10 @@
       {
         "name": "huge-power",
         "description": "Doubles Attack in battle."
+      },
+      {
+        "name": "sap-sipper",
+        "description": "Absorbs Grass moves, raising Attack one stage."
       }
     ],
     "ev_yield": {
@@ -6054,6 +6289,7 @@
       "scary-face",
       "secret-power",
       "seismic-toss",
+      "sing",
       "slam",
       "sleep-talk",
       "snore",
@@ -6114,6 +6350,10 @@
       {
         "name": "pickup",
         "description": "Picks up other Pokémon's used and Flung held items. May also pick up an item after battle."
+      },
+      {
+        "name": "skill-link",
+        "description": "Extends two-to-five-hit moves and Triple Kick to their full length every time."
       }
     ],
     "ev_yield": {
@@ -6152,6 +6392,7 @@
       "double-team",
       "dream-eater",
       "dynamic-punch",
+      "endeavor",
       "endure",
       "facade",
       "fake-out",
@@ -6165,6 +6406,7 @@
       "grass-knot",
       "gunk-shot",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "hone-claws",
       "ice-punch",
@@ -6178,6 +6420,7 @@
       "metronome",
       "mimic",
       "mud-bomb",
+      "mud-shot",
       "mud-slap",
       "nasty-plot",
       "natural-gift",
@@ -6206,6 +6449,7 @@
       "shock-wave",
       "slam",
       "sleep-talk",
+      "smack-down",
       "snatch",
       "snore",
       "solar-beam",
@@ -6218,6 +6462,7 @@
       "switcheroo",
       "tail-slap",
       "tail-whip",
+      "take-down",
       "taunt",
       "thief",
       "thunder",
@@ -6270,6 +6515,10 @@
       {
         "name": "solar-power",
         "description": "Increases Special Attack to 1.5× but costs 1/8 max HP after each turn during strong sunlight."
+      },
+      {
+        "name": "early-bird",
+        "description": "Makes sleep pass twice as quickly."
       }
     ],
     "ev_yield": {
@@ -6342,6 +6591,7 @@
       "take-down",
       "toxic",
       "uproar",
+      "weather-ball",
       "worry-seed"
     ],
     "sprites": {
@@ -6375,6 +6625,10 @@
       {
         "name": "shadow-tag",
         "description": "Prevents opponents from fleeing or switching out."
+      },
+      {
+        "name": "telepathy",
+        "description": "Protects against friendly Pokémon's damaging moves."
       }
     ],
     "ev_yield": {
@@ -6438,6 +6692,10 @@
       {
         "name": "early-bird",
         "description": "Makes sleep pass twice as quickly."
+      },
+      {
+        "name": "sap-sipper",
+        "description": "Absorbs Grass moves, raising Attack one stage."
       }
     ],
     "ev_yield": {
@@ -6476,6 +6734,7 @@
       "dream-eater",
       "earthquake",
       "echoed-voice",
+      "endeavor",
       "endure",
       "energy-ball",
       "facade",
@@ -6584,6 +6843,10 @@
       {
         "name": "sand-veil",
         "description": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+      },
+      {
+        "name": "immunity",
+        "description": "Prevents poison."
       }
     ],
     "ev_yield": {
@@ -6609,7 +6872,9 @@
       "bulldoze",
       "captivate",
       "counter",
+      "crabhammer",
       "cross-poison",
+      "crunch",
       "curse",
       "cut",
       "dark-pulse",
@@ -6625,20 +6890,24 @@
       "faint-attack",
       "false-swipe",
       "feint",
+      "fire-fang",
       "fling",
       "frustration",
       "fury-cutter",
       "guillotine",
+      "gunk-shot",
       "harden",
       "headbutt",
       "hidden-power",
       "hone-claws",
       "hypnosis",
+      "ice-fang",
       "iron-tail",
       "knock-off",
       "metal-claw",
       "mimic",
       "mud-bomb",
+      "mud-shot",
       "mud-slap",
       "natural-gift",
       "night-slash",
@@ -6663,6 +6932,7 @@
       "sand-attack",
       "sand-tomb",
       "sandstorm",
+      "scary-face",
       "screech",
       "secret-power",
       "sky-uppercut",
@@ -6670,6 +6940,7 @@
       "sleep-talk",
       "sludge-bomb",
       "snore",
+      "spikes",
       "stealth-rock",
       "steel-wing",
       "stone-edge",
@@ -6681,10 +6952,13 @@
       "swift",
       "swords-dance",
       "tailwind",
+      "take-down",
       "taunt",
       "thief",
+      "thunder-fang",
       "torment",
       "toxic",
+      "toxic-spikes",
       "u-turn",
       "venoshock",
       "wing-attack",
@@ -6726,6 +7000,10 @@
       {
         "name": "guts",
         "description": "Increases Attack to 1.5× with a major status ailment."
+      },
+      {
+        "name": "moxie",
+        "description": "Raises Attack one stage upon KOing a Pokémon."
       }
     ],
     "ev_yield": {
@@ -6755,6 +7033,7 @@
       "calm-mind",
       "captivate",
       "chip-away",
+      "circle-throw",
       "close-combat",
       "counter",
       "curse",
@@ -6764,6 +7043,7 @@
       "double-edge",
       "double-team",
       "earthquake",
+      "endeavor",
       "endure",
       "facade",
       "false-swipe",
@@ -6788,6 +7068,7 @@
       "low-kick",
       "megahorn",
       "mimic",
+      "mud-shot",
       "natural-gift",
       "night-slash",
       "outrage",
@@ -6808,6 +7089,8 @@
       "secret-power",
       "seismic-toss",
       "shadow-claw",
+      "silver-wind",
+      "skull-bash",
       "slash",
       "sleep-talk",
       "smack-down",
@@ -6869,6 +7152,10 @@
       {
         "name": "flame-body",
         "description": "Has a 30% chance of burning attacking Pokémon on contact."
+      },
+      {
+        "name": "weak-armor",
+        "description": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
       }
     ],
     "ev_yield": {
@@ -6889,6 +7176,7 @@
       "ancient-power",
       "attract",
       "body-slam",
+      "bulldoze",
       "captivate",
       "clear-smog",
       "curse",
@@ -6896,16 +7184,19 @@
       "double-edge",
       "double-team",
       "earth-power",
+      "earthquake",
       "ember",
       "endure",
       "facade",
       "fire-blast",
+      "fire-spin",
       "flame-burst",
       "flame-charge",
       "flamethrower",
       "frustration",
       "guard-swap",
       "harden",
+      "heat-crash",
       "heat-wave",
       "hidden-power",
       "incinerate",
@@ -6915,16 +7206,19 @@
       "light-screen",
       "memento",
       "mimic",
+      "mud-shot",
       "mud-slap",
       "natural-gift",
       "nature-power",
       "overheat",
       "pain-split",
+      "power-gem",
       "protect",
       "recover",
       "reflect",
       "rest",
       "return",
+      "rock-blast",
       "rock-slide",
       "rock-smash",
       "rock-throw",
@@ -6935,15 +7229,19 @@
       "secret-power",
       "selfdestruct",
       "sleep-talk",
+      "smack-down",
       "smog",
       "smoke-screen",
       "snore",
       "spit-up",
+      "stealth-rock",
       "stockpile",
+      "stone-edge",
       "substitute",
       "sunny-day",
       "swagger",
       "swallow",
+      "take-down",
       "toxic",
       "will-o-wisp",
       "yawn"
@@ -6983,6 +7281,10 @@
       {
         "name": "natural-cure",
         "description": "Cures any major status ailment upon switching out."
+      },
+      {
+        "name": "regenerator",
+        "description": "Heals for 1/3 max HP upon switching out."
       }
     ],
     "ev_yield": {
@@ -7131,6 +7433,10 @@
       {
         "name": "sturdy",
         "description": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
+      },
+      {
+        "name": "weak-armor",
+        "description": "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
       }
     ],
     "ev_yield": {
@@ -7163,6 +7469,7 @@
       "double-edge",
       "double-team",
       "drill-peck",
+      "drill-run",
       "endure",
       "facade",
       "feint",
@@ -7172,12 +7479,16 @@
       "frustration",
       "fury-attack",
       "fury-cutter",
+      "giga-impact",
       "guard-swap",
       "hidden-power",
+      "hurricane",
+      "hyper-beam",
       "icy-wind",
       "iron-defense",
       "iron-head",
       "leer",
+      "magnet-bomb",
       "metal-claw",
       "metal-sound",
       "mimic",
@@ -7190,8 +7501,10 @@
       "pluck",
       "protect",
       "pursuit",
+      "razor-wind",
       "rest",
       "return",
+      "reversal",
       "roar",
       "rock-slide",
       "rock-smash",
@@ -7202,6 +7515,7 @@
       "sand-tomb",
       "sandstorm",
       "secret-power",
+      "skull-bash",
       "sky-attack",
       "sky-drop",
       "slash",
@@ -7216,6 +7530,7 @@
       "swift",
       "swords-dance",
       "tailwind",
+      "take-down",
       "taunt",
       "thief",
       "torment",
@@ -7262,6 +7577,10 @@
       {
         "name": "flash-fire",
         "description": "Protects against fire moves. Once one has been blocked, the Pokémon's own Fire moves inflict 1.5× damage until it leaves battle."
+      },
+      {
+        "name": "unnerve",
+        "description": "Prevents opposing Pokémon from eating held Berries."
       }
     ],
     "ev_yield": {
@@ -7323,6 +7642,7 @@
       "nightmare",
       "odor-sleuth",
       "overheat",
+      "pain-split",
       "payback",
       "protect",
       "punishment",
@@ -7354,6 +7674,7 @@
       "super-fang",
       "swagger",
       "swift",
+      "tackle",
       "take-down",
       "taunt",
       "thief",
@@ -7389,6 +7710,10 @@
       {
         "name": "pickup",
         "description": "Picks up other Pokémon's used and Flung held items. May also pick up an item after battle."
+      },
+      {
+        "name": "sand-veil",
+        "description": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
       }
     ],
     "ev_yield": {
@@ -7455,11 +7780,13 @@
       "rock-tomb",
       "rollout",
       "round",
+      "sand-tomb",
       "sandstorm",
       "secret-power",
       "seed-bomb",
       "slam",
       "sleep-talk",
+      "smack-down",
       "snore",
       "stealth-rock",
       "stone-edge",
@@ -7501,6 +7828,10 @@
       {
         "name": "sturdy",
         "description": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
+      },
+      {
+        "name": "sand-veil",
+        "description": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
       }
     ],
     "ev_yield": {
@@ -7581,12 +7912,14 @@
       "rock-tomb",
       "rollout",
       "round",
+      "sand-tomb",
       "sandstorm",
       "scary-face",
       "secret-power",
       "seed-bomb",
       "slam",
       "sleep-talk",
+      "smack-down",
       "snore",
       "stealth-rock",
       "stone-edge",
@@ -7636,6 +7969,10 @@
       {
         "name": "frisk",
         "description": "Reveals an opponent's held item upon entering battle."
+      },
+      {
+        "name": "sap-sipper",
+        "description": "Absorbs Grass moves, raising Attack one stage."
       }
     ],
     "ev_yield": {
@@ -7679,6 +8016,7 @@
       "facade",
       "flash",
       "frustration",
+      "future-sight",
       "giga-impact",
       "gravity",
       "headbutt",
@@ -7779,6 +8117,10 @@
       {
         "name": "scrappy",
         "description": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
+      },
+      {
+        "name": "sap-sipper",
+        "description": "Absorbs Grass moves, raising Attack one stage."
       }
     ],
     "ev_yield": {
@@ -7943,6 +8285,7 @@
       "double-kick",
       "double-team",
       "dragon-breath",
+      "dragon-tail",
       "drain-punch",
       "dynamic-punch",
       "endeavor",
@@ -7959,6 +8302,7 @@
       "grass-pledge",
       "grass-whistle",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "iron-tail",
       "leaf-storm",
@@ -8004,6 +8348,9 @@
       "swift",
       "swords-dance",
       "synthesis",
+      "tackle",
+      "take-down",
+      "thief",
       "thunder-punch",
       "toxic",
       "work-up",
@@ -8021,6 +8368,10 @@
       {
         "name": "overgrow",
         "description": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+      },
+      {
+        "name": "unburden",
+        "description": "Doubles Speed upon using or losing a held item."
       }
     ]
   },
@@ -8060,6 +8411,10 @@
       "double-edge",
       "double-team",
       "dragon-breath",
+      "dragon-claw",
+      "dragon-pulse",
+      "dragon-rush",
+      "dragon-tail",
       "drain-punch",
       "dynamic-punch",
       "endeavor",
@@ -8076,10 +8431,12 @@
       "grass-knot",
       "grass-pledge",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "iron-tail",
       "leaf-blade",
       "leaf-storm",
+      "leech-seed",
       "leer",
       "low-kick",
       "low-sweep",
@@ -8091,6 +8448,7 @@
       "mud-slap",
       "natural-gift",
       "nature-power",
+      "night-slash",
       "pound",
       "protect",
       "pursuit",
@@ -8109,6 +8467,7 @@
       "seed-bomb",
       "seismic-toss",
       "slam",
+      "slash",
       "sleep-talk",
       "snore",
       "solar-beam",
@@ -8119,8 +8478,12 @@
       "swift",
       "swords-dance",
       "synthesis",
+      "tackle",
+      "take-down",
+      "thief",
       "thunder-punch",
       "toxic",
+      "vacuum-wave",
       "work-up",
       "worry-seed",
       "x-scissor"
@@ -8136,6 +8499,10 @@
       {
         "name": "overgrow",
         "description": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+      },
+      {
+        "name": "unburden",
+        "description": "Doubles Speed upon using or losing a held item."
       }
     ]
   },
@@ -8180,6 +8547,8 @@
       "dragon-claw",
       "dragon-dance",
       "dragon-pulse",
+      "dragon-rush",
+      "dragon-tail",
       "drain-punch",
       "dual-chop",
       "dynamic-punch",
@@ -8201,12 +8570,14 @@
       "grass-knot",
       "grass-pledge",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "hone-claws",
       "hyper-beam",
       "iron-tail",
       "leaf-blade",
       "leaf-storm",
+      "leech-seed",
       "leer",
       "low-kick",
       "low-sweep",
@@ -8240,6 +8611,7 @@
       "seed-bomb",
       "seismic-toss",
       "slam",
+      "slash",
       "sleep-talk",
       "snore",
       "solar-beam",
@@ -8250,8 +8622,12 @@
       "swift",
       "swords-dance",
       "synthesis",
+      "tackle",
+      "take-down",
+      "thief",
       "thunder-punch",
       "toxic",
+      "vacuum-wave",
       "work-up",
       "worry-seed",
       "x-scissor"
@@ -8265,6 +8641,10 @@
       {
         "name": "overgrow",
         "description": "Strengthens grass moves to inflict 1.5× damage at 1/3 max HP or less."
+      },
+      {
+        "name": "unburden",
+        "description": "Doubles Speed upon using or losing a held item."
       }
     ]
   },
@@ -8360,7 +8740,9 @@
       "swagger",
       "swift",
       "swords-dance",
+      "take-down",
       "toxic",
+      "uproar",
       "will-o-wisp",
       "work-up"
     ],
@@ -8410,6 +8792,9 @@
       "brick-break",
       "bulk-up",
       "captivate",
+      "circle-throw",
+      "close-combat",
+      "comet-punch",
       "counter",
       "curse",
       "cut",
@@ -8456,6 +8841,7 @@
       "mirror-move",
       "mud-slap",
       "natural-gift",
+      "night-slash",
       "overheat",
       "peck",
       "poison-jab",
@@ -8484,8 +8870,11 @@
       "swagger",
       "swift",
       "swords-dance",
+      "take-down",
+      "thief",
       "thunder-punch",
       "toxic",
+      "uproar",
       "vacuum-wave",
       "will-o-wisp",
       "work-up"
@@ -8539,7 +8928,9 @@
       "bulk-up",
       "bulldoze",
       "captivate",
+      "circle-throw",
       "close-combat",
+      "comet-punch",
       "counter",
       "curse",
       "cut",
@@ -8549,6 +8940,7 @@
       "double-edge",
       "double-kick",
       "double-team",
+      "drain-punch",
       "dual-chop",
       "dynamic-punch",
       "earthquake",
@@ -8592,6 +8984,7 @@
       "mirror-move",
       "mud-slap",
       "natural-gift",
+      "night-slash",
       "overheat",
       "peck",
       "poison-jab",
@@ -8626,9 +9019,12 @@
       "swagger",
       "swift",
       "swords-dance",
+      "take-down",
+      "thief",
       "thunder-punch",
       "toxic",
       "u-turn",
+      "uproar",
       "vacuum-wave",
       "will-o-wisp",
       "work-up"
@@ -8673,6 +9069,7 @@
       "bite",
       "blizzard",
       "body-slam",
+      "bubble-beam",
       "captivate",
       "counter",
       "curse",
@@ -8700,14 +9097,17 @@
       "mimic",
       "mirror-coat",
       "mud-bomb",
+      "mud-shot",
       "mud-slap",
       "mud-sport",
+      "muddy-water",
       "natural-gift",
       "protect",
       "rain-dance",
       "refresh",
       "rest",
       "return",
+      "roar",
       "rock-slide",
       "rock-smash",
       "rock-throw",
@@ -8719,6 +9119,7 @@
       "secret-power",
       "sleep-talk",
       "sludge",
+      "sludge-bomb",
       "sludge-wave",
       "snore",
       "snowscape",
@@ -8754,6 +9155,10 @@
       {
         "name": "torrent",
         "description": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+      },
+      {
+        "name": "damp",
+        "description": "Prevents self destruct, explosion, and aftermath from working while the Pokémon is in battle."
       }
     ]
   },
@@ -8778,13 +9183,16 @@
     "moves": [
       "amnesia",
       "ancient-power",
+      "aqua-ring",
       "aqua-tail",
       "attract",
       "avalanche",
       "bide",
+      "bite",
       "blizzard",
       "body-slam",
       "brick-break",
+      "bubble-beam",
       "bulldoze",
       "captivate",
       "counter",
@@ -8802,10 +9210,12 @@
       "endure",
       "facade",
       "fling",
+      "focus-punch",
       "foresight",
       "frustration",
       "growl",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "hydro-pump",
       "ice-ball",
@@ -8827,6 +9237,7 @@
       "rain-dance",
       "rest",
       "return",
+      "roar",
       "rock-slide",
       "rock-smash",
       "rock-throw",
@@ -8839,6 +9250,7 @@
       "secret-power",
       "seismic-toss",
       "sleep-talk",
+      "sludge-bomb",
       "sludge-wave",
       "snore",
       "snowscape",
@@ -8871,6 +9283,10 @@
       {
         "name": "torrent",
         "description": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+      },
+      {
+        "name": "damp",
+        "description": "Prevents self destruct, explosion, and aftermath from working while the Pokémon is in battle."
       }
     ]
   },
@@ -8895,13 +9311,16 @@
     "moves": [
       "amnesia",
       "ancient-power",
+      "aqua-ring",
       "aqua-tail",
       "attract",
       "avalanche",
       "bide",
+      "bite",
       "blizzard",
       "body-slam",
       "brick-break",
+      "bubble-beam",
       "bulk-up",
       "bulldoze",
       "captivate",
@@ -8919,6 +9338,7 @@
       "endeavor",
       "endure",
       "facade",
+      "fissure",
       "fling",
       "focus-blast",
       "focus-punch",
@@ -8928,6 +9348,7 @@
       "growl",
       "hammer-arm",
       "headbutt",
+      "helping-hand",
       "hidden-power",
       "hydro-cannon",
       "hydro-pump",
@@ -8937,6 +9358,7 @@
       "ice-punch",
       "icy-wind",
       "iron-tail",
+      "knock-off",
       "low-kick",
       "mega-kick",
       "mega-punch",
@@ -8948,6 +9370,7 @@
       "muddy-water",
       "natural-gift",
       "outrage",
+      "poison-jab",
       "protect",
       "rain-dance",
       "rest",
@@ -8962,11 +9385,14 @@
       "round",
       "sand-tomb",
       "scald",
+      "scary-face",
       "screech",
       "secret-power",
       "seismic-toss",
       "sleep-talk",
+      "sludge-bomb",
       "sludge-wave",
+      "smack-down",
       "snore",
       "snowscape",
       "stealth-rock",
@@ -8985,6 +9411,7 @@
       "water-pledge",
       "water-pulse",
       "waterfall",
+      "weather-ball",
       "whirlpool",
       "work-up"
     ],
@@ -8997,6 +9424,10 @@
       {
         "name": "torrent",
         "description": "Strengthens water moves to inflict 1.5× damage at 1/3 max HP or less."
+      },
+      {
+        "name": "damp",
+        "description": "Prevents self destruct, explosion, and aftermath from working while the Pokémon is in battle."
       }
     ]
   },
@@ -9024,6 +9455,7 @@
       "bite",
       "body-slam",
       "captivate",
+      "charm",
       "counter",
       "covet",
       "crunch",
@@ -9032,6 +9464,7 @@
       "double-edge",
       "double-team",
       "embargo",
+      "endeavor",
       "endure",
       "facade",
       "fire-fang",
@@ -9039,6 +9472,7 @@
       "frustration",
       "headbutt",
       "heal-bell",
+      "helping-hand",
       "hidden-power",
       "howl",
       "hyper-voice",
@@ -9114,6 +9548,10 @@
       {
         "name": "quick-feet",
         "description": "Increases Speed to 1.5× with a major status ailment."
+      },
+      {
+        "name": "rattled",
+        "description": "Raises Speed one stage upon being hit by a Dark, Ghost, or Bug move."
       }
     ]
   },
@@ -9140,6 +9578,7 @@
       "bite",
       "body-slam",
       "captivate",
+      "charm",
       "counter",
       "covet",
       "crunch",
@@ -9148,6 +9587,7 @@
       "double-edge",
       "double-team",
       "embargo",
+      "endeavor",
       "endure",
       "facade",
       "fire-fang",
@@ -9156,6 +9596,7 @@
       "giga-impact",
       "headbutt",
       "heal-bell",
+      "helping-hand",
       "hidden-power",
       "howl",
       "hyper-beam",
@@ -9163,12 +9604,14 @@
       "ice-fang",
       "incinerate",
       "iron-tail",
+      "leer",
       "mimic",
       "mud-slap",
       "nasty-plot",
       "natural-gift",
       "odor-sleuth",
       "payback",
+      "poison-fang",
       "protect",
       "psych-up",
       "rain-dance",
@@ -9223,6 +9666,10 @@
       {
         "name": "quick-feet",
         "description": "Increases Speed to 1.5× with a major status ailment."
+      },
+      {
+        "name": "moxie",
+        "description": "Raises Attack one stage upon KOing a Pokémon."
       }
     ]
   },
@@ -9369,6 +9816,10 @@
       {
         "name": "gluttony",
         "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
+      },
+      {
+        "name": "quick-feet",
+        "description": "Increases Speed to 1.5× with a major status ailment."
       }
     ]
   },
@@ -9517,6 +9968,10 @@
       {
         "name": "gluttony",
         "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
+      },
+      {
+        "name": "quick-feet",
+        "description": "Increases Speed to 1.5× with a major status ailment."
       }
     ]
   },
@@ -9563,6 +10018,10 @@
       {
         "name": "shield-dust",
         "description": "Protects against incoming moves' extra effects."
+      },
+      {
+        "name": "run-away",
+        "description": "Ensures success fleeing from wild battles."
       }
     ]
   },
@@ -9707,6 +10166,10 @@
       {
         "name": "swarm",
         "description": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
+      },
+      {
+        "name": "rivalry",
+        "description": "Increases damage inflicted to 1.25× against Pokémon of the same gender, but decreases damage to 0.75× against the opposite gender."
       }
     ]
   },
@@ -9851,6 +10314,10 @@
       {
         "name": "shield-dust",
         "description": "Protects against incoming moves' extra effects."
+      },
+      {
+        "name": "compound-eyes",
+        "description": "Increases moves' accuracy to 1.3×."
       }
     ]
   },
@@ -9900,9 +10367,11 @@
       "ice-beam",
       "icy-wind",
       "leech-seed",
+      "magical-leaf",
       "mega-drain",
       "mimic",
       "mist",
+      "muddy-water",
       "natural-gift",
       "nature-power",
       "protect",
@@ -9925,6 +10394,7 @@
       "sweet-scent",
       "swords-dance",
       "synthesis",
+      "take-down",
       "teeter-dance",
       "thief",
       "tickle",
@@ -9932,6 +10402,7 @@
       "uproar",
       "water-gun",
       "water-pulse",
+      "weather-ball",
       "whirlpool",
       "zen-headbutt"
     ],
@@ -9956,6 +10427,10 @@
       {
         "name": "rain-dish",
         "description": "Heals for 1/16 max HP after each turn during rain."
+      },
+      {
+        "name": "own-tempo",
+        "description": "Prevents confusion."
       }
     ]
   },
@@ -10018,9 +10493,12 @@
       "ice-punch",
       "icy-wind",
       "knock-off",
+      "leech-seed",
+      "magical-leaf",
       "mega-drain",
       "mega-kick",
       "mega-punch",
+      "metronome",
       "mimic",
       "mist",
       "mud-shot",
@@ -10050,6 +10528,7 @@
       "sweet-scent",
       "swords-dance",
       "synthesis",
+      "take-down",
       "teeter-dance",
       "thief",
       "thunder-punch",
@@ -10059,6 +10538,7 @@
       "water-pulse",
       "water-sport",
       "waterfall",
+      "weather-ball",
       "whirlpool",
       "zen-headbutt"
     ],
@@ -10086,6 +10566,10 @@
       {
         "name": "rain-dish",
         "description": "Heals for 1/16 max HP after each turn during rain."
+      },
+      {
+        "name": "own-tempo",
+        "description": "Prevents confusion."
       }
     ]
   },
@@ -10154,6 +10638,8 @@
       "icy-wind",
       "knock-off",
       "leaf-storm",
+      "leech-seed",
+      "magical-leaf",
       "mega-drain",
       "mega-kick",
       "mega-punch",
@@ -10186,8 +10672,10 @@
       "surf",
       "swagger",
       "sweet-scent",
+      "swift",
       "swords-dance",
       "synthesis",
+      "take-down",
       "teeter-dance",
       "thief",
       "thunder-punch",
@@ -10214,6 +10702,10 @@
       {
         "name": "rain-dish",
         "description": "Heals for 1/16 max HP after each turn during rain."
+      },
+      {
+        "name": "own-tempo",
+        "description": "Prevents confusion."
       }
     ]
   },
@@ -10244,11 +10736,13 @@
       "body-slam",
       "bullet-seed",
       "captivate",
+      "curse",
       "defense-curl",
       "defog",
       "dig",
       "double-edge",
       "double-team",
+      "endeavor",
       "endure",
       "energy-ball",
       "explosion",
@@ -10263,7 +10757,9 @@
       "harden",
       "headbutt",
       "hidden-power",
+      "leaf-storm",
       "leech-seed",
+      "magical-leaf",
       "mega-drain",
       "mimic",
       "nasty-plot",
@@ -10274,6 +10770,7 @@
       "power-swap",
       "protect",
       "quick-attack",
+      "rain-dance",
       "razor-wind",
       "refresh",
       "rest",
@@ -10324,6 +10821,10 @@
       {
         "name": "early-bird",
         "description": "Makes sleep pass twice as quickly."
+      },
+      {
+        "name": "pickpocket",
+        "description": "Steals attacking Pokémon's held items on contact."
       }
     ]
   },
@@ -10358,6 +10859,7 @@
       "brick-break",
       "bullet-seed",
       "captivate",
+      "curse",
       "cut",
       "dark-pulse",
       "defense-curl",
@@ -10366,6 +10868,7 @@
       "double-edge",
       "double-team",
       "embargo",
+      "endeavor",
       "endure",
       "energy-ball",
       "explosion",
@@ -10386,9 +10889,12 @@
       "headbutt",
       "hidden-power",
       "hyper-beam",
+      "knock-off",
       "leaf-blade",
+      "leaf-storm",
       "low-kick",
       "low-sweep",
+      "magical-leaf",
       "mega-drain",
       "mega-kick",
       "mimic",
@@ -10396,11 +10902,13 @@
       "nasty-plot",
       "natural-gift",
       "nature-power",
+      "night-slash",
       "payback",
       "pound",
       "power-swap",
       "protect",
       "psych-up",
+      "rain-dance",
       "razor-leaf",
       "razor-wind",
       "refresh",
@@ -10412,6 +10920,7 @@
       "rock-tomb",
       "rollout",
       "round",
+      "scary-face",
       "secret-power",
       "seed-bomb",
       "selfdestruct",
@@ -10434,6 +10943,8 @@
       "thief",
       "torment",
       "toxic",
+      "uproar",
+      "weather-ball",
       "worry-seed"
     ],
     "sprites": {
@@ -10455,6 +10966,10 @@
       {
         "name": "early-bird",
         "description": "Makes sleep pass twice as quickly."
+      },
+      {
+        "name": "pickpocket",
+        "description": "Steals attacking Pokémon's held items on contact."
       }
     ]
   },
@@ -10492,6 +11007,8 @@
       "brick-break",
       "bullet-seed",
       "captivate",
+      "confuse-ray",
+      "curse",
       "cut",
       "dark-pulse",
       "defense-curl",
@@ -10500,6 +11017,7 @@
       "double-edge",
       "double-team",
       "embargo",
+      "endeavor",
       "endure",
       "energy-ball",
       "explosion",
@@ -10521,16 +11039,19 @@
       "harden",
       "headbutt",
       "heat-wave",
+      "hex",
       "hidden-power",
       "hurricane",
       "hyper-beam",
       "icy-wind",
+      "imprison",
       "knock-off",
       "leaf-blade",
       "leaf-storm",
       "leaf-tornado",
       "low-kick",
       "low-sweep",
+      "magical-leaf",
       "mega-drain",
       "mega-kick",
       "mimic",
@@ -10538,12 +11059,14 @@
       "nasty-plot",
       "natural-gift",
       "nature-power",
+      "night-slash",
       "ominous-wind",
       "payback",
       "pound",
       "power-swap",
       "protect",
       "psych-up",
+      "rain-dance",
       "razor-leaf",
       "razor-wind",
       "refresh",
@@ -10551,11 +11074,13 @@
       "retaliate",
       "return",
       "revenge",
+      "reversal",
       "rock-slide",
       "rock-smash",
       "rock-tomb",
       "rollout",
       "round",
+      "scary-face",
       "screech",
       "secret-power",
       "seed-bomb",
@@ -10578,11 +11103,17 @@
       "tackle",
       "tailwind",
       "take-down",
+      "taunt",
       "thief",
       "torment",
       "toxic",
+      "toxic-spikes",
       "twister",
+      "uproar",
+      "vacuum-wave",
+      "weather-ball",
       "whirlwind",
+      "will-o-wisp",
       "worry-seed",
       "x-scissor"
     ],
@@ -10599,8 +11130,8 @@
         "description": "Doubles Speed during strong sunlight."
       },
       {
-        "name": "wind-rider",
-        "description": "Gives immunity to wind moves, and causes the Pokémon's Attack to increase by one stage when hit by one."
+        "name": "pickpocket",
+        "description": "Steals attacking Pokémon's held items on contact."
       }
     ]
   },
@@ -10700,6 +11231,10 @@
       {
         "name": "guts",
         "description": "Increases Attack to 1.5× with a major status ailment."
+      },
+      {
+        "name": "scrappy",
+        "description": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
       }
     ]
   },
@@ -10796,6 +11331,10 @@
       {
         "name": "guts",
         "description": "Increases Attack to 1.5× with a major status ailment."
+      },
+      {
+        "name": "scrappy",
+        "description": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
       }
     ]
   },
@@ -10835,6 +11374,7 @@
       "echoed-voice",
       "endure",
       "facade",
+      "feather-dance",
       "fly",
       "frustration",
       "growl",
@@ -10849,6 +11389,7 @@
       "mimic",
       "mist",
       "mud-slap",
+      "muddy-water",
       "natural-gift",
       "ominous-wind",
       "pluck",
@@ -10885,6 +11426,7 @@
       "water-pulse",
       "water-sport",
       "waterfall",
+      "whirlpool",
       "wide-guard",
       "wing-attack"
     ],
@@ -10974,6 +11516,10 @@
       {
         "name": "hydration",
         "description": "Cures any major status ailment after each turn during rain."
+      },
+      {
+        "name": "rain-dish",
+        "description": "Heals for 1/16 max HP after each turn during rain."
       }
     ]
   },
@@ -11013,6 +11559,7 @@
       "echoed-voice",
       "endure",
       "facade",
+      "feather-dance",
       "fling",
       "fly",
       "frustration",
@@ -11030,6 +11577,7 @@
       "mimic",
       "mist",
       "mud-slap",
+      "muddy-water",
       "natural-gift",
       "ominous-wind",
       "payback",
@@ -11158,6 +11706,10 @@
       {
         "name": "drizzle",
         "description": "Summons rain that lasts indefinitely upon entering battle."
+      },
+      {
+        "name": "rain-dish",
+        "description": "Heals for 1/16 max HP after each turn during rain."
       }
     ]
   },
@@ -11165,8 +11717,7 @@
     "id": 280,
     "name": "ralts",
     "types": [
-      "psychic",
-      "fairy"
+      "psychic"
     ],
     "ev_yield": {
       "special-attack": 1
@@ -11300,6 +11851,10 @@
       {
         "name": "trace",
         "description": "Copies an opponent's ability upon entering battle."
+      },
+      {
+        "name": "telepathy",
+        "description": "Protects against friendly Pokémon's damaging moves."
       }
     ]
   },
@@ -11307,8 +11862,7 @@
     "id": 281,
     "name": "kirlia",
     "types": [
-      "psychic",
-      "fairy"
+      "psychic"
     ],
     "ev_yield": {
       "special-attack": 2
@@ -11408,6 +11962,7 @@
       "toxic",
       "trick",
       "trick-room",
+      "vacuum-wave",
       "will-o-wisp",
       "wish",
       "wonder-room",
@@ -11431,6 +11986,10 @@
       {
         "name": "trace",
         "description": "Copies an opponent's ability upon entering battle."
+      },
+      {
+        "name": "telepathy",
+        "description": "Protects against friendly Pokémon's damaging moves."
       }
     ]
   },
@@ -11438,8 +11997,7 @@
     "id": 282,
     "name": "gardevoir",
     "types": [
-      "psychic",
-      "fairy"
+      "psychic"
     ],
     "ev_yield": {
       "special-attack": 3
@@ -11480,6 +12038,7 @@
       "future-sight",
       "giga-impact",
       "grass-knot",
+      "gravity",
       "growl",
       "guard-swap",
       "headbutt",
@@ -11549,6 +12108,7 @@
       "toxic",
       "trick",
       "trick-room",
+      "vacuum-wave",
       "will-o-wisp",
       "wish",
       "wonder-room",
@@ -11567,6 +12127,10 @@
       {
         "name": "trace",
         "description": "Copies an opponent's ability upon entering battle."
+      },
+      {
+        "name": "telepathy",
+        "description": "Protects against friendly Pokémon's damaging moves."
       }
     ]
   },
@@ -11675,6 +12239,10 @@
       {
         "name": "swift-swim",
         "description": "Doubles Speed during rain."
+      },
+      {
+        "name": "rain-dish",
+        "description": "Heals for 1/16 max HP after each turn during rain."
       }
     ]
   },
@@ -11781,6 +12349,7 @@
       "water-pulse",
       "water-sport",
       "waterfall",
+      "weather-ball",
       "whirlwind"
     ],
     "sprites": {
@@ -11796,6 +12365,10 @@
       {
         "name": "intimidate",
         "description": "Lowers opponents' Attack one stage upon entering battle."
+      },
+      {
+        "name": "unnerve",
+        "description": "Prevents opposing Pokémon from eating held Berries."
       }
     ]
   },
@@ -11892,6 +12465,10 @@
       {
         "name": "poison-heal",
         "description": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
+      },
+      {
+        "name": "quick-feet",
+        "description": "Increases Speed to 1.5× with a major status ailment."
       }
     ]
   },
@@ -12026,6 +12603,10 @@
       {
         "name": "poison-heal",
         "description": "Heals for 1/8 max HP after each turn when poisoned in place of damage."
+      },
+      {
+        "name": "technician",
+        "description": "Strengthens moves of 60 base power or less to 1.5× their power."
       }
     ]
   },
@@ -12193,6 +12774,7 @@
       "dynamic-punch",
       "earthquake",
       "encore",
+      "endeavor",
       "endure",
       "facade",
       "faint-attack",
@@ -12218,6 +12800,7 @@
       "ice-punch",
       "icy-wind",
       "incinerate",
+      "knock-off",
       "low-kick",
       "low-sweep",
       "mega-kick",
@@ -12228,6 +12811,7 @@
       "mud-shot",
       "mud-slap",
       "natural-gift",
+      "night-slash",
       "outrage",
       "poison-jab",
       "protect",
@@ -12331,6 +12915,7 @@
       "dynamic-punch",
       "earthquake",
       "encore",
+      "endeavor",
       "endure",
       "facade",
       "faint-attack",
@@ -12360,6 +12945,7 @@
       "ice-punch",
       "icy-wind",
       "incinerate",
+      "knock-off",
       "low-kick",
       "low-sweep",
       "mega-kick",
@@ -12370,6 +12956,7 @@
       "mud-shot",
       "mud-slap",
       "natural-gift",
+      "night-slash",
       "outrage",
       "poison-jab",
       "protect",
@@ -12520,6 +13107,10 @@
       {
         "name": "compound-eyes",
         "description": "Increases moves' accuracy to 1.3×."
+      },
+      {
+        "name": "run-away",
+        "description": "Ensures success fleeing from wild battles."
       }
     ]
   },
@@ -12579,6 +13170,7 @@
       "mind-reader",
       "mud-slap",
       "natural-gift",
+      "night-slash",
       "ominous-wind",
       "protect",
       "rest",
@@ -12619,6 +13211,10 @@
       {
         "name": "speed-boost",
         "description": "Raises Speed one stage after each turn."
+      },
+      {
+        "name": "infiltrator",
+        "description": "Bypasses Light Screen, Reflect, and Safeguard."
       }
     ]
   },
@@ -12678,6 +13274,7 @@
       "mind-reader",
       "mud-slap",
       "natural-gift",
+      "night-slash",
       "nightmare",
       "protect",
       "rest",
@@ -12851,6 +13448,10 @@
       {
         "name": "soundproof",
         "description": "Protects against sound-based moves."
+      },
+      {
+        "name": "rattled",
+        "description": "Raises Speed one stage upon being hit by a Dark, Ghost, or Bug move."
       }
     ]
   },
@@ -12880,6 +13481,7 @@
       "brick-break",
       "bulldoze",
       "captivate",
+      "circle-throw",
       "counter",
       "defense-curl",
       "double-edge",
@@ -12967,6 +13569,10 @@
       {
         "name": "soundproof",
         "description": "Protects against sound-based moves."
+      },
+      {
+        "name": "scrappy",
+        "description": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
       }
     ]
   },
@@ -12997,6 +13603,7 @@
       "brick-break",
       "bulldoze",
       "captivate",
+      "circle-throw",
       "counter",
       "crunch",
       "defense-curl",
@@ -13090,6 +13697,10 @@
       {
         "name": "soundproof",
         "description": "Protects against sound-based moves."
+      },
+      {
+        "name": "scrappy",
+        "description": "Lets the Pokémon's normal and fighting moves hit ghost Pokémon."
       }
     ]
   },
@@ -13268,6 +13879,10 @@
       {
         "name": "guts",
         "description": "Increases Attack to 1.5× with a major status ailment."
+      },
+      {
+        "name": "sheer-force",
+        "description": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
       }
     ]
   },
@@ -13300,6 +13915,7 @@
       "captivate",
       "close-combat",
       "counter",
+      "curse",
       "detect",
       "dig",
       "double-edge",
@@ -13400,6 +14016,10 @@
       {
         "name": "guts",
         "description": "Increases Attack to 1.5× with a major status ailment."
+      },
+      {
+        "name": "sheer-force",
+        "description": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
       }
     ]
   },
@@ -13407,8 +14027,7 @@
     "id": 298,
     "name": "azurill",
     "types": [
-      "normal",
-      "fairy"
+      "normal"
     ],
     "ev_yield": {
       "hp": 1
@@ -13517,6 +14136,10 @@
       {
         "name": "huge-power",
         "description": "Doubles Attack in battle."
+      },
+      {
+        "name": "sap-sipper",
+        "description": "Absorbs Grass moves, raising Attack one stage."
       }
     ]
   },
@@ -13544,6 +14167,7 @@
       "body-slam",
       "bulldoze",
       "captivate",
+      "curse",
       "defense-curl",
       "discharge",
       "double-edge",
@@ -13561,6 +14185,7 @@
       "harden",
       "head-smash",
       "headbutt",
+      "heavy-slam",
       "helping-hand",
       "hidden-power",
       "ice-punch",
@@ -13585,6 +14210,7 @@
       "rock-tomb",
       "rollout",
       "round",
+      "sand-tomb",
       "sandstorm",
       "secret-power",
       "selfdestruct",
@@ -13600,6 +14226,7 @@
       "sunny-day",
       "swagger",
       "tackle",
+      "take-down",
       "taunt",
       "thunder",
       "thunder-punch",
@@ -13650,6 +14277,10 @@
       {
         "name": "magnet-pull",
         "description": "Prevents steel opponents from fleeing or switching out."
+      },
+      {
+        "name": "sand-force",
+        "description": "Strengthens Rock, Ground, and Steel moves to 1.3× their power during a sandstorm. Protects against sandstorm damage."
       }
     ]
   },
@@ -13772,6 +14403,10 @@
       {
         "name": "normalize",
         "description": "Makes the Pokémon's moves all act normal-type."
+      },
+      {
+        "name": "wonder-skin",
+        "description": "Lowers incoming non-damaging moves' base accuracy to exactly 50%."
       }
     ]
   },
@@ -13893,6 +14528,10 @@
       {
         "name": "normalize",
         "description": "Makes the Pokémon's moves all act normal-type."
+      },
+      {
+        "name": "wonder-skin",
+        "description": "Lowers incoming non-damaging moves' base accuracy to exactly 50%."
       }
     ]
   },
@@ -13960,6 +14599,7 @@
       "gravity",
       "gyro-ball",
       "headbutt",
+      "heal-block",
       "helping-hand",
       "hex",
       "hidden-power",
@@ -13988,6 +14628,7 @@
       "nasty-plot",
       "natural-gift",
       "night-shade",
+      "night-slash",
       "nightmare",
       "octazooka",
       "ominous-wind",
@@ -14011,11 +14652,13 @@
       "rock-tomb",
       "role-play",
       "round",
+      "safeguard",
       "scratch",
       "secret-power",
       "seismic-toss",
       "shadow-ball",
       "shadow-claw",
+      "shadow-punch",
       "shadow-sneak",
       "shock-wave",
       "signal-beam",
@@ -14029,6 +14672,7 @@
       "sucker-punch",
       "sunny-day",
       "swagger",
+      "tackle",
       "take-down",
       "taunt",
       "telekinesis",
@@ -14085,6 +14729,10 @@
       {
         "name": "stall",
         "description": "Makes the Pokémon move last within its move's priority bracket."
+      },
+      {
+        "name": "prankster",
+        "description": "Raises non-damaging moves' priority by one stage."
       }
     ]
   },
@@ -14092,8 +14740,7 @@
     "id": 303,
     "name": "mawile",
     "types": [
-      "steel",
-      "fairy"
+      "steel"
     ],
     "ev_yield": {
       "attack": 1,
@@ -14118,6 +14765,7 @@
       "brick-break",
       "captivate",
       "charge-beam",
+      "charm",
       "counter",
       "crunch",
       "dark-pulse",
@@ -14244,6 +14892,10 @@
       {
         "name": "intimidate",
         "description": "Lowers opponents' Attack one stage upon entering battle."
+      },
+      {
+        "name": "sheer-force",
+        "description": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
       }
     ]
   },
@@ -14301,6 +14953,7 @@
       "metal-claw",
       "metal-sound",
       "mimic",
+      "mud-shot",
       "mud-slap",
       "natural-gift",
       "protect",
@@ -14364,6 +15017,10 @@
       {
         "name": "rock-head",
         "description": "Protects against recoil damage."
+      },
+      {
+        "name": "heavy-metal",
+        "description": "Doubles the Pokémon's weight."
       }
     ]
   },
@@ -14407,6 +15064,7 @@
       "frustration",
       "fury-cutter",
       "harden",
+      "head-smash",
       "headbutt",
       "heavy-slam",
       "hidden-power",
@@ -14419,6 +15077,7 @@
       "metal-claw",
       "metal-sound",
       "mimic",
+      "mud-shot",
       "mud-slap",
       "natural-gift",
       "protect",
@@ -14484,6 +15143,10 @@
       {
         "name": "rock-head",
         "description": "Protects against recoil damage."
+      },
+      {
+        "name": "heavy-metal",
+        "description": "Doubles the Pokémon's weight."
       }
     ]
   },
@@ -14547,6 +15210,7 @@
       "fury-cutter",
       "giga-impact",
       "harden",
+      "head-smash",
       "headbutt",
       "heavy-slam",
       "hidden-power",
@@ -14561,6 +15225,7 @@
       "iron-head",
       "iron-tail",
       "low-kick",
+      "magnet-bomb",
       "magnet-rise",
       "mega-kick",
       "mega-punch",
@@ -14568,6 +15233,7 @@
       "metal-claw",
       "metal-sound",
       "mimic",
+      "mud-shot",
       "mud-slap",
       "natural-gift",
       "outrage",
@@ -14634,6 +15300,10 @@
       {
         "name": "rock-head",
         "description": "Protects against recoil damage."
+      },
+      {
+        "name": "heavy-metal",
+        "description": "Doubles the Pokémon's weight."
       }
     ]
   },
@@ -14798,6 +15468,10 @@
       {
         "name": "pure-power",
         "description": "Doubles Attack in battle."
+      },
+      {
+        "name": "telepathy",
+        "description": "Protects against friendly Pokémon's damaging moves."
       }
     ]
   },
@@ -14822,16 +15496,20 @@
     "moves": [
       "acupressure",
       "aerial-ace",
+      "agility",
       "attract",
       "aura-sphere",
       "baton-pass",
       "bide",
+      "blaze-kick",
       "body-slam",
       "brick-break",
       "bulk-up",
+      "bullet-punch",
       "calm-mind",
       "captivate",
       "close-combat",
+      "comet-punch",
       "confusion",
       "counter",
       "detect",
@@ -14955,6 +15633,10 @@
       {
         "name": "pure-power",
         "description": "Doubles Attack in battle."
+      },
+      {
+        "name": "telepathy",
+        "description": "Protects against friendly Pokémon's damaging moves."
       }
     ]
   },
@@ -15031,6 +15713,7 @@
       "thief",
       "thunder",
       "thunder-fang",
+      "thunder-shock",
       "thunder-wave",
       "thunderbolt",
       "toxic",
@@ -15058,6 +15741,10 @@
       {
         "name": "lightning-rod",
         "description": "Redirects single-target electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
+      },
+      {
+        "name": "minus",
+        "description": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus."
       }
     ]
   },
@@ -15095,6 +15782,7 @@
       "endure",
       "facade",
       "fire-fang",
+      "flame-charge",
       "flamethrower",
       "flash",
       "frustration",
@@ -15117,6 +15805,7 @@
       "protect",
       "quick-attack",
       "rain-dance",
+      "razor-wind",
       "refresh",
       "rest",
       "return",
@@ -15138,6 +15827,7 @@
       "thief",
       "thunder",
       "thunder-fang",
+      "thunder-shock",
       "thunder-wave",
       "thunderbolt",
       "toxic",
@@ -15161,6 +15851,10 @@
       {
         "name": "lightning-rod",
         "description": "Redirects single-target electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
+      },
+      {
+        "name": "minus",
+        "description": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus."
       }
     ]
   },
@@ -15203,6 +15897,7 @@
       "electro-ball",
       "electroweb",
       "encore",
+      "endeavor",
       "endure",
       "entrainment",
       "facade",
@@ -15244,9 +15939,11 @@
       "snore",
       "spark",
       "substitute",
+      "super-fang",
       "swagger",
       "sweet-kiss",
       "swift",
+      "switcheroo",
       "thunder",
       "thunder-punch",
       "thunder-wave",
@@ -15292,6 +15989,10 @@
       {
         "name": "plus",
         "description": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus."
+      },
+      {
+        "name": "lightning-rod",
+        "description": "Redirects single-target electric moves to this Pokémon where possible. Absorbs Electric moves, raising Special Attack one stage."
       }
     ]
   },
@@ -15333,6 +16034,7 @@
       "electro-ball",
       "electroweb",
       "encore",
+      "endeavor",
       "endure",
       "entrainment",
       "facade",
@@ -15374,6 +16076,7 @@
       "snore",
       "spark",
       "substitute",
+      "super-fang",
       "swagger",
       "sweet-kiss",
       "swift",
@@ -15423,6 +16126,10 @@
       {
         "name": "minus",
         "description": "Increases Special Attack to 1.5× when a friendly Pokémon has plus or minus."
+      },
+      {
+        "name": "volt-absorb",
+        "description": "Absorbs electric moves, healing for 1/4 max HP."
       }
     ]
   },
@@ -15447,6 +16154,7 @@
       "acrobatics",
       "aerial-ace",
       "air-cutter",
+      "air-slash",
       "attract",
       "baton-pass",
       "body-slam",
@@ -15463,6 +16171,7 @@
       "double-team",
       "dynamic-punch",
       "encore",
+      "endeavor",
       "endure",
       "facade",
       "flash",
@@ -15508,6 +16217,8 @@
       "tackle",
       "tail-glow",
       "tailwind",
+      "take-down",
+      "taunt",
       "thief",
       "thunder",
       "thunder-punch",
@@ -15536,6 +16247,10 @@
       {
         "name": "swarm",
         "description": "Strengthens bug moves to inflict 1.5× damage at 1/3 max HP or less."
+      },
+      {
+        "name": "prankster",
+        "description": "Raises non-damaging moves' priority by one stage."
       }
     ]
   },
@@ -15560,6 +16275,7 @@
       "acrobatics",
       "aerial-ace",
       "air-cutter",
+      "air-slash",
       "aromatherapy",
       "attract",
       "baton-pass",
@@ -15578,6 +16294,7 @@
       "double-team",
       "dynamic-punch",
       "encore",
+      "endeavor",
       "endure",
       "facade",
       "fake-tears",
@@ -15625,12 +16342,14 @@
       "swift",
       "tackle",
       "tailwind",
+      "take-down",
       "thief",
       "thunder",
       "thunder-punch",
       "thunder-wave",
       "thunderbolt",
       "toxic",
+      "trick",
       "u-turn",
       "water-pulse",
       "wish",
@@ -15653,6 +16372,10 @@
       {
         "name": "tinted-lens",
         "description": "Doubles damage inflicted with not-very-effective moves."
+      },
+      {
+        "name": "prankster",
+        "description": "Raises non-damaging moves' priority by one stage."
       }
     ]
   },
@@ -15681,6 +16404,7 @@
       "body-slam",
       "bullet-seed",
       "captivate",
+      "charm",
       "cotton-spore",
       "covet",
       "cut",
@@ -15705,6 +16429,7 @@
       "mega-drain",
       "mimic",
       "mind-reader",
+      "mud-shot",
       "mud-slap",
       "natural-gift",
       "nature-power",
@@ -15779,6 +16504,10 @@
       {
         "name": "poison-point",
         "description": "Has a 30% chance of poisoning attacking Pokémon on contact."
+      },
+      {
+        "name": "leaf-guard",
+        "description": "Protects against major status ailments during strong sunlight."
       }
     ]
   },
@@ -15831,6 +16560,7 @@
       "hidden-power",
       "ice-beam",
       "ice-punch",
+      "knock-off",
       "mimic",
       "mud-shot",
       "mud-slap",
@@ -15858,6 +16588,7 @@
       "sludge-bomb",
       "sludge-wave",
       "smog",
+      "smoke-screen",
       "snatch",
       "snore",
       "solar-beam",
@@ -15869,6 +16600,7 @@
       "swagger",
       "swallow",
       "swords-dance",
+      "tackle",
       "take-down",
       "thief",
       "thunder-punch",
@@ -15897,6 +16629,10 @@
       {
         "name": "sticky-hold",
         "description": "Prevents a held item from being removed by other Pokémon."
+      },
+      {
+        "name": "gluttony",
+        "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
       }
     ]
   },
@@ -15918,6 +16654,7 @@
       "speed": 55
     },
     "moves": [
+      "acid-armor",
       "acid-spray",
       "amnesia",
       "attract",
@@ -15952,6 +16689,7 @@
       "hyper-beam",
       "ice-beam",
       "ice-punch",
+      "knock-off",
       "metronome",
       "mimic",
       "mud-shot",
@@ -15979,6 +16717,7 @@
       "sludge",
       "sludge-bomb",
       "sludge-wave",
+      "smoke-screen",
       "snatch",
       "snore",
       "solar-beam",
@@ -15990,6 +16729,7 @@
       "swagger",
       "swallow",
       "swords-dance",
+      "tackle",
       "take-down",
       "thief",
       "thunder-punch",
@@ -16015,6 +16755,10 @@
       {
         "name": "sticky-hold",
         "description": "Prevents a held item from being removed by other Pokémon."
+      },
+      {
+        "name": "gluttony",
+        "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
       }
     ]
   },
@@ -16125,6 +16869,10 @@
       {
         "name": "rough-skin",
         "description": "Damages attacking Pokémon for 1/8 their max HP on contact."
+      },
+      {
+        "name": "speed-boost",
+        "description": "Raises Speed one stage after each turn."
       }
     ]
   },
@@ -16258,6 +17006,10 @@
       {
         "name": "rough-skin",
         "description": "Damages attacking Pokémon for 1/8 their max HP on contact."
+      },
+      {
+        "name": "speed-boost",
+        "description": "Raises Speed one stage after each turn."
       }
     ]
   },
@@ -16400,6 +17152,10 @@
       {
         "name": "oblivious",
         "description": "Prevents infatuation and protects against captivate."
+      },
+      {
+        "name": "pressure",
+        "description": "Increases the PP cost of moves targetting the Pokémon by one."
       }
     ]
   },
@@ -16509,6 +17265,10 @@
       {
         "name": "oblivious",
         "description": "Prevents infatuation and protects against captivate."
+      },
+      {
+        "name": "pressure",
+        "description": "Increases the PP cost of moves targetting the Pokémon by one."
       }
     ]
   },
@@ -16548,6 +17308,7 @@
       "earthquake",
       "echoed-voice",
       "ember",
+      "endeavor",
       "endure",
       "facade",
       "fire-blast",
@@ -16563,6 +17324,7 @@
       "growl",
       "growth",
       "headbutt",
+      "heat-crash",
       "heat-wave",
       "heavy-slam",
       "helping-hand",
@@ -16583,6 +17345,7 @@
       "rain-dance",
       "rest",
       "return",
+      "roar",
       "rock-slide",
       "rock-smash",
       "rock-tomb",
@@ -16644,6 +17407,10 @@
       {
         "name": "simple",
         "description": "Doubles the Pokémon's stat modifiers. These doubled modifiers are still capped at -6 or 6 stages."
+      },
+      {
+        "name": "own-tempo",
+        "description": "Prevents confusion."
       }
     ]
   },
@@ -16684,6 +17451,7 @@
       "earthquake",
       "echoed-voice",
       "ember",
+      "endeavor",
       "endure",
       "eruption",
       "explosion",
@@ -16702,6 +17470,7 @@
       "giga-impact",
       "growl",
       "headbutt",
+      "heat-crash",
       "heat-wave",
       "heavy-slam",
       "helping-hand",
@@ -16733,6 +17502,7 @@
       "secret-power",
       "selfdestruct",
       "sleep-talk",
+      "smack-down",
       "snore",
       "solar-beam",
       "stealth-rock",
@@ -16780,6 +17550,10 @@
       {
         "name": "solid-rock",
         "description": "Decreases damage taken from super-effective moves by 1/4."
+      },
+      {
+        "name": "anger-point",
+        "description": "Raises Attack to the maximum of six stages upon receiving a critical hit."
       }
     ]
   },
@@ -16904,6 +17678,10 @@
       {
         "name": "drought",
         "description": "Summons strong sunlight that lasts indefinitely upon entering battle."
+      },
+      {
+        "name": "shell-armor",
+        "description": "Protects against critical hits."
       }
     ]
   },
@@ -16940,6 +17718,7 @@
       "double-team",
       "dream-eater",
       "encore",
+      "endeavor",
       "endure",
       "extrasensory",
       "facade",
@@ -16953,6 +17732,7 @@
       "heal-bell",
       "helping-hand",
       "hidden-power",
+      "hypnosis",
       "icy-wind",
       "imprison",
       "iron-tail",
@@ -16961,9 +17741,11 @@
       "magic-coat",
       "mimic",
       "mirror-coat",
+      "mud-shot",
       "natural-gift",
       "night-shade",
       "odor-sleuth",
+      "pay-day",
       "payback",
       "power-gem",
       "protect",
@@ -16981,6 +17763,7 @@
       "round",
       "secret-power",
       "shadow-ball",
+      "shadow-punch",
       "shock-wave",
       "signal-beam",
       "simple-beam",
@@ -17041,6 +17824,10 @@
       {
         "name": "own-tempo",
         "description": "Prevents confusion."
+      },
+      {
+        "name": "gluttony",
+        "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
       }
     ]
   },
@@ -17084,6 +17871,7 @@
       "dynamic-punch",
       "earth-power",
       "encore",
+      "endeavor",
       "endure",
       "energy-ball",
       "facade",
@@ -17100,10 +17888,12 @@
       "growl",
       "headbutt",
       "heal-bell",
+      "heal-block",
       "helping-hand",
       "hidden-power",
       "hyper-beam",
       "hyper-voice",
+      "hypnosis",
       "ice-punch",
       "icy-wind",
       "imprison",
@@ -17122,6 +17912,8 @@
       "natural-gift",
       "night-shade",
       "odor-sleuth",
+      "ominous-wind",
+      "pay-day",
       "payback",
       "power-gem",
       "protect",
@@ -17141,6 +17933,7 @@
       "seed-bomb",
       "seismic-toss",
       "shadow-ball",
+      "shadow-punch",
       "shock-wave",
       "signal-beam",
       "skill-swap",
@@ -17198,6 +17991,10 @@
       {
         "name": "own-tempo",
         "description": "Prevents confusion."
+      },
+      {
+        "name": "gluttony",
+        "description": "Makes the Pokémon eat any held Berry triggered by low HP below 1/2 its max HP."
       }
     ]
   },
@@ -17349,6 +18146,10 @@
       {
         "name": "tangled-feet",
         "description": "Doubles evasion when confused."
+      },
+      {
+        "name": "contrary",
+        "description": "Inverts stat changes."
       }
     ]
   },
@@ -17418,12 +18219,15 @@
       "sleep-talk",
       "snore",
       "solar-beam",
+      "stealth-rock",
+      "stone-edge",
       "strength",
       "struggle-bug",
       "substitute",
       "sunny-day",
       "superpower",
       "swagger",
+      "take-down",
       "toxic"
     ],
     "sprites": {
@@ -17447,6 +18251,10 @@
       {
         "name": "arena-trap",
         "description": "Prevents opponents from fleeing or switching out. Eluded by flying-types and Pokémon in the air."
+      },
+      {
+        "name": "sheer-force",
+        "description": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
       }
     ]
   },
@@ -17470,6 +18278,7 @@
       "speed": 70
     },
     "moves": [
+      "aerial-ace",
       "air-cutter",
       "air-slash",
       "astonish",
@@ -17488,6 +18297,7 @@
       "double-team",
       "draco-meteor",
       "dragon-breath",
+      "dragon-claw",
       "dragon-pulse",
       "dragon-rush",
       "dragon-tail",
@@ -17503,6 +18313,7 @@
       "frustration",
       "fury-cutter",
       "giga-drain",
+      "giga-impact",
       "headbutt",
       "heat-wave",
       "hidden-power",
@@ -17532,7 +18343,9 @@
       "snore",
       "solar-beam",
       "sonic-boom",
+      "stealth-rock",
       "steel-wing",
+      "stone-edge",
       "strength",
       "struggle-bug",
       "substitute",
@@ -17542,6 +18355,7 @@
       "swagger",
       "swift",
       "tailwind",
+      "take-down",
       "toxic",
       "twister",
       "u-turn",
@@ -17584,6 +18398,7 @@
     },
     "moves": [
       "aerial-ace",
+      "agility",
       "air-cutter",
       "air-slash",
       "astonish",
@@ -17626,6 +18441,7 @@
       "giga-impact",
       "headbutt",
       "heat-wave",
+      "helping-hand",
       "hidden-power",
       "hone-claws",
       "hyper-beam",
@@ -17658,6 +18474,7 @@
       "snore",
       "solar-beam",
       "sonic-boom",
+      "stealth-rock",
       "steel-wing",
       "stone-edge",
       "strength",
@@ -17669,11 +18486,13 @@
       "swagger",
       "swift",
       "tailwind",
+      "take-down",
       "thunder-punch",
       "toxic",
       "twister",
       "u-turn",
-      "uproar"
+      "uproar",
+      "vacuum-wave"
     ],
     "sprites": {
       "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
@@ -17717,6 +18536,7 @@
       "captivate",
       "cotton-spore",
       "counter",
+      "curse",
       "cut",
       "dark-pulse",
       "destiny-bond",
@@ -17727,6 +18547,7 @@
       "drain-punch",
       "dynamic-punch",
       "encore",
+      "endeavor",
       "endure",
       "energy-ball",
       "facade",
@@ -17809,6 +18630,10 @@
       {
         "name": "sand-veil",
         "description": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+      },
+      {
+        "name": "water-absorb",
+        "description": "Absorbs Water moves, healing for 1/4 max HP."
       }
     ]
   },
@@ -17843,6 +18668,7 @@
       "captivate",
       "cotton-spore",
       "counter",
+      "curse",
       "cut",
       "dark-pulse",
       "destiny-bond",
@@ -17853,6 +18679,7 @@
       "dynamic-punch",
       "embargo",
       "encore",
+      "endeavor",
       "endure",
       "energy-ball",
       "facade",
@@ -17873,6 +18700,7 @@
       "hidden-power",
       "hyper-beam",
       "ingrain",
+      "knock-off",
       "leaf-storm",
       "leech-seed",
       "leer",
@@ -17940,6 +18768,10 @@
       {
         "name": "sand-veil",
         "description": "Increases evasion to 1.25× during a sandstorm. Protects against sandstorm damage."
+      },
+      {
+        "name": "water-absorb",
+        "description": "Absorbs Water moves, healing for 1/4 max HP."
       }
     ]
   },
@@ -17980,6 +18812,7 @@
       "dragon-rush",
       "dream-eater",
       "echoed-voice",
+      "endeavor",
       "endure",
       "facade",
       "false-swipe",
@@ -18057,6 +18890,10 @@
       {
         "name": "natural-cure",
         "description": "Cures any major status ailment upon switching out."
+      },
+      {
+        "name": "cloud-nine",
+        "description": "Negates all effects of weather, but does not prevent the weather itself."
       }
     ]
   },
@@ -18098,12 +18935,15 @@
       "dragon-claw",
       "dragon-dance",
       "dragon-pulse",
+      "dragon-rush",
       "dream-eater",
       "earthquake",
       "echoed-voice",
+      "endeavor",
       "endure",
       "facade",
       "false-swipe",
+      "feather-dance",
       "fire-blast",
       "fire-spin",
       "flamethrower",
@@ -18112,6 +18952,7 @@
       "fury-attack",
       "giga-impact",
       "growl",
+      "haze",
       "heal-bell",
       "heat-wave",
       "helping-hand",
@@ -18132,6 +18973,7 @@
       "outrage",
       "peck",
       "perish-song",
+      "petal-dance",
       "pluck",
       "power-swap",
       "protect",
@@ -18147,6 +18989,7 @@
       "round",
       "safeguard",
       "secret-power",
+      "silver-wind",
       "sing",
       "sky-attack",
       "sleep-talk",
@@ -18164,6 +19007,7 @@
       "toxic",
       "twister",
       "uproar",
+      "weather-ball",
       "will-o-wisp",
       "wonder-room"
     ],
@@ -18185,6 +19029,10 @@
       {
         "name": "natural-cure",
         "description": "Cures any major status ailment upon switching out."
+      },
+      {
+        "name": "cloud-nine",
+        "description": "Negates all effects of weather, but does not prevent the weather itself."
       }
     ]
   },
@@ -18217,6 +19065,7 @@
       "brick-break",
       "captivate",
       "close-combat",
+      "comet-punch",
       "counter",
       "crush-claw",
       "curse",
@@ -18233,6 +19082,7 @@
       "endeavor",
       "endure",
       "facade",
+      "fake-out",
       "false-swipe",
       "feint",
       "final-gambit",
@@ -18300,6 +19150,7 @@
       "shadow-ball",
       "shadow-claw",
       "shock-wave",
+      "skull-bash",
       "slash",
       "sleep-talk",
       "snore",
@@ -18312,6 +19163,7 @@
       "swift",
       "switcheroo",
       "swords-dance",
+      "tackle",
       "take-down",
       "taunt",
       "thief",
@@ -18342,6 +19194,10 @@
       {
         "name": "immunity",
         "description": "Prevents poison."
+      },
+      {
+        "name": "toxic-boost",
+        "description": "Increases Attack to 1.5× when poisoned."
       }
     ]
   },
@@ -18376,12 +19232,15 @@
       "captivate",
       "coil",
       "crunch",
+      "curse",
       "dark-pulse",
       "dig",
       "double-edge",
       "double-team",
+      "dragon-pulse",
       "dragon-tail",
       "earthquake",
+      "endeavor",
       "endure",
       "facade",
       "feint",
@@ -18404,6 +19263,7 @@
       "iron-head",
       "iron-tail",
       "knock-off",
+      "leer",
       "lick",
       "mimic",
       "mud-slap",
@@ -18471,6 +19331,10 @@
       {
         "name": "shed-skin",
         "description": "Has a 33% chance of curing any major status ailment after each turn."
+      },
+      {
+        "name": "infiltrator",
+        "description": "Bypasses Light Screen, Reflect, and Safeguard."
       }
     ]
   },
@@ -18922,6 +19786,10 @@
       {
         "name": "anticipation",
         "description": "Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move."
+      },
+      {
+        "name": "hydration",
+        "description": "Cures any major status ailment after each turn during rain."
       }
     ]
   },
@@ -18953,6 +19821,7 @@
       "bounce",
       "bulldoze",
       "captivate",
+      "curse",
       "dive",
       "double-edge",
       "double-team",
@@ -19068,6 +19937,10 @@
       {
         "name": "anticipation",
         "description": "Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move."
+      },
+      {
+        "name": "hydration",
+        "description": "Cures any major status ailment after each turn during rain."
       }
     ]
   },
@@ -19159,7 +20032,9 @@
       "swagger",
       "switcheroo",
       "swords-dance",
+      "take-down",
       "taunt",
+      "thief",
       "toxic",
       "trump-card",
       "vice-grip",
@@ -19193,6 +20068,10 @@
       {
         "name": "shell-armor",
         "description": "Protects against critical hits."
+      },
+      {
+        "name": "adaptability",
+        "description": "Increases the same-type attack bonus from 1.5× to 2×."
       }
     ]
   },
@@ -19278,6 +20157,7 @@
       "rock-tomb",
       "round",
       "scald",
+      "scary-face",
       "secret-power",
       "sleep-talk",
       "sludge-bomb",
@@ -19293,7 +20173,9 @@
       "swagger",
       "swift",
       "swords-dance",
+      "take-down",
       "taunt",
+      "thief",
       "toxic",
       "vice-grip",
       "water-gun",
@@ -19323,6 +20205,10 @@
       {
         "name": "shell-armor",
         "description": "Protects against critical hits."
+      },
+      {
+        "name": "adaptability",
+        "description": "Increases the same-type attack bonus from 1.5× to 2×."
       }
     ]
   },
@@ -19666,6 +20552,10 @@
       {
         "name": "suction-cups",
         "description": "Prevents being forced out of battle by other Pokémon's moves."
+      },
+      {
+        "name": "storm-drain",
+        "description": "Redirects single-target Water moves to this Pokémon where possible. Absorbs Water moves, raising Special Attack one stage."
       }
     ]
   },
@@ -19774,6 +20664,10 @@
       {
         "name": "suction-cups",
         "description": "Prevents being forced out of battle by other Pokémon's moves."
+      },
+      {
+        "name": "storm-drain",
+        "description": "Redirects single-target Water moves to this Pokémon where possible. Absorbs Water moves, raising Special Attack one stage."
       }
     ]
   },
@@ -19873,6 +20767,10 @@
       {
         "name": "battle-armor",
         "description": "Protects against critical hits."
+      },
+      {
+        "name": "swift-swim",
+        "description": "Doubles Speed during rain."
       }
     ]
   },
@@ -19980,6 +20878,10 @@
       {
         "name": "battle-armor",
         "description": "Protects against critical hits."
+      },
+      {
+        "name": "swift-swim",
+        "description": "Doubles Speed during rain."
       }
     ]
   },
@@ -20069,6 +20971,10 @@
       {
         "name": "oblivious",
         "description": "Prevents infatuation and protects against captivate."
+      },
+      {
+        "name": "adaptability",
+        "description": "Increases the same-type attack bonus from 1.5× to 2×."
       }
     ]
   },
@@ -20099,6 +21005,7 @@
       "body-slam",
       "brine",
       "bulldoze",
+      "calm-mind",
       "captivate",
       "coil",
       "confuse-ray",
@@ -20114,6 +21021,7 @@
       "flail",
       "frustration",
       "giga-impact",
+      "haze",
       "helping-hand",
       "hidden-power",
       "hydro-pump",
@@ -20127,6 +21035,7 @@
       "light-screen",
       "magic-coat",
       "mimic",
+      "mist",
       "mud-shot",
       "mud-slap",
       "muddy-water",
@@ -20151,6 +21060,7 @@
       "swagger",
       "swift",
       "tackle",
+      "take-down",
       "toxic",
       "twister",
       "water-gun",
@@ -20174,8 +21084,8 @@
         "description": "Increases Defense to 1.5× with a major status ailment."
       },
       {
-        "name": "competitive",
-        "description": "Raises Special Attack by two stages upon having any stat lowered."
+        "name": "cute-charm",
+        "description": "Has a 30% chance of infatuating attacking Pokémon on contact."
       }
     ]
   },
@@ -20324,6 +21234,8 @@
       "camouflage",
       "captivate",
       "charge-beam",
+      "conversion",
+      "conversion-2",
       "counter",
       "cut",
       "defense-curl",
@@ -20350,6 +21262,7 @@
       "frustration",
       "fury-cutter",
       "fury-swipes",
+      "giga-impact",
       "grass-knot",
       "headbutt",
       "hidden-power",
@@ -20371,6 +21284,7 @@
       "mud-slap",
       "nasty-plot",
       "natural-gift",
+      "power-whip",
       "protect",
       "psybeam",
       "psych-up",
@@ -20497,6 +21411,7 @@
       "icy-wind",
       "imprison",
       "knock-off",
+      "lick",
       "magic-coat",
       "magic-room",
       "metronome",
@@ -20522,6 +21437,7 @@
       "screech",
       "secret-power",
       "shadow-ball",
+      "shadow-claw",
       "shadow-sneak",
       "shock-wave",
       "skill-swap",
@@ -20533,6 +21449,7 @@
       "sucker-punch",
       "sunny-day",
       "swagger",
+      "swords-dance",
       "taunt",
       "telekinesis",
       "thief",
@@ -20543,7 +21460,8 @@
       "toxic",
       "trick",
       "trick-room",
-      "will-o-wisp"
+      "will-o-wisp",
+      "zen-headbutt"
     ],
     "sprites": {
       "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/353.png",
@@ -20570,6 +21488,10 @@
       {
         "name": "frisk",
         "description": "Reveals an opponent's held item upon entering battle."
+      },
+      {
+        "name": "cursed-body",
+        "description": "Has a 30% chance of Disabling any move that hits the Pokémon."
       }
     ]
   },
@@ -20618,13 +21540,16 @@
       "grudge",
       "gunk-shot",
       "headbutt",
+      "heal-block",
       "helping-hand",
       "hex",
       "hidden-power",
       "hyper-beam",
+      "icicle-spear",
       "icy-wind",
       "imprison",
       "knock-off",
+      "lick",
       "magic-coat",
       "magic-room",
       "metronome",
@@ -20642,6 +21567,7 @@
       "psych-up",
       "psychic",
       "rain-dance",
+      "razor-wind",
       "rest",
       "return",
       "role-play",
@@ -20651,9 +21577,11 @@
       "secret-power",
       "shadow-ball",
       "shadow-claw",
+      "shadow-punch",
       "shadow-sneak",
       "shock-wave",
       "skill-swap",
+      "slash",
       "sleep-talk",
       "snatch",
       "snore",
@@ -20673,7 +21601,9 @@
       "toxic",
       "trick",
       "trick-room",
-      "will-o-wisp"
+      "vacuum-wave",
+      "will-o-wisp",
+      "zen-headbutt"
     ],
     "sprites": {
       "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png",
@@ -20702,6 +21632,10 @@
       {
         "name": "frisk",
         "description": "Reveals an opponent's held item upon entering battle."
+      },
+      {
+        "name": "cursed-body",
+        "description": "Has a 30% chance of Disabling any move that hits the Pokémon."
       }
     ]
   },
@@ -20831,6 +21765,10 @@
       {
         "name": "levitate",
         "description": "Evades ground moves."
+      },
+      {
+        "name": "frisk",
+        "description": "Reveals an opponent's held item upon entering battle."
       }
     ]
   },
@@ -20888,6 +21826,7 @@
       "future-sight",
       "giga-impact",
       "gravity",
+      "haze",
       "headbutt",
       "helping-hand",
       "hex",
@@ -20971,6 +21910,10 @@
       {
         "name": "pressure",
         "description": "Increases the PP cost of moves targetting the Pokémon by one."
+      },
+      {
+        "name": "frisk",
+        "description": "Reveals an opponent's held item upon entering battle."
       }
     ]
   },
@@ -21001,6 +21944,7 @@
       "body-slam",
       "bulldoze",
       "bullet-seed",
+      "calm-mind",
       "captivate",
       "curse",
       "cut",
@@ -21058,6 +22002,7 @@
       "sleep-talk",
       "snore",
       "solar-beam",
+      "spite",
       "steel-wing",
       "stomp",
       "strength",
@@ -21098,6 +22043,10 @@
       {
         "name": "solar-power",
         "description": "Increases Special Attack to 1.5× but costs 1/8 max HP after each turn during strong sunlight."
+      },
+      {
+        "name": "harvest",
+        "description": "Has a 50% chance of restoring a used Berry after each turn if the Pokémon has held no items in the meantime."
       }
     ]
   },
@@ -21121,12 +22070,15 @@
     },
     "moves": [
       "ally-switch",
+      "amnesia",
       "astonish",
       "attract",
+      "baton-pass",
       "bind",
       "calm-mind",
       "captivate",
       "charge-beam",
+      "charm",
       "confusion",
       "cosmic-power",
       "curse",
@@ -21137,18 +22089,22 @@
       "double-team",
       "dream-eater",
       "echoed-voice",
+      "encore",
       "endure",
       "energy-ball",
       "entrainment",
       "extrasensory",
       "facade",
+      "fake-tears",
       "flash",
+      "flash-cannon",
       "frustration",
       "future-sight",
       "grass-knot",
       "gravity",
       "growl",
       "heal-bell",
+      "heal-block",
       "heal-pulse",
       "healing-wish",
       "helping-hand",
@@ -21156,16 +22112,20 @@
       "hyper-voice",
       "hypnosis",
       "icy-wind",
+      "imprison",
       "knock-off",
       "last-resort",
       "light-screen",
       "magic-coat",
+      "magnet-bomb",
+      "metal-sound",
       "mimic",
       "natural-gift",
       "nightmare",
       "ominous-wind",
       "perish-song",
       "protect",
+      "psybeam",
       "psych-up",
       "psychic",
       "psyshock",
@@ -21179,17 +22139,21 @@
       "rollout",
       "round",
       "safeguard",
+      "screech",
       "secret-power",
+      "selfdestruct",
       "shadow-ball",
       "shock-wave",
       "signal-beam",
       "skill-swap",
       "sleep-talk",
+      "snarl",
       "snatch",
       "snore",
       "stored-power",
       "substitute",
       "sunny-day",
+      "supersonic",
       "swagger",
       "swift",
       "synchronoise",
@@ -21203,6 +22167,7 @@
       "trick",
       "trick-room",
       "uproar",
+      "water-pulse",
       "wish",
       "wrap",
       "yawn",
@@ -21263,6 +22228,7 @@
       "captivate",
       "charge-beam",
       "close-combat",
+      "confuse-ray",
       "counter",
       "curse",
       "cut",
@@ -21306,6 +22272,7 @@
       "natural-gift",
       "night-slash",
       "nightmare",
+      "ominous-wind",
       "payback",
       "perish-song",
       "protect",
@@ -21329,6 +22296,7 @@
       "secret-power",
       "shadow-ball",
       "shadow-claw",
+      "shadow-sneak",
       "shock-wave",
       "slash",
       "sleep-talk",
@@ -21430,6 +22398,10 @@
       {
         "name": "super-luck",
         "description": "Raises moves' critical hit rates one stage."
+      },
+      {
+        "name": "justified",
+        "description": "Raises Attack one stage upon taking damage from a Dark move."
       }
     ]
   },
@@ -21474,6 +22446,10 @@
       {
         "name": "shadow-tag",
         "description": "Prevents opponents from fleeing or switching out."
+      },
+      {
+        "name": "telepathy",
+        "description": "Protects against friendly Pokémon's damaging moves."
       }
     ]
   },
@@ -21522,6 +22498,7 @@
       "ice-fang",
       "ice-shard",
       "icicle-crash",
+      "icicle-spear",
       "icy-wind",
       "leer",
       "light-screen",
@@ -21575,6 +22552,10 @@
       {
         "name": "ice-body",
         "description": "Heals for 1/16 max HP after each turn during hail. Protects against hail damage."
+      },
+      {
+        "name": "moody",
+        "description": "Raises a random stat two stages and lowers another one stage after each turn."
       }
     ]
   },
@@ -21639,6 +22620,7 @@
       "light-screen",
       "mimic",
       "natural-gift",
+      "ominous-wind",
       "payback",
       "powder-snow",
       "protect",
@@ -21655,6 +22637,7 @@
       "sheer-cold",
       "signal-beam",
       "sing",
+      "skull-bash",
       "sleep-talk",
       "snore",
       "snowscape",
@@ -21686,6 +22669,10 @@
       {
         "name": "ice-body",
         "description": "Heals for 1/16 max HP after each turn during hail. Protects against hail damage."
+      },
+      {
+        "name": "moody",
+        "description": "Raises a random stat two stages and lowers another one stage after each turn."
       }
     ]
   },
@@ -21797,6 +22784,10 @@
       {
         "name": "ice-body",
         "description": "Heals for 1/16 max HP after each turn during hail. Protects against hail damage."
+      },
+      {
+        "name": "oblivious",
+        "description": "Prevents infatuation and protects against captivate."
       }
     ]
   },
@@ -21898,6 +22889,10 @@
       {
         "name": "ice-body",
         "description": "Heals for 1/16 max HP after each turn during hail. Protects against hail damage."
+      },
+      {
+        "name": "oblivious",
+        "description": "Prevents infatuation and protects against captivate."
       }
     ]
   },
@@ -22007,6 +23002,10 @@
       {
         "name": "ice-body",
         "description": "Heals for 1/16 max HP after each turn during hail. Protects against hail damage."
+      },
+      {
+        "name": "oblivious",
+        "description": "Prevents infatuation and protects against captivate."
       }
     ]
   },
@@ -22093,6 +23092,10 @@
       {
         "name": "shell-armor",
         "description": "Protects against critical hits."
+      },
+      {
+        "name": "rattled",
+        "description": "Raises Speed one stage upon being hit by a Dark, Ghost, or Bug move."
       }
     ]
   },
@@ -22190,6 +23193,10 @@
       {
         "name": "swift-swim",
         "description": "Doubles Speed during rain."
+      },
+      {
+        "name": "water-veil",
+        "description": "Prevents burns."
       }
     ]
   },
@@ -22286,6 +23293,10 @@
       {
         "name": "swift-swim",
         "description": "Doubles Speed during rain."
+      },
+      {
+        "name": "hydration",
+        "description": "Cures any major status ailment after each turn during rain."
       }
     ]
   },
@@ -22406,6 +23417,10 @@
       {
         "name": "rock-head",
         "description": "Protects against recoil damage."
+      },
+      {
+        "name": "sturdy",
+        "description": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
       }
     ]
   },
@@ -22439,6 +23454,7 @@
       "dive",
       "double-edge",
       "double-team",
+      "endeavor",
       "endure",
       "entrainment",
       "facade",
@@ -22481,6 +23497,7 @@
       "water-pulse",
       "water-sport",
       "waterfall",
+      "whirlpool",
       "wish"
     ],
     "sprites": {
@@ -22515,6 +23532,10 @@
       {
         "name": "swift-swim",
         "description": "Doubles Speed during rain."
+      },
+      {
+        "name": "hydration",
+        "description": "Cures any major status ailment after each turn during rain."
       }
     ]
   },
@@ -22621,6 +23642,10 @@
       {
         "name": "rock-head",
         "description": "Protects against recoil damage."
+      },
+      {
+        "name": "sheer-force",
+        "description": "Strengthens moves with extra effects to 1.3× their power, but prevents their extra effects."
       }
     ]
   },
@@ -22722,6 +23747,10 @@
       {
         "name": "rock-head",
         "description": "Protects against recoil damage."
+      },
+      {
+        "name": "overcoat",
+        "description": "Protects against damage from weather."
       }
     ]
   },
@@ -22774,6 +23803,7 @@
       "fire-blast",
       "fire-fang",
       "fire-spin",
+      "flame-charge",
       "flamethrower",
       "fly",
       "focus-energy",
@@ -22815,6 +23845,7 @@
       "scary-face",
       "secret-power",
       "shadow-claw",
+      "skull-bash",
       "sleep-talk",
       "snore",
       "steel-wing",
@@ -22843,6 +23874,10 @@
       {
         "name": "intimidate",
         "description": "Lowers opponents' Attack one stage upon entering battle."
+      },
+      {
+        "name": "moxie",
+        "description": "Raises Attack one stage upon KOing a Pokémon."
       }
     ]
   },
@@ -22865,6 +23900,8 @@
       "speed": 30
     },
     "moves": [
+      "agility",
+      "facade",
       "headbutt",
       "iron-defense",
       "iron-head",
@@ -22887,6 +23924,10 @@
       {
         "name": "clear-body",
         "description": "Prevents stats from being lowered by other Pokémon."
+      },
+      {
+        "name": "light-metal",
+        "description": "Halves the Pokémon's weight."
       }
     ]
   },
@@ -22929,12 +23970,16 @@
       "facade",
       "flash",
       "flash-cannon",
+      "focus-punch",
       "frustration",
       "fury-cutter",
+      "future-sight",
+      "giga-impact",
       "grass-knot",
       "gravity",
       "gyro-ball",
       "headbutt",
+      "heavy-slam",
       "hidden-power",
       "hone-claws",
       "hyper-beam",
@@ -22943,6 +23988,7 @@
       "iron-defense",
       "iron-head",
       "light-screen",
+      "magnet-bomb",
       "magnet-rise",
       "metal-claw",
       "meteor-mash",
@@ -23004,6 +24050,10 @@
       {
         "name": "clear-body",
         "description": "Prevents stats from being lowered by other Pokémon."
+      },
+      {
+        "name": "light-metal",
+        "description": "Halves the Pokémon's weight."
       }
     ]
   },
@@ -23034,6 +24084,7 @@
       "brick-break",
       "bulldoze",
       "bullet-punch",
+      "comet-punch",
       "confusion",
       "cosmic-power",
       "cut",
@@ -23047,14 +24098,17 @@
       "facade",
       "flash",
       "flash-cannon",
+      "focus-punch",
       "frustration",
       "fury-cutter",
+      "future-sight",
       "giga-impact",
       "grass-knot",
       "gravity",
       "gyro-ball",
       "hammer-arm",
       "headbutt",
+      "heavy-slam",
       "hidden-power",
       "hone-claws",
       "hyper-beam",
@@ -23062,7 +24116,9 @@
       "icy-wind",
       "iron-defense",
       "iron-head",
+      "knock-off",
       "light-screen",
+      "magnet-bomb",
       "magnet-rise",
       "metal-claw",
       "meteor-mash",
@@ -23092,11 +24148,15 @@
       "secret-power",
       "selfdestruct",
       "shadow-ball",
+      "shadow-claw",
+      "shadow-punch",
       "signal-beam",
+      "skull-bash",
       "sleep-talk",
       "sludge-bomb",
       "snore",
       "stealth-rock",
+      "stone-edge",
       "strength",
       "substitute",
       "sunny-day",
@@ -23123,6 +24183,10 @@
       {
         "name": "clear-body",
         "description": "Prevents stats from being lowered by other Pokémon."
+      },
+      {
+        "name": "light-metal",
+        "description": "Halves the Pokémon's weight."
       }
     ]
   },
@@ -23185,6 +24249,7 @@
       "mimic",
       "mud-slap",
       "natural-gift",
+      "power-gem",
       "protect",
       "psych-up",
       "rest",
@@ -23216,6 +24281,7 @@
       "sunny-day",
       "superpower",
       "swagger",
+      "take-down",
       "thunder",
       "thunder-punch",
       "thunder-wave",
@@ -23237,6 +24303,10 @@
       {
         "name": "clear-body",
         "description": "Prevents stats from being lowered by other Pokémon."
+      },
+      {
+        "name": "sturdy",
+        "description": "Prevents being KOed from full HP, leaving 1 HP instead. Protects against the one-hit KO moves regardless of HP."
       }
     ]
   },
@@ -23348,6 +24418,10 @@
       {
         "name": "clear-body",
         "description": "Prevents stats from being lowered by other Pokémon."
+      },
+      {
+        "name": "ice-body",
+        "description": "Heals for 1/16 max HP after each turn during hail. Protects against hail damage."
       }
     ]
   },
@@ -23409,6 +24483,7 @@
       "mega-kick",
       "mega-punch",
       "metal-claw",
+      "metal-sound",
       "mimic",
       "mud-slap",
       "natural-gift",
@@ -23441,6 +24516,7 @@
       "sunny-day",
       "superpower",
       "swagger",
+      "take-down",
       "thunder",
       "thunder-punch",
       "thunder-wave",
@@ -23462,6 +24538,10 @@
       {
         "name": "clear-body",
         "description": "Prevents stats from being lowered by other Pokémon."
+      },
+      {
+        "name": "light-metal",
+        "description": "Halves the Pokémon's weight."
       }
     ]
   },
@@ -23486,6 +24566,7 @@
     "moves": [
       "aerial-ace",
       "agility",
+      "air-cutter",
       "air-slash",
       "ally-switch",
       "attract",
@@ -23540,6 +24621,7 @@
       "natural-gift",
       "outrage",
       "protect",
+      "psybeam",
       "psych-up",
       "psychic",
       "psycho-cut",
@@ -23547,6 +24629,7 @@
       "psyshock",
       "psywave",
       "rain-dance",
+      "razor-wind",
       "recover",
       "reflect",
       "reflect-type",
@@ -23576,6 +24659,7 @@
       "swagger",
       "swift",
       "tailwind",
+      "take-down",
       "telekinesis",
       "thunder",
       "thunder-wave",
@@ -23587,6 +24671,7 @@
       "water-pulse",
       "water-sport",
       "waterfall",
+      "weather-ball",
       "whirlpool",
       "wish",
       "zen-headbutt"
@@ -23631,6 +24716,7 @@
     "moves": [
       "aerial-ace",
       "agility",
+      "air-cutter",
       "air-slash",
       "ally-switch",
       "attract",
@@ -23683,6 +24769,7 @@
       "outrage",
       "power-split",
       "protect",
+      "psybeam",
       "psych-up",
       "psychic",
       "psycho-cut",
@@ -23690,6 +24777,7 @@
       "psyshock",
       "psywave",
       "rain-dance",
+      "razor-wind",
       "recover",
       "reflect",
       "refresh",
@@ -23717,6 +24805,7 @@
       "swagger",
       "swift",
       "tailwind",
+      "take-down",
       "telekinesis",
       "thunder",
       "thunder-wave",
@@ -23727,8 +24816,11 @@
       "twister",
       "water-pulse",
       "waterfall",
+      "weather-ball",
       "whirlpool",
+      "wish",
       "wonder-room",
+      "work-up",
       "zen-headbutt"
     ],
     "sprites": {
@@ -23795,6 +24887,7 @@
       "hydro-pump",
       "hyper-beam",
       "ice-beam",
+      "icicle-spear",
       "icy-wind",
       "iron-head",
       "mimic",
@@ -23899,10 +24992,12 @@
       "fire-blast",
       "fire-fang",
       "fire-punch",
+      "fire-spin",
       "fissure",
       "flamethrower",
       "fling",
       "focus-blast",
+      "focus-punch",
       "frustration",
       "fury-cutter",
       "giga-impact",
@@ -23927,6 +25022,7 @@
       "mud-slap",
       "natural-gift",
       "overheat",
+      "power-gem",
       "protect",
       "psych-up",
       "rest",
@@ -23941,6 +25037,7 @@
       "rollout",
       "round",
       "safeguard",
+      "sand-tomb",
       "sandstorm",
       "scary-face",
       "secret-power",
@@ -24030,6 +25127,7 @@
       "dragon-claw",
       "dragon-dance",
       "dragon-pulse",
+      "dragon-rush",
       "dragon-tail",
       "earth-power",
       "earthquake",
@@ -24106,6 +25204,7 @@
       "water-pulse",
       "waterfall",
       "whirlpool",
+      "whirlwind",
       "wild-charge"
     ],
     "sprites": {
@@ -24154,6 +25253,7 @@
       "calm-mind",
       "charge-beam",
       "charm",
+      "confuse-ray",
       "confusion",
       "cosmic-power",
       "defense-curl",
@@ -24168,6 +25268,7 @@
       "endure",
       "energy-ball",
       "facade",
+      "fake-tears",
       "fire-punch",
       "flash",
       "flash-cannon",
@@ -24180,6 +25281,7 @@
       "gravity",
       "headbutt",
       "healing-wish",
+      "heart-stamp",
       "helping-hand",
       "hidden-power",
       "hyper-beam",
@@ -24195,6 +25297,7 @@
       "magic-room",
       "mega-kick",
       "mega-punch",
+      "metal-sound",
       "meteor-mash",
       "metronome",
       "mimic",
@@ -24202,6 +25305,7 @@
       "natural-gift",
       "nightmare",
       "protect",
+      "psybeam",
       "psych-up",
       "psychic",
       "psyshock",
@@ -24276,6 +25380,7 @@
     },
     "moves": [
       "aerial-ace",
+      "agility",
       "ally-switch",
       "avalanche",
       "bind",
@@ -24303,6 +25408,7 @@
       "focus-blast",
       "focus-punch",
       "frustration",
+      "future-sight",
       "giga-impact",
       "grass-knot",
       "gravity",
@@ -24312,6 +25418,7 @@
       "ice-beam",
       "ice-punch",
       "icy-wind",
+      "imprison",
       "knock-off",
       "leer",
       "light-screen",
@@ -24327,8 +25434,10 @@
       "natural-gift",
       "night-shade",
       "nightmare",
+      "pain-split",
       "poison-jab",
       "protect",
+      "psybeam",
       "psych-up",
       "psychic",
       "psycho-boost",
@@ -24347,6 +25456,7 @@
       "role-play",
       "round",
       "safeguard",
+      "scary-face",
       "secret-power",
       "seismic-toss",
       "shadow-ball",
@@ -24358,12 +25468,15 @@
       "snore",
       "solar-beam",
       "stealth-rock",
+      "stored-power",
       "strength",
       "substitute",
       "sunny-day",
       "superpower",
       "swagger",
+      "swift",
       "switcheroo",
+      "take-down",
       "taunt",
       "telekinesis",
       "teleport",

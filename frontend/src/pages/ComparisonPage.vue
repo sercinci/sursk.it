@@ -800,6 +800,11 @@
                     :key="`a-ability-${abilityLabel}`"
                     class="rounded-full border border-indigo-200 bg-indigo-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-indigo-700"
                   >{{ abilityLabel }}</span>
+                  <span
+                    v-if="selectedDamageAvsB.move.priority !== null && selectedDamageAvsB.move.priority !== 0"
+                    class="rounded-full border border-sky-200 bg-sky-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-sky-700"
+                    :title="t('moves.column.priority')"
+                  >{{ formatPriority(selectedDamageAvsB.move.priority) }}</span>
                   <span :class="['rounded-full border px-1.5 py-0.5 text-[11px] font-bold', multiplierBadgeClass(selectedDamageAvsB.move.multiplier)]">{{ formatMultiplier(selectedDamageAvsB.move.multiplier) }}</span>
                 </div>
               </div>
@@ -856,7 +861,12 @@
                       class="h-[11px] w-auto"
                     />
                   </span>
-                  <span class="w-7 shrink-0 text-right font-mono text-xs text-muted">{{ move.effectivePower }}</span>
+                  <span
+                    v-if="move.priority !== null && move.priority !== 0"
+                    class="shrink-0 rounded border border-sky-200 bg-sky-50 px-1.5 py-0.5 font-mono text-[9px] font-semibold text-sky-700"
+                    :title="t('moves.column.priority')"
+                  >{{ formatPriority(move.priority) }}</span>
+                  <span class="w-9 shrink-0 text-right font-mono text-xs text-muted">{{ formatMovePowerToken(move) }}</span>
                   <span :class="['shrink-0 rounded-full border px-1.5 py-0.5 text-[11px] font-bold', multiplierBadgeClass(move.multiplier)]">{{ formatMultiplier(move.multiplier) }}</span>
                 </button>
               </div>
@@ -916,6 +926,11 @@
                     :key="`b-ability-${abilityLabel}`"
                     class="rounded-full border border-indigo-200 bg-indigo-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-indigo-700"
                   >{{ abilityLabel }}</span>
+                  <span
+                    v-if="selectedDamageBvsA.move.priority !== null && selectedDamageBvsA.move.priority !== 0"
+                    class="rounded-full border border-sky-200 bg-sky-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-sky-700"
+                    :title="t('moves.column.priority')"
+                  >{{ formatPriority(selectedDamageBvsA.move.priority) }}</span>
                   <span :class="['rounded-full border px-1.5 py-0.5 text-[11px] font-bold', multiplierBadgeClass(selectedDamageBvsA.move.multiplier)]">{{ formatMultiplier(selectedDamageBvsA.move.multiplier) }}</span>
                 </div>
               </div>
@@ -972,7 +987,12 @@
                       class="h-[11px] w-auto"
                     />
                   </span>
-                  <span class="w-7 shrink-0 text-right font-mono text-xs text-muted">{{ move.effectivePower }}</span>
+                  <span
+                    v-if="move.priority !== null && move.priority !== 0"
+                    class="shrink-0 rounded border border-sky-200 bg-sky-50 px-1.5 py-0.5 font-mono text-[9px] font-semibold text-sky-700"
+                    :title="t('moves.column.priority')"
+                  >{{ formatPriority(move.priority) }}</span>
+                  <span class="w-9 shrink-0 text-right font-mono text-xs text-muted">{{ formatMovePowerToken(move) }}</span>
                   <span :class="['shrink-0 rounded-full border px-1.5 py-0.5 text-[11px] font-bold', multiplierBadgeClass(move.multiplier)]">{{ formatMultiplier(move.multiplier) }}</span>
                 </button>
               </div>
@@ -1008,6 +1028,7 @@ import {
   getAbilityWeather,
   getEffectivePokemonStatus,
   getMoveDamageProfile,
+  isRetaliationTrueDamageMove,
   isWeatherSuppressedByAbility,
   type BattleAbility,
   type BattleWeather,
@@ -1767,6 +1788,7 @@ const stabMatchupBvsA = computed(() => {
 // ── Section 3: Move effectiveness ──────────────────────────────────────────
 type ScoredMove = PokemonMove & {
   multiplier: number;
+  baseTypeEffectiveness: number;
   effectiveType: string;
   effectivePower: number;
   weatherMultiplier: number;
@@ -1784,7 +1806,7 @@ function scoreDamageMove(
   attackerAbility: BattleAbility,
   defenderAbility: BattleAbility
 ): ScoredMove | null {
-  if (move.power === null || move.type === null) return null;
+  if (move.power === null || move.type === null || isRetaliationTrueDamageMove(move)) return null;
   const profile = getMoveDamageProfile(
     move,
     battleWeather.value,
@@ -1796,15 +1818,17 @@ function scoreDamageMove(
   );
   if (profile.type === null || profile.power === null) return null;
   const baseMultiplier = getAttackMultiplierForTypes(profile.type, defender.types);
-  const multiplier = getAbilityAdjustedTypeEffectiveness(
+  const adjustedMultiplier = getAbilityAdjustedTypeEffectiveness(
     move,
     profile.type,
     baseMultiplier,
     attackerAbility,
     defenderAbility
   );
+  const multiplier = move.true_damage && adjustedMultiplier > 0 ? 1 : adjustedMultiplier;
   return {
     ...move,
+    baseTypeEffectiveness: baseMultiplier,
     effectiveType: profile.type,
     effectivePower: profile.power,
     weatherMultiplier: profile.weatherMultiplier,
@@ -1879,7 +1903,7 @@ const selectedDamageAvsB = computed((): SelectedDamage | null => {
     pokemonA.value,
     pokemonB.value,
     move,
-    move.multiplier,
+    move.baseTypeEffectiveness,
     damageSettingsA.value,
     damageSettingsB.value,
     { critical: criticalAvsB.value }
@@ -1894,7 +1918,7 @@ const selectedDamageBvsA = computed((): SelectedDamage | null => {
     pokemonB.value,
     pokemonA.value,
     move,
-    move.multiplier,
+    move.baseTypeEffectiveness,
     damageSettingsB.value,
     damageSettingsA.value,
     { critical: criticalBvsA.value }
@@ -2060,6 +2084,29 @@ function multiplierBadgeClass(mult: number): string {
 
 function getLearnMethodBadges(methods: MoveLearnMethod[]): string[] {
   return formatLearnMethodLabels(methods, labelLearnMethod, "Lv ");
+}
+
+function formatPriority(priority: number | null): string {
+  if (priority === null) return "-";
+  return priority > 0 ? `+${priority}` : String(priority);
+}
+
+function formatMovePowerToken(move: ScoredMove): string {
+  if (!move.true_damage) {
+    return String(move.effectivePower);
+  }
+
+  const moveName = move.name.toLowerCase();
+  if (moveName === "dragon-rage") return "40";
+  if (moveName === "sonic-boom") return "20";
+  if (moveName === "night-shade" || moveName === "seismic-toss") return "Lv";
+  if (moveName === "super-fang") return "1/2";
+  if (moveName === "endeavor" || moveName === "final-gambit") return "HP";
+  if (moveName === "psywave") return "var";
+  if (moveName === "fissure" || moveName === "guillotine" || moveName === "horn-drill" || moveName === "sheer-cold") {
+    return "OHKO";
+  }
+  return t("moves.power.special_damage");
 }
 
 function getMoveCategoryIcon(category: string | null): string | null {

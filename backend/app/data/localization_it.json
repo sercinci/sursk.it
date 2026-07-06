@@ -104,7 +104,7 @@
       "description": "Se il nemico è del sesso opposto, s'infatua e attacca con meno probabilità."
     },
     "aura-sphere": {
-      "display_name": "Sferapulsar",
+      "display_name": "Forzasfera",
       "description": "Chi la usa rilascia una forza eterea dal profondo del corpo. La mossa è infallibile."
     },
     "aurora-beam": {
@@ -344,7 +344,7 @@
       "description": "Rilascia spore simili al cotone che si attaccano al nemico e riducono di molto la sua Velocità."
     },
     "counter": {
-      "display_name": "Contrattacco",
+      "display_name": "Contatore",
       "description": "Mossa che contrasta ogni attacco fisico, arrecando il doppio del danno ricevuto."
     },
     "covet": {
@@ -404,7 +404,7 @@
       "description": "Chi la usa spazza via barriere come Riflesso e Schermoluce con un forte vento e riduce la capacità d'elusione del nemico."
     },
     "destiny-bond": {
-      "display_name": "Destinobbligato",
+      "display_name": "Destinobbl.",
       "description": "Se chi la usa va KO prima del proprio turno, chi ha sferrato il colpo da KO fa la stessa fine."
     },
     "detect": {
@@ -436,7 +436,7 @@
       "description": "Colpisce il bersaglio con una sequenza di pugni che può anche confonderlo."
     },
     "doom-desire": {
-      "display_name": "Desiderio Fatale",
+      "display_name": "Obbliderio",
       "description": "Intensa luce solare che colpisce il nemico dopo due turni dall'uso della mossa."
     },
     "double-edge": {
@@ -784,7 +784,7 @@
       "description": "Chi la usa lancia acidi gastrici sul nemico. Il fluido annulla l'abilità del nemico."
     },
     "giga-drain": {
-      "display_name": "Gigassorbimento",
+      "display_name": "Gigassorbim.",
       "description": "Mossa che assorbe PS. Chi la usa recupera una quantità di PS pari alla metà del danno inferto."
     },
     "giga-impact": {
@@ -792,7 +792,7 @@
       "description": "Chi la usa carica il nemico usando tutta la sua forza, ma al turno successivo deve riposare."
     },
     "glare": {
-      "display_name": "Sguardo Feroce",
+      "display_name": "Bagliore",
       "description": "Chi la usa spaventa il nemico con uno sguardo terrificante e ne causa la paralisi."
     },
     "grass-knot": {
@@ -896,7 +896,7 @@
       "description": "Chi la usa impedisce al nemico di utilizzare mosse o abilità recupera-PS per cinque turni."
     },
     "heal-pulse": {
-      "display_name": "Curapulsar",
+      "display_name": "Ondasana",
       "description": "Chi la usa lancia un'onda rilassante che fa recuperare al bersaglio metà dei suoi PS massimi."
     },
     "healing-wish": {
@@ -1164,7 +1164,7 @@
       "description": "Chi la usa medita per risvegliare la propria forza interiore e migliorare l'Attacco."
     },
     "mega-drain": {
-      "display_name": "Megassorbimento",
+      "display_name": "Megassorbim.",
       "description": "Mossa che assorbe PS. Chi la usa recupera una quantità di PS pari alla metà del danno inferto."
     },
     "mega-kick": {
@@ -1296,7 +1296,7 @@
       "description": "Chi la usa attacca colpendo il nemico con i suoi arti pieni di spine. Può far tentennare il Pokémon colpito."
     },
     "night-shade": {
-      "display_name": "Ombra Notturna",
+      "display_name": "Ombra Nott.",
       "description": "Fa apparire un orribile miraggio al nemico e infligge un danno pari al livello di chi la usa."
     },
     "night-slash": {
@@ -1516,7 +1516,7 @@
       "description": "Chi la usa trattiene il bersaglio, costringendolo ad agire per ultimo."
     },
     "quick-attack": {
-      "display_name": "Attacco Rapido",
+      "display_name": "Att. Rapido",
       "description": "Chi la usa colpisce sempre per primo e ad una tale velocità da rendersi quasi invisibile."
     },
     "quick-guard": {
@@ -1696,7 +1696,7 @@
       "description": "Chi la usa emette una raffica di semi dal guscio duro che colpiscono il nemico dall'alto."
     },
     "seismic-toss": {
-      "display_name": "Movimento Sismico",
+      "display_name": "Mov. Sismico",
       "description": "Colpisce il bersaglio con la forza di gravità. Infligge un danno pari al livello di chi la usa."
     },
     "self-destruct": {
@@ -2056,7 +2056,7 @@
       "description": "Chi la usa fa galleggiare in aria il bersaglio, rendendolo facile da colpire per tre turni."
     },
     "teleport": {
-      "display_name": "Teletrasporto",
+      "display_name": "Teletraspor.",
       "description": "Fa fuggire dai Pokémon selvatici. Fuori dalla lotta porta all'ultimo Centro Pokémon visitato."
     },
     "temper-flare": {
@@ -2236,7 +2236,7 @@
       "description": "Fiamme intense di colore viola causano una scottatura al nemico."
     },
     "wing-attack": {
-      "display_name": "Attacco d'Ala",
+      "display_name": "Att. d'Ala",
       "description": "Infligge danni al nemico spiegando delle grandi ali possenti."
     },
     "wish": {
@@ -2282,6 +2282,338 @@
     "zen-headbutt": {
       "display_name": "Cozzata Zen",
       "description": "Chi la usa concentra la forza nella testa e si lancia contro il nemico. Può anche farlo tentennare."
+    },
+    "karate-chop": {
+      "display_name": "Colpokarate",
+      "description": ""
+    },
+    "comet-punch": {
+      "display_name": "Cometapugno",
+      "description": ""
+    },
+    "pay-day": {
+      "display_name": "Giornopaga",
+      "description": ""
+    },
+    "vine-whip": {
+      "display_name": "Frustata",
+      "description": ""
+    },
+    "jump-kick": {
+      "display_name": "Calciosalto",
+      "description": ""
+    },
+    "rolling-kick": {
+      "display_name": "Calciorullo",
+      "description": ""
+    },
+    "horn-attack": {
+      "display_name": "Incornata",
+      "description": ""
+    },
+    "horn-drill": {
+      "display_name": "Perforcorno",
+      "description": ""
+    },
+    "twineedle": {
+      "display_name": "Doppio Ago",
+      "description": ""
+    },
+    "drill-peck": {
+      "display_name": "Perforbecco",
+      "description": ""
+    },
+    "submission": {
+      "display_name": "Sottomiss.",
+      "description": ""
+    },
+    "thunder-shock": {
+      "display_name": "Tuonoshock",
+      "description": ""
+    },
+    "minimize": {
+      "display_name": "Minimizzato",
+      "description": ""
+    },
+    "smoke-screen": {
+      "display_name": "Muro di Fumo",
+      "description": ""
+    },
+    "selfdestruct": {
+      "display_name": "Autodistruz.",
+      "description": ""
+    },
+    "egg-bomb": {
+      "display_name": "Uovobomba",
+      "description": ""
+    },
+    "bone-club": {
+      "display_name": "Ossoclava",
+      "description": ""
+    },
+    "spike-cannon": {
+      "display_name": "Sparalance",
+      "description": ""
+    },
+    "kinesis": {
+      "display_name": "Cinèsi",
+      "description": ""
+    },
+    "soft-boiled": {
+      "display_name": "Covauova",
+      "description": ""
+    },
+    "hi-jump-kick": {
+      "display_name": "Calcinvolo",
+      "description": ""
+    },
+    "barrage": {
+      "display_name": "Att. Pioggia",
+      "description": ""
+    },
+    "lovely-kiss": {
+      "display_name": "Demonbacio",
+      "description": ""
+    },
+    "transform": {
+      "display_name": "Trasformaz.",
+      "description": ""
+    },
+    "bonemerang": {
+      "display_name": "Ossomerang",
+      "description": ""
+    },
+    "hyper-fang": {
+      "display_name": "Iperzanna",
+      "description": ""
+    },
+    "sharpen": {
+      "display_name": "Affilatore",
+      "description": ""
+    },
+    "conversion": {
+      "display_name": "Conversione",
+      "description": ""
+    },
+    "struggle": {
+      "display_name": "Scontro",
+      "description": ""
+    },
+    "sketch": {
+      "display_name": "Schizzo",
+      "description": ""
+    },
+    "triple-kick": {
+      "display_name": "Triplocalcio",
+      "description": ""
+    },
+    "spider-web": {
+      "display_name": "Ragnatela",
+      "description": ""
+    },
+    "conversion-2": {
+      "display_name": "Conversione2",
+      "description": ""
+    },
+    "aeroblast": {
+      "display_name": "Aerocolpo",
+      "description": ""
+    },
+    "faint-attack": {
+      "display_name": "Finta",
+      "description": ""
+    },
+    "octazooka": {
+      "display_name": "Octazooka",
+      "description": ""
+    },
+    "bone-rush": {
+      "display_name": "Ossoraffica",
+      "description": ""
+    },
+    "milk-drink": {
+      "display_name": "Buonlatte",
+      "description": ""
+    },
+    "sacred-fire": {
+      "display_name": "Magifuoco",
+      "description": ""
+    },
+    "smelling-salt": {
+      "display_name": "Maniereforti",
+      "description": ""
+    },
+    "follow-me": {
+      "display_name": "Sonoqui",
+      "description": ""
+    },
+    "volt-tackle": {
+      "display_name": "Locomovolt",
+      "description": ""
+    },
+    "heart-swap": {
+      "display_name": "Cuorbaratto",
+      "description": ""
+    },
+    "mirror-shot": {
+      "display_name": "Cristalcolpo",
+      "description": ""
+    },
+    "rock-wrecker": {
+      "display_name": "Devastomasso",
+      "description": ""
+    },
+    "magnet-bomb": {
+      "display_name": "Bombagnete",
+      "description": ""
+    },
+    "chatter": {
+      "display_name": "Schiamazzo",
+      "description": ""
+    },
+    "judgment": {
+      "display_name": "Giudizio",
+      "description": ""
+    },
+    "wood-hammer": {
+      "display_name": "Mazzuolegno",
+      "description": ""
+    },
+    "attack-order": {
+      "display_name": "Comandourto",
+      "description": ""
+    },
+    "defend-order": {
+      "display_name": "Comandoscudo",
+      "description": ""
+    },
+    "heal-order": {
+      "display_name": "Comandocura",
+      "description": ""
+    },
+    "roar-of-time": {
+      "display_name": "Fragortempo",
+      "description": ""
+    },
+    "spacial-rend": {
+      "display_name": "Fendispazio",
+      "description": ""
+    },
+    "lunar-dance": {
+      "display_name": "Lunardanza",
+      "description": ""
+    },
+    "crush-grip": {
+      "display_name": "Sbriciolmano",
+      "description": ""
+    },
+    "magma-storm": {
+      "display_name": "Magmaclisma",
+      "description": ""
+    },
+    "dark-void": {
+      "display_name": "Vuototetro",
+      "description": ""
+    },
+    "seed-flare": {
+      "display_name": "Infuriaseme",
+      "description": ""
+    },
+    "shadow-force": {
+      "display_name": "Oscurotuffo",
+      "description": ""
+    },
+    "rage-powder": {
+      "display_name": "Polverabbia",
+      "description": ""
+    },
+    "storm-throw": {
+      "display_name": "Tempestretta",
+      "description": ""
+    },
+    "shift-gear": {
+      "display_name": "Cambiomarcia",
+      "description": ""
+    },
+    "horn-leech": {
+      "display_name": "Legnicorno",
+      "description": ""
+    },
+    "sacred-sword": {
+      "display_name": "Spadasolenne",
+      "description": ""
+    },
+    "steamroller": {
+      "display_name": "Rulloduro",
+      "description": ""
+    },
+    "night-daze": {
+      "display_name": "Urtoscuro",
+      "description": ""
+    },
+    "psystrike": {
+      "display_name": "Psicobotta",
+      "description": ""
+    },
+    "head-charge": {
+      "display_name": "Ricciolata",
+      "description": ""
+    },
+    "gear-grind": {
+      "display_name": "Ingracolpo",
+      "description": ""
+    },
+    "searing-shot": {
+      "display_name": "Sparafuoco",
+      "description": ""
+    },
+    "techno-blast": {
+      "display_name": "Tecnobotto",
+      "description": ""
+    },
+    "relic-song": {
+      "display_name": "Cantoantico",
+      "description": ""
+    },
+    "secret-sword": {
+      "display_name": "Spadamistica",
+      "description": ""
+    },
+    "glaciate": {
+      "display_name": "Gelamondo",
+      "description": ""
+    },
+    "bolt-strike": {
+      "display_name": "Lucesiluro",
+      "description": ""
+    },
+    "blue-flare": {
+      "display_name": "Fuocoblu",
+      "description": ""
+    },
+    "fiery-dance": {
+      "display_name": "Voldifuoco",
+      "description": ""
+    },
+    "freeze-shock": {
+      "display_name": "Elettrogelo",
+      "description": ""
+    },
+    "ice-burn": {
+      "display_name": "Vampagelida",
+      "description": ""
+    },
+    "v-create": {
+      "display_name": "Generatore V",
+      "description": ""
+    },
+    "fusion-flare": {
+      "display_name": "Incrofiamma",
+      "description": ""
+    },
+    "fusion-bolt": {
+      "display_name": "Incrotuono",
+      "description": ""
     }
   },
   "locations": {
@@ -2469,7 +2801,7 @@
       "description": "L’immunità naturale del Pokémon gli impedisce di essere avvelenato."
     },
     "inner-focus": {
-      "display_name": "Forza Interiore",
+      "display_name": "Fuocodentro",
       "description": "La capacità di concentrazione del Pokémon evita che tentenni per gli attacchi del nemico."
     },
     "insomnia": {
@@ -2723,6 +3055,294 @@
     "wonder-guard": {
       "display_name": "Magidifesa",
       "description": "Un potere misterioso protegge il Pokémon e lo rende vulnerabile solo alle mosse superefficaci."
+    },
+    "big-pecks": {
+      "display_name": "Pettinfuori",
+      "description": ""
+    },
+    "unnerve": {
+      "display_name": "Agitazione",
+      "description": ""
+    },
+    "sand-rush": {
+      "display_name": "Remasabbia",
+      "description": ""
+    },
+    "rivalry": {
+      "display_name": "Antagonismo",
+      "description": ""
+    },
+    "sheer-force": {
+      "display_name": "Forzabruta",
+      "description": ""
+    },
+    "magic-guard": {
+      "display_name": "Magicscudo",
+      "description": ""
+    },
+    "friend-guard": {
+      "display_name": "Amicoscudo",
+      "description": ""
+    },
+    "unaware": {
+      "display_name": "Imprudenza",
+      "description": ""
+    },
+    "infiltrator": {
+      "display_name": "Intrapasso",
+      "description": ""
+    },
+    "stench": {
+      "display_name": "Tanfo",
+      "description": ""
+    },
+    "dry-skin": {
+      "display_name": "Pellearsa",
+      "description": ""
+    },
+    "wonder-skin": {
+      "display_name": "Splendicute",
+      "description": ""
+    },
+    "sand-force": {
+      "display_name": "Silicoforza",
+      "description": ""
+    },
+    "technician": {
+      "display_name": "Tecnico",
+      "description": ""
+    },
+    "anger-point": {
+      "display_name": "Grancollera",
+      "description": ""
+    },
+    "defiant": {
+      "display_name": "Agonismo",
+      "description": ""
+    },
+    "justified": {
+      "display_name": "Giustizia",
+      "description": ""
+    },
+    "water-absorb": {
+      "display_name": "Assorbacqua",
+      "description": ""
+    },
+    "steadfast": {
+      "display_name": "Cuordeciso",
+      "description": ""
+    },
+    "regenerator": {
+      "display_name": "Rigenergia",
+      "description": ""
+    },
+    "analytic": {
+      "display_name": "Ponderazione",
+      "description": ""
+    },
+    "poison-touch": {
+      "display_name": "Velentocco",
+      "description": ""
+    },
+    "skill-link": {
+      "display_name": "Abillegame",
+      "description": ""
+    },
+    "overcoat": {
+      "display_name": "Copricapo",
+      "description": ""
+    },
+    "cursed-body": {
+      "display_name": "Corpofunesto",
+      "description": ""
+    },
+    "weak-armor": {
+      "display_name": "Sottilguscio",
+      "description": ""
+    },
+    "forewarn": {
+      "display_name": "Premonizione",
+      "description": ""
+    },
+    "aftermath": {
+      "display_name": "Scoppio",
+      "description": ""
+    },
+    "harvest": {
+      "display_name": "Coglibacche",
+      "description": ""
+    },
+    "reckless": {
+      "display_name": "Temerarietà",
+      "description": ""
+    },
+    "unburden": {
+      "display_name": "Agiltecnica",
+      "description": ""
+    },
+    "iron-fist": {
+      "display_name": "Ferropugno",
+      "description": ""
+    },
+    "healer": {
+      "display_name": "Curacuore",
+      "description": ""
+    },
+    "leaf-guard": {
+      "display_name": "Fogliamanto",
+      "description": ""
+    },
+    "filter": {
+      "display_name": "Filtro",
+      "description": ""
+    },
+    "moxie": {
+      "display_name": "Arroganza",
+      "description": ""
+    },
+    "rattled": {
+      "display_name": "Paura",
+      "description": ""
+    },
+    "imposter": {
+      "display_name": "Sosia",
+      "description": ""
+    },
+    "adaptability": {
+      "display_name": "Adattabilità",
+      "description": ""
+    },
+    "download": {
+      "display_name": "Download",
+      "description": ""
+    },
+    "snow-cloak": {
+      "display_name": "Mantelneve",
+      "description": ""
+    },
+    "multiscale": {
+      "display_name": "Multisquame",
+      "description": ""
+    },
+    "magic-bounce": {
+      "display_name": "Magispecchio",
+      "description": ""
+    },
+    "sap-sipper": {
+      "display_name": "Mangiaerba",
+      "description": ""
+    },
+    "prankster": {
+      "display_name": "Burla",
+      "description": ""
+    },
+    "telepathy": {
+      "display_name": "Telepatia",
+      "description": ""
+    },
+    "light-metal": {
+      "display_name": "Metalleggero",
+      "description": ""
+    },
+    "contrary": {
+      "display_name": "Inversione",
+      "description": ""
+    },
+    "pickpocket": {
+      "display_name": "Arraffalesto",
+      "description": ""
+    },
+    "honey-gather": {
+      "display_name": "Mielincetta",
+      "description": ""
+    },
+    "moody": {
+      "display_name": "Altalena",
+      "description": ""
+    },
+    "sand-stream": {
+      "display_name": "Sabbiafiume",
+      "description": ""
+    },
+    "heavy-metal": {
+      "display_name": "Metalpesante",
+      "description": ""
+    },
+    "toxic-boost": {
+      "display_name": "Velenimpeto",
+      "description": ""
+    },
+    "storm-drain": {
+      "display_name": "Acquascolo",
+      "description": ""
+    },
+    "flower-gift": {
+      "display_name": "Regalfiore",
+      "description": ""
+    },
+    "flare-boost": {
+      "display_name": "Bruciaimpeto",
+      "description": ""
+    },
+    "klutz": {
+      "display_name": "Impaccio",
+      "description": ""
+    },
+    "heatproof": {
+      "display_name": "Antifuoco",
+      "description": ""
+    },
+    "snow-warning": {
+      "display_name": "Scendineve",
+      "description": ""
+    },
+    "motor-drive": {
+      "display_name": "Elettrorapid",
+      "description": ""
+    },
+    "slow-start": {
+      "display_name": "Lentoinizio",
+      "description": ""
+    },
+    "bad-dreams": {
+      "display_name": "Sogniamari",
+      "description": ""
+    },
+    "multitype": {
+      "display_name": "Multitipo",
+      "description": ""
+    },
+    "victory-star": {
+      "display_name": "Vittorstella",
+      "description": ""
+    },
+    "zen-mode": {
+      "display_name": "Stato Zen",
+      "description": ""
+    },
+    "mummy": {
+      "display_name": "Mummia",
+      "description": ""
+    },
+    "defeatist": {
+      "display_name": "Sconforto",
+      "description": ""
+    },
+    "illusion": {
+      "display_name": "Illusione",
+      "description": ""
+    },
+    "iron-barbs": {
+      "display_name": "Spineferrate",
+      "description": ""
+    },
+    "turboblaze": {
+      "display_name": "Piroturbina",
+      "description": ""
+    },
+    "teravolt": {
+      "display_name": "Teravolt",
+      "description": ""
     }
   }
 }

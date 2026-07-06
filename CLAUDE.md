@@ -69,10 +69,9 @@ Pre-generated JSON files in `backend/app/data/` are committed and served directl
 The data targets PokeMMO with these specific settings, which determine which Pokemon, moves, and TMs are valid:
 
 - **Pokemon types**: generation 2–5 (i.e. types introduced up to Gen 5 are present; Fairy type from Gen 6 is normalized to Normal for PokeMMO compatibility)
-- **Leveling move set**: generation 5 (moves learned by level-up use Gen 5 learnsets)
-- **TM learn set**: generation 9 (TM compatibility uses Gen 9 learnsets)
+- **Client dump overlay**: current PokeMMO learnsets, move metadata, Pokemon types/stats/EV yields/ability slots, and Italian move/ability display names are overlaid after the PokeAPI base build from the client `Dump Moddable Resources -> Pokedex Data` export when available. Move learn methods include level-up, TM, tutor, egg, pre-evolution, evolution, and special/event labels.
 
-Primary data sources: [PokeMMO ShoutWiki – Hoenn](https://pokemmo.shoutwiki.com/wiki/Hoenn), [PokeMMO Hub Pokédex](https://pokemmohub.com/tools/pokedex/)
+Primary data sources: local PokeMMO client dump, [PokeMMO ShoutWiki – Hoenn](https://pokemmo.shoutwiki.com/wiki/Hoenn), [PokeMMO Hub Pokédex](https://pokemmohub.com/tools/pokedex/). [PokeMMO Data](https://github.com/PokeMMOZone/PokeMMO-Data) is kept as a fallback/reference source.
 
 ### Deployment
 

@@ -51,6 +51,8 @@ export interface DamageCalculationOptions {
   critical?: boolean;
 }
 
+export type DamageKind = "standard" | "fixed" | "variable" | "ohko";
+
 export const DEFAULT_DAMAGE_SETTINGS: DamageSettings = {
   level: DAMAGE_LEVEL,
   iv: DAMAGE_IV,
@@ -136,8 +138,11 @@ const WEATHER_BALL_TYPES: Partial<Record<BattleWeather, string>> = {
   sandstorm: "rock",
   hail: "ice",
 };
+const OHKO_MOVE_NAMES = new Set(["fissure", "guillotine", "horn-drill", "sheer-cold"]);
+const RETALIATION_TRUE_DAMAGE_MOVES = new Set(["counter", "mirror-coat", "metal-burst"]);
 
 export interface DamageCalculation {
+  damageKind: DamageKind;
   level: number;
   attackerStat: number;
   defenderStat: number;
@@ -504,6 +509,10 @@ export function getMoveDamageProfile(
   };
 }
 
+export function isRetaliationTrueDamageMove(move: PokemonMove): boolean {
+  return Boolean(move.true_damage && RETALIATION_TRUE_DAMAGE_MOVES.has(move.name.toLowerCase()));
+}
+
 function calculateBaseDamage(power: number, attack: number, defense: number, level: number): number {
   const levelFactor = floorDiv(2 * level, 5) + 2;
   return floorDiv(floorDiv(levelFactor * power * attack, defense), 50) + 2;
@@ -804,6 +813,40 @@ function getDamageAfterResidual(currentDamage: number, defenderHp: number, resid
   return Math.min(defenderHp, Math.max(0, currentDamage + residualDamage));
 }
 
+function getKoChanceSummary(
+  rolls: number[],
+  defenderHp: number,
+  defenderCurrentHp: number,
+  entryHazardDamage: number,
+  sturdyBlockedOhko: boolean,
+  weatherResidualDamage: number,
+  statusResidualDamage: number,
+  abilityResidualDamage: number
+): { ohkoChance: number; twoHkoChance: number } {
+  const defenderHpAfterEntryHazards = Math.max(0, defenderCurrentHp - entryHazardDamage);
+  const ohkoRolls = defenderHpAfterEntryHazards <= 0
+    ? rolls.length
+    : sturdyBlockedOhko
+      ? 0
+      : rolls.filter((damage) => damage >= defenderHpAfterEntryHazards).length;
+  let twoHkoRolls = 0;
+  for (const firstRoll of rolls) {
+    for (const secondRoll of rolls) {
+      const firstHitDamage = sturdyBlockedOhko && firstRoll >= defenderHp ? defenderHp - 1 : firstRoll;
+      const residualAfterFirstHit = weatherResidualDamage + statusResidualDamage + abilityResidualDamage;
+      const firstTurnDamage = getDamageAfterResidual(entryHazardDamage + firstHitDamage, defenderCurrentHp, residualAfterFirstHit);
+      if (firstTurnDamage + secondRoll >= defenderCurrentHp) {
+        twoHkoRolls += 1;
+      }
+    }
+  }
+
+  return {
+    ohkoChance: (ohkoRolls / rolls.length) * 100,
+    twoHkoChance: (twoHkoRolls / (rolls.length * rolls.length)) * 100,
+  };
+}
+
 function getCurrentHpFromPercent(maxHp: number, currentHpPercent?: number): { hp: number; percent: number } {
   const numericPercent = Number(currentHpPercent);
   const percent = Number.isFinite(numericPercent)
@@ -813,6 +856,63 @@ function getCurrentHpFromPercent(maxHp: number, currentHpPercent?: number): { hp
     hp: Math.max(1, Math.floor((maxHp * percent) / 100)),
     percent,
   };
+}
+
+function getTrueDamageRolls(
+  move: PokemonMove,
+  attackerLevel: number,
+  defenderLevel: number,
+  attackerCurrentHp: number,
+  defenderCurrentHp: number,
+  typeEffectiveness: number
+): { kind: DamageKind; rolls: number[] } | null {
+  if (!move.true_damage) {
+    return null;
+  }
+
+  const moveName = move.name.toLowerCase();
+  if (RETALIATION_TRUE_DAMAGE_MOVES.has(moveName)) {
+    return null;
+  }
+
+  if (typeEffectiveness === 0) {
+    return { kind: OHKO_MOVE_NAMES.has(moveName) ? "ohko" : "fixed", rolls: [0] };
+  }
+
+  if (moveName === "dragon-rage") {
+    return { kind: "fixed", rolls: [40] };
+  }
+  if (moveName === "sonic-boom") {
+    return { kind: "fixed", rolls: [20] };
+  }
+  if (moveName === "night-shade" || moveName === "seismic-toss") {
+    return { kind: "fixed", rolls: [attackerLevel] };
+  }
+  if (moveName === "super-fang") {
+    return { kind: "fixed", rolls: [Math.max(1, Math.floor(defenderCurrentHp / 2))] };
+  }
+  if (moveName === "endeavor") {
+    return { kind: "fixed", rolls: [Math.max(0, defenderCurrentHp - attackerCurrentHp)] };
+  }
+  if (moveName === "final-gambit") {
+    return { kind: "fixed", rolls: [attackerCurrentHp] };
+  }
+  if (moveName === "psywave") {
+    const minDamage = Math.max(1, Math.floor(attackerLevel * 0.5));
+    const maxDamage = Math.max(minDamage, Math.floor(attackerLevel * 1.5));
+    return {
+      kind: "variable",
+      rolls: Array.from({ length: maxDamage - minDamage + 1 }, (_, index) => minDamage + index),
+    };
+  }
+  if (OHKO_MOVE_NAMES.has(moveName)) {
+    return {
+      kind: "ohko",
+      rolls: [defenderLevel > attackerLevel ? 0 : defenderCurrentHp],
+    };
+  }
+
+  return null;
 }
 
 export function calculateMoveDamage(
@@ -851,6 +951,130 @@ export function calculateMoveDamage(
     return null;
   }
 
+  const defenderHp = calculatePokemonStat(defender, "hp", getSideStatSettings(defenderSettings, "hp"));
+  const attackerHp = calculatePokemonStat(attacker, "hp", getSideStatSettings(attackerSettings, "hp"));
+  if (attackerHp <= 0 || defenderHp <= 0) {
+    return null;
+  }
+  const attackerCurrentHp = getCurrentHpFromPercent(attackerHp, attackerSettings.currentHpPercent).hp;
+  const defenderCurrentHpState = getCurrentHpFromPercent(defenderHp, defenderSettings.currentHpPercent);
+  const defenderCurrentHp = defenderCurrentHpState.hp;
+  const defenderCurrentHpPercent = defenderCurrentHpState.percent;
+  const adjustedTypeEffectiveness = getAbilityAdjustedTypeEffectiveness(
+    move,
+    effectiveType,
+    typeEffectiveness,
+    attackerAbility,
+    defenderAbility
+  );
+  const abilityBlockedBy = abilityBlocksMove(
+    move,
+    effectiveType,
+    typeEffectiveness,
+    attackerAbility,
+    defenderAbility
+  );
+  const weatherResidualDamage = getWeatherResidualDamage(defender, defenderHp, effectiveWeather, defenderAbility);
+  const weatherResidualBlockedBy = getWeatherResidualBlocker(defender, effectiveWeather, defenderAbility);
+  const statusResidualDamage = getStatusResidualDamage(defenderHp, defenderStatus, defenderAbility);
+  const abilityResidualDamage = getAbilityResidualDamage(defenderHp, effectiveWeather, defenderAbility);
+  const hazards = normalizeHazards(defenderSettings.hazards);
+  const spikesLayers = hazards.spikes;
+  const stealthRockEnabled = hazards.stealthRock;
+  const spikesDamage = getSpikesDamage(defender, defenderHp, spikesLayers, defenderAbility);
+  const stealthRockDamage = getStealthRockDamage(defender, defenderHp, stealthRockEnabled, defenderAbility);
+  const entryHazardDamage = Math.min(defenderCurrentHp, spikesDamage + stealthRockDamage);
+  const spikesBlockedBy = getSpikesBlocker(defender, spikesLayers, defenderAbility);
+  const stealthRockBlockedBy = getStealthRockBlocker(stealthRockEnabled, defenderAbility);
+  const stealthRockMultiplier = stealthRockEnabled ? getAttackMultiplierForTypes("rock", defender.types) : 1;
+
+  const trueDamage = getTrueDamageRolls(
+    move,
+    attackerSettings.level,
+    defenderSettings.level,
+    attackerCurrentHp,
+    defenderCurrentHp,
+    adjustedTypeEffectiveness
+  );
+  if (move.true_damage) {
+    if (!trueDamage) {
+      return null;
+    }
+    const ohkoMoveWouldDealDamage = trueDamage.kind === "ohko" &&
+      trueDamage.rolls.some((damage) => damage > 0);
+    const sturdyBlocksOhkoMove = ohkoMoveWouldDealDamage &&
+      normalizeAbility(defenderAbility) === "sturdy" &&
+      !attackerBypassesDefenderAbility(attackerAbility);
+    const rolls = sturdyBlocksOhkoMove ? [0] : trueDamage.rolls;
+    const minDamage = Math.min(...rolls);
+    const maxDamage = Math.max(...rolls);
+    const sturdyBlockedOhko = sturdyBlocksOhkoMove || (
+      normalizeAbility(defenderAbility) === "sturdy" &&
+      defenderCurrentHp === defenderHp &&
+      entryHazardDamage === 0 &&
+      !attackerBypassesDefenderAbility(attackerAbility) &&
+      rolls.some((damage) => damage >= defenderHp)
+    );
+    const koSummary = getKoChanceSummary(
+      rolls,
+      defenderHp,
+      defenderCurrentHp,
+      entryHazardDamage,
+      sturdyBlockedOhko,
+      weatherResidualDamage,
+      statusResidualDamage,
+      abilityResidualDamage
+    );
+
+    return {
+      damageKind: trueDamage.kind,
+      level: attackerSettings.level,
+      attackerStat: 0,
+      defenderStat: 0,
+      defenderHp,
+      defenderCurrentHp,
+      defenderCurrentHpPercent,
+      attackStatName: "fixed",
+      defenseStatName: "hp",
+      effectivePower,
+      effectiveType,
+      weatherMultiplier: 1,
+      critical: false,
+      criticalMultiplier: 1,
+      criticalBlockedBy: null,
+      statusDamageMultiplier: 1,
+      abilityDamageModifiers: [],
+      abilityBlockedBy,
+      sturdyBlockedOhko,
+      entryHazardDamage,
+      spikesDamage,
+      stealthRockDamage,
+      spikesLayers,
+      stealthRockMultiplier,
+      spikesBlockedBy,
+      stealthRockBlockedBy,
+      weather: effectiveWeather,
+      weatherResidualDamage,
+      weatherResidualBlockedBy,
+      statusResidualDamage,
+      abilityResidualDamage,
+      attackerStatus,
+      defenderStatus,
+      attackerAbility,
+      defenderAbility,
+      stab: 1,
+      typeEffectiveness: adjustedTypeEffectiveness,
+      rolls,
+      minDamage,
+      maxDamage,
+      minPercent: (minDamage / defenderHp) * 100,
+      maxPercent: (maxDamage / defenderHp) * 100,
+      averageDamage: rolls.reduce((sum, damage) => sum + damage, 0) / rolls.length,
+      ohkoChance: koSummary.ohkoChance,
+      twoHkoChance: koSummary.twoHkoChance,
+    };
+  }
+
   const statNames = getMoveStatNames(move);
   if (!statNames) {
     return null;
@@ -876,22 +1100,10 @@ export function calculateMoveDamage(
       applyStatusToStats: false,
     }
   );
-  const defenderHp = calculatePokemonStat(defender, "hp", getSideStatSettings(defenderSettings, "hp"));
-  if (attackerStat <= 0 || defenderStat <= 0 || defenderHp <= 0) {
+  if (attackerStat <= 0 || defenderStat <= 0) {
     return null;
   }
-  const defenderCurrentHpState = getCurrentHpFromPercent(defenderHp, defenderSettings.currentHpPercent);
-  const defenderCurrentHp = defenderCurrentHpState.hp;
-  const defenderCurrentHpPercent = defenderCurrentHpState.percent;
-
   const hasStab = attacker.types.some((type) => type.toLowerCase() === effectiveType.toLowerCase());
-  const adjustedTypeEffectiveness = getAbilityAdjustedTypeEffectiveness(
-    move,
-    effectiveType,
-    typeEffectiveness,
-    attackerAbility,
-    defenderAbility
-  );
   const baseDamage = calculateBaseDamage(effectivePower, attackerStat, defenderStat, attackerSettings.level);
   const statusDamageMultiplier = getStatusDamageMultiplier(move, attackerStatus, attackerAbility);
   const abilityDamageModifiers = getAbilityDamageModifiers(
@@ -902,26 +1114,6 @@ export function calculateMoveDamage(
     attackerAbility,
     defenderAbility
   );
-  const abilityBlockedBy = abilityBlocksMove(
-    move,
-    effectiveType,
-    typeEffectiveness,
-    attackerAbility,
-    defenderAbility
-  );
-  const weatherResidualDamage = getWeatherResidualDamage(defender, defenderHp, effectiveWeather, defenderAbility);
-  const weatherResidualBlockedBy = getWeatherResidualBlocker(defender, effectiveWeather, defenderAbility);
-  const statusResidualDamage = getStatusResidualDamage(defenderHp, defenderStatus, defenderAbility);
-  const abilityResidualDamage = getAbilityResidualDamage(defenderHp, effectiveWeather, defenderAbility);
-  const hazards = normalizeHazards(defenderSettings.hazards);
-  const spikesLayers = hazards.spikes;
-  const stealthRockEnabled = hazards.stealthRock;
-  const spikesDamage = getSpikesDamage(defender, defenderHp, spikesLayers, defenderAbility);
-  const stealthRockDamage = getStealthRockDamage(defender, defenderHp, stealthRockEnabled, defenderAbility);
-  const entryHazardDamage = Math.min(defenderCurrentHp, spikesDamage + stealthRockDamage);
-  const spikesBlockedBy = getSpikesBlocker(defender, spikesLayers, defenderAbility);
-  const stealthRockBlockedBy = getStealthRockBlocker(stealthRockEnabled, defenderAbility);
-  const stealthRockMultiplier = stealthRockEnabled ? getAttackMultiplierForTypes("rock", defender.types) : 1;
   const rolls = RANDOM_ROLLS.map((roll) =>
     calculateRollDamage(
       baseDamage,
@@ -936,30 +1128,24 @@ export function calculateMoveDamage(
   );
   const minDamage = Math.min(...rolls);
   const maxDamage = Math.max(...rolls);
-  const defenderHpAfterEntryHazards = Math.max(0, defenderCurrentHp - entryHazardDamage);
   const sturdyBlockedOhko = normalizeAbility(defenderAbility) === "sturdy" &&
     defenderCurrentHp === defenderHp &&
     entryHazardDamage === 0 &&
     !attackerBypassesDefenderAbility(attackerAbility) &&
     rolls.some((damage) => damage >= defenderHp);
-  const ohkoRolls = defenderHpAfterEntryHazards <= 0
-    ? rolls.length
-    : sturdyBlockedOhko
-      ? 0
-      : rolls.filter((damage) => damage >= defenderHpAfterEntryHazards).length;
-  let twoHkoRolls = 0;
-  for (const firstRoll of rolls) {
-    for (const secondRoll of rolls) {
-      const firstHitDamage = sturdyBlockedOhko && firstRoll >= defenderHp ? defenderHp - 1 : firstRoll;
-      const residualAfterFirstHit = weatherResidualDamage + statusResidualDamage + abilityResidualDamage;
-      const firstTurnDamage = getDamageAfterResidual(entryHazardDamage + firstHitDamage, defenderCurrentHp, residualAfterFirstHit);
-      if (firstTurnDamage + secondRoll >= defenderCurrentHp) {
-        twoHkoRolls += 1;
-      }
-    }
-  }
+  const koSummary = getKoChanceSummary(
+    rolls,
+    defenderHp,
+    defenderCurrentHp,
+    entryHazardDamage,
+    sturdyBlockedOhko,
+    weatherResidualDamage,
+    statusResidualDamage,
+    abilityResidualDamage
+  );
 
   return {
+    damageKind: "standard",
     level: attackerSettings.level,
     attackerStat,
     defenderStat,
@@ -1002,7 +1188,7 @@ export function calculateMoveDamage(
     minPercent: (minDamage / defenderHp) * 100,
     maxPercent: (maxDamage / defenderHp) * 100,
     averageDamage: rolls.reduce((sum, damage) => sum + damage, 0) / rolls.length,
-    ohkoChance: (ohkoRolls / rolls.length) * 100,
-    twoHkoChance: (twoHkoRolls / (rolls.length * rolls.length)) * 100,
+    ohkoChance: koSummary.ohkoChance,
+    twoHkoChance: koSummary.twoHkoChance,
   };
 }

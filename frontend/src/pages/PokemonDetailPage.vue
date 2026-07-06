@@ -454,7 +454,7 @@
             </div>
 
             <div class="overflow-x-auto">
-            <table class="min-w-[700px] w-full text-left text-sm">
+            <table class="min-w-[760px] w-full text-left text-sm">
               <thead class="bg-black/5 text-xs uppercase tracking-wide text-muted">
                 <tr>
                   <th class="px-3 py-2">
@@ -485,6 +485,11 @@
                   <th class="px-3 py-2">
                     <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleMoveSort('accuracy')">
                       {{ t("moves.column.accuracy") }} <span class="font-mono">{{ moveSortIndicator('accuracy') }}</span>
+                    </button>
+                  </th>
+                  <th class="px-3 py-2">
+                    <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleMoveSort('priority')">
+                      {{ t("moves.column.priority") }} <span class="font-mono">{{ moveSortIndicator('priority') }}</span>
                     </button>
                   </th>
                   <th class="px-3 py-2">
@@ -533,11 +538,12 @@
                   </td>
                   <td class="px-3 py-2 capitalize text-muted">{{ move.category ? labelMoveCategory(move.category) : "-" }}</td>
                   <td class="px-3 py-2">
-                    <strong v-if="move.power !== null && isStabMove(move)">{{ move.power }}</strong>
-                    <span v-else>{{ move.power ?? "-" }}</span>
+                    <strong v-if="move.power !== null && !move.true_damage && isStabMove(move)">{{ move.power }}</strong>
+                    <span v-else>{{ formatPower(move.power, move.true_damage) }}</span>
                   </td>
                   <td class="px-3 py-2">{{ move.pp ?? "-" }}</td>
                   <td class="px-3 py-2">{{ move.accuracy ?? "-" }}</td>
+                  <td class="px-3 py-2">{{ formatPriority(move.priority) }}</td>
                   <td class="px-3 py-2 text-muted">{{ formatLearnMethods(move.methods) }}</td>
                   <td class="px-3 py-2 text-right">
                     <RouterLink
@@ -702,7 +708,7 @@
           </div>
 
           <div class="overflow-x-auto">
-            <table class="min-w-[700px] w-full text-left text-sm">
+            <table class="min-w-[760px] w-full text-left text-sm">
             <thead class="bg-black/5 text-xs uppercase tracking-wide text-muted">
               <tr>
                 <th class="px-3 py-2">
@@ -733,6 +739,11 @@
                 <th class="px-3 py-2">
                   <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleMoveSort('accuracy')">
                     {{ t("moves.column.accuracy") }} <span class="font-mono">{{ moveSortIndicator('accuracy') }}</span>
+                  </button>
+                </th>
+                <th class="px-3 py-2">
+                  <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleMoveSort('priority')">
+                    {{ t("moves.column.priority") }} <span class="font-mono">{{ moveSortIndicator('priority') }}</span>
                   </button>
                 </th>
                 <th class="px-3 py-2">
@@ -785,11 +796,12 @@
                 </td>
                 <td class="px-3 py-2 capitalize text-muted">{{ move.category ? labelMoveCategory(move.category) : "-" }}</td>
                 <td class="px-3 py-2">
-                  <strong v-if="move.power !== null && isStabMove(move)">{{ move.power }}</strong>
-                  <span v-else>{{ move.power ?? "-" }}</span>
+                  <strong v-if="move.power !== null && !move.true_damage && isStabMove(move)">{{ move.power }}</strong>
+                  <span v-else>{{ formatPower(move.power, move.true_damage) }}</span>
                 </td>
                 <td class="px-3 py-2">{{ move.pp ?? "-" }}</td>
                 <td class="px-3 py-2">{{ move.accuracy ?? "-" }}</td>
+                <td class="px-3 py-2">{{ formatPriority(move.priority) }}</td>
                 <td class="px-3 py-2 text-muted">{{ formatLearnMethods(move.methods) }}</td>
                 <td class="px-3 py-2 text-right">
                   <RouterLink
@@ -868,7 +880,7 @@ type MobileSection =
   | "statistics"
   | "moves"
   | "location";
-type MoveSortColumn = "name" | "type" | "category" | "power" | "pp" | "accuracy" | "learn";
+type MoveSortColumn = "name" | "type" | "category" | "power" | "pp" | "accuracy" | "priority" | "learn";
 const LEARN_METHOD_SORT_ORDER: Record<string, number> = {
   "level-up": 0,
   tm: 1,
@@ -1113,6 +1125,20 @@ function formatLearnMethodName(method: string) {
   return labelLearnMethod(method);
 }
 
+function formatPriority(priority: number | null) {
+  if (priority === null) {
+    return "-";
+  }
+  return priority > 0 ? `+${priority}` : String(priority);
+}
+
+function formatPower(power: number | null, trueDamage: boolean | null) {
+  if (trueDamage) {
+    return t("moves.power.special_damage");
+  }
+  return power ?? "-";
+}
+
 function formatEvolutionTrigger(trigger: string | null) {
   if (!trigger) {
     return isItalian.value ? "Speciale" : "Special";
@@ -1247,7 +1273,7 @@ function getMoveSortValue(move: PokemonMove, column: MoveSortColumn) {
   if (column === "learn") {
     return getMoveLearnSortValue(move);
   }
-  if (column === "power" || column === "pp" || column === "accuracy") {
+  if (column === "power" || column === "pp" || column === "accuracy" || column === "priority") {
     return move[column];
   }
   if (column === "name" || column === "type" || column === "category") {

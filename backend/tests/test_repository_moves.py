@@ -68,3 +68,19 @@ def test_pokemon_move_rows_include_all_locale_names() -> None:
 
     machop_moves_it = {move.name: move for move in repository.list_pokemon_moves(66, locale="it")}
     assert machop_moves_it["close-combat"].display_name == "Zuffa"
+
+
+def test_pokemmo_client_dump_learnsets_include_current_tm_sources() -> None:
+    repository = load_repository()
+
+    flygon_moves = {move.name: move for move in repository.list_pokemon_moves(330)}
+    stealth_rock_methods = [
+        method.model_dump() for method in flygon_moves["stealth-rock"].methods
+    ]
+    assert {"method": "tm", "level": None} in stealth_rock_methods
+
+    medicham_moves = {move.name: move for move in repository.list_pokemon_moves(308)}
+    fake_out_methods = [
+        method.model_dump() for method in medicham_moves["fake-out"].methods
+    ]
+    assert {"method": "tm", "level": None} in fake_out_methods
