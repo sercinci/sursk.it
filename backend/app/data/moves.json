@@ -5,7 +5,10 @@
     "power": 20,
     "pp": 25,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "acid",
@@ -13,7 +16,10 @@
     "power": 40,
     "pp": 30,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "acid-armor",
@@ -21,7 +27,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "acid-spray",
@@ -29,7 +38,10 @@
     "power": 40,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "acrobatics",
@@ -37,7 +49,10 @@
     "power": 55,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "acupressure",
@@ -45,7 +60,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 1,
+    "true_damage": false
   },
   {
     "name": "aerial-ace",
@@ -53,7 +71,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": null,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "after-you",
@@ -61,7 +82,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "agility",
@@ -69,7 +93,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "air-cutter",
@@ -77,7 +104,10 @@
     "power": 60,
     "pp": 25,
     "accuracy": 95,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "air-slash",
@@ -85,7 +115,10 @@
     "power": 75,
     "pp": 15,
     "accuracy": 95,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "alluring-voice",
@@ -101,7 +134,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 2,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "amnesia",
@@ -109,7 +145,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "ancient-power",
@@ -117,7 +156,10 @@
     "power": 60,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "aqua-jet",
@@ -125,7 +167,10 @@
     "power": 40,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "aqua-ring",
@@ -133,7 +178,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "aqua-tail",
@@ -141,7 +189,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "arm-thrust",
@@ -149,7 +200,10 @@
     "power": 15,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "aromatherapy",
@@ -157,7 +211,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 6,
+    "true_damage": false
   },
   {
     "name": "assist",
@@ -165,7 +222,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "assurance",
@@ -173,7 +233,10 @@
     "power": 60,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "astonish",
@@ -181,7 +244,10 @@
     "power": 30,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "attract",
@@ -189,7 +255,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "aura-sphere",
@@ -197,7 +266,10 @@
     "power": 80,
     "pp": 20,
     "accuracy": null,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "aurora-beam",
@@ -205,7 +277,10 @@
     "power": 65,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "aurora-veil",
@@ -221,7 +296,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "avalanche",
@@ -229,7 +307,10 @@
     "power": 60,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": -4,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "axe-kick",
@@ -253,7 +334,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "baton-pass",
@@ -261,15 +345,21 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "beat-up",
     "type": "dark",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "belch",
@@ -285,7 +375,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "bestow",
@@ -293,15 +386,21 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "bide",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": null,
-    "category": "physical"
+    "category": "physical",
+    "priority": 1,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "bind",
@@ -309,7 +408,10 @@
     "power": 15,
     "pp": 20,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "bite",
@@ -317,7 +419,10 @@
     "power": 60,
     "pp": 25,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "blast-burn",
@@ -325,7 +430,10 @@
     "power": 150,
     "pp": 5,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "blaze-kick",
@@ -333,7 +441,10 @@
     "power": 85,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "blizzard",
@@ -341,7 +452,10 @@
     "power": 110,
     "pp": 5,
     "accuracy": 70,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "block",
@@ -349,7 +463,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "body-press",
@@ -365,7 +482,10 @@
     "power": 85,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "boomburst",
@@ -381,7 +501,10 @@
     "power": 85,
     "pp": 5,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "brave-bird",
@@ -389,7 +512,10 @@
     "power": 120,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "breaking-swipe",
@@ -405,7 +531,10 @@
     "power": 75,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "brine",
@@ -413,7 +542,10 @@
     "power": 65,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "brutal-swing",
@@ -429,7 +561,10 @@
     "power": 40,
     "pp": 30,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "bubble-beam",
@@ -437,7 +572,10 @@
     "power": 65,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "bug-bite",
@@ -445,7 +583,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "bug-buzz",
@@ -453,7 +594,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "bulk-up",
@@ -461,7 +605,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "bulldoze",
@@ -469,7 +616,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "bullet-punch",
@@ -477,7 +627,10 @@
     "power": 40,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "bullet-seed",
@@ -485,7 +638,10 @@
     "power": 25,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "burning-jealousy",
@@ -501,7 +657,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "camouflage",
@@ -509,7 +668,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "captivate",
@@ -517,7 +679,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "charge",
@@ -525,7 +690,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "charge-beam",
@@ -533,15 +701,21 @@
     "power": 50,
     "pp": 10,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "charm",
-    "type": "fairy",
+    "type": "normal",
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "chilling-water",
@@ -557,7 +731,10 @@
     "power": 70,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "circle-throw",
@@ -565,7 +742,10 @@
     "power": 60,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": -6,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "clamp",
@@ -573,7 +753,10 @@
     "power": 35,
     "pp": 15,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "clear-smog",
@@ -581,7 +764,10 @@
     "power": 50,
     "pp": 15,
     "accuracy": null,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "close-combat",
@@ -589,7 +775,10 @@
     "power": 120,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "coaching",
@@ -605,7 +794,21 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
+  },
+  {
+    "name": "comet-punch",
+    "type": "normal",
+    "power": 18,
+    "pp": 15,
+    "accuracy": 85,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "confide",
@@ -621,7 +824,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "confusion",
@@ -629,7 +835,10 @@
     "power": 50,
     "pp": 25,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "constrict",
@@ -637,7 +846,32 @@
     "power": 10,
     "pp": 35,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
+  },
+  {
+    "name": "conversion",
+    "type": "normal",
+    "power": null,
+    "pp": 30,
+    "accuracy": null,
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
+  },
+  {
+    "name": "conversion-2",
+    "type": "normal",
+    "power": null,
+    "pp": 30,
+    "accuracy": null,
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "copycat",
@@ -645,7 +879,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "cosmic-power",
@@ -653,7 +890,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "cotton-guard",
@@ -661,7 +901,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "cotton-spore",
@@ -669,15 +912,21 @@
     "power": null,
     "pp": 40,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "counter",
     "type": "fighting",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": -5,
+    "target_type": 13,
+    "true_damage": true
   },
   {
     "name": "covet",
@@ -685,7 +934,10 @@
     "power": 60,
     "pp": 25,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "crabhammer",
@@ -693,7 +945,10 @@
     "power": 100,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "crafty-shield",
@@ -709,7 +964,10 @@
     "power": 100,
     "pp": 5,
     "accuracy": 80,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "cross-poison",
@@ -717,7 +975,10 @@
     "power": 70,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "crunch",
@@ -725,7 +986,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "crush-claw",
@@ -733,7 +997,10 @@
     "power": 75,
     "pp": 10,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "curse",
@@ -741,7 +1008,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 13,
+    "true_damage": false
   },
   {
     "name": "cut",
@@ -749,7 +1019,10 @@
     "power": 50,
     "pp": 30,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dark-pulse",
@@ -757,7 +1030,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "darkest-lariat",
@@ -781,7 +1057,10 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "defog",
@@ -789,7 +1068,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "destiny-bond",
@@ -797,7 +1079,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "detect",
@@ -805,7 +1090,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 4,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "dig",
@@ -813,7 +1101,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "disable",
@@ -821,7 +1112,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "disarming-voice",
@@ -837,7 +1131,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "dive",
@@ -845,7 +1142,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dizzy-punch",
@@ -853,7 +1153,10 @@
     "power": 70,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "doom-desire",
@@ -861,7 +1164,10 @@
     "power": 140,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "double-edge",
@@ -869,7 +1175,10 @@
     "power": 120,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "double-hit",
@@ -877,7 +1186,10 @@
     "power": 35,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "double-kick",
@@ -885,7 +1197,10 @@
     "power": 30,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "double-slap",
@@ -893,7 +1208,10 @@
     "power": 15,
     "pp": 10,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "double-team",
@@ -901,7 +1219,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "draco-meteor",
@@ -909,7 +1230,10 @@
     "power": 130,
     "pp": 5,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dragon-ascent",
@@ -925,7 +1249,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dragon-cheer",
@@ -941,7 +1268,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dragon-dance",
@@ -949,7 +1279,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "dragon-hammer",
@@ -965,15 +1298,21 @@
     "power": 85,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dragon-rage",
     "type": "dragon",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "dragon-rush",
@@ -981,7 +1320,10 @@
     "power": 100,
     "pp": 10,
     "accuracy": 75,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dragon-tail",
@@ -989,7 +1331,10 @@
     "power": 60,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": -6,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "drain-punch",
@@ -997,7 +1342,10 @@
     "power": 75,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "draining-kiss",
@@ -1013,15 +1361,21 @@
     "power": 100,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "drill-peck",
     "type": "flying",
-    "category": "physical",
     "power": 80,
     "pp": 20,
-    "accuracy": 100
+    "accuracy": 100,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "drill-run",
@@ -1029,7 +1383,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dual-chop",
@@ -1037,7 +1394,10 @@
     "power": 40,
     "pp": 15,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "dual-wingbeat",
@@ -1053,7 +1413,10 @@
     "power": 100,
     "pp": 5,
     "accuracy": 50,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "earth-power",
@@ -1061,7 +1424,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "earthquake",
@@ -1069,7 +1435,10 @@
     "power": 100,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "echoed-voice",
@@ -1077,7 +1446,10 @@
     "power": 40,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "eerie-impulse",
@@ -1098,10 +1470,13 @@
   {
     "name": "electro-ball",
     "type": "electric",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "electroweb",
@@ -1109,7 +1484,10 @@
     "power": 55,
     "pp": 15,
     "accuracy": 95,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "embargo",
@@ -1117,7 +1495,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "ember",
@@ -1125,7 +1506,10 @@
     "power": 40,
     "pp": 25,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "encore",
@@ -1133,15 +1517,21 @@
     "power": null,
     "pp": 5,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "endeavor",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "endure",
@@ -1149,7 +1539,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 4,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "energy-ball",
@@ -1157,7 +1550,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "entrainment",
@@ -1165,7 +1561,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "eruption",
@@ -1173,7 +1572,10 @@
     "power": 150,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "expanding-force",
@@ -1189,7 +1591,10 @@
     "power": 250,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "extrasensory",
@@ -1197,7 +1602,10 @@
     "power": 80,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "extreme-speed",
@@ -1205,7 +1613,10 @@
     "power": 80,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 2,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "facade",
@@ -1213,7 +1624,10 @@
     "power": 70,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "faint-attack",
@@ -1221,7 +1635,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": null,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fairy-wind",
@@ -1237,7 +1654,10 @@
     "power": 40,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 3,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fake-tears",
@@ -1245,7 +1665,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "false-swipe",
@@ -1253,7 +1676,10 @@
     "power": 40,
     "pp": 40,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "feather-dance",
@@ -1261,7 +1687,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "feint",
@@ -1269,7 +1698,10 @@
     "power": 30,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 2,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fell-stinger",
@@ -1282,10 +1714,13 @@
   {
     "name": "final-gambit",
     "type": "fighting",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "fire-blast",
@@ -1293,7 +1728,10 @@
     "power": 110,
     "pp": 5,
     "accuracy": 85,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fire-fang",
@@ -1301,7 +1739,10 @@
     "power": 65,
     "pp": 15,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fire-pledge",
@@ -1309,7 +1750,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fire-punch",
@@ -1317,7 +1761,10 @@
     "power": 75,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fire-spin",
@@ -1325,7 +1772,10 @@
     "power": 35,
     "pp": 15,
     "accuracy": 85,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "first-impression",
@@ -1338,18 +1788,24 @@
   {
     "name": "fissure",
     "type": "ground",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": 30,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "flail",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flame-burst",
@@ -1357,7 +1813,10 @@
     "power": 70,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flame-charge",
@@ -1365,7 +1824,10 @@
     "power": 50,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flame-wheel",
@@ -1373,7 +1835,10 @@
     "power": 60,
     "pp": 25,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flamethrower",
@@ -1381,7 +1846,10 @@
     "power": 90,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flare-blitz",
@@ -1389,7 +1857,10 @@
     "power": 120,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flash",
@@ -1397,7 +1868,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flash-cannon",
@@ -1405,7 +1879,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flatter",
@@ -1413,15 +1890,21 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fling",
     "type": "dark",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "flip-turn",
@@ -1437,7 +1920,10 @@
     "power": 90,
     "pp": 15,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "focus-blast",
@@ -1445,7 +1931,10 @@
     "power": 120,
     "pp": 5,
     "accuracy": 70,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "focus-energy",
@@ -1453,7 +1942,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "focus-punch",
@@ -1461,15 +1953,21 @@
     "power": 150,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": -3,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "follow-me",
     "type": "normal",
-    "category": "status",
     "power": null,
     "pp": 20,
-    "accuracy": null
+    "accuracy": null,
+    "category": "status",
+    "priority": 2,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "force-palm",
@@ -1477,7 +1975,10 @@
     "power": 60,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "foresight",
@@ -1485,7 +1986,10 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "foul-play",
@@ -1493,7 +1997,10 @@
     "power": 95,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "freeze-dry",
@@ -1509,7 +2016,10 @@
     "power": 150,
     "pp": 5,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "frost-breath",
@@ -1517,15 +2027,21 @@
     "power": 60,
     "pp": 10,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "frustration",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fury-attack",
@@ -1533,7 +2049,10 @@
     "power": 15,
     "pp": 20,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fury-cutter",
@@ -1541,7 +2060,10 @@
     "power": 40,
     "pp": 20,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "fury-swipes",
@@ -1549,7 +2071,10 @@
     "power": 18,
     "pp": 15,
     "accuracy": 80,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "future-sight",
@@ -1557,7 +2082,10 @@
     "power": 120,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "gastro-acid",
@@ -1565,7 +2093,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "giga-drain",
@@ -1573,7 +2104,10 @@
     "power": 75,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "giga-impact",
@@ -1581,7 +2115,10 @@
     "power": 150,
     "pp": 5,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "glare",
@@ -1589,15 +2126,21 @@
     "power": null,
     "pp": 30,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "grass-knot",
     "type": "grass",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "grass-pledge",
@@ -1605,7 +2148,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "grass-whistle",
@@ -1613,7 +2159,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 55,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "grassy-glide",
@@ -1637,7 +2186,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "growl",
@@ -1645,7 +2197,10 @@
     "power": null,
     "pp": 40,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "growth",
@@ -1653,7 +2208,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "grudge",
@@ -1661,7 +2219,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "guard-split",
@@ -1669,7 +2230,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "guard-swap",
@@ -1677,15 +2241,21 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "guillotine",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": 30,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "gunk-shot",
@@ -1693,7 +2263,10 @@
     "power": 120,
     "pp": 5,
     "accuracy": 80,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "gust",
@@ -1701,15 +2274,21 @@
     "power": 40,
     "pp": 35,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "gyro-ball",
     "type": "steel",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "hammer-arm",
@@ -1717,7 +2296,10 @@
     "power": 100,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "hard-press",
@@ -1733,7 +2315,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "haze",
@@ -1741,7 +2326,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "head-smash",
@@ -1749,7 +2337,10 @@
     "power": 150,
     "pp": 5,
     "accuracy": 80,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "headbutt",
@@ -1757,7 +2348,10 @@
     "power": 70,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "headlong-rush",
@@ -1773,7 +2367,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 6,
+    "true_damage": false
   },
   {
     "name": "heal-block",
@@ -1781,7 +2378,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "heal-pulse",
@@ -1789,7 +2389,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "healing-wish",
@@ -1797,7 +2400,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "heart-stamp",
@@ -1805,15 +2411,21 @@
     "power": 60,
     "pp": 25,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "heat-crash",
     "type": "fire",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "heat-wave",
@@ -1821,15 +2433,21 @@
     "power": 95,
     "pp": 10,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "heavy-slam",
     "type": "steel",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "helping-hand",
@@ -1837,7 +2455,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 5,
+    "target_type": 17,
+    "true_damage": false
   },
   {
     "name": "hex",
@@ -1845,7 +2466,10 @@
     "power": 65,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "hi-jump-kick",
@@ -1853,7 +2477,10 @@
     "power": 130,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "hidden-power",
@@ -1861,7 +2488,10 @@
     "power": 60,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "high-horsepower",
@@ -1877,23 +2507,32 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "horn-attack",
     "type": "normal",
-    "category": "physical",
     "power": 65,
     "pp": 25,
-    "accuracy": 100
+    "accuracy": 100,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "horn-drill",
     "type": "normal",
-    "category": "physical",
-    "power": null,
+    "power": 1,
     "pp": 5,
-    "accuracy": 30
+    "accuracy": 30,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "howl",
@@ -1901,7 +2540,10 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 6,
+    "true_damage": false
   },
   {
     "name": "hurricane",
@@ -1909,7 +2551,10 @@
     "power": 110,
     "pp": 10,
     "accuracy": 70,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "hydro-cannon",
@@ -1917,7 +2562,10 @@
     "power": 150,
     "pp": 5,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "hydro-pump",
@@ -1925,7 +2573,10 @@
     "power": 110,
     "pp": 5,
     "accuracy": 80,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "hyper-beam",
@@ -1933,7 +2584,10 @@
     "power": 150,
     "pp": 5,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "hyper-voice",
@@ -1941,7 +2595,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "hypnosis",
@@ -1949,7 +2606,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 60,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "ice-ball",
@@ -1957,7 +2617,10 @@
     "power": 30,
     "pp": 20,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "ice-beam",
@@ -1965,7 +2628,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "ice-fang",
@@ -1973,7 +2639,10 @@
     "power": 65,
     "pp": 15,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "ice-punch",
@@ -1981,7 +2650,10 @@
     "power": 75,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "ice-shard",
@@ -1989,7 +2661,10 @@
     "power": 40,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "ice-spinner",
@@ -2005,7 +2680,10 @@
     "power": 85,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "icicle-spear",
@@ -2013,7 +2691,10 @@
     "power": 25,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "icy-wind",
@@ -2021,7 +2702,10 @@
     "power": 55,
     "pp": 15,
     "accuracy": 95,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "imprison",
@@ -2029,7 +2713,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "incinerate",
@@ -2037,7 +2724,10 @@
     "power": 60,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "inferno",
@@ -2045,7 +2735,10 @@
     "power": 100,
     "pp": 5,
     "accuracy": 50,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "infestation",
@@ -2061,7 +2754,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "iron-defense",
@@ -2069,7 +2765,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "iron-head",
@@ -2077,7 +2776,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "iron-tail",
@@ -2085,31 +2787,43 @@
     "power": 100,
     "pp": 15,
     "accuracy": 75,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "jump-kick",
     "type": "fighting",
-    "category": "physical",
     "power": 100,
     "pp": 10,
-    "accuracy": 95
+    "accuracy": 95,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "karate-chop",
     "type": "fighting",
-    "category": "physical",
     "power": 50,
     "pp": 25,
-    "accuracy": 100
+    "accuracy": 100,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "knock-off",
     "type": "dark",
-    "power": 65,
+    "power": 20,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "laser-focus",
@@ -2133,7 +2847,10 @@
     "power": 140,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "lava-plume",
@@ -2141,7 +2858,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "leaf-blade",
@@ -2149,7 +2869,10 @@
     "power": 90,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "leaf-storm",
@@ -2157,7 +2880,10 @@
     "power": 130,
     "pp": 5,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "leaf-tornado",
@@ -2165,7 +2891,10 @@
     "power": 65,
     "pp": 10,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "leafage",
@@ -2181,7 +2910,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "leech-seed",
@@ -2189,7 +2921,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 90,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "leer",
@@ -2197,7 +2932,10 @@
     "power": null,
     "pp": 30,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "lick",
@@ -2205,7 +2943,10 @@
     "power": 30,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "life-dew",
@@ -2221,7 +2962,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 12,
+    "true_damage": false
   },
   {
     "name": "liquidation",
@@ -2237,15 +2981,21 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "low-kick",
     "type": "fighting",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "low-sweep",
@@ -2253,7 +3003,10 @@
     "power": 65,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "lucky-chant",
@@ -2261,7 +3014,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 12,
+    "true_damage": false
   },
   {
     "name": "lunge",
@@ -2277,7 +3033,10 @@
     "power": 95,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mach-punch",
@@ -2285,7 +3044,10 @@
     "power": 40,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "magic-coat",
@@ -2293,7 +3055,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 4,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "magic-room",
@@ -2301,7 +3066,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "magical-leaf",
@@ -2309,15 +3077,21 @@
     "power": 60,
     "pp": 20,
     "accuracy": null,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "magnet-bomb",
     "type": "steel",
-    "category": "physical",
     "power": 60,
     "pp": 20,
-    "accuracy": null
+    "accuracy": null,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "magnet-rise",
@@ -2325,23 +3099,32 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "magnitude",
     "type": "ground",
-    "power": null,
+    "power": 1,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "me-first",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 3,
+    "true_damage": false
   },
   {
     "name": "mean-look",
@@ -2349,7 +3132,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "meditate",
@@ -2357,7 +3143,10 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "mega-drain",
@@ -2365,7 +3154,10 @@
     "power": 40,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mega-kick",
@@ -2373,7 +3165,10 @@
     "power": 120,
     "pp": 5,
     "accuracy": 75,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mega-punch",
@@ -2381,7 +3176,10 @@
     "power": 80,
     "pp": 20,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "megahorn",
@@ -2389,7 +3187,10 @@
     "power": 120,
     "pp": 10,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "memento",
@@ -2397,15 +3198,21 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "metal-burst",
     "type": "steel",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 13,
+    "true_damage": true
   },
   {
     "name": "metal-claw",
@@ -2413,7 +3220,10 @@
     "power": 50,
     "pp": 35,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "metal-sound",
@@ -2421,7 +3231,10 @@
     "power": null,
     "pp": 40,
     "accuracy": 85,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "meteor-beam",
@@ -2437,7 +3250,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "metronome",
@@ -2445,15 +3261,21 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "milk-drink",
     "type": "normal",
-    "category": "status",
     "power": null,
     "pp": 5,
-    "accuracy": null
+    "accuracy": null,
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "mimic",
@@ -2461,7 +3283,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mind-reader",
@@ -2469,15 +3294,21 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "minimize",
     "type": "normal",
-    "category": "status",
     "power": null,
     "pp": 10,
-    "accuracy": null
+    "accuracy": null,
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "miracle-eye",
@@ -2485,15 +3316,21 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mirror-coat",
     "type": "psychic",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": -5,
+    "target_type": 13,
+    "true_damage": true
   },
   {
     "name": "mirror-move",
@@ -2501,15 +3338,21 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mirror-shot",
     "type": "steel",
-    "category": "special",
     "power": 65,
     "pp": 10,
-    "accuracy": 85
+    "accuracy": 85,
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mist",
@@ -2517,7 +3360,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 12,
+    "true_damage": false
   },
   {
     "name": "mist-ball",
@@ -2525,7 +3371,10 @@
     "power": 95,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "misty-explosion",
@@ -2553,11 +3402,14 @@
   },
   {
     "name": "moonlight",
-    "type": "fairy",
+    "type": "normal",
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "morning-sun",
@@ -2565,7 +3417,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "mud-bomb",
@@ -2573,7 +3428,10 @@
     "power": 65,
     "pp": 10,
     "accuracy": 85,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mud-shot",
@@ -2581,7 +3439,10 @@
     "power": 55,
     "pp": 15,
     "accuracy": 95,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mud-slap",
@@ -2589,7 +3450,10 @@
     "power": 20,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "mud-sport",
@@ -2597,7 +3461,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "muddy-water",
@@ -2605,7 +3472,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 85,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "mystical-fire",
@@ -2621,15 +3491,21 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "natural-gift",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "nature-power",
@@ -2637,7 +3513,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "needle-arm",
@@ -2645,15 +3524,21 @@
     "power": 60,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "night-shade",
     "type": "ghost",
-    "power": null,
+    "power": 1,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "night-slash",
@@ -2661,7 +3546,10 @@
     "power": 70,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "nightmare",
@@ -2669,7 +3557,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "noble-roar",
@@ -2690,10 +3581,13 @@
   {
     "name": "octazooka",
     "type": "water",
-    "category": "special",
     "power": 65,
     "pp": 10,
-    "accuracy": 85
+    "accuracy": 85,
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "odor-sleuth",
@@ -2701,7 +3595,10 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "ominous-wind",
@@ -2709,7 +3606,10 @@
     "power": 60,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "origin-pulse",
@@ -2722,10 +3622,13 @@
   {
     "name": "outrage",
     "type": "dragon",
-    "power": 120,
+    "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 9,
+    "true_damage": false
   },
   {
     "name": "overheat",
@@ -2733,7 +3636,10 @@
     "power": 130,
     "pp": 5,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "pain-split",
@@ -2741,15 +3647,21 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "pay-day",
     "type": "normal",
-    "category": "physical",
     "power": 40,
     "pp": 20,
-    "accuracy": 100
+    "accuracy": 100,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "payback",
@@ -2757,7 +3669,10 @@
     "power": 50,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "peck",
@@ -2765,7 +3680,10 @@
     "power": 35,
     "pp": 35,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "perish-song",
@@ -2773,7 +3691,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 8,
+    "true_damage": false
   },
   {
     "name": "petal-blizzard",
@@ -2789,7 +3710,10 @@
     "power": 120,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 9,
+    "true_damage": false
   },
   {
     "name": "phantom-force",
@@ -2805,7 +3729,10 @@
     "power": 25,
     "pp": 20,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "play-nice",
@@ -2829,7 +3756,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "poison-fang",
@@ -2837,7 +3767,10 @@
     "power": 50,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "poison-gas",
@@ -2845,7 +3778,10 @@
     "power": null,
     "pp": 40,
     "accuracy": 90,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "poison-jab",
@@ -2853,7 +3789,10 @@
     "power": 80,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "poison-powder",
@@ -2861,7 +3800,10 @@
     "power": null,
     "pp": 35,
     "accuracy": 75,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "poison-sting",
@@ -2869,7 +3811,10 @@
     "power": 15,
     "pp": 35,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "poison-tail",
@@ -2877,7 +3822,10 @@
     "power": 50,
     "pp": 25,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "poltergeist",
@@ -2901,7 +3849,10 @@
     "power": 40,
     "pp": 35,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "powder-snow",
@@ -2909,7 +3860,10 @@
     "power": 40,
     "pp": 25,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "power-gem",
@@ -2917,7 +3871,10 @@
     "power": 80,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "power-split",
@@ -2925,7 +3882,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "power-swap",
@@ -2933,7 +3893,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "power-trick",
@@ -2941,7 +3904,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "power-trip",
@@ -2965,7 +3931,10 @@
     "power": 120,
     "pp": 10,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "precipice-blades",
@@ -2978,10 +3947,13 @@
   {
     "name": "present",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 15,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "protect",
@@ -2989,7 +3961,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 4,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "psybeam",
@@ -2997,7 +3972,10 @@
     "power": 65,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "psych-up",
@@ -3005,7 +3983,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "psychic",
@@ -3013,7 +3994,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "psychic-fangs",
@@ -3045,7 +4029,10 @@
     "power": 140,
     "pp": 5,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "psycho-cut",
@@ -3053,7 +4040,10 @@
     "power": 70,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "psycho-shift",
@@ -3061,7 +4051,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "psyshock",
@@ -3069,23 +4062,32 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "psywave",
     "type": "psychic",
-    "power": null,
+    "power": 1,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "punishment",
     "type": "dark",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "pursuit",
@@ -3093,7 +4095,10 @@
     "power": 40,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "quash",
@@ -3101,7 +4106,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "quick-attack",
@@ -3109,7 +4117,10 @@
     "power": 40,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "quick-guard",
@@ -3117,7 +4128,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 3,
+    "target_type": 12,
+    "true_damage": false
   },
   {
     "name": "quiver-dance",
@@ -3125,7 +4139,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "rage",
@@ -3133,7 +4150,10 @@
     "power": 20,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rain-dance",
@@ -3141,7 +4161,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "rapid-spin",
@@ -3149,7 +4172,10 @@
     "power": 50,
     "pp": 40,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "razor-leaf",
@@ -3157,7 +4183,10 @@
     "power": 55,
     "pp": 25,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "razor-shell",
@@ -3165,7 +4194,10 @@
     "power": 75,
     "pp": 10,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "razor-wind",
@@ -3173,7 +4205,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "recover",
@@ -3181,7 +4216,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "recycle",
@@ -3189,7 +4227,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "reflect",
@@ -3197,7 +4238,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 12,
+    "true_damage": false
   },
   {
     "name": "reflect-type",
@@ -3205,7 +4249,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "refresh",
@@ -3213,7 +4260,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "rest",
@@ -3221,7 +4271,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "retaliate",
@@ -3229,15 +4282,21 @@
     "power": 70,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "return",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "revenge",
@@ -3245,15 +4304,21 @@
     "power": 60,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": -4,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "reversal",
     "type": "fighting",
-    "power": null,
+    "power": 1,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rising-voltage",
@@ -3269,7 +4334,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": -6,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rock-blast",
@@ -3277,7 +4345,10 @@
     "power": 25,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rock-climb",
@@ -3285,7 +4356,10 @@
     "power": 90,
     "pp": 20,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rock-polish",
@@ -3293,7 +4367,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "rock-slide",
@@ -3301,7 +4378,10 @@
     "power": 75,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "rock-smash",
@@ -3309,7 +4389,10 @@
     "power": 40,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rock-throw",
@@ -3317,7 +4400,10 @@
     "power": 50,
     "pp": 15,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rock-tomb",
@@ -3325,7 +4411,10 @@
     "power": 60,
     "pp": 15,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "role-play",
@@ -3333,15 +4422,21 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rolling-kick",
     "type": "fighting",
-    "category": "physical",
     "power": 60,
     "pp": 15,
-    "accuracy": 85
+    "accuracy": 85,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "rollout",
@@ -3349,7 +4444,10 @@
     "power": 30,
     "pp": 20,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "roost",
@@ -3357,7 +4455,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "rototiller",
@@ -3373,7 +4474,10 @@
     "power": 60,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "safeguard",
@@ -3381,7 +4485,10 @@
     "power": null,
     "pp": 25,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 12,
+    "true_damage": false
   },
   {
     "name": "sand-attack",
@@ -3389,7 +4496,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sand-tomb",
@@ -3397,7 +4507,10 @@
     "power": 35,
     "pp": 15,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sandstorm",
@@ -3405,7 +4518,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "scald",
@@ -3413,7 +4529,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "scale-shot",
@@ -3429,7 +4548,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "scorching-sands",
@@ -3445,7 +4567,10 @@
     "power": 40,
     "pp": 35,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "screech",
@@ -3453,7 +4578,10 @@
     "power": null,
     "pp": 40,
     "accuracy": 85,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "secret-power",
@@ -3461,7 +4589,10 @@
     "power": 70,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "seed-bomb",
@@ -3469,15 +4600,21 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "seismic-toss",
     "type": "fighting",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "selfdestruct",
@@ -3485,7 +4622,10 @@
     "power": 200,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "shadow-ball",
@@ -3493,7 +4633,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "shadow-claw",
@@ -3501,7 +4644,10 @@
     "power": 70,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "shadow-punch",
@@ -3509,7 +4655,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": null,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "shadow-sneak",
@@ -3517,7 +4666,10 @@
     "power": 40,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "shed-tail",
@@ -3530,10 +4682,13 @@
   {
     "name": "sheer-cold",
     "type": "ice",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": 30,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "shell-smash",
@@ -3541,7 +4696,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "shock-wave",
@@ -3549,7 +4707,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": null,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "signal-beam",
@@ -3557,7 +4718,10 @@
     "power": 75,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "silver-wind",
@@ -3565,7 +4729,10 @@
     "power": 60,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "simple-beam",
@@ -3573,7 +4740,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sing",
@@ -3581,7 +4751,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 55,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "skill-swap",
@@ -3589,7 +4762,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "skitter-smack",
@@ -3605,7 +4781,10 @@
     "power": 130,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sky-attack",
@@ -3613,7 +4792,10 @@
     "power": 140,
     "pp": 5,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sky-drop",
@@ -3621,7 +4803,10 @@
     "power": 60,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 14,
+    "true_damage": false
   },
   {
     "name": "sky-uppercut",
@@ -3629,7 +4814,10 @@
     "power": 85,
     "pp": 15,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "slack-off",
@@ -3637,7 +4825,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "slam",
@@ -3645,7 +4836,10 @@
     "power": 80,
     "pp": 20,
     "accuracy": 75,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "slash",
@@ -3653,7 +4847,10 @@
     "power": 70,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sleep-powder",
@@ -3661,7 +4858,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 75,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sleep-talk",
@@ -3669,7 +4869,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "sludge",
@@ -3677,7 +4880,10 @@
     "power": 65,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sludge-bomb",
@@ -3685,7 +4891,10 @@
     "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sludge-wave",
@@ -3693,7 +4902,10 @@
     "power": 95,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "smack-down",
@@ -3701,7 +4913,10 @@
     "power": 50,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "smart-strike",
@@ -3717,7 +4932,10 @@
     "power": 70,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "smog",
@@ -3725,7 +4943,10 @@
     "power": 30,
     "pp": 20,
     "accuracy": 70,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "smoke-screen",
@@ -3733,7 +4954,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "snarl",
@@ -3741,7 +4965,10 @@
     "power": 55,
     "pp": 15,
     "accuracy": 95,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "snatch",
@@ -3749,7 +4976,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 4,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "snore",
@@ -3757,7 +4987,10 @@
     "power": 50,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "snowscape",
@@ -3765,7 +4998,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "soak",
@@ -3773,7 +5009,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "solar-beam",
@@ -3781,7 +5020,10 @@
     "power": 120,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "solar-blade",
@@ -3794,10 +5036,13 @@
   {
     "name": "sonic-boom",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 20,
     "accuracy": 90,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "spark",
@@ -3805,15 +5050,21 @@
     "power": 65,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "spike-cannon",
     "type": "normal",
-    "category": "physical",
     "power": 20,
     "pp": 15,
-    "accuracy": 100
+    "accuracy": 100,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "spikes",
@@ -3821,7 +5072,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 11,
+    "true_damage": false
   },
   {
     "name": "spiky-shield",
@@ -3834,10 +5088,13 @@
   {
     "name": "spit-up",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "spite",
@@ -3845,7 +5102,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "splash",
@@ -3853,7 +5113,10 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "spore",
@@ -3861,7 +5124,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "spotlight",
@@ -3877,7 +5143,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 11,
+    "true_damage": false
   },
   {
     "name": "steel-beam",
@@ -3901,7 +5170,10 @@
     "power": 70,
     "pp": 25,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sticky-web",
@@ -3917,7 +5189,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "stomp",
@@ -3925,7 +5200,10 @@
     "power": 65,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "stomping-tantrum",
@@ -3941,7 +5219,10 @@
     "power": 100,
     "pp": 5,
     "accuracy": 80,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "stored-power",
@@ -3949,15 +5230,21 @@
     "power": 20,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "storm-throw",
     "type": "fighting",
-    "category": "physical",
     "power": 60,
     "pp": 10,
-    "accuracy": 100
+    "accuracy": 100,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "strength",
@@ -3965,7 +5252,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "string-shot",
@@ -3973,7 +5263,10 @@
     "power": null,
     "pp": 40,
     "accuracy": 95,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "struggle-bug",
@@ -3981,7 +5274,10 @@
     "power": 50,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "stuff-cheeks",
@@ -3997,15 +5293,21 @@
     "power": null,
     "pp": 30,
     "accuracy": 75,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "submission",
     "type": "fighting",
-    "category": "physical",
     "power": 80,
     "pp": 20,
-    "accuracy": 80
+    "accuracy": 80,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "substitute",
@@ -4013,7 +5315,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "sucker-punch",
@@ -4021,7 +5326,10 @@
     "power": 70,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sunny-day",
@@ -4029,15 +5337,21 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "super-fang",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 10,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": true
   },
   {
     "name": "superpower",
@@ -4045,7 +5359,10 @@
     "power": 120,
     "pp": 5,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "supersonic",
@@ -4053,7 +5370,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 55,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "surf",
@@ -4061,7 +5381,10 @@
     "power": 90,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "swagger",
@@ -4069,7 +5392,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 85,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "swallow",
@@ -4077,15 +5403,21 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "sweet-kiss",
-    "type": "fairy",
+    "type": "normal",
     "power": null,
     "pp": 10,
     "accuracy": 75,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "sweet-scent",
@@ -4093,7 +5425,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "swift",
@@ -4101,7 +5436,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": null,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "switcheroo",
@@ -4109,7 +5447,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "swords-dance",
@@ -4117,7 +5458,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "synchronoise",
@@ -4125,7 +5469,10 @@
     "power": 120,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "synthesis",
@@ -4133,7 +5480,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "tackle",
@@ -4141,7 +5491,10 @@
     "power": 40,
     "pp": 35,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "tail-glow",
@@ -4149,7 +5502,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "tail-slap",
@@ -4157,7 +5513,10 @@
     "power": 25,
     "pp": 10,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "tail-whip",
@@ -4165,7 +5524,10 @@
     "power": null,
     "pp": 30,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "tailwind",
@@ -4173,7 +5535,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 12,
+    "true_damage": false
   },
   {
     "name": "take-down",
@@ -4181,7 +5546,10 @@
     "power": 90,
     "pp": 20,
     "accuracy": 85,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "taunt",
@@ -4189,7 +5557,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "tearful-look",
@@ -4205,7 +5576,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 4,
+    "true_damage": false
   },
   {
     "name": "telekinesis",
@@ -4213,7 +5587,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "teleport",
@@ -4221,7 +5598,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": -6,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "temper-flare",
@@ -4253,7 +5633,10 @@
     "power": 60,
     "pp": 25,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "thrash",
@@ -4261,7 +5644,10 @@
     "power": 120,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 9,
+    "true_damage": false
   },
   {
     "name": "throat-chop",
@@ -4277,7 +5663,10 @@
     "power": 110,
     "pp": 10,
     "accuracy": 70,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "thunder-fang",
@@ -4285,7 +5674,10 @@
     "power": 65,
     "pp": 15,
     "accuracy": 95,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "thunder-punch",
@@ -4293,15 +5685,21 @@
     "power": 75,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "thunder-shock",
     "type": "electric",
-    "category": "special",
     "power": 40,
     "pp": 30,
-    "accuracy": 100
+    "accuracy": 100,
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "thunder-wave",
@@ -4309,7 +5707,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 90,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "thunderbolt",
@@ -4317,7 +5718,10 @@
     "power": 90,
     "pp": 15,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "tickle",
@@ -4325,7 +5729,10 @@
     "power": null,
     "pp": 20,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "torment",
@@ -4333,7 +5740,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "toxic",
@@ -4341,7 +5751,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 90,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "toxic-spikes",
@@ -4349,7 +5762,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 11,
+    "true_damage": false
   },
   {
     "name": "trailblaze",
@@ -4362,10 +5778,13 @@
   {
     "name": "transform",
     "type": "normal",
-    "category": "status",
     "power": null,
     "pp": 10,
-    "accuracy": null
+    "accuracy": null,
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "tri-attack",
@@ -4373,7 +5792,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "trick",
@@ -4381,7 +5803,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "trick-room",
@@ -4389,7 +5814,10 @@
     "power": null,
     "pp": 5,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": -7,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "triple-axel",
@@ -4402,10 +5830,13 @@
   {
     "name": "trump-card",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": null,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "twister",
@@ -4413,7 +5844,10 @@
     "power": 40,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "u-turn",
@@ -4421,7 +5855,10 @@
     "power": 70,
     "pp": 20,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "upper-hand",
@@ -4437,15 +5874,21 @@
     "power": 90,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 9,
+    "true_damage": false
   },
   {
     "name": "v-create",
     "type": "fire",
-    "category": "physical",
     "power": 180,
     "pp": 5,
-    "accuracy": 95
+    "accuracy": 95,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "vacuum-wave",
@@ -4453,7 +5896,10 @@
     "power": 40,
     "pp": 30,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "venom-drench",
@@ -4469,7 +5915,10 @@
     "power": 65,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "vice-grip",
@@ -4477,7 +5926,10 @@
     "power": 55,
     "pp": 30,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "vital-throw",
@@ -4485,7 +5937,10 @@
     "power": 70,
     "pp": 10,
     "accuracy": null,
-    "category": "physical"
+    "category": "physical",
+    "priority": -1,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "volt-switch",
@@ -4493,15 +5948,21 @@
     "power": 70,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "volt-tackle",
     "type": "electric",
-    "category": "physical",
     "power": 120,
     "pp": 15,
-    "accuracy": 100
+    "accuracy": 100,
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "wake-up-slap",
@@ -4509,7 +5970,10 @@
     "power": 70,
     "pp": 10,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "water-gun",
@@ -4517,7 +5981,10 @@
     "power": 40,
     "pp": 25,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "water-pledge",
@@ -4525,7 +5992,10 @@
     "power": 80,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "water-pulse",
@@ -4533,7 +6003,10 @@
     "power": 60,
     "pp": 20,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "water-sport",
@@ -4541,7 +6014,10 @@
     "power": null,
     "pp": 15,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "water-spout",
@@ -4549,7 +6025,10 @@
     "power": 150,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 5,
+    "true_damage": false
   },
   {
     "name": "waterfall",
@@ -4557,7 +6036,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "weather-ball",
@@ -4565,7 +6047,10 @@
     "power": 50,
     "pp": 10,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "whirlpool",
@@ -4573,7 +6058,10 @@
     "power": 35,
     "pp": 15,
     "accuracy": 85,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "whirlwind",
@@ -4581,7 +6069,10 @@
     "power": null,
     "pp": 20,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": -6,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "wide-guard",
@@ -4589,7 +6080,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 3,
+    "target_type": 12,
+    "true_damage": false
   },
   {
     "name": "wild-charge",
@@ -4597,7 +6091,10 @@
     "power": 90,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "will-o-wisp",
@@ -4605,7 +6102,10 @@
     "power": null,
     "pp": 15,
     "accuracy": 85,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "wing-attack",
@@ -4613,7 +6113,10 @@
     "power": 60,
     "pp": 35,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "wish",
@@ -4621,7 +6124,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "withdraw",
@@ -4629,7 +6135,10 @@
     "power": null,
     "pp": 40,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "wonder-room",
@@ -4637,7 +6146,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 10,
+    "true_damage": false
   },
   {
     "name": "work-up",
@@ -4645,7 +6157,10 @@
     "power": null,
     "pp": 30,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 7,
+    "true_damage": false
   },
   {
     "name": "worry-seed",
@@ -4653,7 +6168,10 @@
     "power": null,
     "pp": 10,
     "accuracy": 100,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "wrap",
@@ -4661,15 +6179,21 @@
     "power": 15,
     "pp": 20,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "wring-out",
     "type": "normal",
-    "power": null,
+    "power": 1,
     "pp": 5,
     "accuracy": 100,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "x-scissor",
@@ -4677,7 +6201,10 @@
     "power": 80,
     "pp": 15,
     "accuracy": 100,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "yawn",
@@ -4685,7 +6212,10 @@
     "power": null,
     "pp": 10,
     "accuracy": null,
-    "category": "status"
+    "category": "status",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "zap-cannon",
@@ -4693,7 +6223,10 @@
     "power": 120,
     "pp": 5,
     "accuracy": 50,
-    "category": "special"
+    "category": "special",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   },
   {
     "name": "zen-headbutt",
@@ -4701,6 +6234,9 @@
     "power": 80,
     "pp": 15,
     "accuracy": 90,
-    "category": "physical"
+    "category": "physical",
+    "priority": 0,
+    "target_type": 0,
+    "true_damage": false
   }
 ]

@@ -260,6 +260,7 @@ Core files include:
 | `scripts/build_data.py` | Builds base Pokemon/move/location/move-detail data from PokeAPI | `pokemon.json`, `moves.json`, `locations.json`, `move_details.json` |
 | `scripts/build_pokemmo_hoenn_locations.py` | Builds Hoenn encounter/location details from PokeMMO wiki (+ fallbacks) | `pokemmo_hoenn_locations.json` |
 | `scripts/augment_hoenn_crossgen_pokemon.py` | Adds capturable Gen1/Gen2 entries seen in Hoenn encounter data | updates `pokemon.json` |
+| `scripts/sync_pokemmo_learnsets.py` | Overlays current PokeMMO learnsets, move metadata, Pokemon core fields, and Italian display names from the local client dump when available | updates `pokemon.json`, `moves.json`, `move_details.json`, `localization_it.json` |
 | `scripts/build_it_localization.py` | Builds Italian move/ability/location localization dataset | `localization_it.json` |
 
 ### Recommended regeneration order
@@ -271,12 +272,14 @@ pip install -r backend/requirements-dev.txt
 python3 scripts/build_data.py
 python3 scripts/build_pokemmo_hoenn_locations.py
 python3 scripts/augment_hoenn_crossgen_pokemon.py
+python3 scripts/sync_pokemmo_learnsets.py
 python3 scripts/build_it_localization.py
 ```
 
 Note:
 
 - These scripts call external services and can take time.
+- `scripts/sync_pokemmo_learnsets.py` defaults to the macOS client export at `~/Library/Application Support/com.pokeemu.macos/pokemmo-client-live/dump/resources/dump.zip` when it exists.
 - Commit regenerated data together with code changes that depend on it.
 
 ## Testing

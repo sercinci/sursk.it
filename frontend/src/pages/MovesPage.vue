@@ -55,19 +55,48 @@
 
     <div class="card-surface overflow-hidden rounded-2xl">
       <div class="overflow-x-auto">
-        <table class="min-w-[720px] w-full text-left text-sm">
+        <table class="min-w-[780px] w-full text-left text-sm">
           <thead class="bg-black/5 text-xs uppercase tracking-wide text-muted">
             <tr>
-              <th class="px-4 py-3">{{ t("moves.column.move") }}</th>
-              <th class="px-4 py-3">{{ t("moves.column.type") }}</th>
-              <th class="px-4 py-3">{{ t("moves.column.category") }}</th>
-              <th class="px-4 py-3">{{ t("moves.column.power") }}</th>
-              <th class="px-4 py-3">{{ t("moves.column.pp") }}</th>
-              <th class="px-4 py-3">{{ t("moves.column.accuracy") }}</th>
+              <th class="px-4 py-3">
+                <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleSort('name')">
+                  {{ t("moves.column.move") }} <span class="font-mono">{{ sortIndicator('name') }}</span>
+                </button>
+              </th>
+              <th class="px-4 py-3">
+                <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleSort('type')">
+                  {{ t("moves.column.type") }} <span class="font-mono">{{ sortIndicator('type') }}</span>
+                </button>
+              </th>
+              <th class="px-4 py-3">
+                <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleSort('category')">
+                  {{ t("moves.column.category") }} <span class="font-mono">{{ sortIndicator('category') }}</span>
+                </button>
+              </th>
+              <th class="px-4 py-3">
+                <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleSort('power')">
+                  {{ t("moves.column.power") }} <span class="font-mono">{{ sortIndicator('power') }}</span>
+                </button>
+              </th>
+              <th class="px-4 py-3">
+                <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleSort('pp')">
+                  {{ t("moves.column.pp") }} <span class="font-mono">{{ sortIndicator('pp') }}</span>
+                </button>
+              </th>
+              <th class="px-4 py-3">
+                <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleSort('accuracy')">
+                  {{ t("moves.column.accuracy") }} <span class="font-mono">{{ sortIndicator('accuracy') }}</span>
+                </button>
+              </th>
+              <th class="px-4 py-3">
+                <button type="button" class="inline-flex items-center gap-1 hover:text-text" @click="toggleSort('priority')">
+                  {{ t("moves.column.priority") }} <span class="font-mono">{{ sortIndicator('priority') }}</span>
+                </button>
+              </th>
             </tr>
           </thead>
           <tbody>
-            <template v-for="move in filtered" :key="move.name">
+            <template v-for="move in filteredAndSorted" :key="move.name">
               <tr
                 :id="`move-row-${move.name}`"
                 class="cursor-pointer border-t border-black/5 transition-colors hover:bg-black/[0.03]"
@@ -89,12 +118,13 @@
                   <span v-else class="text-muted">-</span>
                 </td>
                 <td class="px-4 py-3 text-muted">{{ labelMoveCategory(move.category) }}</td>
-                <td class="px-4 py-3">{{ move.power ?? "-" }}</td>
+                <td class="px-4 py-3">{{ formatPower(move.power, move.true_damage) }}</td>
                 <td class="px-4 py-3">{{ move.pp ?? "-" }}</td>
                 <td class="px-4 py-3">{{ move.accuracy ?? "-" }}</td>
+                <td class="px-4 py-3">{{ formatPriority(move.priority) }}</td>
               </tr>
               <tr v-if="expandedMove === move.name" class="border-t border-black/5 bg-black/[0.02]">
-                <td colspan="6" class="px-4 py-4">
+                <td colspan="7" class="px-4 py-4">
                   <p class="text-xs font-semibold uppercase tracking-wide text-muted">{{ t("moves.description") }}</p>
                   <p v-if="isMoveDetailLoading" class="mt-1 text-sm text-muted">{{ t("moves.loading_detail") }}</p>
                   <p v-else class="mt-1 text-sm leading-relaxed text-text">
@@ -221,11 +251,13 @@ import TypeEffectivenessBadge from "@/components/TypeEffectivenessBadge.vue";
 import { getTypeChipStyle } from "@/constants/pokemonTypes";
 import { getOffensiveDamageGroups } from "@/constants/typeEffectiveness";
 import { labelLearnMethod, labelMoveCategory, labelType, t, useLocale } from "@/i18n";
-import type { MoveTmPurchase } from "@/types";
+import type { Move, MoveTmPurchase } from "@/types";
 import type { MoveLearnMethod, MoveLearner } from "@/types";
 import { formatLearnMethodLabels } from "@/utils/moveLearnMethods";
 
 type DamageMultiplier = 2 | 0.5 | 0;
+type SortColumn = "name" | "type" | "category" | "power" | "pp" | "accuracy" | "priority";
+type SortDirection = "asc" | "desc";
 
 interface MoveEffectivenessGroup {
   multiplier: DamageMultiplier;
@@ -236,6 +268,8 @@ const query = ref("");
 const expandedMove = ref<string | null>(null);
 const selectedTypeFilter = ref("");
 const selectedCategoryFilter = ref("");
+const sortColumn = ref<SortColumn>("name");
+const sortDirection = ref<SortDirection>("asc");
 const { locale } = useLocale();
 const route = useRoute();
 const DAMAGE_MULTIPLIERS: DamageMultiplier[] = [2, 0.5, 0];
@@ -269,6 +303,15 @@ const filtered = computed(() => {
     const slug = normalizeQuery(move.name);
     return display.includes(needle) || slug.includes(needle);
   });
+});
+
+const filteredAndSorted = computed(() => {
+  const rows = [...filtered.value];
+  rows.sort((a, b) => {
+    const comparison = compareSortValues(getSortValue(a, sortColumn.value), getSortValue(b, sortColumn.value));
+    return sortDirection.value === "asc" ? comparison : -comparison;
+  });
+  return rows;
 });
 
 const hasActiveFilters = computed(
@@ -362,6 +405,51 @@ function resetFilters() {
   selectedCategoryFilter.value = "";
 }
 
+function toggleSort(column: SortColumn) {
+  if (sortColumn.value === column) {
+    sortDirection.value = sortDirection.value === "asc" ? "desc" : "asc";
+    return;
+  }
+  sortColumn.value = column;
+  sortDirection.value = "asc";
+}
+
+function sortIndicator(column: SortColumn) {
+  if (sortColumn.value !== column) {
+    return "";
+  }
+  return sortDirection.value === "asc" ? "↑" : "↓";
+}
+
+function getSortValue(move: Move, column: SortColumn) {
+  if (column === "name") {
+    return (move.display_name ?? move.name).toLowerCase();
+  }
+  if (column === "type" || column === "category") {
+    return (move[column] ?? "").toLowerCase();
+  }
+  if (column === "power") {
+    return move.true_damage ? null : move.power;
+  }
+  return move[column];
+}
+
+function compareSortValues(a: string | number | null, b: string | number | null) {
+  if (a === null && b === null) {
+    return 0;
+  }
+  if (a === null) {
+    return 1;
+  }
+  if (b === null) {
+    return -1;
+  }
+  if (typeof a === "number" && typeof b === "number") {
+    return a - b;
+  }
+  return String(a).localeCompare(String(b));
+}
+
 function normalizeQuery(value: string) {
   return value.trim().toLowerCase().replaceAll("-", " ").replace(/\s+/g, " ");
 }
@@ -384,6 +472,20 @@ function formatDamageMultiplier(multiplier: DamageMultiplier) {
 
 function isDamagingMove(category: string | null) {
   return category === "physical" || category === "special";
+}
+
+function formatPriority(priority: number | null) {
+  if (priority === null) {
+    return "-";
+  }
+  return priority > 0 ? `+${priority}` : String(priority);
+}
+
+function formatPower(power: number | null, trueDamage: boolean | null) {
+  if (trueDamage) {
+    return t("moves.power.special_damage");
+  }
+  return power ?? "-";
 }
 
 function formatLabel(value: string | null) {

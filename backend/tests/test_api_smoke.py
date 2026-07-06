@@ -41,8 +41,7 @@ def test_pokemon_detail_includes_abilities() -> None:
         payload = response.json()
         pokemon = payload["data"]
         abilities = pokemon["abilities"]
-        assert [ability["name"] for ability in abilities] == ["overgrow"]
-        assert "unburden" not in [ability["name"] for ability in abilities]
+        assert [ability["name"] for ability in abilities] == ["overgrow", "unburden"]
         assert all(ability["description"] for ability in abilities)
         assert pokemon["ev_yield"] == {"speed": 1}
 
@@ -57,6 +56,8 @@ def test_pokemon_detail_localizes_abilities_for_italian() -> None:
         assert abilities
         assert abilities[0]["name"] == "overgrow"
         assert abilities[0]["display_name"] == "Erbaiuto"
+        assert abilities[1]["name"] == "unburden"
+        assert abilities[1]["display_name"] == "Agiltecnica"
         assert "type Grass" not in abilities[0]["description"]
         assert abilities[0]["description"]
 

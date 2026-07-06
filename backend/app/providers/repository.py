@@ -615,6 +615,9 @@ class DataRepository:
                     power=move_meta.power if move_meta else None,
                     pp=move_meta.pp if move_meta else None,
                     accuracy=move_meta.accuracy if move_meta else None,
+                    priority=move_meta.priority if move_meta else None,
+                    target_type=move_meta.target_type if move_meta else None,
+                    true_damage=move_meta.true_damage if move_meta else None,
                     description=(
                         self.it_move_description_by_slug.get(normalized_name)
                         if locale == "it"

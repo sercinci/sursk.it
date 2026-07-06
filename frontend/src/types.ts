@@ -92,6 +92,9 @@ export interface Move {
   power: number | null;
   pp: number | null;
   accuracy: number | null;
+  priority: number | null;
+  target_type: number | null;
+  true_damage: boolean | null;
 }
 
 export interface MoveLearnMethod {

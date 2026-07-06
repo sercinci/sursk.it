@@ -146,7 +146,7 @@ function speedLv50(base: number) {
 function learnSource(m: PokemonMove): KeyMove["source"] {
   const methods = m.methods.map(x => x.method);
   const isLevelUp = methods.some(x => x === "level-up");
-  const isTM      = methods.some(x => x === "machine");
+  const isTM      = methods.some(x => x === "tm" || x === "machine");
   const isTutor   = methods.some(x => x === "tutor");
   if (isLevelUp && (isTM || isTutor)) return "level-up+TM";
   if (isTutor)    return "tutor";
@@ -171,7 +171,7 @@ function learnSourceFiltered(m: PokemonMove, opts: AnalysisOptions): KeyMove["so
     .filter(lm => isMethodValid(lm.method, lm.level, opts))
     .map(lm => lm.method);
   const isLevelUp = names.includes("level-up");
-  const isTM      = names.includes("machine");
+  const isTM      = names.includes("tm") || names.includes("machine");
   const isTutor   = names.includes("tutor");
   if (isLevelUp && (isTM || isTutor)) return "level-up+TM";
   if (isTutor)    return "tutor";
@@ -190,9 +190,10 @@ function serializePokemon(
   const offensive = availableMoves.filter(
     m => m.type && m.category !== "status" && m.power && m.power > 0,
   );
+  const normalDamageMoves = offensive.filter(m => !m.true_damage);
 
   const coverage = opponents.map(opp => {
-    const results = offensive.map(m => {
+    const results = normalDamageMoves.map(m => {
       const internalName   = m.name.toLowerCase();
       const moveType       = m.type!.toLowerCase();
       const typeMultiplier = getAttackMultiplierForTypes(m.type!, opp.types);
@@ -215,6 +216,7 @@ function serializePokemon(
         type:              m.type!,
         power:             m.power!,
         category:          m.category!,
+        priority:          m.priority ?? 0,
         multiplier:        typeMultiplier,
         learn_source:      learnSourceFiltered(m, opts),
         typeImmune,
@@ -235,6 +237,7 @@ function serializePokemon(
         type:         m.type,
         power:        m.power,
         category:     m.category,
+        priority:     m.priority,
         multiplier:   m.multiplier,
         learn_source: m.learn_source,
         // Warn when this move is SE if opponent has one ability but blocked if they have another
@@ -301,6 +304,8 @@ function serializePokemon(
       type:         m.type!,
       power:        m.power!,
       category:     m.category!,
+      priority:     m.priority ?? 0,
+      true_damage:  Boolean(m.true_damage),
       accuracy:     m.accuracy,
       learn_source: learnSourceFiltered(m, opts),
     })),
@@ -333,7 +338,9 @@ Each Pokémon in the JSON has:
   IMPORTANT: When a Pokémon has multiple abilities, analyse EVERY ability scenario.
   Do not assume one ability is active — the player may choose any of them.
 - all_offensive_moves: every learnable offensive move (level-up AND TM/tutor),
-  each tagged with learn_source
+  each tagged with learn_source, priority, and true_damage.
+  If true_damage is true, the move uses fixed/OHKO/special damage logic; do not
+  treat its power value as normal base power.
 - coverage_vs_opponents: PRE-COMPUTED coverage against each specific opponent
   - super_effective_moves: SE moves that are NOT blocked by ALL of the opponent's
     abilities. Each entry may have a conditional_note field:

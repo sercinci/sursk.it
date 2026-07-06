@@ -43,6 +43,9 @@ class Move(BaseModel):
     power: int | None = None
     pp: int | None = None
     accuracy: int | None = None
+    priority: int | None = None
+    target_type: int | None = None
+    true_damage: bool | None = None
 
 
 class PokemonMove(Move):
