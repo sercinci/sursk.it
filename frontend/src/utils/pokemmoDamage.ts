@@ -1000,7 +1000,9 @@ export function calculateMoveDamage(
     if (!trueDamage) {
       return null;
     }
-    const sturdyBlocksOhkoMove = trueDamage.kind === "ohko" &&
+    const ohkoMoveWouldDealDamage = trueDamage.kind === "ohko" &&
+      trueDamage.rolls.some((damage) => damage > 0);
+    const sturdyBlocksOhkoMove = ohkoMoveWouldDealDamage &&
       normalizeAbility(defenderAbility) === "sturdy" &&
       !attackerBypassesDefenderAbility(attackerAbility);
     const rolls = sturdyBlocksOhkoMove ? [0] : trueDamage.rolls;
